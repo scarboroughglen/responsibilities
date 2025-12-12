@@ -159,8 +159,19 @@ Based on review of your governing documents (Condo IV By-Laws and HOA/Associatio
 
 #### 3. Building - Patios
 **Listing Says**: Homeowner
-**Bylaws Say**: ✓ CORRECT (if owner-installed)
-**Comment**: Patios are typically homeowner additions. If original construction, would be Limited Common Element maintained by owner anyway.
+**Bylaws Say**: ✓ CORRECT (with important nuance)
+**Comment**: **This requires understanding original vs. owner-installed improvements**:
+
+**Key Bylaw Provisions**:
+- Rear yards (first 20 feet) are Limited Common Elements "**to be maintained by the Association**"
+- However: "No landscaping or construction of any nature whatsoever, **including decks, patios or enclosures** may be made...by any Unit Owner without...permission"
+- Critical language: "neither the Condominium nor the **Association shall be responsible for any such landscaping installed by a Unit Owner**"
+
+**Proper Allocation**:
+- **Owner-installed patios** (with ARC approval) = **HOMEOWNER** - This is almost certainly what your listing refers to and is correct
+- **Natural rear yard surface** (no patio) = **ASSOCIATION (HOA)** - maintains the original sodded/seeded yard area
+
+**Practical Reality**: Most/all patios in the development are likely owner-installed improvements, making Homeowner assignment correct. If any units have NO patio and just natural yard, that area is HOA-maintained, but any constructed patio surface becomes owner responsibility once installed.
 
 #### 4. Building - Driveways (Condos 2, 3, 4 only)
 **Listing Says**: Condo
@@ -172,12 +183,15 @@ Based on review of your governing documents (Condo IV By-Laws and HOA/Associatio
 #### 5. Building - Dryer Vent Cleaning
 **Listing Says**: Homeowner
 **Bylaws Say**: ✓ CORRECT
-**Comment**: Interior maintenance is unit owner responsibility. Dryer vent cleaning is routine maintenance inside the unit.
+**Comment**: Interior maintenance is unit owner responsibility. Dryer vent cleaning is routine maintenance inside the unit to prevent lint buildup and fire hazards.
 
 #### 6-7. Building - Dryer Vents Exterior
 **Listing Says**: Condo
 **Bylaws Say**: ✓ CORRECT
-**Comment**: Exterior components are part of the building envelope. Condo maintains exterior walls and components.
+**Comment**: This is a split responsibility correctly captured:
+- **Interior vent cleaning** = Owner (mechanical system maintenance)
+- **Exterior cap/termination** = Condo (part of exterior wall/building envelope)
+The bylaws designate "mechanical systems" as Owner responsibility for interior components, but the exterior wall penetration and cap are part of the building envelope maintained by the Condo.
 
 #### 8. Building - Exterior Doors - Replace Door
 **Listing Says**: Homeowner
@@ -335,6 +349,16 @@ Based on review of your governing documents (Condo IV By-Laws and HOA/Associatio
 
 4. **Landscaping Modifications**: Once a homeowner modifies landscaping (even with approval), ongoing maintenance is theirs, not HOA's. This is captured in Item 50.
 
+5. **Owner-Installed Improvements vs. Original Construction**: Critical distinction for patios, decks, and landscaping:
+   - **Original/unmodified** = Condo or HOA maintains (depending on location)
+   - **Owner-modified** (even with ARC approval) = Owner maintains going forward
+   - This applies to patios, decks, fencing, landscaping, etc.
+
+6. **Dryer Vents - Split Responsibility**:
+   - Interior vent cleaning = Owner
+   - Exterior cap (part of building envelope) = Condo
+   - This correctly reflects that the vent system penetrates through a Common Element (the exterior wall)
+
 ---
 
 ## CONCLUSION
@@ -353,4 +377,3 @@ Based on review of your governing documents (Condo IV By-Laws and HOA/Associatio
 4. **LOW**: Remove "???" marks where responsibility is actually clear in bylaws
 
 This is a well-constructed document that demonstrates good understanding of the three-tier responsibility structure (Owner/Condo/HOA) established in your governing documents.
-
