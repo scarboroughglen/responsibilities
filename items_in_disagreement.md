@@ -53,6 +53,34 @@
 
 ---
 
+### Building - Patios (Rear) - All Condos
+
+**Current Assignment in Spreadsheet**: Homeowner
+
+**Bylaws Say**: CORRECT assignment, but requires understanding of nuance
+
+**Important Distinction**:
+The bylaws create a critical split based on whether the patio is original or owner-installed:
+
+1. **Owner-Installed Patios (with ARC approval)** = HOMEOWNER
+   - Bylaws state: "neither the Condominium nor the Association shall be responsible for any such landscaping installed by a Unit Owner"
+   - This includes patios, which require ARC approval
+   - Once installed, ongoing maintenance becomes owner responsibility
+
+2. **Natural Rear Yard Surface (no patio installed)** = ASSOCIATION (HOA)
+   - Bylaws state rear yards are Limited Common Elements "to be maintained by the Association"
+   - This applies to the original sodded/seeded yard area (first 20 feet)
+
+**Your Listing is CORRECT**: Since almost all/all patios in the development are owner-installed improvements (even with HOA approval), they are properly assigned to Homeowner.
+
+**Clarification Needed**: Consider adding a note in your spreadsheet distinguishing:
+- "Patios (Owner-Installed)" = Homeowner
+- "Rear Yard (Natural Surface, No Patio)" = HOA
+
+This distinction helps explain why some units with no patio have HOA maintaining their rear yard, while units with patios maintain the patio themselves.
+
+---
+
 ## ITEMS WITH UNNECESSARY "???" MARKS (Actually Clear in Bylaws)
 
 ### Item 58: Site Work - Retaining Wall - masonry along entry
@@ -80,5 +108,7 @@
 **Items to Correct**: 1 (Item 36 - retaining walls should be HOA)
 
 **Items Needing Research/Decision**: 2 (mailboxes, pest control contract)
+
+**Items Correctly Assigned but Needing Clarification Note**: 1 (patios - current assignment is correct, but should note the distinction between owner-installed patios vs. natural rear yards)
 
 **Items to Clean Up**: Remove "???" from items that are actually clear (retaining wall at entry, internal plumbing)
