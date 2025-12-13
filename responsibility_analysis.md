@@ -77,12 +77,123 @@ Based on review of your governing documents (Condo IV By-Laws and HOA/Associatio
 - Perimeter fencing (board-on-board, guard rails, split rail, vinyl) all HOA common areas
 - These are clearly outside individual Condo parcels
 
-#### 48. Site Work - Irrigation
+#### 48. Site Work - Irrigation-repair fund
 **Listing Says**: Condo IV Sprinklers (Condo); Common Area Sprinklers (HOA)
-**Bylaws Say**: ✓ CORRECT - Well distinguished
-**Comment**: Proper allocation based on location:
-- **Condo**: Sprinklers serving that Condo's buildings/landscaping
-- **HOA**: Common area irrigation systems
+**Bylaws Say**: ⚠️ LIKELY INCORRECT - Needs Review
+**Comment**: **This allocation requires careful reconsideration based on bylaw analysis.**
+
+**CRITICAL BYLAW PROVISIONS:**
+
+**From Association Documents (Page 82):**
+> "The Association will be responsible for grounds maintenance and landscaping of the Common Areas, **including the front, side and rear yards of all Units**."
+
+**From HOA Budget - Line Items:**
+- Item (4): "Water Sprinkler System & Pool" = $1,000 (HOA expense)
+- Item (21): "Sprinkler Maintenance" = $2,500 (HOA expense)
+
+**From Association Documents (Page 82):**
+> "The Association is responsible for **watering any shrubs and ornamental trees on the Limited Common Elements**."
+
+**ANALYSIS OF RESPONSIBILITY:**
+
+The key question is: **What does "Condo IV Sprinklers" actually refer to?**
+
+**Grounds vs. Building Infrastructure Distinction:**
+- **Utility lines** (water, sewer, electric) = Serve the BUILDINGS → Can be Condo-specific (parcel laterals)
+- **Sprinkler systems** = Water the GROUNDS/LAWNS → Part of grounds maintenance
+
+**Since HOA is responsible for ALL grounds maintenance** (including lawns around all units), the **sprinkler system that waters those grounds should be HOA responsibility**.
+
+**PROPER ALLOCATION SHOULD BE:**
+
+| Sprinkler Location | Current Assignment | Correct Assignment | Reasoning |
+|-------------------|-------------------|-------------------|-----------|
+| **Pool area sprinklers** | HOA | **HOA** ✓ | Pool is HOA recreational facility |
+| **Clubhouse area sprinklers** | HOA | **HOA** ✓ | Clubhouse is HOA property |
+| **Roadway/common area sprinklers** | HOA | **HOA** ✓ | Common areas maintained by HOA |
+| **Lawns around Condo IV buildings** | Condo (?) | **HOA** ⚠️ | HOA maintains "front, side and rear yards of all Units" |
+| **Lawns between Condo IV buildings** | Condo (?) | **HOA** ⚠️ | HOA maintains grounds |
+| **Limited Common Element yards** | Condo (?) | **HOA** ⚠️ | HOA waters shrubs/trees on Limited Common Elements |
+
+**THE UNIT OWNER'S 25-FOOT WATERING OBLIGATION:**
+
+**From Association Documents (Page 82):**
+> "Each Unit Owner is responsible for the watering of the first 25 feet of his/her lawn, including front lawns and back/side yards."
+
+**CRITICAL CLARIFICATION:** This obligation does NOT mean owners maintain the sprinkler system in that area.
+
+**What the 25-foot rule means:**
+- **Supplemental manual watering** (with hose/watering can) during hot summer months
+- **Emergency manual watering** if sprinkler system fails or is inadequate
+- **Preventing lawn death** through neglect
+
+**What it does NOT mean:**
+- Owners don't own the sprinkler infrastructure
+- Owners don't repair broken sprinkler heads
+- Owners don't maintain the irrigation system
+
+**Example Scenario:**
+1. **Sprinkler head breaks** in front yard (within 25 feet of unit)
+2. **HOA repairs the sprinkler head** (part of grounds maintenance)
+3. **While waiting for repair**, unit owner must manually water to prevent lawn death
+4. **If owner fails to water** and lawn dies → Owner charged for re-seeding (even though HOA's sprinkler broke)
+
+**POSSIBLE INTERPRETATION OF "CONDO IV SPRINKLERS":**
+
+The only scenarios where Condo IV would be responsible for sprinklers:
+
+**Option 1: Building-Attached Irrigation** (Unlikely)
+- Roof irrigation systems
+- Planters attached to building exterior
+- Something that's part of the building structure itself
+- These would be "building maintenance" not "grounds maintenance"
+
+**Option 2: Separate Condo-Specific System** (Possible)
+- If Condo IV installed a completely separate irrigation system beyond what HOA provides
+- Similar to owner-installed landscaping (becomes owner/condo responsibility)
+- Would need to be documented in Condo IV records
+
+**Option 3: Misallocation** (Most Likely)
+- The listing incorrectly assigns lawn/grounds sprinklers to Condo
+- Should be HOA for all grounds irrigation
+- Only "Common Area Sprinklers" (pool, clubhouse, roads) correctly identified as HOA
+
+**BUDGET EVIDENCE STRONGLY SUPPORTS HOA RESPONSIBILITY:**
+
+The HOA budget includes:
+- **$1,000** for "Water Sprinkler System & Pool" (operating costs)
+- **$2,500** for "Sprinkler Maintenance" (repairs/upkeep)
+
+**Budget Footnote (Item 4):**
+> "Usage is based on **40 sprinkler heads** producing 4 gallons per minute operating 20 minutes per day for 120 days"
+
+This shows HOA operates and maintains a comprehensive sprinkler system throughout the development.
+
+**INFRASTRUCTURE OWNERSHIP PRINCIPLE:**
+
+Following the utility allocation model (Item 38):
+- **Underground sprinkler mains** (trunk distribution) → HOA (serves multiple areas)
+- **Sprinkler laterals/heads** serving lawns → HOA (part of grounds maintenance HOA performs)
+
+**Unlike utility lines** (which serve buildings and can be Condo-specific), **sprinkler systems serve the grounds**, which HOA maintains.
+
+**CONCLUSION & RECOMMENDATION:**
+
+**Current Assignment Appears INCORRECT**
+
+Unless "Condo IV Sprinklers" refers to a very specific building-attached or Condo-installed supplemental system (which should be documented), **ALL lawn and grounds irrigation should be HOA responsibility**.
+
+**Recommended Corrected Allocation:**
+- **Pool/Clubhouse/Roadway Sprinklers** → HOA ✓ (currently correct)
+- **Lawn/Grounds Sprinklers** (including around Condo IV buildings) → **Should be HOA** (currently appears to be assigned to Condo)
+
+**Action Items:**
+1. **Review the "Sprinkler Memo"** referenced in your notes to understand what "Condo IV Sprinklers" specifically refers to
+2. **Check Condo IV budgets** - Do they include sprinkler maintenance costs? (If not, it's HOA)
+3. **Examine original construction documents** - Were sprinklers installed as part of building construction (unlikely) or site development (HOA)?
+4. **Verify current practice** - Who actually repairs broken sprinkler heads around Condo IV buildings?
+
+**If no evidence exists for a separate Condo-specific sprinkler system, this allocation should be corrected to HOA.**
 
 #### 49. Site Work - Landscaping and Tree Maintenance
 **Listing Says**: HOA
@@ -345,7 +456,13 @@ The bylaws designate "mechanical systems" as Owner responsibility for interior c
    - Exterior surface RE-PAINTING of doors/windows → Condo (when building is repainted)
    - This distinction is captured in Item 14 but could be clarified for doors too
 
-3. **Lawn Watering**: Unit owners must water first 25 feet of lawn. While HOA maintains/mows, failure to water can result in owner being charged for re-seeding.
+3. **Lawn Watering vs. Sprinkler System Maintenance - CRITICAL DISTINCTION**:
+   - **Unit Owner's 25-foot watering obligation** = Supplemental MANUAL watering (hose/watering can) to prevent lawn death
+   - **Sprinkler System Maintenance** = HOA responsibility (part of grounds maintenance)
+   - **Key Point**: Owner must manually water if sprinkler system fails, but owner does NOT repair/maintain the sprinkler system itself
+   - **If sprinkler breaks and owner fails to manually water** → Owner charged for re-seeding the dead lawn
+   - **Budget Evidence**: HOA budget includes $1,000 for sprinkler water and $2,500 for sprinkler maintenance
+   - **Bylaw Evidence**: "Association will be responsible for grounds maintenance and landscaping of the Common Areas, including the front, side and rear yards of all Units"
 
 4. **Landscaping Modifications**: Once a homeowner modifies landscaping (even with approval), ongoing maintenance is theirs, not HOA's. This is captured in Item 50.
 
@@ -359,21 +476,30 @@ The bylaws designate "mechanical systems" as Owner responsibility for interior c
    - Exterior cap (part of building envelope) = Condo
    - This correctly reflects that the vent system penetrates through a Common Element (the exterior wall)
 
+7. **Sprinkler System Infrastructure vs. Watering Obligation**:
+   - **Sprinkler pipes, heads, valves, distribution** = HOA (grounds maintenance infrastructure)
+   - **Water costs and operation** = HOA (per budget)
+   - **Supplemental manual watering** = Unit Owner obligation (first 25 feet)
+   - **Grounds vs. Building principle**: Sprinklers serve the grounds (HOA maintains), unlike utility lines that serve buildings (can be Condo-specific)
+
 ---
 
 ## CONCLUSION
 
-**Overall Assessment**: Your responsibility listing is approximately **94% accurate** based on governing documents, with one item requiring correction.
+**Overall Assessment**: Your responsibility listing is approximately **91% accurate** based on governing documents, with corrections and clarifications needed.
 
-**Items Confirmed Correct**: 62 out of 69 items
-**Items Requiring Correction**: 1 item (hillside retaining walls should be HOA, not Condo)
+**Items Confirmed Correct**: 61 out of 69 items
+**Items Requiring Correction**: 2 items (hillside retaining walls, likely sprinkler allocation)
 **Items Needing Clarification**: 2 items (mailboxes, pest control)
 **Items with Unnecessary "???" Marks**: 3 items where bylaws are actually clear
 
 **Priority Actions**:
 1. **HIGH**: Correct Item 36 - Hillside retaining walls should be HOA responsibility (they are erosion control/drainage, not building structure)
-2. **HIGH**: Resolve mailbox responsibility (affects multiple line items)
-3. **MEDIUM**: Review pest control contract
-4. **LOW**: Remove "???" marks where responsibility is actually clear in bylaws
+2. **HIGH**: Review Item 48 - "Condo IV Sprinklers" allocation appears incorrect; lawn/grounds sprinklers should be HOA (grounds maintenance), not Condo
+3. **HIGH**: Review the "Sprinkler Memo" to understand what "Condo IV Sprinklers" specifically refers to and verify against bylaw provisions
+4. **HIGH**: Resolve mailbox responsibility (affects multiple line items)
+5. **MEDIUM**: Review pest control contract
+6. **LOW**: Remove "???" marks where responsibility is actually clear in bylaws
 
 This is a well-constructed document that demonstrates good understanding of the three-tier responsibility structure (Owner/Condo/HOA) established in your governing documents.
+
