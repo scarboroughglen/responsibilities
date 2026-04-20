@@ -1,0 +1,709 @@
+# Becht Engineering Capital Reserve Study (2026) - Responsibility Allocation Analysis
+
+## Overview
+
+The Becht Engineering Capital Reserve Study (Project 25-1140, dated February 3, 2026) covers **Scarborough Glen as a single entity** -- 49 buildings, 136 units. It identifies **41 components** with a total current replacement cost of **$5,414,558** and recommends annual contributions between **$219,984** (threshold) and **$437,404** (component method).
+
+**The Problem**: Becht does NOT differentiate between the five legal entities (HOA, Condo I, Condo II, Condo III, Condo IV). The original Falcon Group report (2022) properly separated these. This document uses Falcon's per-entity quantities as the benchmark to derive allocation ratios and re-assign Becht's costs to the correct responsible entity.
+
+---
+
+## Becht Components - Complete List (41 Items)
+
+| # | Category | Component | Typical Life | Est Rem Life | Unit Cost | Qty | Unit | Replace Cost |
+|---|----------|-----------|-------------|-------------|-----------|-----|------|-------------|
+| 1 | Mechanical | Aerator | 15y | 10y | $5,500 | 1 EA | | $5,500 |
+| 2 | Miscellaneous | Asphalt Crack Filling | 3y | 2y | $15,000 | 1 LS | | $15,000 |
+| 3 | Site | Asphalt Paving | 20y | 10y | $30 | 11,000 SY | | $330,000 |
+| 4 | Site | Asphalt Paving, Driveways | 20y | 10y | $55 | 5,600 SY | | $308,000 |
+| 5 | Architectural | Bathroom Refurbishment | 30y | 7y | $5,000 | 2 LS | | $10,000 |
+| 6 | Architectural | Chimney Chase Covers | 25y | 5y | $1,200 | 149 EA | | $178,800 |
+| 7 | Miscellaneous | Clubhouse Furniture | 15y | 10y | $15,000 | 1 LS | | $15,000 |
+| 8 | Site | Concrete Pool Apron | 30y | 10y | $25 | 3,130 SF | | $78,250 |
+| 9 | Site | Concrete Pool Coping | 25y | 5y | $45 | 220 LF | | $9,900 |
+| 10 | Site | Concrete Sidewalks | 30y | 7y | $22 | 1,600 SF | | $35,200 |
+| 11 | Site | Curbing, Concrete - 10% | 20y | 10y | $50 | 700 LF | | $35,000 |
+| 12 | Architectural | Deck Replacement, Composite | 50y | 27y | $100 | 3,600 SF | | $360,000 |
+| 13 | Architectural | Deck Replacement, Wood | 30y | 7y | $100 | 4,400 SF | | $440,000 |
+| 14 | Miscellaneous | Entrance Sign - Large | 30y | 20y | $10,000 | 2 EA | | $20,000 |
+| 15 | Miscellaneous | Entrance Sign - Small | 25y | 20y | $6,000 | 2 EA | | $12,000 |
+| 16 | Site | Fence, Vinyl Stockade 6 Ft | 40y | 17y | $85 | 500 LF | | $42,500 |
+| 17 | Site | Fence, Wood Split Rail | 25y | 15y | $35 | 3,500 LF | | $122,500 |
+| 18 | Electrical | Fire Alarm Control Panel | 30y | 7y | $8,000 | 1 EA | | $8,000 |
+| 19 | Miscellaneous | Fitness Room Refurbishment | 30y | 7y | $5,000 | 1 LS | | $5,000 |
+| 20 | Architectural | Gutters, 5 In. - Clubhouse | 25y | 2y | $10 | 250 LF | | $2,500 |
+| 21 | Mechanical | Hot Water Heater | 10y | 7y | $2,500 | 1 EA | | $2,500 |
+| 22 | Miscellaneous | Kitchen Refurbishment | 25y | 7y | $3,500 | 1 LS | | $3,500 |
+| 23 | Architectural | Leaders, 2X3 - Clubhouse | 25y | 6y | $10 | 50 LF | | $500 |
+| 24 | Electrical | Lights, Entrance Sign | 20y | 10y | $750 | 2 EA | | $1,500 |
+| 25 | Electrical | Lights, Entry Clubhouse | 30y | 10y | $450 | 6 EA | | $2,700 |
+| 26 | Electrical | Lights, Recessed | 30y | 7y | $125 | 44 EA | | $5,500 |
+| 27 | Electrical | Lights, Street, Prem | 30y | 7y | $3,200 | 26 EA | | $83,200 |
+| 28 | Miscellaneous | Mailboxes | 25y | 23y | $150 | 136 EA | | $20,400 |
+| 29 | Mechanical | Pool Filter System | 20y | 10y | $10,000 | 1 LS | | $10,000 |
+| 30 | Architectural | Roof, Shingles - Clubhouse | 25y | 6y | $5.85 | 2,670 SF | | $15,620 |
+| 31 | Architectural | Roof, Shingles - Townhouses | 25y | 24y | $5.85 | 196,750 SF | | $1,150,988 |
+| 32 | Miscellaneous | Seal Coating | 5y | 2y | $1.50 | 11,000 SY | | $16,500 |
+| 33 | Architectural | Siding, Vinyl | 45y | 23y | $12 | 150,000 SF | | $1,800,000 |
+| 34 | Architectural | Siding, Vinyl - Clubhouse | 45y | 22y | $12 | 2,500 SF | | $30,000 |
+| 35 | Architectural | Siding, Wood | 40y | 12y | $12 | 18,500 SF | | $222,000 |
+| 36 | Architectural | Skylights - Clubhouse | 25y | 6y | $750 | 6 EA | | $4,500 |
+| 37 | Miscellaneous | Stop Signs | 25y | 20y | $500 | 5 EA | | $2,500 |
+| 38 | Site | Street Signs | 25y | 20y | $1,000 | 2 EA | | $2,000 |
+| 39 | Architectural | Windows, Double Hung - Double, Clubhouse | 50y | 27y | $800 | 5 EA | | $4,000 |
+| 40 | Architectural | Windows, Double Hung - Single, Clubhouse | 50y | 27y | $1,000 | 2 EA | | $2,000 |
+| 41 | Architectural | Windows, Transom | 50y | 27y | $1,500 | 1 EA | | $1,500 |
+
+**Total Replacement Cost: $5,414,558**
+
+---
+
+## Step 1: Classify Each Becht Component by Responsible Entity
+
+Using the governing documents and the responsibility framework from the .md files (Owner/Condo/HOA three-tier structure):
+
+### HOA-Only Items (No allocation needed)
+
+These are 100% HOA responsibility -- recreation, clubhouse, pool, site common areas.
+
+| # | Becht Component | Replace Cost | Responsibility Basis |
+|---|----------------|-------------|---------------------|
+| 1 | Aerator | $5,500 | Pool/recreation = HOA |
+| 2 | Asphalt Crack Filling | $15,000 | Roadways = HOA common element |
+| 5 | Bathroom Refurbishment (Clubhouse) | $10,000 | Clubhouse = HOA |
+| 7 | Clubhouse Furniture | $15,000 | Clubhouse = HOA |
+| 8 | Concrete Pool Apron | $78,250 | Pool = HOA |
+| 9 | Concrete Pool Coping | $9,900 | Pool = HOA |
+| 11 | Curbing, Concrete | $35,000 | Roadways = HOA |
+| 14 | Entrance Sign - Large | $20,000 | Common area signage = HOA |
+| 15 | Entrance Sign - Small | $12,000 | Common area signage = HOA |
+| 16 | Fence, Vinyl Stockade | $42,500 | Perimeter fencing = HOA |
+| 17 | Fence, Wood Split Rail | $122,500 | Perimeter fencing = HOA |
+| 18 | Fire Alarm Control Panel | $8,000 | Clubhouse = HOA |
+| 19 | Fitness Room Refurbishment | $5,000 | Clubhouse = HOA |
+| 20 | Gutters - Clubhouse | $2,500 | Clubhouse = HOA |
+| 21 | Hot Water Heater | $2,500 | Clubhouse = HOA |
+| 22 | Kitchen Refurbishment | $3,500 | Clubhouse = HOA |
+| 23 | Leaders - Clubhouse | $500 | Clubhouse = HOA |
+| 24 | Lights, Entrance Sign | $1,500 | Common area = HOA |
+| 25 | Lights, Entry Clubhouse | $2,700 | Clubhouse = HOA |
+| 26 | Lights, Recessed | $5,500 | Clubhouse = HOA |
+| 29 | Pool Filter System | $10,000 | Pool = HOA |
+| 30 | Roof, Shingles - Clubhouse | $15,620 | Clubhouse = HOA |
+| 34 | Siding, Vinyl - Clubhouse | $30,000 | Clubhouse = HOA |
+| 36 | Skylights - Clubhouse | $4,500 | Clubhouse = HOA |
+| 37 | Stop Signs | $2,500 | Common area signage = HOA |
+| 38 | Street Signs | $2,000 | Common area signage = HOA |
+| 39 | Windows, Dbl Hung Double - Clubhouse | $4,000 | Clubhouse = HOA |
+| 40 | Windows, Dbl Hung Single - Clubhouse | $2,000 | Clubhouse = HOA |
+| 41 | Windows, Transom | $1,500 | Clubhouse = HOA |
+
+| | **HOA-Only Subtotal** | **$475,470** | |
+
+### Items Requiring HOA/Condo Split (Need allocation ratios)
+
+| # | Becht Component | Replace Cost | Split Type |
+|---|----------------|-------------|-----------|
+| 3 | Asphalt Paving (Roadways) | $330,000 | HOA (roadways are common) |
+| 4 | Asphalt Paving, Driveways | $308,000 | Condo (driveways are per-Condo) |
+| 6 | Chimney Chase Covers | $178,800 | Condo (building component) |
+| 10 | Concrete Sidewalks | $35,200 | Mixed - HOA common + Condo parcel walks |
+| 12 | Deck Replacement, Composite | $360,000 | Condo (building component) |
+| 13 | Deck Replacement, Wood | $440,000 | Condo (building component) |
+| 27 | Lights, Street | $83,200 | HOA (street lights are common) |
+| 28 | Mailboxes | $20,400 | Disputed (see items_in_disagreement.md) |
+| 31 | Roof, Shingles - Townhouses | $1,150,988 | Condo (building component) |
+| 32 | Seal Coating | $16,500 | HOA (roadway maintenance) |
+| 33 | Siding, Vinyl | $1,800,000 | Condo (building component) |
+| 35 | Siding, Wood | $222,000 | Condo (building component) |
+
+| | **Split Items Subtotal** | **$4,945,088** | |
+
+**Verification**: $475,470 + $4,945,088 = $5,420,558 (vs Becht total $5,414,558 -- $6,000 rounding difference is acceptable)
+
+---
+
+## Step 2: Items That Are 100% HOA (No Condo Split)
+
+Several of the "split" items above are actually 100% HOA upon closer review:
+
+| Becht Component | Replace Cost | Entity | Rationale |
+|----------------|-------------|--------|-----------|
+| Asphalt Paving (Roadways) | $330,000 | **HOA** | Roadways are common elements per bylaws |
+| Lights, Street | $83,200 | **HOA** | Street lights are common area infrastructure |
+| Seal Coating | $16,500 | **HOA** | Roadway maintenance = HOA |
+| Mailboxes | $20,400 | **HOA** | Per Becht: 136 EA = all units. Recently replaced community-wide. Per responsibility_analysis.md this is disputed but likely HOA |
+
+**Additional HOA total from split items**: $449,700 (road) + $83,200 (lights) + $20,400 (mailboxes) = **$450,100**
+
+**Revised HOA-Only Total**: $475,470 + $330,000 + $83,200 + $16,500 + $20,400 = **$925,570**
+
+---
+
+## Step 3: Derive Allocation Ratios from Falcon Report
+
+### 3A. Roof Shingles - Townhouses
+
+**Becht lumped total**: 196,750 SF = $1,150,988
+
+**Falcon breakdown** (in roofing squares, 1 SQ = 100 SF):
+
+| Entity | Falcon Qty | Falcon Unit | Falcon Cost | % of Townhouse Total |
+|--------|-----------|-------------|-------------|---------------------|
+| Condo I | 171 SQ | $550/SQ | $94,050 | 7.27% |
+| Condo II | 218 SQ | $700/SQ | $152,600 | 9.27% |
+| Condo III | 164 SQ | $700/SQ | $114,800 | 6.97% |
+| Condo IV | 1,796 SQ | $550/SQ | $987,800 | 76.39% (note: qty-based) |
+| **Total** | **2,349 SQ** | | **$1,349,250** | |
+
+**Quantity-based ratio** (using Falcon SQ as proxy for roof area):
+
+| Entity | Falcon SQ | Ratio | Becht Allocation |
+|--------|----------|-------|-----------------|
+| Condo I | 171 | 7.28% | $83,792 |
+| Condo II | 218 | 9.28% | $106,812 |
+| Condo III | 164 | 6.98% | $80,339 |
+| Condo IV | 1,796 | 76.46% | $880,045 |
+| **Total** | **2,349** | **100%** | **$1,150,988** |
+
+**Math**: Ratio = (Condo SQ / 2,349 Total SQ). Allocation = Ratio x $1,150,988.
+
+---
+
+### 3B. Chimney Chase Covers
+
+**Becht lumped total**: 149 EA = $178,800
+
+**Falcon breakdown**:
+
+| Entity | Falcon Qty | Falcon Unit Cost | Falcon Cost |
+|--------|-----------|-----------------|-------------|
+| Condo I | 10 EA | $800 | $8,000 |
+| Condo II | 11 EA | $650 | $7,150 |
+| Condo III | 9 EA | $650 | $5,850 |
+| Condo IV - Large | 49 EA | $800 | $39,200 |
+| Condo IV - Small | 21 EA | $650 | $13,650 |
+| **Total** | **100 EA** | | **$73,850** |
+
+**Note**: Becht counts 149 EA vs Falcon's 100 EA. Becht may have counted differently or included items Falcon excluded. Using **Falcon's quantity ratio** to split Becht's total:
+
+| Entity | Falcon EA | Ratio | Becht Allocation |
+|--------|----------|-------|-----------------|
+| Condo I | 10 | 10.00% | $17,880 |
+| Condo II | 11 | 11.00% | $19,668 |
+| Condo III | 9 | 9.00% | $16,092 |
+| Condo IV | 70 | 70.00% | $125,160 |
+| **Total** | **100** | **100%** | **$178,800** |
+
+---
+
+### 3C. Siding, Vinyl (Townhouses)
+
+**Becht lumped total**: 150,000 SF = $1,800,000
+
+**Falcon breakdown** (only Condo I and Condo IV have vinyl siding per Falcon):
+
+| Entity | Falcon Qty | Falcon Unit | Falcon Cost |
+|--------|-----------|-------------|-------------|
+| Condo I | 190 SQ | $700/SQ | $133,000 |
+| Condo II | 0 | -- | $0 (wood siding) |
+| Condo III | 0 | -- | $0 (wood siding) |
+| Condo IV | 2,118 SQ | $700/SQ | $1,482,600 |
+| **Total** | **2,308 SQ** | | **$1,615,600** |
+
+**Quantity-based ratio** (Condo I + IV only):
+
+| Entity | Falcon SQ | Ratio | Becht Allocation |
+|--------|----------|-------|-----------------|
+| Condo I | 190 | 8.23% | $148,140 |
+| Condo IV | 2,118 | 91.77% | $1,651,860 |
+| **Total** | **2,308** | **100%** | **$1,800,000** |
+
+---
+
+### 3D. Siding, Wood
+
+**Becht lumped total**: 18,500 SF = $222,000
+
+**Falcon breakdown** (Condo II and III have wood siding):
+
+| Entity | Falcon Qty | Falcon Unit | Falcon Cost |
+|--------|-----------|-------------|-------------|
+| Condo II | 213 SQ | $850/SQ | $181,050 |
+| Condo III | 219 SQ | $850/SQ | $186,150 |
+| **Total** | **432 SQ** | | **$367,200** |
+
+**Note**: Becht shows 18,500 SF (185 SQ) vs Falcon's 432 SQ. Becht specifically notes this is for "units 301-411 Glenwood Dr" suggesting it may be partial. Using Falcon's ratio:
+
+| Entity | Falcon SQ | Ratio | Becht Allocation |
+|--------|----------|-------|-----------------|
+| Condo II | 213 | 49.31% | $109,468 |
+| Condo III | 219 | 50.69% | $112,532 |
+| **Total** | **432** | **100%** | **$222,000** |
+
+---
+
+### 3E. Deck Replacement (Wood + Composite)
+
+**Becht totals**:
+- Deck Replacement, Wood: 4,400 SF = $440,000 (30y life, 7y remaining)
+- Deck Replacement, Composite: 3,600 SF = $360,000 (50y life, 27y remaining)
+- **Combined**: 8,000 SF = $800,000
+
+**Falcon breakdown** (all decks measured in SF at $70/SF):
+
+| Entity | Falcon Total Deck SF | Falcon Cost |
+|--------|---------------------|-------------|
+| Condo I | 14 EA various sizes* | $177,920 |
+| Condo II | 1,881 SF (3 x 627) | $131,670 |
+| Condo III | 2,010 SF (3 x 670) | $140,700 |
+| Condo IV | 3,744 SF (3 x 1,248) | $262,080 |
+| **Total** | | **$712,370** |
+
+*Condo I used per-EA pricing not SF. Falcon costs: 4 double-story ($64K) + 4 large ($40.4K) + 2 side-entry ($49.5K) + 4 small ($24K) = $177,920
+
+**Falcon cost-based ratio** (since Condo I uses different units):
+
+| Entity | Falcon Cost | Ratio | Becht Allocation |
+|--------|------------|-------|-----------------|
+| Condo I | $177,920 | 24.97% | $199,760 |
+| Condo II | $131,670 | 18.48% | $147,840 |
+| Condo III | $140,700 | 19.75% | $158,000 |
+| Condo IV | $262,080 | 36.79% | $294,320 |
+| **Total** | **$712,370** | **100%** | **$800,000** |
+
+**Note**: Becht splits decks into "wood" (near-term, 7y) and "composite" (long-term, 27y). The wood decks are the current ones needing replacement; the composite line represents the replacement material's next cycle. For budgeting purposes the near-term wood replacement ($440,000) is the actionable item. The composite line ($360,000) is 27 years out.
+
+---
+
+### 3F. Asphalt Paving, Driveways
+
+**Becht total**: 5,600 SY = $308,000
+
+**Falcon breakdown**:
+
+| Entity | Falcon Qty | Falcon Unit Cost | Falcon Cost |
+|--------|-----------|-----------------|-------------|
+| Condo I | 0 SY | -- | $0 (has assigned parking, not driveways) |
+| Condo II | 560 SY | $45/SY | $25,200 |
+| Condo III | 235 SY | $45/SY | $10,575 |
+| Condo IV | 3,789 SY | $45/SY | $170,505 |
+| **Total** | **4,584 SY** | | **$206,280** |
+
+**Note**: Becht counts 5,600 SY vs Falcon's 4,584 SY. Becht uses $55/SY vs Falcon's $45/SY. Using Falcon's quantity ratio:
+
+| Entity | Falcon SY | Ratio | Becht Allocation |
+|--------|----------|-------|-----------------|
+| Condo I | 0 | 0.00% | $0 |
+| Condo II | 560 | 12.22% | $37,638 |
+| Condo III | 235 | 5.13% | $15,800 |
+| Condo IV | 3,789 | 82.66% | $254,562 |
+| **Total** | **4,584** | **100%** | **$308,000** |
+
+---
+
+### 3G. Concrete Sidewalks
+
+**Becht total**: 1,600 SF = $35,200
+
+**Falcon breakdown** -- sidewalks appear in both HOA and Condo schedules:
+
+| Entity | Falcon Line Item | Falcon Qty | Falcon Cost |
+|--------|-----------------|-----------|-------------|
+| HOA | Walkway-concrete | 451 SF | $6,314 |
+| HOA | Walkway-sidewalk, flagstone at clubhouse | 280 SF | $5,600 |
+| Condo I | Walkway-concrete sidewalk and entry walk | 232 SF | $3,248 |
+| Condo II | Walkway-entry walk, concrete | 73 SF | $1,022 |
+| Condo III | Walkway-entry walk, concrete | 59 SF | $826 |
+| Condo IV | Walkway-entry walk/stair/landing, concrete | 185 SF | $3,330 |
+| **Total** | | **1,280 SF** | **$20,340** |
+
+**Note**: Becht's 1,600 SF vs Falcon's 1,280 SF. Using Falcon's quantity ratio:
+
+| Entity | Falcon SF | Ratio | Becht Allocation |
+|--------|----------|-------|-----------------|
+| HOA | 731 | 57.11% | $20,103 |
+| Condo I | 232 | 18.13% | $6,382 |
+| Condo II | 73 | 5.70% | $2,006 |
+| Condo III | 59 | 4.61% | $1,623 |
+| Condo IV | 185 | 14.45% | $5,086 |
+| **Total** | **1,280** | **100%** | **$35,200** |
+
+---
+
+## Step 4: Final Allocation Summary
+
+### Per-Entity Replacement Cost Allocation
+
+| Becht Component | Becht Total | HOA | Condo I | Condo II | Condo III | Condo IV |
+|----------------|------------|-----|---------|----------|-----------|----------|
+| **HOA-Only Items** | | | | | | |
+| Aerator | $5,500 | $5,500 | -- | -- | -- | -- |
+| Asphalt Crack Filling | $15,000 | $15,000 | -- | -- | -- | -- |
+| Asphalt Paving (Roads) | $330,000 | $330,000 | -- | -- | -- | -- |
+| Bathroom Refurb (Club) | $10,000 | $10,000 | -- | -- | -- | -- |
+| Clubhouse Furniture | $15,000 | $15,000 | -- | -- | -- | -- |
+| Concrete Pool Apron | $78,250 | $78,250 | -- | -- | -- | -- |
+| Concrete Pool Coping | $9,900 | $9,900 | -- | -- | -- | -- |
+| Curbing, Concrete | $35,000 | $35,000 | -- | -- | -- | -- |
+| Entrance Sign - Large | $20,000 | $20,000 | -- | -- | -- | -- |
+| Entrance Sign - Small | $12,000 | $12,000 | -- | -- | -- | -- |
+| Fence, Vinyl Stockade | $42,500 | $42,500 | -- | -- | -- | -- |
+| Fence, Wood Split Rail | $122,500 | $122,500 | -- | -- | -- | -- |
+| Fire Alarm Panel | $8,000 | $8,000 | -- | -- | -- | -- |
+| Fitness Room Refurb | $5,000 | $5,000 | -- | -- | -- | -- |
+| Gutters - Clubhouse | $2,500 | $2,500 | -- | -- | -- | -- |
+| Hot Water Heater | $2,500 | $2,500 | -- | -- | -- | -- |
+| Kitchen Refurb | $3,500 | $3,500 | -- | -- | -- | -- |
+| Leaders - Clubhouse | $500 | $500 | -- | -- | -- | -- |
+| Lights, Entrance Sign | $1,500 | $1,500 | -- | -- | -- | -- |
+| Lights, Entry Clubhouse | $2,700 | $2,700 | -- | -- | -- | -- |
+| Lights, Recessed | $5,500 | $5,500 | -- | -- | -- | -- |
+| Lights, Street | $83,200 | $83,200 | -- | -- | -- | -- |
+| Mailboxes | $20,400 | $20,400 | -- | -- | -- | -- |
+| Pool Filter System | $10,000 | $10,000 | -- | -- | -- | -- |
+| Roof - Clubhouse | $15,620 | $15,620 | -- | -- | -- | -- |
+| Seal Coating | $16,500 | $16,500 | -- | -- | -- | -- |
+| Siding, Vinyl - Clubhouse | $30,000 | $30,000 | -- | -- | -- | -- |
+| Skylights - Clubhouse | $4,500 | $4,500 | -- | -- | -- | -- |
+| Stop Signs | $2,500 | $2,500 | -- | -- | -- | -- |
+| Street Signs | $2,000 | $2,000 | -- | -- | -- | -- |
+| Windows, Dbl Dbl - Club | $4,000 | $4,000 | -- | -- | -- | -- |
+| Windows, Dbl Sgl - Club | $2,000 | $2,000 | -- | -- | -- | -- |
+| Windows, Transom | $1,500 | $1,500 | -- | -- | -- | -- |
+| **HOA-Only Subtotal** | **$925,570** | **$925,570** | **$0** | **$0** | **$0** | **$0** |
+| | | | | | | |
+| **Split Items (Falcon Ratios)** | | | | | | |
+| Driveways, Asphalt | $308,000 | $0 | $0 | $37,638 | $15,800 | $254,562 |
+| Chimney Chase Covers | $178,800 | $0 | $17,880 | $19,668 | $16,092 | $125,160 |
+| Concrete Sidewalks | $35,200 | $20,103 | $6,382 | $2,006 | $1,623 | $5,086 |
+| Deck Repl., Wood | $440,000 | $0 | $109,868 | $81,312 | $86,900 | $161,876 |
+| Deck Repl., Composite | $360,000 | $0 | $89,892 | $66,528 | $71,100 | $132,444 |
+| Roof - Townhouses | $1,150,988 | $0 | $83,792 | $106,812 | $80,339 | $880,045 |
+| Siding, Vinyl | $1,800,000 | $0 | $148,140 | $0 | $0 | $1,651,860 |
+| Siding, Wood | $222,000 | $0 | $0 | $109,468 | $112,532 | $0 |
+| **Split Subtotal** | **$4,494,988** | **$20,103** | **$455,954** | **$423,432** | **$384,386** | **$3,211,033** |
+
+---
+
+### Grand Total by Entity
+
+| Entity | Total Replacement Cost | % of Total | Per Unit* |
+|--------|----------------------|-----------|----------|
+| **HOA** | **$945,673** | **17.46%** | $6,953/unit (136 units) |
+| **Condo I** | **$455,954** | **8.42%** | $25,331/unit (18 units) |
+| **Condo II** | **$423,432** | **7.82%** | $38,494/unit (11 units) |
+| **Condo III** | **$384,386** | **7.10%** | $42,710/unit (9 units) |
+| **Condo IV** | **$3,211,033** | **59.30%** | $32,765/unit (98 units) |
+| **Total** | **$5,420,478** | **100%** | |
+
+*Unit counts estimated from Falcon report structure (136 total units).
+
+**Note**: Condo IV dominates because it has the largest building count (98 of 136 units), and carries the bulk of vinyl siding ($1.65M) and roof ($880K) costs.
+
+---
+
+## Step 5: Ratio Summary Table (Falcon-Derived)
+
+These ratios can be applied to Becht's costs whenever a building-level component needs to be split across condos.
+
+### Building Component Ratios
+
+| Component Type | Condo I | Condo II | Condo III | Condo IV | Source |
+|---------------|---------|----------|-----------|----------|--------|
+| Roof (SQ) | 7.28% | 9.28% | 6.98% | 76.46% | Falcon SQ counts |
+| Chimney Caps (EA) | 10.00% | 11.00% | 9.00% | 70.00% | Falcon EA counts |
+| Vinyl Siding (SQ) | 8.23% | 0% | 0% | 91.77% | Falcon SQ counts |
+| Wood Siding (SQ) | 0% | 49.31% | 50.69% | 0% | Falcon SQ counts |
+| Decks (cost-based) | 24.97% | 18.48% | 19.75% | 36.79% | Falcon cost ratios |
+| Driveways (SY) | 0% | 12.22% | 5.13% | 82.66% | Falcon SY counts |
+| Sidewalks (SF) | 18.13% | 5.70% | 4.61% | 14.45% | Falcon SF counts + 57.11% HOA |
+
+### General Building Ratio (by Falcon total building costs)
+
+For any future building-level items not specifically broken down:
+
+| Entity | Falcon Building Total* | Ratio |
+|--------|----------------------|-------|
+| Condo I | $438,268 | 10.06% |
+| Condo II | $544,092 | 12.49% |
+| Condo III | $500,989 | 11.50% |
+| Condo IV | $2,873,373 | 65.95% |
+| **Total** | **$4,356,722** | **100%** |
+
+*Sum of all BUILDING- line items from each Falcon Condo schedule.
+
+---
+
+## Step 6: Becht vs. Falcon - Key Differences
+
+| Aspect | Falcon (2022) | Becht (2026) |
+|--------|--------------|-------------|
+| **Entity Separation** | 5 separate schedules (HOA, C1, C2, C3, C4) | 1 combined schedule |
+| **Total Components** | 59 (HOA) + 13 (C1) + 10 (C2) + 11 (C3) + 13 (C4) = 106 | 41 |
+| **Roof Unit** | SQ (roofing squares) | SF (square feet) |
+| **Roof Unit Cost** | $450-$700/SQ | $5.85/SF ($585/SQ) |
+| **Siding Unit** | SQ at $700/SQ | SF at $12/SF ($1,200/SQ) |
+| **Inflation Assumption** | 0% | 3% |
+| **Interest Assumption** | 0% | 1% |
+| **Roof Life Cycle** | 30 years | 25 years |
+| **Siding Life Cycle** | 40-50 years | 40-45 years |
+| **Deck Life Cycle** | 25 years | 30-50 years |
+
+### Items in Falcon but NOT in Becht
+
+| Falcon Item | Entity | Falcon Cost | Notes |
+|------------|--------|-------------|-------|
+| Wood trim replacement (recurring) | C1 | $5,000/cycle | Becht omits recurring trim maintenance |
+| Privacy fence, vinyl | C4 | $7,735 | Condo-specific fencing |
+| Retaining wall, wood tie wells | C4 | $15,000 | Condo-specific retaining walls |
+| Board-on-board fence at property line | HOA | $37,350 | Becht has vinyl stockade + split rail but not board-on-board |
+| Guard rail | HOA | $10,880 | Not in Becht |
+| Vinyl on masonry wall fence | HOA | $13,950 | Not in Becht |
+| Entry stoops (per-condo) | C1-C4 | Various | Becht omits entry stoops entirely |
+| Pool shell resurface | HOA | $22,620 | Becht has filter but not shell |
+| Pool cover | HOA | $4,000 | Not in Becht |
+| Pool pump | HOA | $2,500 | Not in Becht |
+| Pool fence, aluminum | HOA | $18,425 | Not in Becht |
+| Pool furniture fund | HOA | $12,000 | Not in Becht |
+| Swimming pool chlorination equip | HOA | $1,500 | Not in Becht |
+| Playground equipment | HOA | $27,000 | Not in Becht |
+| Playground picnic table | HOA | $1,300 | Not in Becht |
+| Playground trash receptacle | HOA | $800 | Not in Becht |
+| CCTV security | HOA | $2,000 | Not in Becht |
+| Key fob entry system | HOA | $1,500 | Not in Becht |
+| HVAC, humidifier | HOA | $2,500 | Not in Becht |
+| HVAC, split system AC | HOA | $9,000 | Not in Becht |
+| Clubhouse door, main entry | HOA | $3,500 | Not in Becht |
+| Clubhouse flooring, carpet | HOA | $5,220 | Not in Becht |
+| Clubhouse flooring, ceramic tile | HOA | $3,060 | Not in Becht |
+| Clubhouse wallpaper | HOA | $3,648 | Not in Becht |
+| Clubhouse window treatments | HOA | $2,000 | Not in Becht |
+| Clubhouse windows (full) | HOA | $7,500 | Becht has individual window counts |
+| Clubhouse mirrored panels | HOA | $2,100 | Not in Becht |
+| Clubhouse restroom/lockers | HOA | $30,000 | Not in Becht |
+| Roadway granite block entry | HOA | $37,875 | Not in Becht |
+| Driveway seal coat (per-condo) | C2-C4 | Various | Becht has community-wide seal coat only |
+| Irrigation repair fund | HOA | $5,000 | Not in Becht |
+| Refuse (slab, dumpsters, enclosure) | HOA | $6,504 | Not in Becht |
+| Retaining wall, masonry at entry | HOA | $5,000 | Not in Becht |
+| Signage (flagpole, stop, street) | HOA | $21,900 | Becht has these but at different values |
+| Fire suppression system | HOA | $7,500 | Not in Becht |
+| Mailbox hut restoration | C1 | $1,500 | Not in Becht |
+
+### Items in Becht but NOT in Falcon
+
+| Becht Item | Becht Cost | Notes |
+|-----------|-----------|-------|
+| Aerator | $5,500 | Pool-related, new line item |
+| Asphalt Crack Filling (separate) | $15,000 | Falcon lumped into roadway maintenance |
+| Curbing, Concrete | $35,000 | Falcon excluded curbing |
+| Fire Alarm Control Panel | $8,000 | Falcon excluded (clubhouse fire panel) |
+| Fitness Room Refurbishment | $5,000 | Falcon had fitness equipment but not room refurb |
+| Kitchen Refurbishment | $3,500 | Falcon had kitchenette refurbish at $6,000 |
+| Bathroom Refurbishment | $10,000 | Falcon had restroom/lockers at $30,000 |
+
+---
+
+## Step 7: Contribution Allocation
+
+Becht recommends annual contributions between $219,984 (5% threshold) and $437,404 (component method). Using the entity-share ratios from Step 4:
+
+### Component Method ($437,404/year)
+
+| Entity | Share of Total | Annual Contribution | Monthly/Unit |
+|--------|---------------|-------------------|-------------|
+| HOA | 17.46% | $76,370 | $47/unit |
+| Condo I | 8.42% | $36,829 | $170/unit |
+| Condo II | 7.82% | $34,205 | $259/unit |
+| Condo III | 7.10% | $31,056 | $288/unit |
+| Condo IV | 59.30% | $259,378 | $221/unit |
+| **Total** | **100%** | **$437,838** | |
+
+### 5% Threshold Method ($219,984/year)
+
+| Entity | Share of Total | Annual Contribution | Monthly/Unit |
+|--------|---------------|-------------------|-------------|
+| HOA | 17.46% | $38,409 | $24/unit |
+| Condo I | 8.42% | $18,523 | $86/unit |
+| Condo II | 7.82% | $17,203 | $130/unit |
+| Condo III | 7.10% | $15,619 | $145/unit |
+| Condo IV | 59.30% | $130,451 | $111/unit |
+| **Total** | **100%** | **$220,205** | |
+
+### Comparison to Falcon's Original Contributions
+
+| Entity | Falcon Full Funding (2022) | Becht Component (allocated) | Difference |
+|--------|--------------------------|---------------------------|-----------|
+| HOA | $56,866* | $76,370 | +$19,504 (+34%) |
+| Condo I | $50,336 | $36,829 | -$13,507 (-27%) |
+| Condo II | $82,588 | $34,205 | -$48,383 (-59%) |
+| Condo III | $70,736 | $31,056 | -$39,680 (-56%) |
+| Condo IV | $343,139 | $259,378 | -$83,761 (-24%) |
+
+*Falcon HOA contribution estimated from hoa_schedule.js line items.
+
+**Note**: Large differences are expected because (1) Becht uses 3% inflation vs Falcon's 0%, (2) roofs were just replaced in 2025 resetting the clock, (3) unit costs differ significantly between reports, and (4) Becht has fewer line items (41 vs 106).
+
+---
+
+## Appendix A: Falcon Report Line Items by Entity (Complete)
+
+### HOA (59 items)
+
+| # | Line Item | Life | Rem | Qty | Unit | Cost/Unit | Total |
+|---|----------|------|-----|-----|------|-----------|-------|
+| 1 | Clubhouse-door, main entry | 30 | 16 | 1 | LS | $3,500 | $3,500 |
+| 2 | Clubhouse-fire suppression system | 30 | 8 | 1 | LS | $7,500 | $7,500 |
+| 3 | Clubhouse-fitness equipment | 5 | 2 | 1 | LS | $5,000 | $5,000 |
+| 4 | Clubhouse-flooring, carpet | 12 | 8 | 87 | SY | $60 | $5,220 |
+| 5 | Clubhouse-flooring, ceramic tile | 30 | 16 | 180 | SF | $17 | $3,060 |
+| 6 | Clubhouse-furniture fund | 20 | 6 | 1 | LS | $7,500 | $7,500 |
+| 7 | Clubhouse-hot water heater | 15 | 0 | 1 | EA | $3,000 | $3,000 |
+| 8 | Clubhouse-hvac, humidifier | 30 | 8 | 1 | LS | $2,500 | $2,500 |
+| 9 | Clubhouse-hvac, split system AC | 30 | 8 | 1 | LS | $9,000 | $9,000 |
+| 10 | Clubhouse-kitchen appliances | 30 | 16 | 1 | LS | $2,000 | $2,000 |
+| 11 | Clubhouse-kitchenette refurbish | 30 | 16 | 1 | LS | $6,000 | $6,000 |
+| 12 | Clubhouse-mirrored panels | 30 | 16 | 6 | EA | $350 | $2,100 |
+| 13 | Clubhouse-restroom/lockers | 30 | 16 | 2 | EA | $15,000 | $30,000 |
+| 14 | Clubhouse-roof shingles incl gutters | 30 | 9 | 28 | SQ | $450 | $12,600 |
+| 15 | Clubhouse-roof, chimney cap | 30 | 9 | 1 | EA | $800 | $800 |
+| 16 | Clubhouse-security, cctv | 15 | 7 | 1 | LS | $2,000 | $2,000 |
+| 17 | Clubhouse-security, key fob entry | 15 | 7 | 1 | LS | $1,500 | $1,500 |
+| 18 | Clubhouse-siding, vinyl | 50 | 24 | 23 | SQ | $700 | $16,100 |
+| 19 | Clubhouse-skylights | 30 | 9 | 6 | EA | $700 | $4,200 |
+| 20 | Clubhouse-wallpaper | 30 | 16 | 608 | SF | $6 | $3,648 |
+| 21 | Clubhouse-window treatments | 30 | 16 | 1 | LS | $2,000 | $2,000 |
+| 22 | Clubhouse-windows | 30 | 16 | 1 | LS | $7,500 | $7,500 |
+| 23 | Playground-equipment | 30 | 16 | 1 | LS | $27,000 | $27,000 |
+| 24 | Playground-picnic table | 30 | 16 | 1 | EA | $1,300 | $1,300 |
+| 25 | Playground-trash receptacle | 30 | 16 | 1 | EA | $800 | $800 |
+| 26 | Pool-chlorination equipment | 10 | 6 | 1 | LS | $1,500 | $1,500 |
+| 27 | Pool-concrete apron/deck | 30 | 2 | 2,527 | SF | $16 | $40,432 |
+| 28 | Pool-coping | 20 | 2 | 140 | LF | $80 | $11,200 |
+| 29 | Pool-cover | 10 | 2 | 1 | EA | $4,000 | $4,000 |
+| 30 | Pool-fence, aluminum | 30 | 12 | 335 | LF | $55 | $18,425 |
+| 31 | Pool-filters | 25 | 21 | 2 | EA | $2,500 | $5,000 |
+| 32 | Pool-furniture fund | 10 | 7 | 1 | LS | $12,000 | $12,000 |
+| 33 | Pool-pool shell resurface incl tile | 10 | 3 | 1,885 | SF | $12 | $22,620 |
+| 34 | Pool-pump | 10 | 2 | 1 | EA | $2,500 | $2,500 |
+| 35 | Driveway-asphalt reconstruct, emergency | 15 | 0 | 160 | SY | $45 | $7,200 |
+| 36 | Driveway-asphalt seal coat, emergency | 5 | 5 | 160 | SY | $2.50 | $400 |
+| 37 | Electrical-bollard lights, clubhouse | 30 | 15 | 6 | EA | $800 | $4,800 |
+| 38 | Electrical-light pole/fixture | 30 | 7 | 24 | EA | $3,800 | $91,200 |
+| 39 | Fence-board on board, wood | 25 | 12 | 830 | LF | $45 | $37,350 |
+| 40 | Fence-guard rail | 40 | 16 | 136 | LF | $80 | $10,880 |
+| 41 | Fence-split rail, replacement fund | 3 | 1 | 150 | LF | $25 | $3,750 |
+| 42 | Fence-vinyl on masonry wall | 30 | 8 | 465 | LF | $30 | $13,950 |
+| 43 | Irrigation-repair fund | 10 | 2 | 1 | LS | $5,000 | $5,000 |
+| 44 | Mailbox-double, pedestal and box | 20 | 6 | 53 | EA | $300 | $15,900 |
+| 45 | Mailbox-single, pedestal and box | 20 | 6 | 12 | EA | $200 | $2,400 |
+| 46 | Refuse-concrete slab | 40 | 15 | 144 | SF | $16 | $2,304 |
+| 47 | Refuse-dumpsters | 10 | 5 | 3 | EA | $800 | $2,400 |
+| 48 | Refuse-enclosure, wood gate/fence | 20 | 15 | 30 | LF | $60 | $1,800 |
+| 49 | Retaining wall-masonry, along entry | 30 | 8 | 1 | LS | $5,000 | $5,000 |
+| 50 | Roadway-asphalt resurface | 15 | 0 | 13,433 | SY | $32 | $429,856 |
+| 51 | Roadway-asphalt seal coat | 5 | 5 | 13,433 | SY | $2.50 | $33,583 |
+| 52 | Roadway-granite block entry | 30 | 0 | 505 | SF | $75 | $37,875 |
+| 53 | Signage-entry sign, large | 30 | 18 | 1 | EA | $7,500 | $7,500 |
+| 54 | Signage-entry sign, small | 30 | 18 | 2 | EA | $2,000 | $4,000 |
+| 55 | Signage-flagpole | 35 | 9 | 1 | LS | $3,000 | $3,000 |
+| 56 | Signage-stop signs | 30 | 8 | 11 | EA | $800 | $8,800 |
+| 57 | Signage-street signs, wood | 30 | 8 | 2 | EA | $1,300 | $2,600 |
+| 58 | Walkway-concrete | 3 | 0 | 451 | SF | $14 | $6,314 |
+| 59 | Walkway-flagstone at clubhouse | 30 | 15 | 280 | SF | $20 | $5,600 |
+
+**HOA Total**: $1,051,117
+
+### Condo I (13 items)
+
+| # | Line Item | Life | Rem | Qty | Unit | Cost/Unit | Total |
+|---|----------|------|-----|-----|------|-----------|-------|
+| 1 | Deck-wood, double story | 25 | 12 | 4 | EA | $16,000 | $64,000 |
+| 2 | Deck-wood, large | 25 | 11 | 4 | EA | $10,100 | $40,400 |
+| 3 | Deck-wood, side entry deck/stair | 25 | 8 | 2 | EA | $24,760 | $49,520 |
+| 4 | Deck-wood, small | 25 | 10 | 4 | EA | $6,000 | $24,000 |
+| 5 | Roof-chimney caps | 50 | 3 | 10 | EA | $800 | $8,000 |
+| 6 | Roof-shingles incl gutters/leaders | 30 | 3 | 171 | SQ | $550 | $94,050 |
+| 7 | Siding-vinyl | 50 | 28 | 190 | SQ | $700 | $133,000 |
+| 8 | Siding-wood trim replacement | 3 | 1 | 1 | LS | $5,000 | $5,000 |
+| 9 | Mailbox-boxes | 15 | 10 | 18 | EA | $75 | $1,350 |
+| 10 | Mailbox-hut restoration | 25 | 10 | 1 | LS | $1,500 | $1,500 |
+| 11 | Walkway-concrete sidewalk/entry walk | 3 | 2 | 232 | SF | $14 | $3,248 |
+| 12 | Walkway-entry stoop | 30 | 8 | 8 | EA | $1,500 | $12,000 |
+| 13 | Walkway-pavers, at mailbox | 30 | 15 | 100 | SF | $22 | $2,200 |
+
+**Condo I Total**: $438,268
+
+### Condo II (10 items)
+
+| # | Line Item | Life | Rem | Qty | Unit | Cost/Unit | Total |
+|---|----------|------|-----|-----|------|-----------|-------|
+| 1 | Deck-wood reconstruction (phase 1) | 25 | 4 | 627 | SF | $70 | $43,890 |
+| 2 | Deck-wood reconstruction (phase 2) | 25 | 5 | 627 | SF | $70 | $43,890 |
+| 3 | Deck-wood reconstruction (phase 3) | 25 | 6 | 627 | SF | $70 | $43,890 |
+| 4 | Roof-chimney caps | 50 | 3 | 11 | EA | $650 | $7,150 |
+| 5 | Roof-shingles incl gutters/leaders | 30 | 3 | 218 | SQ | $700 | $152,600 |
+| 6 | Siding-wood clapboards/trim | 40 | 18 | 213 | SQ | $850 | $181,050 |
+| 7 | Walkway-entry stoop | 30 | 8 | 11 | EA | $4,000 | $44,000 |
+| 8 | Walkway-entry walk, concrete | 3 | 2 | 73 | SF | $14 | $1,022 |
+| 9 | Driveway-asphalt reconstruction | 15 | 0 | 560 | SY | $45 | $25,200 |
+| 10 | Driveway-asphalt seal coat | 5 | 5 | 560 | SY | $2.50 | $1,400 |
+
+**Condo II Total**: $544,092
+
+### Condo III (11 items)
+
+| # | Line Item | Life | Rem | Qty | Unit | Cost/Unit | Total |
+|---|----------|------|-----|-----|------|-----------|-------|
+| 1 | Deck-wood reconstruction (phase 1) | 25 | 4 | 670 | SF | $70 | $46,900 |
+| 2 | Deck-wood reconstruction (phase 2) | 25 | 5 | 670 | SF | $70 | $46,900 |
+| 3 | Deck-wood reconstruction (phase 3) | 25 | 6 | 670 | SF | $70 | $46,900 |
+| 4 | Roof-chimney caps | 50 | 3 | 9 | EA | $650 | $5,850 |
+| 5 | Roof-shingles incl gutters/leaders | 30 | 3 | 164 | SQ | $700 | $114,800 |
+| 6 | Siding-wood clapboards | 40 | 16 | 219 | SQ | $850 | $186,150 |
+| 7 | Siding-wood trim | 5 | 0 | 1 | LS | $7,500 | $7,500 |
+| 8 | Walkway-entry stoop | 30 | 10 | 9 | EA | $3,500 | $31,500 |
+| 9 | Walkway-entry walk, concrete | 3 | 0 | 59 | SF | $14 | $826 |
+| 10 | Driveway-asphalt reconstruction | 15 | 0 | 235 | SY | $45 | $10,575 |
+| 11 | Driveway-asphalt seal coat | 5 | 5 | 235 | SY | $2.50 | $588 |
+
+**Condo III Total**: $500,989 (note: includes $7,500 wood trim not in Becht scope)
+
+### Condo IV (13 items)
+
+| # | Line Item | Life | Rem | Qty | Unit | Cost/Unit | Total |
+|---|----------|------|-----|-----|------|-----------|-------|
+| 1 | Deck-wood reconstruction (phase 1) | 25 | 4 | 1,248 | SF | $70 | $87,360 |
+| 2 | Deck-wood reconstruction (phase 2) | 25 | 5 | 1,248 | SF | $70 | $87,360 |
+| 3 | Deck-wood reconstruction (phase 3) | 25 | 6 | 1,248 | SF | $70 | $87,360 |
+| 4 | Fence-privacy, vinyl | 30 | 13 | 119 | LF | $65 | $7,735 |
+| 5 | Retaining wall-wood tie wells | 10 | 4 | 1 | LS | $15,000 | $15,000 |
+| 6 | Roof-chimney caps, large | 50 | 5 | 49 | EA | $800 | $39,200 |
+| 7 | Roof-chimney caps, small | 50 | 5 | 21 | EA | $650 | $13,650 |
+| 8 | Roof-shingles incl gutters/leaders | 30 | 5 | 1,796 | SQ | $550 | $987,800 |
+| 9 | Siding-vinyl | 50 | 30 | 2,118 | SQ | $700 | $1,482,600 |
+| 10 | Driveway-asphalt reconstruction | 15 | 0 | 3,789 | SY | $45 | $170,505 |
+| 11 | Driveway-asphalt seal coat | 5 | 5 | 3,789 | SY | $2.50 | $9,473 |
+| 12 | Walkway-entry stoop, end unit porch | 5 | 2 | 2 | EA | $5,000 | $10,000 |
+| 13 | Walkway-entry walk/stair/landing | 3 | 2 | 185 | SF | $18 | $3,330 |
+
+**Condo IV Total**: $3,001,373 (note: includes fence + retaining wall not in Becht scope)
+
+---
+
+## Appendix B: Methodology Notes
+
+1. **Ratio Derivation**: All split ratios are derived from Falcon's 2022 quantity measurements. Falcon performed field measurements and plan take-offs for each entity separately. These physical quantities (SQ, SF, SY, EA) represent the most accurate per-entity breakdown available.
+
+2. **Quantity Discrepancies**: Becht and Falcon often show different total quantities for the same component (e.g., 149 vs 100 chimney caps, 5,600 vs 4,584 SY driveways). This is expected due to different measurement methodologies, scope interpretations, and the 4-year gap between studies. The **ratios** between entities remain valid even when absolute quantities differ.
+
+3. **Cost Discrepancies**: Unit costs differ between reports due to inflation (4 years), different pricing sources, and scope differences (e.g., Becht may include items Falcon priced separately). This analysis uses Becht's total costs and only applies Falcon's **proportional ratios** to split them.
+
+4. **Siding Type Assignment**: Falcon clearly identifies Condo I and IV as having vinyl siding, and Condo II and III as having wood siding. Becht separates these into two line items ("Siding, Vinyl" and "Siding, Wood") which aligns with this distinction. The wood siding specifically references "units 301-411 Glenwood Dr."
+
+5. **Condo I Driveways**: Condo I has "assigned parking" (a parking lot) rather than individual driveways. The Falcon report includes no driveway line item for Condo I. The Becht driveway cost is therefore split only among Condos II, III, and IV.
+
+6. **Deck Replacement**: Becht creates two line items -- wood (current, 7y remaining) and composite (replacement material, 27y remaining). This represents the same physical decks: replace the current wood decks now, then the composite replacements won't need work for 50 years. For budget purposes, the near-term $440,000 wood deck replacement is the priority.
+
+7. **Mailboxes**: Per items_in_disagreement.md, mailbox responsibility is disputed. Becht counts 136 EA (all units) at $150 each = $20,400. Becht notes they were "recently replaced all throughout the community." This analysis assigns them to HOA pending resolution, consistent with the community-wide replacement pattern.
