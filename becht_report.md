@@ -1119,3 +1119,253 @@ This table shows what percentage of each year's total disbursement each entity i
 6. **Condos II and III spike in 2038** when wood siding replacement is due. Since only these two condos have wood siding (per Falcon), they bear 100% of that $316,516 cost split roughly 49/51.
 
 7. **Items NOT in this schedule** that each entity should budget for separately (from Appendix C): entry stoops (all condos), playground equipment (HOA), pool shell resurfacing (HOA), board-on-board fencing (HOA), recurring wood trim maintenance (Condos I and III), and the composite deck second-cycle replacement ($360,000 around year 2053+).
+
+---
+
+## Appendix E: Simple Per-Entity Funding Schedule
+
+### Approach
+
+Becht provides three funding scenarios for the combined community. This appendix computes the equivalent **per-entity** funding schedule using the simplest possible method:
+
+- **Flat Year-1 contribution** that grows at 3%/year (matching Becht's inflation assumption)
+- **1% annual interest** earned on the reserve balance (matching Becht's interest assumption)
+- **Starting balance**: Becht's $348,425 community reserve allocated proportionally by each entity's share of total replacement cost
+- **Goal**: Find the minimum Year-1 contribution that keeps the closing balance at or above the threshold for every year in the 25-year window
+
+This is the same logic Becht uses in their Baseline and Threshold scenarios, applied per entity instead of community-wide.
+
+---
+
+### E.1 Summary: Year-1 Annual Contribution by Entity
+
+| Entity | Units | Baseline (0%) | 5% Threshold | 10% Threshold |
+|--------|-------|--------------|-------------|---------------|
+| **HOA** | 136 | **$64,563** | **$68,009** | **$71,455** |
+| **Condo I** | 18 | **$14,383** | **$16,862** | **$19,341** |
+| **Condo II** | 11 | **$18,686** | **$19,967** | **$21,248** |
+| **Condo III** | 9 | **$17,450** | **$18,613** | **$19,776** |
+| **Condo IV** | 98 | **$99,619** | **$103,827** | **$111,860** |
+| **Total** | 136 | **$214,701** | **$227,278** | **$243,680** |
+
+**Comparison to Becht community-wide recommendations**:
+- Becht Baseline: $219,984/year (vs $214,701 allocated -- 2.4% lower due to rounding/interest timing)
+- Becht 5% Threshold: $226,658/year (vs $227,278 allocated -- within 0.3%)
+
+---
+
+### E.2 Monthly Cost Per Unit
+
+| Entity | Units | Baseline/Unit/Mo | 5% Threshold/Unit/Mo | 10% Threshold/Unit/Mo |
+|--------|-------|-----------------|---------------------|----------------------|
+| HOA | 136 | $40 | $42 | $44 |
+| Condo I | 18 | $67 | $78 | $90 |
+| Condo II | 11 | $142 | $151 | $161 |
+| Condo III | 9 | $162 | $172 | $183 |
+| Condo IV | 98 | $85 | $88 | $95 |
+
+**Note**: HOA contributions are shared across all 136 units. Condo contributions are per-condo (shared among only that condo's units). A Condo II unit owner pays the HOA amount PLUS the Condo II amount: $40 + $142 = $182/month at Baseline.
+
+---
+
+### E.3 Baseline (0% Threshold) -- Detailed 25-Year Schedule
+
+#### HOA -- $64,563/year starting contribution
+
+| Year | Opening | Contribution | Disbursement | Interest | Closing |
+|------|---------|-------------|-------------|---------|---------|
+| 2026 | $59,717 | $64,563 | -- | $597 | $124,877 |
+| 2027 | $124,877 | $66,500 | -- | $1,249 | $192,625 |
+| 2028 | $192,625 | $68,495 | $36,067 | $1,926 | $226,980 |
+| 2029 | $226,980 | $70,550 | -- | $2,270 | $299,799 |
+| 2030 | $299,799 | $72,666 | -- | $2,998 | $375,463 |
+| 2031 | $375,463 | $74,846 | $11,477 | $3,755 | $442,587 |
+| 2032 | $442,587 | $77,092 | $24,620 | $4,426 | $499,485 |
+| 2033 | $499,485 | $79,404 | $208,222 | $4,995 | $375,662 |
+| 2034 | $375,662 | $81,786 | -- | $3,757 | $461,205 |
+| 2035 | $461,205 | $84,240 | -- | $4,612 | $550,057 |
+| 2036 | $550,057 | $86,767 | $642,321 | $5,501 | $4 |
+| 2037 | $4 | $89,370 | -- | $0 | $89,374 |
+| 2038 | $89,374 | $92,051 | $44,915 | $894 | $137,404 |
+| 2039 | $137,404 | $94,813 | -- | $1,374 | $233,591 |
+| 2040 | $233,591 | $97,657 | -- | $2,336 | $333,585 |
+| 2041 | $333,585 | $100,587 | $190,852 | $3,336 | $246,655 |
+| 2042 | $246,655 | $103,605 | -- | $2,467 | $352,727 |
+| 2043 | $352,727 | $106,713 | $126,440 | $3,527 | $336,527 |
+| 2044 | $336,527 | $109,914 | -- | $3,365 | $449,806 |
+| 2045 | $449,806 | $113,212 | -- | $4,498 | $567,516 |
+| 2046 | $567,516 | $116,608 | $65,922 | $5,675 | $623,877 |
+| 2047 | $623,877 | $120,106 | -- | $6,239 | $750,222 |
+| 2048 | $750,222 | $123,709 | $117,838 | $7,502 | $763,596 |
+| 2049 | $763,596 | $127,421 | $40,261 | $7,636 | $858,391 |
+| 2050 | $858,391 | $131,243 | -- | $8,584 | $998,218 |
+
+**Critical year**: 2036 -- HOA fund drops to near $0 after $642K roadway repaving. Fund recovers by 2037.
+
+#### Condo I -- $14,383/year starting contribution
+
+| Year | Opening | Contribution | Disbursement | Interest | Closing |
+|------|---------|-------------|-------------|---------|---------|
+| 2026 | $29,418 | $14,383 | -- | $294 | $44,095 |
+| 2027 | $44,095 | $14,814 | -- | $441 | $59,350 |
+| 2028 | $59,350 | $15,259 | -- | $594 | $75,203 |
+| 2029 | $75,203 | $15,717 | -- | $752 | $91,671 |
+| 2030 | $91,671 | $16,188 | -- | $917 | $108,776 |
+| 2031 | $108,776 | $16,674 | $20,728 | $1,088 | $105,810 |
+| 2032 | $105,810 | $17,174 | -- | $1,058 | $124,042 |
+| 2033 | $124,042 | $17,689 | $142,972 | $1,240 | $0 |
+| 2034 | $0 | $18,220 | -- | $0 | $18,220 |
+| 2035 | $18,220 | $18,767 | -- | $182 | $37,168 |
+| 2036 | $37,168 | $19,330 | -- | $372 | $56,870 |
+| 2037 | $56,870 | $19,909 | -- | $569 | $77,348 |
+| 2038 | $77,348 | $20,507 | -- | $773 | $98,628 |
+| 2039 | $98,628 | $21,122 | -- | $986 | $120,736 |
+| 2040 | $120,736 | $21,756 | -- | $1,207 | $143,699 |
+| 2041 | $143,699 | $22,408 | -- | $1,437 | $167,544 |
+| 2042 | $167,544 | $23,080 | -- | $1,675 | $192,300 |
+| 2043 | $192,300 | $23,773 | -- | $1,923 | $217,996 |
+| 2044 | $217,996 | $24,486 | -- | $2,180 | $244,662 |
+| 2045 | $244,662 | $25,221 | -- | $2,447 | $272,329 |
+| 2046 | $272,329 | $25,977 | -- | $2,723 | $301,030 |
+| 2047 | $301,030 | $26,757 | -- | $3,010 | $330,797 |
+| 2048 | $330,797 | $27,559 | -- | $3,308 | $361,664 |
+| 2049 | $361,664 | $28,386 | $292,367 | $3,617 | $101,300 |
+| 2050 | $101,300 | $29,238 | -- | $1,013 | $131,551 |
+
+**Critical years**: 2033 (deck replacement depletes fund) and 2049 (vinyl siding -- $292K).
+
+#### Condo II -- $18,686/year starting contribution
+
+| Year | Opening | Contribution | Disbursement | Interest | Closing |
+|------|---------|-------------|-------------|---------|---------|
+| 2026 | $27,319 | $18,686 | -- | $273 | $46,278 |
+| 2027 | $46,278 | $19,247 | -- | $463 | $65,988 |
+| 2028 | $65,988 | $19,824 | -- | $660 | $86,472 |
+| 2029 | $86,472 | $20,419 | -- | $865 | $107,755 |
+| 2030 | $107,755 | $21,031 | -- | $1,078 | $129,864 |
+| 2031 | $129,864 | $21,662 | $22,801 | $1,299 | $130,024 |
+| 2032 | $130,024 | $22,312 | -- | $1,300 | $153,636 |
+| 2033 | $153,636 | $22,981 | $102,471 | $1,536 | $75,683 |
+| 2034 | $75,683 | $23,671 | -- | $757 | $100,111 |
+| 2035 | $100,111 | $24,381 | -- | $1,001 | $125,493 |
+| 2036 | $125,493 | $25,112 | $50,582 | $1,255 | $101,278 |
+| 2037 | $101,278 | $25,866 | -- | $1,013 | $128,157 |
+| 2038 | $128,157 | $26,642 | $156,074 | $1,282 | $6 |
+| 2039 | $6 | $27,441 | -- | $0 | $27,447 |
+| 2040 | $27,447 | $28,264 | -- | $274 | $55,986 |
+| 2041 | $55,986 | $29,112 | -- | $560 | $85,658 |
+| 2042 | $85,658 | $29,986 | -- | $857 | $116,500 |
+| 2043 | $116,500 | $30,885 | -- | $1,165 | $148,550 |
+| 2044 | $148,550 | $31,812 | -- | $1,485 | $181,847 |
+| 2045 | $181,847 | $32,766 | -- | $1,818 | $216,432 |
+| 2046 | $216,432 | $33,749 | -- | $2,164 | $252,345 |
+| 2047 | $252,345 | $34,761 | -- | $2,523 | $289,630 |
+| 2048 | $289,630 | $35,804 | -- | $2,896 | $328,330 |
+| 2049 | $328,330 | $36,878 | -- | $3,283 | $368,492 |
+| 2050 | $368,492 | $37,985 | -- | $3,685 | $410,162 |
+
+**Critical year**: 2038 -- wood siding replacement ($156K) depletes fund. No further Condo II disbursements after 2038, so fund recovers steadily.
+
+#### Condo III -- $17,450/year starting contribution
+
+| Year | Opening | Contribution | Disbursement | Interest | Closing |
+|------|---------|-------------|-------------|---------|---------|
+| 2026 | $24,800 | $17,450 | -- | $248 | $42,498 |
+| 2027 | $42,498 | $17,974 | -- | $425 | $60,897 |
+| 2028 | $60,897 | $18,513 | -- | $609 | $80,018 |
+| 2029 | $80,018 | $19,068 | -- | $800 | $99,886 |
+| 2030 | $99,886 | $19,640 | -- | $999 | $120,525 |
+| 2031 | $120,525 | $20,229 | $18,655 | $1,205 | $123,305 |
+| 2032 | $123,305 | $20,836 | -- | $1,233 | $145,374 |
+| 2033 | $145,374 | $21,461 | $108,871 | $1,454 | $59,418 |
+| 2034 | $59,418 | $22,105 | -- | $594 | $82,118 |
+| 2035 | $82,118 | $22,768 | -- | $821 | $105,707 |
+| 2036 | $105,707 | $23,451 | $21,234 | $1,057 | $108,982 |
+| 2037 | $108,982 | $24,155 | -- | $1,090 | $134,226 |
+| 2038 | $134,226 | $24,880 | $160,442 | $1,342 | $6 |
+| 2039 | $6 | $25,626 | -- | $0 | $25,632 |
+| 2040 | $25,632 | $26,395 | -- | $256 | $52,283 |
+| 2041 | $52,283 | $27,187 | -- | $523 | $79,992 |
+| 2042 | $79,992 | $28,002 | -- | $800 | $108,794 |
+| 2043 | $108,794 | $28,842 | -- | $1,088 | $138,725 |
+| 2044 | $138,725 | $29,707 | -- | $1,387 | $169,819 |
+| 2045 | $169,819 | $30,599 | -- | $1,698 | $202,116 |
+| 2046 | $202,116 | $31,517 | -- | $2,021 | $235,654 |
+| 2047 | $235,654 | $32,462 | -- | $2,357 | $270,473 |
+| 2048 | $270,473 | $33,436 | -- | $2,705 | $306,613 |
+| 2049 | $306,613 | $34,439 | -- | $3,066 | $344,119 |
+| 2050 | $344,119 | $35,472 | -- | $3,441 | $383,032 |
+
+**Critical year**: 2038 -- wood siding replacement ($160K) depletes fund. Same pattern as Condo II.
+
+#### Condo IV -- $99,619/year starting contribution
+
+| Year | Opening | Contribution | Disbursement | Interest | Closing |
+|------|---------|-------------|-------------|---------|---------|
+| 2026 | $207,172 | $99,619 | -- | $2,072 | $308,862 |
+| 2027 | $308,862 | $102,608 | -- | $3,089 | $414,558 |
+| 2028 | $414,558 | $105,686 | -- | $4,146 | $524,390 |
+| 2029 | $524,390 | $108,856 | -- | $5,244 | $638,490 |
+| 2030 | $638,490 | $112,122 | -- | $6,385 | $756,997 |
+| 2031 | $756,997 | $115,486 | $145,095 | $7,570 | $734,958 |
+| 2032 | $734,958 | $118,950 | -- | $7,350 | $861,258 |
+| 2033 | $861,258 | $122,519 | $205,342 | $8,613 | $787,047 |
+| 2034 | $787,047 | $126,194 | -- | $7,870 | $921,112 |
+| 2035 | $921,112 | $129,980 | -- | $9,211 | $1,060,303 |
+| 2036 | $1,060,303 | $133,880 | $342,150 | $10,603 | $862,636 |
+| 2037 | $862,636 | $137,896 | -- | $8,626 | $1,009,158 |
+| 2038 | $1,009,158 | $142,033 | -- | $10,092 | $1,161,283 |
+| 2039 | $1,161,283 | $146,294 | -- | $11,613 | $1,319,189 |
+| 2040 | $1,319,189 | $150,683 | -- | $13,192 | $1,483,064 |
+| 2041 | $1,483,064 | $155,203 | -- | $14,831 | $1,653,098 |
+| 2042 | $1,653,098 | $159,859 | -- | $16,531 | $1,829,488 |
+| 2043 | $1,829,488 | $164,655 | -- | $18,295 | $2,012,438 |
+| 2044 | $2,012,438 | $169,595 | -- | $20,124 | $2,202,157 |
+| 2045 | $2,202,157 | $174,683 | -- | $22,022 | $2,398,861 |
+| 2046 | $2,398,861 | $179,923 | -- | $23,989 | $2,602,773 |
+| 2047 | $2,602,773 | $185,321 | -- | $26,028 | $2,814,121 |
+| 2048 | $2,814,121 | $190,880 | -- | $28,141 | $3,033,143 |
+| 2049 | $3,033,143 | $196,607 | $3,260,083 | $30,331 | $0 |
+| 2050 | $0 | $202,505 | -- | $0 | $202,503 |
+
+**Critical year**: 2049 -- vinyl siding replacement ($3.26M) completely depletes the fund. This is the single largest expenditure in the entire community. Condo IV spends 23 years accumulating reserves for this one event.
+
+---
+
+### E.4 What Each Unit Owner Actually Pays (Combined HOA + Condo)
+
+Every unit owner pays into **two** reserve funds: the HOA fund (shared by all 136 units) and their own Condo fund. Here is the combined monthly reserve contribution per unit at the **Baseline (0%)** level:
+
+| Entity | HOA Share/Unit/Mo | Condo Share/Unit/Mo | **Total/Unit/Mo** |
+|--------|------------------|--------------------|-----------------:|
+| Condo I unit | $40 | $67 | **$107** |
+| Condo II unit | $40 | $142 | **$182** |
+| Condo III unit | $40 | $162 | **$202** |
+| Condo IV unit | $40 | $85 | **$125** |
+
+At the **10% Threshold** level:
+
+| Entity | HOA Share/Unit/Mo | Condo Share/Unit/Mo | **Total/Unit/Mo** |
+|--------|------------------|--------------------|-----------------:|
+| Condo I unit | $44 | $90 | **$134** |
+| Condo II unit | $44 | $161 | **$205** |
+| Condo III unit | $44 | $183 | **$227** |
+| Condo IV unit | $44 | $95 | **$139** |
+
+**Why Condo II and III pay more per unit**: These condos have fewer units (11 and 9 respectively) sharing the cost of wood siding replacement ($156K-$160K). Condo IV has a much larger total obligation but spreads it across 98 units.
+
+---
+
+### E.5 Assumptions and Limitations
+
+1. **Starting balance allocation**: Becht's $348,425 was split proportionally by replacement cost share (HOA 17.1%, C1 8.4%, C2 7.8%, C3 7.1%, C4 59.5%). The actual split of existing reserves between entities may differ -- each entity should use its actual current reserve balance.
+
+2. **Contributions grow at 3%/year**: This matches Becht's inflation assumption. If the board holds contributions flat, the fund will be underfunded.
+
+3. **Interest at 1%/year**: Assumes reserves are in a low-yield savings or money market account. Higher returns would reduce required contributions.
+
+4. **This schedule covers only Becht components**: Items omitted from Becht (entry stoops, playground, pool shell, board-on-board fence, wood trim maintenance) are NOT included. Each entity should add a supplemental budget for those items.
+
+5. **Baseline (0%) is the minimum**: The fund hits $0 at least once for every entity. This means any unexpected expense or cost overrun requires a special assessment. The 5% or 10% threshold provides a buffer.
+
+6. **Condo IV's 2049 siding event**: At $3.26M, this is by far the largest single expenditure. If actual siding costs exceed the estimate, or if replacement is needed earlier than 2049, Condo IV will face a significant shortfall. This single item drives most of Condo IV's contribution requirement.
