@@ -1350,23 +1350,50 @@ This is the same logic Becht uses in their Baseline and Threshold scenarios, app
 
 ### E.4 What Each Unit Owner Actually Pays (Combined HOA + Condo)
 
-Every unit owner pays into **two** reserve funds: the HOA fund (shared by all 136 units) and their own Condo fund. Here is the combined monthly reserve contribution per unit at the **Baseline (0%)** level:
+Every unit owner pays into **two** reserve funds: the HOA fund (shared by all 136 units) and their own Condo fund.
 
-| Entity | HOA Share/Unit/Mo | Condo Share/Unit/Mo | **Total/Unit/Mo** |
-|--------|------------------|--------------------|-----------------:|
-| Condo I unit | $40 | $67 | **$107** |
-| Condo II unit | $40 | $142 | **$182** |
-| Condo III unit | $40 | $162 | **$202** |
-| Condo IV unit | $40 | $85 | **$125** |
+**These amounts are NOT fixed.** Contributions grow at 3% per year to keep pace with inflation. A unit owner paying $125/month in 2026 will pay $145/month by 2031 and $253/month by 2050. The tables below show how costs escalate over the 25-year window.
 
-At the **10% Threshold** level:
+For reference, the Falcon report (2022) used a **step-up approach** rather than smooth annual increases -- contributions held flat for 5-6 year blocks, then jumped to a new level. The Becht model instead uses a steady 3% annual increase, which produces a smoother but continuously rising cost curve. Both approaches reach similar totals over time; the difference is in timing.
 
-| Entity | HOA Share/Unit/Mo | Condo Share/Unit/Mo | **Total/Unit/Mo** |
-|--------|------------------|--------------------|-----------------:|
-| Condo I unit | $44 | $90 | **$134** |
-| Condo II unit | $44 | $161 | **$205** |
-| Condo III unit | $44 | $183 | **$227** |
-| Condo IV unit | $44 | $95 | **$139** |
+#### Combined Monthly Cost Per Unit Over Time -- Baseline (0%)
+
+| Entity | Units | 2026 | 2031 | 2036 | 2041 | 2046 | 2050 |
+|--------|-------|------|------|------|------|------|------|
+| Condo I | 18 | $106 | $123 | $143 | $165 | $192 | $216 |
+| Condo II | 11 | $181 | $210 | $243 | $282 | $327 | $368 |
+| Condo III | 9 | $201 | $233 | $270 | $313 | $363 | $409 |
+| Condo IV | 98 | $124 | $144 | $167 | $194 | $224 | $253 |
+
+Each cell = (HOA contribution / 136 units / 12 months) + (Condo contribution / Condo units / 12 months) at 3% annual growth.
+
+#### Year-by-Year Annual Contribution Per Entity -- Baseline (0%)
+
+For boards setting budgets, here are the entity-level annual contributions at 5-year intervals:
+
+| Entity | 2026 | 2031 | 2036 | 2041 | 2046 | 2050 |
+|--------|------|------|------|------|------|------|
+| HOA | $64,563 | $74,846 | $86,767 | $100,587 | $116,608 | $131,243 |
+| Condo I | $14,383 | $16,674 | $19,330 | $22,408 | $25,977 | $29,238 |
+| Condo II | $18,686 | $21,662 | $25,112 | $29,112 | $33,749 | $37,985 |
+| Condo III | $17,450 | $20,229 | $23,451 | $27,187 | $31,517 | $35,472 |
+| Condo IV | $99,619 | $115,486 | $133,880 | $155,203 | $179,923 | $202,505 |
+| **Total** | **$214,701** | **$248,897** | **$288,540** | **$334,497** | **$387,774** | **$436,443** |
+
+#### Comparison: Falcon Step-Up vs Becht Smooth Growth
+
+The Falcon report held contributions flat within multi-year blocks, then adjusted. For example, Condo IV's Falcon full-funding contribution:
+
+| Period | Falcon (flat within block) | Becht 3%/year equivalent |
+|--------|--------------------------|-------------------------|
+| 2022-2027 | $343,139/year | N/A (pre-Becht) |
+| 2028-2032 | $262,965/year | $105,686 - $118,950/year |
+| 2033-2037 | $263,962/year | $122,519 - $137,896/year |
+| 2038-2042 | $275,331/year | $142,033 - $159,859/year |
+| 2043-2047 | $275,331/year | $164,655 - $185,321/year |
+| 2048-2052 | $282,019/year | $190,880 - $214,912/year |
+
+**Important**: Falcon and Becht contributions are not directly comparable because they cover different component lists, use different inflation assumptions (0% vs 3%), and different life cycle estimates. The Falcon contributions were also based on a "full funding" (component) method, while the Becht Baseline shown here is a threshold method. The Falcon full-funding contributions were significantly higher because they aimed to fully fund each component individually rather than pooling funds.
 
 **Why Condo II and III pay more per unit**: These condos have fewer units (11 and 9 respectively) sharing the cost of wood siding replacement ($156K-$160K). Condo IV has a much larger total obligation but spreads it across 98 units.
 
