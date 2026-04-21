@@ -1124,6 +1124,22 @@ This table shows what percentage of each year's total disbursement each entity i
 
 ## Appendix E: Simple Per-Entity Funding Schedule
 
+### What Are the Funding Scenarios?
+
+A reserve fund works like a savings account: you put money in each year (contributions) and take money out when something needs to be replaced (disbursements). The question is: **how much do you need to put in each year so there's enough when you need it?**
+
+The three scenarios answer that question with different levels of risk tolerance:
+
+**Baseline (0% Threshold)** -- The absolute minimum. Contributions are set so that the fund balance never drops below **$0** at the end of any year. This means every dollar collected will eventually be spent, with nothing left over as a cushion. The fund will hit exactly $0 in at least one year. If anything goes wrong -- an unexpected repair, a cost overrun, a component failing earlier than projected -- there is no buffer and a **special assessment** (emergency charge to unit owners) would be required.
+
+**5% Threshold** -- A moderate safety margin. Contributions are set so the fund balance never drops below **5% of the total replacement cost** of that entity's components. For example, if an entity has $1,000,000 in total replacement costs, the fund will never drop below $50,000. This provides a cushion for minor surprises -- a component failing a year or two early, or a project coming in slightly over budget -- without needing a special assessment.
+
+**10% Threshold** -- A more conservative safety margin. The fund balance never drops below **10% of total replacement cost**. This provides a larger buffer and is generally recommended by the Community Associations Institute (CAI) as a prudent minimum. It costs more per year but significantly reduces the risk of special assessments.
+
+**Which should you choose?** Baseline is the cheapest but riskiest. 10% costs more but provides real protection. The difference between Baseline and 10% Threshold is relatively modest -- for example, Condo IV pays $85/unit/month at Baseline vs $95/unit/month at 10% Threshold, a $10/month difference that buys $321,000 in emergency cushion.
+
+---
+
 ### Approach
 
 Becht provides three funding scenarios for the combined community. This appendix computes the equivalent **per-entity** funding schedule using the simplest possible method:
