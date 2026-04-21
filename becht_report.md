@@ -885,7 +885,11 @@ The following items appear in the Falcon reserve schedule but have no correspond
 | Walkway-pavers at mailbox | C1 | $2,200 | Site | Low |
 | Driveway-asphalt seal coat (per-condo) | C2-C4 | $588-$9,473 | Site | Low-Moderate (Becht has community-wide seal coat only) |
 
-**Entry stoops are the most significant omission.** Falcon budgets $12,000 (C1), $44,000 (C2), $31,500 (C3), and $10,000-$220,000 (C4, with recurring 5-year cycle for end unit porches). These are concrete structures that deteriorate and require periodic replacement. Their omission from Becht means no reserve funding is being planned for stoop replacement.
+**Entry stoops are the most significant omission.** Falcon budgets $12,000 (C1), $44,000 (C2), $31,500 (C3), and $10,000-$220,000 (C4, with recurring 5-year cycle for end unit porches). These are the concrete steps and landing platforms at the front door of each townhouse unit. They crack, settle, and deteriorate over time -- especially in the Northeast with freeze/thaw cycles -- and require periodic replacement. Their omission from Becht means no reserve funding is being planned for stoop replacement.
+
+**Condo IV entry stoop note -- potential undercount in Falcon as well**: Falcon only budgets 2 EA "end unit porch" stoops ($10,000) plus 185 SF of "entry walk/stair/landing" ($3,330) for Condo IV. While the short replacement cycles (5-year and 3-year respectively) produce a 30-year cumulative spend of approximately $149,445, this still appears low for 98 units (~$1,525/unit over 30 years). By comparison, Condo II budgets $4,000/stoop for 11 units ($44,000 base). If Condo IV units have similar raised concrete stoops, the base cost could be closer to $294,000-$490,000 per occurrence rather than $10,000.
+
+It is possible that most Condo IV units have at-grade entries (slab-on-grade, no elevated stoop) and only the 2 end units have raised porches -- but this should be verified with a physical count. If Falcon undersized this item for Condo IV, then both reports understate the stoop reserve requirement for the community's largest condo entity.
 
 ---
 
