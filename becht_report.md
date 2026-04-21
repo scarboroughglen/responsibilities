@@ -1382,10 +1382,10 @@ For boards setting budgets, here are the entity-level annual contributions at 5-
 
 #### Comparison: Falcon Step-Up vs Becht Smooth Growth
 
-The Falcon report held contributions flat within multi-year blocks, then adjusted. For example, Condo IV's Falcon full-funding contribution:
+The Falcon report held contributions flat within multi-year blocks, then adjusted. The table below shows Condo IV as an example. **These numbers are not an apples-to-apples comparison** -- they use different funding methods, which is the primary reason Falcon appears roughly 2x higher.
 
-| Period | Falcon (flat within block) | Becht 3%/year equivalent |
-|--------|--------------------------|-------------------------|
+| Period | Falcon Full Funding (flat blocks) | Becht Baseline 0% (3%/year growth) |
+|--------|----------------------------------|-------------------------------------|
 | 2022-2027 | $343,139/year | N/A (pre-Becht) |
 | 2028-2032 | $262,965/year | $105,686 - $118,950/year |
 | 2033-2037 | $263,962/year | $122,519 - $137,896/year |
@@ -1393,7 +1393,15 @@ The Falcon report held contributions flat within multi-year blocks, then adjuste
 | 2043-2047 | $275,331/year | $164,655 - $185,321/year |
 | 2048-2052 | $282,019/year | $190,880 - $214,912/year |
 
-**Important**: Falcon and Becht contributions are not directly comparable because they cover different component lists (106 vs 41 items), use different inflation assumptions (0% vs 3%), and different life cycle estimates. See Appendix C for a detailed breakdown of these differences.
+**Why Falcon appears ~2x higher -- four compounding reasons:**
+
+1. **Different funding methods**: The Falcon column is "full funding" (component method) -- the most conservative approach, where each component is funded individually. The Becht column is "baseline" (0% threshold) -- the least conservative, where all funds are pooled and the balance is allowed to hit $0. Even within Falcon's own report, the threshold method was 30-40% cheaper than full funding. For example, Falcon's Condo IV threshold contributions were $209,125/year (5%) and $236,504/year (10%) vs $343,139/year (full funding).
+
+2. **Falcon covers more components**: Falcon includes 13 line items for Condo IV (entry stoops on a recurring 5-year cycle, retaining walls, privacy fence, driveway seal coat) that Becht omits entirely.
+
+3. **Different starting balances**: Falcon started Condo IV with $582,976 in reserves. The Becht allocation here uses $207,172 (proportional share of the community-wide $348,425).
+
+4. **Different cost and life cycle assumptions**: See Appendix C for the full breakdown (inflation 0% vs 3%, roof life 30y vs 25y, siding costs +71%, etc.).
 
 **Why Condo II and III pay more per unit**: These condos have fewer units (11 and 9 respectively) sharing the cost of wood siding replacement ($156K-$160K). Condo IV has a much larger total obligation but spreads it across 98 units.
 
