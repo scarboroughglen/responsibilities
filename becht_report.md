@@ -1393,7 +1393,7 @@ The Falcon report held contributions flat within multi-year blocks, then adjuste
 | 2043-2047 | $275,331/year | $164,655 - $185,321/year |
 | 2048-2052 | $282,019/year | $190,880 - $214,912/year |
 
-**Important**: Falcon and Becht contributions are not directly comparable because they cover different component lists, use different inflation assumptions (0% vs 3%), and different life cycle estimates. The Falcon contributions were also based on a "full funding" (component) method, while the Becht Baseline shown here is a threshold method. The Falcon full-funding contributions were significantly higher because they aimed to fully fund each component individually rather than pooling funds.
+**Important**: Falcon and Becht contributions are not directly comparable because they cover different component lists (106 vs 41 items), use different inflation assumptions (0% vs 3%), and different life cycle estimates. See Appendix C for a detailed breakdown of these differences.
 
 **Why Condo II and III pay more per unit**: These condos have fewer units (11 and 9 respectively) sharing the cost of wood siding replacement ($156K-$160K). Condo IV has a much larger total obligation but spreads it across 98 units.
 
