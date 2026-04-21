@@ -943,3 +943,179 @@ The grand totals are surprisingly close (-2.1%), but this masks substantial diff
 1. Use the allocation ratios in this document (Step 5) to determine its share of Becht's combined costs
 2. Separately budget for items Becht omits but Falcon included (especially entry stoops, playground, pool shell, fencing)
 3. Understand that Becht's contribution recommendations ($219K-$437K/year) represent a community-wide total that must be split among five entities, not a single contribution figure for any one entity
+
+---
+
+## Appendix D: Becht Reserve Disbursement Schedule -- Allocated by Entity
+
+### Source Data
+
+This appendix uses the **scarborough_glen_reserve_matrix_BECHT.xlsx** spreadsheet, which contains the Becht disbursement schedule projecting when each component will need replacement and the inflated cost at that future date (3% annual inflation applied). The spreadsheet covers 36 of the 41 Becht components over 25 years (2026-2050), with a total projected disbursement of **$6,558,814**.
+
+Like the Becht report itself, this spreadsheet treats Scarborough Glen as a **single entity** with no per-condo or HOA breakdown. The allocation below applies the Falcon-derived ratios from Step 5 of this document.
+
+---
+
+### D.1 Overall 25-Year Accountability
+
+| Entity | 25-Year Total | Share |
+|--------|--------------|-------|
+| **HOA** | **$1,508,935** | **23.01%** |
+| **Condo I** | **$456,067** | **6.95%** |
+| **Condo II** | **$331,927** | **5.06%** |
+| **Condo III** | **$309,203** | **4.71%** |
+| **Condo IV** | **$3,952,670** | **60.27%** |
+| **Grand Total** | **$6,558,801** | **100%** |
+
+---
+
+### D.2 Year-by-Year Disbursement Schedule by Entity
+
+All costs shown are inflated to the projected replacement year (Becht's 3% inflation assumption).
+
+| Year | HOA | Condo I | Condo II | Condo III | Condo IV | Total |
+|------|-----|---------|----------|-----------|----------|-------|
+| 2026 | $0 | $0 | $0 | $0 | $0 | $0 |
+| 2027 | $0 | $0 | $0 | $0 | $0 | $0 |
+| 2028 | $36,067 | $0 | $0 | $0 | $0 | $36,067 |
+| 2029 | $0 | $0 | $0 | $0 | $0 | $0 |
+| 2030 | $0 | $0 | $0 | $0 | $0 | $0 |
+| 2031 | $11,477 | $20,728 | $22,801 | $18,655 | $145,095 | $218,755 |
+| 2032 | $24,620 | $0 | $0 | $0 | $0 | $24,620 |
+| 2033 | $208,222 | $142,972 | $102,471 | $108,871 | $205,342 | $767,879 |
+| 2034 | $0 | $0 | $0 | $0 | $0 | $0 |
+| 2035 | $0 | $0 | $0 | $0 | $0 | $0 |
+| 2036 | $642,321 | $0 | $50,582 | $21,234 | $342,150 | $1,056,286 |
+| 2037 | $0 | $0 | $0 | $0 | $0 | $0 |
+| 2038 | $44,915 | $0 | $156,074 | $160,442 | $0 | $361,431 |
+| 2039 | $0 | $0 | $0 | $0 | $0 | $0 |
+| 2040 | $0 | $0 | $0 | $0 | $0 | $0 |
+| 2041 | $190,852 | $0 | $0 | $0 | $0 | $190,852 |
+| 2042 | $0 | $0 | $0 | $0 | $0 | $0 |
+| 2043 | $126,440 | $0 | $0 | $0 | $0 | $126,440 |
+| 2044 | $0 | $0 | $0 | $0 | $0 | $0 |
+| 2045 | $0 | $0 | $0 | $0 | $0 | $0 |
+| 2046 | $65,922 | $0 | $0 | $0 | $0 | $65,922 |
+| 2047 | $0 | $0 | $0 | $0 | $0 | $0 |
+| 2048 | $117,838 | $0 | $0 | $0 | $0 | $117,838 |
+| 2049 | $40,261 | $292,367 | $0 | $0 | $3,260,083 | $3,592,711 |
+| 2050 | $0 | $0 | $0 | $0 | $0 | $0 |
+| **Total** | **$1,508,935** | **$456,067** | **$331,927** | **$309,203** | **$3,952,670** | **$6,558,801** |
+
+---
+
+### D.3 Per-Entity Component Breakdown (Inflated Costs)
+
+#### HOA -- $1,508,935 (23.01%)
+
+| Component | Year(s) | Inflated Cost |
+|-----------|---------|--------------|
+| Asphalt Paving (Roads) | 2036 | $443,487 |
+| Fence, Wood Split Rail | 2041 | $190,852 |
+| Seal Coating | 2028, 2033, 2038, 2043, 2048 | $120,208 |
+| Asphalt Crack Filling | 2028, 2033, 2038, 2043, 2048 | $109,283 |
+| Concrete Pool Apron | 2036 | $105,162 |
+| Lights, Street | 2033 | $102,325 |
+| Fence, Vinyl Stockade | 2043 | $70,246 |
+| Siding, Vinyl - Clubhouse | 2048 | $57,482 |
+| Curbing, Concrete | 2036 | $47,037 |
+| Mailboxes | 2049 | $40,261 |
+| Entrance Sign - Large | 2046 | $36,122 |
+| Concrete Sidewalks (HOA share: 57.11%) | 2033 | $24,723 |
+| Entrance Sign - Small | 2046 | $21,673 |
+| Clubhouse Furniture | 2036 | $20,159 |
+| Roof, Shingles - Clubhouse | 2032 | $18,650 |
+| Pool Filter System | 2036 | $13,439 |
+| Bathroom Refurbishment | 2033 | $12,299 |
+| Concrete Pool Coping | 2031 | $11,477 |
+| Fire Alarm Control Panel | 2033 | $9,839 |
+| Aerator | 2036 | $7,392 |
+| Hot Water Heater | 2033, 2043 | $7,207 |
+| Lights, Recessed | 2033 | $6,764 |
+| Fitness Room Refurbishment | 2033 | $6,149 |
+| Skylights - Clubhouse | 2032 | $5,373 |
+| Stop Signs | 2046 | $4,515 |
+| Kitchen Refurbishment | 2033 | $4,305 |
+| Lights, Entry Clubhouse | 2036 | $3,629 |
+| Street Signs | 2046 | $3,612 |
+| Gutters - Clubhouse | 2028 | $2,652 |
+| Lights, Entrance Sign | 2036 | $2,016 |
+| Leaders - Clubhouse | 2032 | $597 |
+
+#### Condo I -- $456,067 (6.95%)
+
+| Component | Year(s) | Inflated Cost | Ratio Used |
+|-----------|---------|--------------|-----------|
+| Siding, Vinyl (C1 share) | 2049 | $292,367 | 8.23% of $3,552,450 |
+| Deck Replacement, Wood (C1 share) | 2033 | $135,123 | 24.97% of $541,143 |
+| Chimney Chase Covers (C1 share) | 2031 | $20,728 | 10.00% of $207,278 |
+| Concrete Sidewalks (C1 share) | 2033 | $7,849 | 18.13% of $43,291 |
+
+#### Condo II -- $331,927 (5.06%)
+
+| Component | Year(s) | Inflated Cost | Ratio Used |
+|-----------|---------|--------------|-----------|
+| Siding, Wood (C2 share) | 2038 | $156,074 | 49.31% of $316,516 |
+| Deck Replacement, Wood (C2 share) | 2033 | $100,003 | 18.48% of $541,143 |
+| Asphalt Driveways (C2 share) | 2036 | $50,582 | 12.22% of $413,924 |
+| Chimney Chase Covers (C2 share) | 2031 | $22,801 | 11.00% of $207,278 |
+| Concrete Sidewalks (C2 share) | 2033 | $2,468 | 5.70% of $43,291 |
+
+#### Condo III -- $309,203 (4.71%)
+
+| Component | Year(s) | Inflated Cost | Ratio Used |
+|-----------|---------|--------------|-----------|
+| Siding, Wood (C3 share) | 2038 | $160,442 | 50.69% of $316,516 |
+| Deck Replacement, Wood (C3 share) | 2033 | $106,876 | 19.75% of $541,143 |
+| Asphalt Driveways (C3 share) | 2036 | $21,234 | 5.13% of $413,924 |
+| Chimney Chase Covers (C3 share) | 2031 | $18,655 | 9.00% of $207,278 |
+| Concrete Sidewalks (C3 share) | 2033 | $1,996 | 4.61% of $43,291 |
+
+#### Condo IV -- $3,952,670 (60.27%)
+
+| Component | Year(s) | Inflated Cost | Ratio Used |
+|-----------|---------|--------------|-----------|
+| Siding, Vinyl (C4 share) | 2049 | $3,260,083 | 91.77% of $3,552,450 |
+| Asphalt Driveways (C4 share) | 2036 | $342,150 | 82.66% of $413,924 |
+| Deck Replacement, Wood (C4 share) | 2033 | $199,087 | 36.79% of $541,143 |
+| Chimney Chase Covers (C4 share) | 2031 | $145,095 | 70.00% of $207,278 |
+| Concrete Sidewalks (C4 share) | 2033 | $6,256 | 14.45% of $43,291 |
+
+---
+
+### D.4 Percentage Accountability by Year
+
+This table shows what percentage of each year's total disbursement each entity is responsible for. Useful for understanding who is driving costs in any given year.
+
+| Year | HOA | Condo I | Condo II | Condo III | Condo IV |
+|------|-----|---------|----------|-----------|----------|
+| 2028 | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| 2031 | 5.2% | 9.5% | 10.4% | 8.5% | 66.3% |
+| 2032 | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| 2033 | 27.1% | 18.6% | 13.3% | 14.2% | 26.7% |
+| 2036 | 60.8% | 0.0% | 4.8% | 2.0% | 32.4% |
+| 2038 | 12.4% | 0.0% | 43.2% | 44.4% | 0.0% |
+| 2041 | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| 2043 | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| 2046 | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| 2048 | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| 2049 | 1.1% | 8.1% | 0.0% | 0.0% | 90.7% |
+| **Overall** | **23.0%** | **7.0%** | **5.1%** | **4.7%** | **60.3%** |
+
+---
+
+### D.5 Key Observations
+
+1. **2049 is the dominant cost year** ($3.59M) driven almost entirely by vinyl siding replacement across Condo I and Condo IV. Condo IV alone accounts for $3.26M of this.
+
+2. **2036 is the second-largest year** ($1.06M) primarily from roadway repaving (HOA) and driveway reconstruction (Condos II-IV).
+
+3. **2033 is the most broadly shared year** -- all five entities have significant expenditures due to deck replacements (all condos), street lights (HOA), and sidewalks (mixed).
+
+4. **Condo IV's 60.3% share** is driven by two components: vinyl siding ($3.26M in 2049) and asphalt driveways ($342K in 2036). The siding alone represents 82.4% of Condo IV's total 25-year disbursement.
+
+5. **HOA years with 100% responsibility** (2028, 2032, 2041, 2043, 2046, 2048) are years where only common-area items are scheduled -- seal coating, crack filling, fencing, signage, and clubhouse components.
+
+6. **Condos II and III spike in 2038** when wood siding replacement is due. Since only these two condos have wood siding (per Falcon), they bear 100% of that $316,516 cost split roughly 49/51.
+
+7. **Items NOT in this schedule** that each entity should budget for separately (from Appendix C): entry stoops (all condos), playground equipment (HOA), pool shell resurfacing (HOA), board-on-board fencing (HOA), recurring wood trim maintenance (Condos I and III), and the composite deck second-cycle replacement ($360,000 around year 2053+).
