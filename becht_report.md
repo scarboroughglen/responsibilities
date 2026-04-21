@@ -707,3 +707,235 @@ Becht recommends annual contributions between $219,984 (5% threshold) and $437,4
 6. **Deck Replacement**: Becht creates two line items -- wood (current, 7y remaining) and composite (replacement material, 27y remaining). This represents the same physical decks: replace the current wood decks now, then the composite replacements won't need work for 50 years. For budget purposes, the near-term $440,000 wood deck replacement is the priority.
 
 7. **Mailboxes**: Per items_in_disagreement.md, mailbox responsibility is disputed. Becht counts 136 EA (all units) at $150 each = $20,400. Becht notes they were "recently replaced all throughout the community." This analysis assigns them to HOA pending resolution, consistent with the community-wide replacement pattern.
+
+---
+
+## Appendix C: Detailed Discrepancies Between Falcon and Becht Reports
+
+### Important Context
+
+Both the Falcon Group (2022) and Becht Engineering (2026) reports are **engineering assessments**, not contracts. Neither report creates binding financial obligations on its own. They are professional opinions on the condition, remaining life, and estimated replacement cost of common elements based on visual inspection, industry data, and field measurement.
+
+However, these assessments are not purely academic -- they **directly inform the reserve funding schedules** that each entity (HOA, Condo I-IV) uses to set annual contributions and plan capital expenditures. Discrepancies between assessments affect how much each entity budgets, when projects are planned, and whether reserve funds will be adequate when replacement is needed. Understanding where and why the two reports differ is essential for making informed funding decisions.
+
+The discrepancies documented below are presented factually. Reasonable engineers can reach different conclusions based on their methodology, pricing sources, and professional judgment. The goal is transparency, not criticism.
+
+---
+
+### C.1 Scope and Entity Structure
+
+| Aspect | Falcon (2022) | Becht (2026) | Impact |
+|--------|--------------|-------------|--------|
+| **Number of schedules** | 5 separate (HOA, C1, C2, C3, C4) | 1 combined | Becht provides no per-entity allocation; costs cannot be assigned without external ratios |
+| **Total line items** | 106 across all entities | 41 | Becht consolidates many items and omits others entirely |
+| **Entity identification** | Each component assigned to a specific entity | All components listed under "Scarborough Glen" | Becht's single-entity approach does not reflect the legal structure of the community |
+
+**Why this matters for reserve funding**: Each of the five entities maintains its own reserve fund and sets its own contribution rate. A single combined schedule cannot be directly used for any individual entity's budget without the allocation work performed in this document.
+
+---
+
+### C.2 Financial Assumptions
+
+| Assumption | Falcon (2022) | Becht (2026) | Impact on Projections |
+|-----------|--------------|-------------|----------------------|
+| **Inflation rate** | 0% | 3% | Becht's 30-year projections will show significantly higher future costs. A $100,000 item at 3% inflation becomes $242,726 in 30 years; at 0% it stays $100,000 |
+| **Interest rate** | 0% | 1% | Becht assumes reserve funds earn 1% annually, partially offsetting contributions needed |
+| **Net effect** | Conservative (no growth assumptions) | Moderate (costs rise, but funds earn interest) | Becht's recommended contributions are shaped by these assumptions; if actual inflation exceeds 3% or interest earned is below 1%, the fund will be underfunded |
+
+**Why this matters for reserve funding**: The inflation assumption is the single largest driver of long-term funding recommendations. Falcon's 0% approach shows today's dollars only, requiring the board to manually account for inflation in future budgets. Becht's 3% approach bakes inflation into the projection, producing higher recommended contributions but a more forward-looking forecast.
+
+---
+
+### C.3 Life Cycle Estimates
+
+Components where Falcon and Becht assign different expected useful lives:
+
+| Component | Falcon Life | Becht Life | Difference | Effect on Funding |
+|-----------|-----------|-----------|-----------|------------------|
+| Roof shingles (townhouses) | 30 years | 25 years | -5 years | Becht assumes replacement 5 years sooner; higher annual contribution needed |
+| Roof shingles (clubhouse) | 30 years | 25 years | -5 years | Same as above |
+| Chimney chase covers | 50 years | 25 years | -25 years | Becht plans for replacement in half the time; significantly increases contribution |
+| Vinyl siding (townhouses) | 50 years | 45 years | -5 years | Modest increase in annual contribution |
+| Wood siding | 40 years | 40 years | 0 | Agrees |
+| Decks, wood | 25 years | 30 years | +5 years | Becht allows more time; slightly lower annual contribution |
+| Decks, composite | N/A | 50 years | N/A | Falcon did not include composite as a separate future-replacement line |
+| Asphalt paving (roads) | 15 years | 20 years | +5 years | Becht allows more time between repaving cycles |
+| Asphalt driveways | 15 years | 20 years | +5 years | Same as above |
+| Split rail fence | 3 years (replacement fund) | 25 years | +22 years | Different approach: Falcon uses a recurring repair fund; Becht prices full replacement |
+| Vinyl stockade fence | N/A (not in Falcon) | 40 years | N/A | New item in Becht |
+| Entry stoops | 30 years | N/A (omitted) | N/A | Becht omits entry stoops entirely |
+| Pool apron | 30 years | 30 years | 0 | Agrees |
+| Pool coping | 20 years | 25 years | +5 years | Minor impact |
+| Street lights | 30 years | 30 years | 0 | Agrees |
+| Mailboxes | 20 years (pedestal+box) | 25 years | +5 years | Becht allows longer life |
+
+**Why this matters for reserve funding**: Shorter life cycle estimates produce higher annual contributions (you're saving for a replacement that comes sooner). The chimney chase cover difference is the most significant -- Falcon's 50-year estimate means minimal annual funding, while Becht's 25-year estimate doubles the annualized cost for that component.
+
+---
+
+### C.4 Quantity Discrepancies
+
+Components where the measured quantities differ between reports:
+
+| Component | Falcon Qty | Falcon Unit | Becht Qty | Becht Unit | Variance | Possible Explanation |
+|-----------|-----------|-------------|----------|-----------|----------|---------------------|
+| Roof, townhouses | 2,349 SQ | (234,900 SF) | 196,750 SF | (1,968 SQ) | -16.2% | Different measurement methodology; Falcon may include overhang/waste factor |
+| Chimney chase covers | 100 EA | | 149 EA | | +49.0% | Becht may count individual panels vs Falcon counting per chimney assembly |
+| Asphalt driveways | 4,584 SY | | 5,600 SY | | +22.2% | Becht may include aprons or turnaround areas Falcon excluded |
+| Concrete sidewalks | 1,280 SF | (across all entities) | 1,600 SF | | +25.0% | Becht may include walks Falcon assigned differently |
+| Vinyl siding | 2,308 SQ | (230,800 SF) | 150,000 SF | (1,500 SQ) | -35.0% | Significant gap; Falcon includes all vinyl-sided buildings (C1+C4), Becht may exclude some surfaces |
+| Street lights | 24 EA (+ 6 bollards) | | 26 EA | | Comparable | Becht may count bollards as street lights |
+| Mailboxes | 65 EA (53 double + 12 single) | | 136 EA | | +109.2% | Becht counts per-unit; Falcon counts pedestal assemblies (each double serves 2 units) |
+| Pool apron | 2,527 SF | | 3,130 SF | | +23.8% | Becht may include adjacent walkways in pool apron measurement |
+| Pool coping | 140 LF | | 220 LF | | +57.1% | Possible remeasurement or inclusion of baby pool/wading area |
+| Vinyl stockade fence | N/A | | 500 LF | | N/A | New item -- Falcon did not include this fence type |
+| Split rail fence | 150 LF (repair fund) | | 3,500 LF (full) | | N/A | Different scope: Falcon budgets partial repair; Becht prices complete replacement |
+| Entry signs, large | 1 EA @ $7,500 | | 2 EA @ $10,000 | | +166.7% | Becht counts 2 signs and higher unit cost |
+| Entry signs, small | 2 EA @ $2,000 | | 2 EA @ $6,000 | | +200% (cost) | Same count, tripled unit cost |
+
+**Why this matters for reserve funding**: Quantity differences directly multiply into cost differences. The 49% increase in chimney chase covers, for example, increases the reserve requirement for that line item by nearly half. When combined with Becht's shorter life cycle (25 vs 50 years), the annualized contribution for chimney caps is approximately 3x what Falcon projected.
+
+---
+
+### C.5 Unit Cost Differences
+
+| Component | Falcon Unit Cost | Becht Unit Cost | Change | % Change |
+|-----------|-----------------|----------------|--------|----------|
+| Roof shingles | $550-$700/SQ | $585/SQ ($5.85/SF) | -$0 to +$35/SQ | -5% to +6% |
+| Chimney chase covers | $650-$800/EA | $1,200/EA | +$400-$550/EA | +50% to +85% |
+| Vinyl siding | $700/SQ | $1,200/SQ ($12/SF) | +$500/SQ | +71% |
+| Wood siding | $850/SQ | $1,200/SQ ($12/SF) | +$350/SQ | +41% |
+| Decks, wood | $70/SF | $100/SF | +$30/SF | +43% |
+| Asphalt paving, roads | $32/SY | $30/SY | -$2/SY | -6% |
+| Asphalt paving, driveways | $45/SY | $55/SY | +$10/SY | +22% |
+| Seal coating | $2.50/SY | $1.50/SY | -$1.00/SY | -40% |
+| Concrete sidewalks | $14/SF | $22/SF | +$8/SF | +57% |
+| Pool apron | $16/SF | $25/SF | +$9/SF | +56% |
+| Pool coping | $80/LF | $45/LF | -$35/LF | -44% |
+| Mailboxes | $200-$300/EA | $150/EA | -$50 to -$150/EA | -25% to -50% |
+| Street lights | $3,800/EA | $3,200/EA | -$600/EA | -16% |
+| Entry signs, large | $7,500/EA | $10,000/EA | +$2,500/EA | +33% |
+| Entry signs, small | $2,000/EA | $6,000/EA | +$4,000/EA | +200% |
+| Clubhouse furniture | $7,500/LS | $15,000/LS | +$7,500/LS | +100% |
+| Skylights, clubhouse | $700/EA | $750/EA | +$50/EA | +7% |
+| Stop signs | $800/EA | $500/EA | -$300/EA | -38% |
+
+**Why this matters for reserve funding**: Unit costs reflect 2022 vs 2026 pricing, different vendors/markets, and potentially different scopes of work per item. The 71% increase in vinyl siding cost per square ($700 to $1,200/SQ) has the largest absolute impact given the enormous quantity involved (150,000 SF in Becht). Combined with the quantity and life-cycle differences, the total funding picture can shift dramatically.
+
+---
+
+### C.6 Items in Falcon but Omitted from Becht
+
+The following items appear in the Falcon reserve schedule but have no corresponding entry in the Becht report. Their omission means no reserve funds are being planned for these components under the Becht framework.
+
+#### HOA Items Omitted
+
+| Falcon Item | Falcon Cost | Category | Potential Funding Gap |
+|------------|-------------|---------|----------------------|
+| Clubhouse-door, main entry | $3,500 | Architectural | Low |
+| Clubhouse-fire suppression system | $7,500 | Mechanical | Moderate -- safety/code item |
+| Clubhouse-flooring, carpet | $5,220 | Architectural | Low |
+| Clubhouse-flooring, ceramic tile | $3,060 | Architectural | Low |
+| Clubhouse-HVAC, humidifier | $2,500 | Mechanical | Low |
+| Clubhouse-HVAC, split system AC | $9,000 | Mechanical | Moderate -- critical building system |
+| Clubhouse-kitchen appliances | $2,000 | Miscellaneous | Low |
+| Clubhouse-mirrored panels, fitness | $2,100 | Architectural | Low |
+| Clubhouse-restroom/lockers | $30,000 | Architectural | Moderate -- large item |
+| Clubhouse-wallpaper | $3,648 | Architectural | Low |
+| Clubhouse-window treatments | $2,000 | Architectural | Low |
+| Clubhouse-windows (full set) | $7,500 | Architectural | Low (Becht has individual windows instead) |
+| Clubhouse-security, CCTV | $2,000 | Electrical | Low |
+| Clubhouse-security, key fob entry | $1,500 | Electrical | Low |
+| Playground-equipment | $27,000 | Miscellaneous | Moderate -- will need replacement |
+| Playground-picnic table | $1,300 | Miscellaneous | Low |
+| Playground-trash receptacle | $800 | Miscellaneous | Low |
+| Pool-chlorination equipment | $1,500 | Mechanical | Low |
+| Pool-cover | $4,000 | Miscellaneous | Low |
+| Pool-pump | $2,500 | Mechanical | Low |
+| Pool-fence, aluminum | $18,425 | Site | Moderate |
+| Pool-furniture fund | $12,000 | Miscellaneous | Low |
+| Pool-shell resurface incl tile | $22,620 | Architectural | Moderate -- recurring expense |
+| Driveway-emergency access (reconstruct) | $7,200 | Site | Low |
+| Driveway-emergency access (seal coat) | $400 | Site | Low |
+| Electrical-bollard lights, clubhouse | $4,800 | Electrical | Low |
+| Fence-board on board, wood | $37,350 | Site | Moderate -- large fence run |
+| Fence-guard rail | $10,880 | Site | Low |
+| Fence-vinyl on masonry wall | $13,950 | Site | Low |
+| Irrigation-repair fund | $5,000 | Site | Low |
+| Refuse-concrete slab | $2,304 | Site | Low |
+| Refuse-dumpsters | $2,400 | Miscellaneous | Low |
+| Refuse-enclosure, wood gate/fence | $1,800 | Site | Low |
+| Retaining wall-masonry, along entry | $5,000 | Site | Low |
+| Roadway-granite block entry | $37,875 | Site | Moderate -- decorative entry feature |
+| Signage-flagpole | $3,000 | Miscellaneous | Low |
+
+**Total Falcon HOA items omitted from Becht: ~$304,833**
+
+#### Condo Items Omitted
+
+| Falcon Item | Entity | Falcon Cost | Category | Potential Funding Gap |
+|------------|--------|-------------|---------|----------------------|
+| Siding-wood trim replacement (recurring 3y cycle) | C1 | $5,000/cycle | Architectural | Moderate -- recurring maintenance |
+| Siding-wood trim (recurring 5y cycle) | C3 | $7,500/cycle | Architectural | Moderate -- recurring maintenance |
+| Fence-privacy, vinyl | C4 | $7,735 | Site | Low |
+| Retaining wall-wood tie wells | C4 | $15,000 | Site | Moderate -- structural/safety |
+| Entry stoops (all condos) | C1-C4 | $12K-$44K each | Site | **High -- significant per-condo cost** |
+| Mailbox-boxes | C1 | $1,350 | Miscellaneous | Low |
+| Mailbox-hut restoration | C1 | $1,500 | Miscellaneous | Low |
+| Walkway-pavers at mailbox | C1 | $2,200 | Site | Low |
+| Driveway-asphalt seal coat (per-condo) | C2-C4 | $588-$9,473 | Site | Low-Moderate (Becht has community-wide seal coat only) |
+
+**Entry stoops are the most significant omission.** Falcon budgets $12,000 (C1), $44,000 (C2), $31,500 (C3), and $10,000-$220,000 (C4, with recurring 5-year cycle for end unit porches). These are concrete structures that deteriorate and require periodic replacement. Their omission from Becht means no reserve funding is being planned for stoop replacement.
+
+---
+
+### C.7 Items in Becht but Not in Falcon
+
+| Becht Item | Becht Cost | Category | Notes |
+|-----------|-----------|---------|-------|
+| Aerator | $5,500 | Mechanical | Pool-related; Falcon may have considered this operational maintenance |
+| Asphalt Crack Filling (separate line) | $15,000 | Miscellaneous | Falcon included this under general roadway maintenance, not as a reserve item |
+| Curbing, Concrete - 10% | $35,000 | Site | Falcon excluded curbing (likely considered part of repaving scope) |
+| Fire Alarm Control Panel | $8,000 | Electrical | Clubhouse fire panel; Falcon had fire suppression system but not the control panel separately |
+| Fitness Room Refurbishment | $5,000 | Miscellaneous | Falcon had fitness equipment ($5,000) but not room refurbishment |
+| Bathroom Refurbishment | $10,000 | Architectural | Falcon had restroom/lockers at $30,000 -- different scope/pricing |
+| Kitchen Refurbishment | $3,500 | Miscellaneous | Falcon had kitchenette refurbish at $6,000 -- similar item, different cost |
+| Deck Replacement, Composite | $360,000 | Architectural | Future replacement cycle for decks after wood-to-composite conversion; Falcon did not model this second cycle |
+
+---
+
+### C.8 Combined Impact on Total Replacement Costs
+
+| | Falcon (2022) | Becht (2026) | Difference |
+|---|-------------|-------------|-----------|
+| **HOA replacement cost** | $1,051,117 | $925,570* | -$125,547 (-12%) |
+| **Total building components (all condos)** | $4,484,722 | $4,494,988* | +$10,266 (+0.2%) |
+| **Grand total** | $5,535,839 | $5,420,558 | -$115,281 (-2.1%) |
+
+*Using allocations derived in this document.
+
+The grand totals are surprisingly close (-2.1%), but this masks substantial differences in individual line items that shift costs between entities and across time horizons. The similar totals are partly coincidental -- higher unit costs in Becht offset Falcon items that Becht omits.
+
+---
+
+### C.9 Summary of Key Discrepancy Impacts on Reserve Funding
+
+| Discrepancy | Direction | Funding Impact |
+|-------------|-----------|---------------|
+| Becht uses 3% inflation vs Falcon's 0% | Increases projected costs | Higher recommended annual contributions across all entities |
+| Becht assigns 25y roof life vs Falcon's 30y | Earlier replacement | Increases annual roof reserve contribution by ~20% |
+| Becht assigns 25y chimney cap life vs Falcon's 50y | Much earlier replacement | Approximately doubles the annualized chimney cap contribution |
+| Becht siding costs 41-71% higher per SQ | Higher replacement cost | Significant increase in siding reserve for all condos |
+| Becht omits entry stoops | No reserve planned | Each condo should independently budget for stoops ($12K-$220K+ over 30 years) |
+| Becht omits playground equipment | No reserve planned | HOA should independently budget ~$27K+ for playground replacement |
+| Becht omits pool shell resurfacing | No reserve planned | HOA should independently budget ~$22K+ per cycle (10-year) |
+| Becht omits board-on-board fence | No reserve planned | HOA should independently budget ~$37K+ for property-line fencing |
+| Becht omits roadway granite block entry | No reserve planned | HOA should independently budget ~$38K+ for entry feature |
+| Becht omits recurring wood trim maintenance | No reserve planned | Condos I and III should independently budget $5K-$7.5K per cycle |
+| Becht single-entity format | No per-entity allocation | Reserve funding schedules cannot be built per entity without external analysis (this document) |
+
+**Bottom line for reserve funding**: The Becht report provides a useful updated assessment of component conditions and costs as of 2026, but it cannot be used as-is for any individual entity's reserve funding schedule. The single-entity format, omitted components, and different assumptions mean that each entity (HOA, Condo I-IV) must:
+
+1. Use the allocation ratios in this document (Step 5) to determine its share of Becht's combined costs
+2. Separately budget for items Becht omits but Falcon included (especially entry stoops, playground, pool shell, fencing)
+3. Understand that Becht's contribution recommendations ($219K-$437K/year) represent a community-wide total that must be split among five entities, not a single contribution figure for any one entity
