@@ -1367,6 +1367,24 @@ For reference, the Falcon report (2022) used a **step-up approach** rather than 
 
 Each cell = (HOA contribution / 136 units / 12 months) + (Condo contribution / Condo units / 12 months) at 3% annual growth.
 
+#### Combined Monthly Cost Per Unit Over Time -- 5% Threshold
+
+| Entity | Units | 2026 | 2031 | 2036 | 2041 | 2046 | 2050 |
+|--------|-------|------|------|------|------|------|------|
+| Condo I | 18 | $120 | $139 | $161 | $187 | $216 | $243 |
+| Condo II | 11 | $193 | $224 | $259 | $301 | $348 | $392 |
+| Condo III | 9 | $214 | $248 | $288 | $333 | $387 | $435 |
+| Condo IV | 98 | $130 | $151 | $175 | $202 | $235 | $264 |
+
+#### Combined Monthly Cost Per Unit Over Time -- 10% Threshold
+
+| Entity | Units | 2026 | 2031 | 2036 | 2041 | 2046 | 2050 |
+|--------|-------|------|------|------|------|------|------|
+| Condo I | 18 | $133 | $155 | $179 | $208 | $241 | $271 |
+| Condo II | 11 | $205 | $237 | $275 | $319 | $370 | $416 |
+| Condo III | 9 | $227 | $263 | $305 | $353 | $410 | $461 |
+| Condo IV | 98 | $139 | $161 | $187 | $216 | $251 | $282 |
+
 #### Year-by-Year Annual Contribution Per Entity -- Baseline (0%)
 
 For boards setting budgets, here are the entity-level annual contributions at 5-year intervals:
