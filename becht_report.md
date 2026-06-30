@@ -1438,3 +1438,129 @@ The Falcon report held contributions flat within multi-year blocks, then adjuste
 5. **Baseline (0%) is the minimum**: The fund hits $0 at least once for every entity. This means any unexpected expense or cost overrun requires a special assessment. The 5% or 10% threshold provides a buffer.
 
 6. **Condo IV's 2049 siding event**: At $3.26M, this is by far the largest single expenditure. If actual siding costs exceed the estimate, or if replacement is needed earlier than 2049, Condo IV will face a significant shortfall. This single item drives most of Condo IV's contribution requirement.
+
+---
+
+## Appendix F: Recommended Component Unbundling (Industry Best Practices)
+
+### Assessment
+
+Per Community Associations Institute (CAI) best practices, a reserve schedule should track components separately if they:
+
+1. Are the association's responsibility
+2. Have a predictable useful life
+3. Have a predictable remaining useful life
+4. Have a replacement cost above a minimum threshold
+
+When items with vastly different lifespans are lumped together -- like a structural deck frame (30–50 years) and a wooden safety railing (10–15 years) -- the schedule obscures near-term cash flow needs and safety requirements. The 2022 Falcon report adhered closer to this standard with 106 distinct line items. The 2026 Becht report over-consolidated into just 41 items.
+
+The following items should be broken into smaller, more actionable sub-components with independent maintenance cycles.
+
+---
+
+### F.1 Decks and Balconies
+
+**Current Becht treatment**: Entire deck replacements as single line items (Wood Deck Replacement at $440,000; Composite Deck Replacement at $360,000).
+
+**Problem**: Railings weather faster than decking and are critical life-safety features. Structural framing often survives two or three cycles of decking replacement. Lumping them together delays railing maintenance until a full deck replacement event.
+
+**Recommended breakdown**:
+
+| Sub-Component | Useful Life | Maintenance Type | Responsible Entity |
+|--------------|-------------|-----------------|-------------------|
+| Deck Railings & Balusters | 10–15 years | Replace/repair for safety compliance | Condo |
+| Deck Decking (surface boards) | 15–20 years | Replace worn/rotted boards | Condo |
+| Structural Framing & Footings | 30–50 years | Inspect; replace only if compromised | Condo |
+
+**Safety note**: Deck railings should be on a **regular inspection cycle** (annually or biannually) independent of full replacement. Building code requires railings to resist 200 lbs of lateral force; rotted or loose railings present an immediate fall hazard and liability.
+
+---
+
+### F.2 Entry Stoops and Stairs
+
+**Current Becht treatment**: Completely omitted from the 2026 reserve schedule.
+
+**Problem**: Concrete settling, spalling, and cracking on stairs present immediate trip hazards and liability for the Condo associations. These are Limited Common Elements requiring ongoing maintenance. Falcon correctly identified them with per-entity budgets ($12K–$44K per condo).
+
+**Recommended breakdown**:
+
+| Sub-Component | Useful Life | Maintenance Type | Responsible Entity |
+|--------------|-------------|-----------------|-------------------|
+| Concrete stoop/landing replacement | 25–30 years | Full replacement when structurally failed | Condo |
+| Stoop repair/leveling (mudjacking, patching) | 5–10 years | Recurring repair cycle | Condo |
+| Stair nosing/tread repair | 5–10 years | Safety-critical recurring maintenance | Condo |
+
+**Action required**: Each Condo entity should add entry stoops back into their reserve schedule on a staggered 5- to 10-year repair/replacement cycle.
+
+---
+
+### F.3 Wood Siding vs. Wood Trim
+
+**Current Becht treatment**: Wood siding as a single 40-year life cycle item ($222,000 total for Condos II and III).
+
+**Problem**: Premature siding failure is directly tied to poor maintenance of trim and paint. Falcon's field notes called out wood rot on window trim. Separating trim maintenance from full siding replacement allows the shorter-cycle work to protect the longer-lived siding.
+
+**Recommended breakdown**:
+
+| Sub-Component | Useful Life | Maintenance Type | Responsible Entity |
+|--------------|-------------|-----------------|-------------------|
+| Full siding replacement | 30–40 years | Capital replacement | Condo II, III |
+| Wood trim replacement/repair | 3–5 years | Recurring maintenance (rot-prone areas) | Condo I, III |
+| Exterior paint/stain/caulking | 5–8 years | Recurring maintenance | Condo II, III |
+
+**Cost impact**: A recurring 3- to 5-year trim and caulking cycle ($5,000–$7,500 per cycle per Falcon) will significantly extend the life of the full siding, potentially deferring the $222,000 replacement event by 5–10 years.
+
+---
+
+### F.4 Swimming Pool Infrastructure
+
+**Current Becht treatment**: Only budgets for pool filter system ($10,000), concrete apron ($78,250), and coping ($9,900).
+
+**Problem**: Pool shell plaster/marcite degrades due to chemical exposure and freeze/thaw cycles. Ignoring the shell until major failure results in leaks and significantly higher capital costs. Falcon budgeted $22,620 for pool shell resurfacing on a 10-year cycle.
+
+**Recommended breakdown**:
+
+| Sub-Component | Useful Life | Maintenance Type | Responsible Entity |
+|--------------|-------------|-----------------|-------------------|
+| Pool shell resurfacing (plaster/marcite) | 10 years | Recurring capital | HOA |
+| Pool coping | 25 years | Capital replacement | HOA |
+| Pool concrete apron/deck | 30 years | Capital replacement | HOA |
+| Pool filter system | 20 years | Capital replacement | HOA |
+| Pool mechanical (pump, chlorinator, heater) | 7–10 years | Recurring capital | HOA |
+| Pool cover | 8–10 years | Recurring replacement | HOA |
+| Pool furniture | 10 years | Recurring replacement | HOA |
+| Pool fence/safety barriers | 25–30 years | Capital replacement; annual inspection | HOA |
+
+---
+
+### F.5 Fencing
+
+**Current Becht treatment**: Total replacement of split rail fencing at year 25 ($122,500 for 3,500 LF).
+
+**Problem**: Wood fencing rots unevenly. Replacing sections as they lean or fail is more realistic than waiting 25 years to replace 3,500 linear feet all at once. Falcon used a 3-year recurring repair fund approach ($3,750/cycle for 150 LF).
+
+**Recommended breakdown**:
+
+| Sub-Component | Useful Life | Maintenance Type | Responsible Entity |
+|--------------|-------------|-----------------|-------------------|
+| Split rail fence -- recurring repair/partial replacement | 3–5 years | Recurring maintenance fund | HOA |
+| Split rail fence -- full replacement | 25 years | Capital replacement (deferred by repairs) | HOA |
+| Vinyl stockade fence -- full replacement | 40 years | Capital replacement | HOA |
+| Board-on-board fence (property line) | 25 years | Capital replacement | HOA |
+
+**Cost impact**: A $3,750–$5,000 annual repair fund can extend the full replacement event by 5–10 years, deferring the $122,500 capital outlay.
+
+---
+
+### F.6 Summary of Unbundling Impact on Reserve Schedule
+
+| Category | Becht Line Items | Recommended Line Items | Key Addition |
+|----------|-----------------|----------------------|-------------|
+| Decks | 2 | 6 (2 per sub-component × condo) | Railing safety cycle (10–15 yr) |
+| Entry Stoops | 0 | 4 (one per condo) | Repair/leveling cycle (5–10 yr) |
+| Wood Siding/Trim | 1 | 3 | Trim/caulk cycle (3–5 yr) |
+| Pool | 3 | 8 | Shell resurfacing (10 yr) |
+| Fencing | 2 | 4 | Recurring repair fund (3–5 yr) |
+| **Total additions** | **8 items** | **25 items** | **+17 recurring/safety items** |
+
+**Bottom line**: The Becht report's 41-item schedule should be expanded to approximately 58 items to properly capture the recurring maintenance and safety-inspection cycles that protect the community's larger capital assets. The recurring items (railings, trim, stoops, fence repairs, pool shell) are relatively low cost individually ($3,000–$25,000 per cycle) but their omission creates a false sense of adequacy in the reserve fund while deferred maintenance accelerates deterioration of the larger capital components they protect.
