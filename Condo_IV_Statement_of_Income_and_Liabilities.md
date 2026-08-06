@@ -1,6 +1,6 @@
 # Scarborough Glen Condominium IV, Inc.
 ## Unaudited Statement of Income and Liabilities
-*Prepared by Erik Anderson / Board Treasurer]*
+*Prepared by Erik Anderson / Board Treasurer*
 *In Reference to the Becht Engineering Capital Reserve Study (2026) and the Falcon Engineering Report (2022)*
 
 ---
