@@ -1,13 +1,13 @@
 # Scarborough Glen Condominium IV, Inc.
 ## Unaudited Statement of Income and Liabilities
-*Prepared by [Preparer / Board Treasurer]*
+*Prepared by Erik Anderson / Board Treasurer]*
 *In Reference to the Becht Engineering Capital Reserve Study (2026) and the Falcon Engineering Report (2022)*
 
 ---
 
 ## Background
 
-At the request of Scarborough Glen Condominium IV, Inc. (the "Association"), the following **unaudited Statement of Income and Liabilities** has been prepared. This schedule incorporates the Association's general-ledger activity for the period **January 1, 2026 through August 3, 2026**, together with projected future repair and replacement obligations identified in the **Becht Engineering Capital Reserve Study (2026)** and the **Falcon Engineering Report (2022)**.
+At the request of Scarborough Glen Condominium IV owners, the following **unaudited Statement of Income and Liabilities** has been prepared. This schedule incorporates the Association's general-ledger activity for the period **January 1, 2026 through August 3, 2026**, together with projected future repair and replacement obligations identified in the **Becht Engineering Capital Reserve Study (2026)** and the **Falcon Engineering Report (2022)**.
 
 The Becht study evaluates the common property of Scarborough Glen as a whole; the Falcon report separates obligations by entity. The figures below reflect the portion allocated to Condominium IV (98 units) using the per-entity quantity ratios derived from the Falcon report.
 
