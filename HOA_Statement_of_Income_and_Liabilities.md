@@ -11,7 +11,7 @@ At the request of Scarborough Glen owners, the following **unaudited Statement o
 
 Unlike the four condominium associations, the HOA owns **no residential buildings**. It maintains the common property serving all **136 units** — grounds and landscaping, roadways and site paving, the clubhouse and pool complex, fencing, site lighting, signage, and shared utilities — and it collects the HOA dues from the condominium associations that fund those services. There is therefore **no master-association pass-through** on the HOA's books; the dues it receives are core operating income.
 
-This presentation is intended to assist management, the Board, and members in understanding the Association's financial position in relation to its long-term obligations. It is **unaudited** and should not be relied upon as a substitute for audited financial statements.
+This presentation is intended to help Association members understand the HOA's financial position, current reserve funding, and long-term repair and replacement obligations, and to support the Board and management in reserve planning. It has been prepared by management and is **unaudited**; it is not intended to represent audited financial statements in accordance with U.S. GAAP, and no assurance is expressed on the projections.
 
 ---
 
