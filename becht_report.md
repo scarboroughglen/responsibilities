@@ -1474,6 +1474,8 @@ The following items should be broken into smaller, more actionable sub-component
 
 **Safety note**: Deck railings should be on a **regular inspection cycle** (annually or biannually) independent of full replacement. Building code requires railings to resist 200 lbs of lateral force; rotted or loose railings present an immediate fall hazard and liability.
 
+**Implemented in the 2026 funding plan**: the condo reserve workbooks now fund decks as three separate cycles rather than one lumped replacement — **Railings & Balusters** (~12 yr, and immediately where past service life), **Deck Boards / surface** (~18 yr), and **Framing & Footings** (~30–50 yr, survives 2–3 board cycles). For Condo IV, railings are scheduled for an ASAP (2027) safety replacement, again with the 2033 deck rebuild, then every ~12 years; framing (40%) and boards (35%) are itemized within the 2033 rebuild.
+
 ---
 
 ### F.2 Entry Stoops and Stairs
@@ -1509,6 +1511,13 @@ The following items should be broken into smaller, more actionable sub-component
 | Exterior paint/stain/caulking | 5–8 years | Recurring maintenance | Condo II, III |
 
 **Cost impact**: A recurring 3- to 5-year trim and caulking cycle ($5,000–$7,500 per cycle per Falcon) will significantly extend the life of the full siding, potentially deferring the $222,000 replacement event by 5–10 years.
+
+**Vinyl-sided buildings (Condos I and IV) — caulk/sealant is still required.** Vinyl siding is not painted, so Falcon and Becht assigned it no maintenance cycle. A vinyl-sided wall, however, still depends on **exterior caulk/sealant at windows, doors, corners, and penetrations** and on maintenance of any **wood trim** (fascia, soffits, window/door surrounds). Failed **window-seal caulking** is a common path for water to get *behind* the vinyl and rot the sheathing and framing — shortening the life of the wall assembly even while the vinyl itself looks intact. These condos should fund a recurring **caulk/sealant and trim maintenance cycle (≈5–7 years)**. This protects the wall assembly and structure, not the vinyl's own service life. The Condo IV plan now includes this at **$15,000 per cycle**.
+
+| Sub-Component | Useful Life | Maintenance Type | Responsible Entity |
+|--------------|-------------|-----------------|-------------------|
+| Exterior caulk/sealant — windows, doors, corners, penetrations | 5–7 years | Recurring maintenance (water intrusion prevention) | Condo I, IV (vinyl) |
+| Wood trim — fascia, soffits, window/door surrounds | 5–8 years | Recurring maintenance | Condo I, IV (vinyl) |
 
 ---
 
