@@ -11,7 +11,7 @@ At the request of Scarborough Glen Condominium IV owners, the following **unaudi
 
 The Becht study evaluates the common property of Scarborough Glen as a whole; the Falcon report separates obligations by entity. The figures below reflect the portion allocated to Condominium IV (98 units) using the per-entity quantity ratios derived from the Falcon report.
 
-This presentation is intended to assist management, the Board, and members in understanding the Association's financial position in relation to its long-term obligations. It is **unaudited** and should not be relied upon as a substitute for audited financial statements.
+This document is intended to help owners understand this Condominium's financial position, current reserve funding, and long-term repair and replacement obligations, and to support the Board and management in reserve planning. It has been prepared by the Condominium's Treasurer and is unaudited; it is not intended to represent audited financial statements in accordance with U.S. GAAP, and no assurance is expressed on the projections.
 
 ---
 
