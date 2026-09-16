@@ -7,7 +7,7 @@
 
 ## Background
 
-At the request of Scarborough Glen Condominium IV owners, the following **unaudited Statement of Income and Liabilities** has been prepared. This schedule incorporates the Association's general-ledger activity for the period **January 1, 2026 through August 3, 2026**, together with projected future repair and replacement obligations identified in the **Becht Engineering Capital Reserve Study (2026)** and the **Falcon Engineering Report (2022)**.
+At the request of Scarborough Glen Condominium IV owners, the following **unaudited Statement of Income and Liabilities** has been prepared. This schedule incorporates the Condominium's general-ledger activity for the period **January 1, 2026 through June 30, 2026**, together with projected future repair and replacement obligations identified in the **Becht Engineering Capital Reserve Study (2026)** and the **Falcon Engineering Report (2022)**.
 
 The Becht study evaluates the common property of Scarborough Glen as a whole; the Falcon report separates obligations by entity. The figures below reflect the portion allocated to Condominium IV (98 units) using the per-entity quantity ratios derived from the Falcon report.
 
@@ -16,51 +16,90 @@ This document is intended to help owners understand this Condominium's financial
 ---
 
 ## Statement of Income and Cash Position
-*(January 1 – August 3, 2026; year-to-date, unaudited)*
+*(January 1 – June 30, 2026; six months, unaudited)*
 
 ### Income
 
 | Source | Amount |
 |---|---:|
-| Common Charge income (Condo IV operating) | $248,041.77 |
-| HOA dues collected — remitted to the Master HOA (pass-through) | $261,054.67 |
-| Other income (interest, working capital, lease, work orders) | $5,310.38 |
-| **Total Income** | **$513,556.82** |
+| **Condominium IV operating income** | |
+| Common Charges | $204,774.80 |
+| Late fees and other common-charge income | $850.00 |
+| *Subtotal — Condo IV operating income* | *$205,624.80* |
+| **HOA dues collected from owners — pass-through to the Master HOA** | $215,383.04 |
+| **Other income** | |
+| Working-capital contributions on unit resales | $3,302.14 |
+| Lease fee income | $500.00 |
+| Reserve interest | $388.85 |
+| Roof reserve fund contribution | $124.00 |
+| Work orders | $50.00 |
+| *Subtotal — other income* | *$4,364.99* |
+| **Total Income** | **$425,372.83** |
 
 ### Expenses
 
 | Category | Amount |
 |---|---:|
-| Master Association remittance — HOA dues pass-through | $250,390.00 |
-| Insurance (workers comp, crime, D&O) | $3,847.08 |
-| Administrative (copies, postage, filings) | $688.53 |
+| **Master Association remittance — HOA dues pass-through** | $214,620.00 |
+| **Condominium IV operating expenses** | |
+| Roof raking & ice removal from gutters | $5,332.05 |
+| Administrative (copies, postage, filings, digital records) | $664.05 |
+| Insurance (workers' compensation renewal) | $607.00 |
 | State & local income tax | $595.00 |
-| Roof loan principal & interest (loan retired July 2026) | $4,333.98 |
-| Capital projects (entry steps, window wells, roof raking, sewer line) | $13,012.62 |
-| **Total Expenses** | **$272,867.21** |
+| Window-well drain repair | $108.38 |
+| *Subtotal — Condo IV own operating expenses* | *$7,306.48* |
+| **Debt service** | |
+| Roof loan interest | $4,113.47 |
+| **Capital projects** | |
+| Window-well reconstruction (1601 Pheasant Woods) | $8,128.13 |
+| Window-well materials | $4,300.00 |
+| Less: HOA reimbursement for #1003 sewer-line repair | ($5,155.94) |
+| *Subtotal — capital projects, net* | *$7,272.19* |
+| **Total Expenses** | **$233,312.14** |
 
-**Excess of Income over Expenses (YTD): $240,689.61**
+**Excess of Income over Expenses: $192,060.69**
 
-> *Note: This surplus is not distributable. During the period it funded the full payoff of the roof loan principal (~$184,115, loan retired July 17, 2026) and reserve contributions, including a $95,000 certificate of deposit.*
+### Reconciliation to Cash
 
-### Cash Position (current balances)
-
-| Account | Balance |
+| | Amount |
 |---|---:|
-| Cash – Operating (Webster Bank) | $10,670.65 |
-| Cash – Reserve (Webster Bank) | $50,989.15 |
-| Cash – Reserve (PCSB CD, 3.68%, matures 9/5/26) | $95,000.00 |
-| **Total Cash Available** | **$156,659.80** |
+| Excess of Income over Expenses | $192,060.69 |
+| Roof loan **principal** repayment (balance-sheet, not an expense) | ($162,239.65) |
+| Prepaid-assessment and other balance-sheet adjustments | ($109.20) |
+| **Net Increase in Cash** | **$29,711.84** |
+
+> *Note: This surplus is **not distributable**. Essentially all of it went to retiring the roof loan — **$162,239.65 of principal was repaid during the half-year**, at roughly $27,000/month (the scheduled payment plus a $20,000 additional principal paydown every month). The remainder funded reserves, including the $95,000 certificate of deposit opened February 5.*
+
+> **Pass-through note.** Condominium IV collected **$215,383.04** in HOA dues from its owners and remitted **$214,620.00** to the Master HOA (six monthly payments of $35,770 = 98 units × $365). The $763.04 difference is a timing variance, not retained income. The remittance ties exactly to the amount recorded as received on the HOA's books.
+
+### Cash Position *(as of June 30, 2026)*
+
+| Account | Jan 1, 2026 | Jun 30, 2026 | Change |
+|---|---:|---:|---:|
+| Cash – Operating (Webster Bank 6387) | $28,237.80 | $6,238.65 | ($21,999.15) |
+| Cash – Reserve (Webster Bank 6389) | $80,432.84 | $37,143.77 | ($43,289.07) |
+| Cash – Reserve (PCSB CD 7922, 3.68%) | $0.00 | $95,000.00 | $95,000.00 |
+| Cash – Roof Fund (Webster Bank 0541) | $4.05 | $4.11 | $0.06 |
+| Cash – Loan servicing (Tompkins Checking X1966) | $7,894.71 | $7,894.71 | — |
+| **Total Cash Available** | **$116,569.40** | **$146,281.24** | **$29,711.84** |
+
+> ⚠️ **Operating liquidity.** The operating account closed the period at **$6,238.65**. Condominium IV's own direct operating costs are modest (~$1,218/month for the half-year, and only ~$329/month excluding the one-time winter roof raking), but the account must clear the **$35,770 monthly HOA remittance**, so it operates on a thin margin against a large monthly obligation.
+
+> **Reserve activity during the period.** Monthly reserve transfers of $13,750 were made in **January, March, April, May and June — February was skipped**, the month the $95,000 CD was opened. Reserve cash also funded **$20,000 of the roof-loan paydown on May 7**. Together with $2,572.14 of capital contributions on resales and $388.79 of interest, the Webster Reserve account fell from $80,432.84 to $37,143.77 even though total reserves (including the new CD) rose.
+
+> **CD maturity to verify.** The general ledger records the PCSB CD as a *7-month* certificate at 3.68% opened February 5, 2026 (maturing **September 5, 2026**), while the bank register labels the same account **"PCSB CD - 7922 3/5/27."** Confirm the actual maturity date with PCSB before relying on either figure for liquidity planning.
 
 ---
 
-## Outstanding Liabilities *(as of August 3, 2026)*
+## Outstanding Liabilities *(as of June 30, 2026)*
 
 | Liability | Balance |
 |---|---:|
-| Roof Loan – Tompkins Mahopac Bank | **$0.00 — paid in full July 2026** |
+| Roof Loan – Tompkins Mahopac Bank | **~$21,875 outstanding** *(estimated — see note)* |
 
-> The roof replacement loan was paid down through the period and retired in July 2026 (final payment and UCC termination recorded July 17, 2026). The Association currently carries no outstanding debt.
+> **The roof loan was still outstanding at June 30, 2026.** It was retired the following month (final payment and UCC termination recorded **July 17, 2026**), so this statement — unlike the prior year-to-date presentation through August 3 — captures the Association while the debt was still on the books.
+>
+> **$162,239.65 of principal** was repaid during the half-year, plus **$4,113.47** of interest. Monthly interest fell from $1,101.67 in January to $280.53 in June as the balance amortized. The **remaining balance of approximately $21,875 is an estimate**: the transaction report does not carry the loan's opening balance, so this is derived from the total principal of ~$184,115 retired across January–July less the $162,239.65 paid through June 30. **Confirm against the balance sheet or the lender's payoff statement** before publishing.
 
 ---
 
@@ -92,31 +131,48 @@ There are two ways to read the gap. **(A)** is what the reserve plan actually re
 
 | Measure | Amount |
 |---|---:|
-| Reserve cash on hand (Webster Reserve + PCSB CD) | $145,989 |
+| Reserve cash on hand at 6/30/26 (Webster Reserve + PCSB CD + Roof Fund) | $132,147.88 |
 | Annual contribution required (all three funds, Year 1) | **~$156,900/yr (~$133/unit/mo)** |
 | Emergency Reserve — target | $300,000 |
-| Operating Reserve — floor (3 months operating expense) | $109,509 |
+| Operating Reserve — floor (3 months operating expense @ $36,503/mo) | $109,509 |
 | Long-Term Maintenance | Kept solvent every year (peak need ~$3.3M for the 2049 siding) |
 | Total 25-year replacement obligation | $3,451,433 |
 
 *This plan funds each obligation as it comes due; it does **not** require a large lump sum on hand today. The reserve balance rises and falls as bills are paid — it never needs to sit at the "fully funded" figure in section B.*
 
+> *The half-year data supports the $36,503/month operating basis used by the plan: actual all-in operating spend (the HOA pass-through plus Condo IV's own costs) was $221,926.48 over six months, or **$36,987.75/month** — within 1.3% of the planned figure.*
+
 ### B. Industry health check (accrual basis — diagnostic only)
 
 | Measure | Amount |
 |---|---:|
-| Fully Funded Balance benchmark (straight-line accrual to date) | ~$1,435,600 |
-| Reserve on hand | $145,989 |
-| **Percent funded** | **~10.2%** *(CAI "weak" band is under 30%)* |
+| Fully Funded Balance benchmark (straight-line accrual to date) | $1,435,572 |
+| Reserve on hand at 6/30/26 | $132,147.88 |
+| **Percent funded** | **~9.2%** *(CAI "weak" band is under 30%)* |
 
 *Percent funded measures how far behind the community fell before this plan was adopted. It is a diagnostic — **not** an amount that must be held in cash.*
 
+### Reduction Readiness — the three gates
+
+Any reduction in common charges is gated on measurable reserve targets rather than a calendar date. As of June 30, 2026:
+
+| Gate | Target | Actual | Status |
+|---|---|---|:--:|
+| 1. Capital reserve percent funded | ≥ 30% floor (aspire 70%) | ~9.2% | **FAIL** |
+| 2. Operating Reserve at/above floor | ≥ $109,509 (3 mo.) | $37,143.77 liquid (~1.0 mo.) | **FAIL** |
+| 3. Long-Term Maintenance clears every year | never below $0 | clears at $156,900/yr | **PASS** |
+| **OVERALL** | all three must pass | | **NOT SUPPORTED** |
+
+> Two of the three gates fail as of June 30, 2026, so a reduction in common charges is not supported on the current figures. The picture improves from July forward: the roof loan is retired, which frees roughly $27,000/month of debt service that was previously consuming the surplus. Re-run these gates once a few post-payoff months are on the books.
+
 ### Priorities
 
-The nearest-term items — **deck railings and exterior caulk/sealant (2027)**, **chimney caps (2031)**, and **entry stoops (2032)** — should be funded first. Additional shortfalls may emerge as the field-verification items (chimney-cap scope, entry-stoop count) are confirmed.
+The nearest-term items — **deck railings and exterior caulk/sealant (2027)**, **chimney caps (2031)**, and **entry stoops (2032)** — should be funded first. With the roof loan retired in July, the cash that was servicing it should be redirected to the reserve schedule rather than absorbed into operating. Additional shortfalls may emerge as the field-verification items (chimney-cap scope, entry-stoop count) are confirmed.
+
+> **Workbook reconciliation note.** `Condo_IV_Reserve_Plan.xlsx` carries a total reserve cash figure of **$145,989**, which was the balance as of August 3, 2026. The June 30 balance is **$132,147.88** (the difference is the July reserve transfer). The plan's forward-looking contribution figures are unaffected, but the starting-balance input should be re-based to the period being reported when the workbook is next regenerated from `generate_entity_workbooks.py`.
 
 ---
 
 ## Disclaimer
 
-This Statement has been prepared for informational purposes only. It is **unaudited** and is not intended to represent audited financial statements in accordance with U.S. GAAP. The income and cash information is derived from the Condominium's general-ledger transactions for January 1 – August 3, 2026; the future repair and replacement figures are based on the Becht Engineering Capital Reserve Study (2026) and the Falcon Engineering Report (2022) as allocated to its Condominium. No assurance is expressed on the projections, which are estimates subject to change as conditions evolve and as field verification is completed.
+This Statement has been prepared for informational purposes only. It is **unaudited** and is not intended to represent audited financial statements in accordance with U.S. GAAP. The income and cash information is derived from the Condominium's general-ledger transactions and bank account register for January 1 – June 30, 2026; the future repair and replacement figures are based on the Becht Engineering Capital Reserve Study (2026) and the Falcon Engineering Report (2022) as allocated to its Condominium. No assurance is expressed on the projections, which are estimates subject to change as conditions evolve and as field verification is completed.
