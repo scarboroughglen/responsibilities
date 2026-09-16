@@ -95,7 +95,11 @@ Produce `<Entity>_Statement_of_Income_and_Liabilities.md` with these sections:
    - **Excess of Income over Expenses**, with a note on what the surplus funded (loan
      payoff, reserve transfers) and that it is not distributable
    - **Cash Position** table (Operating / Reserve / CD → Total)
-4. **Outstanding Liabilities** — loan balance or "$0 — paid in full <date>"
+4. **Outstanding Liabilities and Receivables** — loan balance or "$0 — paid in full <date>";
+   **plus inter-entity HOA-dues arrears.** Always reconcile dues actually received against
+   dues owed (units x $365 x months in the period) and report any shortfall by association.
+   A shortfall is a **receivable on the HOA's statement** and the matching **liability on the
+   condo's** — it must appear on both, in this section, not only in the income discussion.
 5. **Future Major Repairs and Replacements** — table from the reserve plan (Component /
    Remaining life (year) / Cost / Notes), ordered soonest-first, ending in **Total
    Estimated Replacement Obligation**. Include the flags that apply (see §5).
@@ -123,6 +127,13 @@ Produce `<Entity>_Statement_of_Income_and_Liabilities.md` with these sections:
   Reserve components are pool, fencing, clubhouse, roadways, signage, lighting, etc.
 - **Condo I (SG1):** Vinyl siding → include the **exterior caulk/sealant & trim
   maintenance** line (window-seal caulking protects the assembly behind the vinyl).
+  **HOA dues arrears — must be reported as a liability.** Condo I stopped remitting HOA
+  dues after March 2026: it paid 69 of the 108 unit-months owed for January–June 2026
+  (18 units @ $365/unit/month), leaving **$14,235.00 unpaid as of June 30, 2026**, with no
+  payment in April, May or June. This is carried as a receivable on the HOA's statement and
+  **must appear as an outstanding liability on Condo I's** — verify the current balance
+  against Condo I's own GL and the receivable ledger before publishing, since it accrues
+  $6,570/month until paid.
 - **Condo II (SG2):** **Wood siding** → include **wood-siding replacement**, plus recurring
   **paint/stain/caulk** and (if applicable) **wood-trim** maintenance cycles.
 - **Condo III (SG3):** **Wood siding + wood trim** → include siding replacement, wood-trim

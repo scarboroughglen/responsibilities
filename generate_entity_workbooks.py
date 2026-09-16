@@ -259,6 +259,304 @@ ENTITIES = {
 YEARS = list(range(2026, 2051))
 
 # ---------------------------------------------------------------------------
+# Component useful-life lookup (Becht 2026 typical/remaining life)
+# Used to compute the Fully Funded Balance (FFB) for each component:
+#   FFB share = allocated cost x (effective age / useful life)
+#   effective age = useful life - remaining life
+# Ordered most-specific first; first substring match wins.
+# ---------------------------------------------------------------------------
+
+COMPONENT_LIFE = [
+    # (name substring, useful life, remaining life)
+    ("Railings", 12, 1),   # deck rails/balusters: safety cycle, past service life now
+    ("Leveling", 7, 1),    # stoop leveling / stair nosing: safety repair cycle
+    ("Entry Stoops", 28, 6),   # concrete stoop/landing replacement (F.2)
+    ("Pool Shell", 10, 1),
+    ("Pool Fence", 28, 10),
+    ("Board-on-Board", 25, 8),
+    ("Deck Replacement, Composite", 50, 27),
+    ("Deck Replacement, Wood", 30, 7),
+    ("Deck Boards", 18, 7),   # decking surface: ~18-yr wear cycle
+    ("Deck", 30, 7),          # framing & footings (and generic deck)
+    ("Siding, Vinyl - Clubhouse", 45, 22),
+    ("Siding, Vinyl", 45, 23),
+    ("Siding, Wood", 40, 12),
+    ("Roof, Shingles - Clubhouse", 25, 6),
+    ("Roof - Clubhouse", 25, 6),
+    ("Roof", 25, 24),
+    ("Chimney", 25, 5),
+    ("Asphalt Crack", 3, 2),
+    ("Asphalt Driveways", 20, 10),
+    ("Asphalt Paving", 20, 10),
+    ("Driveways", 20, 10),
+    ("Seal Coating", 5, 2),
+    ("Concrete Pool Apron", 30, 10),
+    ("Concrete Pool Coping", 25, 5),
+    ("Concrete Sidewalks", 30, 7),
+    ("Curbing", 20, 10),
+    ("Fence, Vinyl Stockade", 40, 17),
+    ("Fence, Wood Split Rail", 25, 15),
+    ("Mailboxes", 25, 23),
+    ("Aerator", 15, 10),
+    ("Bathroom Refurb", 30, 7),
+    ("Clubhouse Furniture", 15, 10),
+    ("Fire Alarm", 30, 7),
+    ("Fitness Room", 30, 7),
+    ("Gutters", 25, 2),
+    ("Hot Water Heater", 10, 7),
+    ("Kitchen Refurb", 25, 7),
+    ("Leaders", 25, 6),
+    ("Lights, Entry Clubhouse", 30, 10),
+    ("Lights, Entrance Sign", 20, 10),
+    ("Lights, Recessed", 30, 7),
+    ("Lights, Street", 30, 7),
+    ("Pool Filter", 20, 10),
+    ("Skylights", 25, 6),
+    ("Stop Signs", 25, 20),
+    ("Street Signs", 25, 20),
+    ("Windows", 50, 27),
+    ("Entrance Sign", 30, 20),
+]
+
+
+def get_life(component_name):
+    """Return (useful_life, remaining_life) for a component name, or (None, None)."""
+    for substr, life, rem in COMPONENT_LIFE:
+        if substr in component_name:
+            return life, rem
+    return None, None
+
+
+# ---------------------------------------------------------------------------
+# Three-fund configuration
+#   Fund 1  Emergency Reserve      -> worst-case building replacement (target)
+#   Fund 2  Long-Term Maintenance  -> Becht/Falcon capital schedule (never < $0)
+#   Fund 3  Regular Reserve        -> decoupled general reserve (flat floor)
+# emergency_target / regular_floor are placeholders the board replaces with real
+# figures. total_cash is the entity's actual reserve cash to allocate at start.
+# ---------------------------------------------------------------------------
+
+# operating_multiplier x operating_monthly = the Operating Reserve floor (months of
+# operating expenses). operating_monthly defaults to 0 (placeholder — enter actual).
+FUND_DEFAULTS = {
+    "HOA":      {"emergency_target": 200000, "operating_multiplier": 3, "operating_monthly": 0, "total_cash": 59717,
+                 "emergency_label": "largest common asset (clubhouse / pool)"},
+    "Condo_I":  {"emergency_target": 150000, "operating_multiplier": 3, "operating_monthly": 0, "total_cash": 29418,
+                 "emergency_label": "worst-case building replacement"},
+    "Condo_II": {"emergency_target": 120000, "operating_multiplier": 3, "operating_monthly": 0, "total_cash": 27319,
+                 "emergency_label": "worst-case building replacement"},
+    "Condo_III": {"emergency_target": 120000, "operating_multiplier": 3, "operating_monthly": 0, "total_cash": 24800,
+                  "emergency_label": "worst-case building replacement"},
+    "Condo_IV": {"emergency_target": 300000, "operating_multiplier": 3, "operating_monthly": 36503, "total_cash": 145989,
+                 "emergency_label": "worst-case building replacement",
+                 # Recommended starting-balance split (Emergency, LTM, Operating); Emergency built over 10y
+                 "start_split": (0, 95000, 50989), "emergency_fill_years": 10},
+}
+for _k, _v in FUND_DEFAULTS.items():
+    ENTITIES[_k].update(_v)
+
+
+def split_deck_rails(entity, rail_share=0.25, decking_share=0.35, rail_cycle=12,
+                     inflation=0.03, horizon=2050, asap_year=2027):
+    """Split the lumped wood deck into three components on their own cycles
+    (per becht_report.md Appendix F.1):
+
+      - Railings & Balusters (25%) — life-safety; must resist 200 lbs lateral.
+        Past service life now, so replaced ASAP (asap_year), again with the deck
+        rebuild, and every ~12 yrs thereafter.
+      - Deck Boards / surface (35%) — ~18-yr wear cycle.
+      - Framing & Footings (40%) — long-lived structure (survives 2-3 board cycles).
+
+    Framing and boards are both renewed when the deck is rebuilt in Becht's due
+    year (2033); their next stand-alone cycles (boards ~2051, framing ~2063) fall
+    beyond the 2050 window, so only the railings recur in-horizon (2027/2033/2045)."""
+    framing_share = 1 - rail_share - decking_share
+    comps = entity["components"]
+    wood = next((c for c in comps if "Deck Replacement, Wood" in c[0]), None)
+    if wood is None:
+        return
+    name, becht, share, alloc, yr, infl = wood
+    suffix = name[name.find(" ("):] if " (" in name else ""   # e.g. " (Condo IV share)"
+    rail_cur = round(alloc * rail_share)
+    deck_cur = round(alloc * decking_share)
+    fram_cur = alloc - rail_cur - deck_cur
+
+    def inf(cur, y):
+        return round(cur * (1 + inflation) ** (y - 2026)) if isinstance(y, int) else infl
+
+    fram_name = f"Deck Framing & Footings, Wood{suffix}"
+    deck_name = f"Deck Boards (surface), Wood{suffix}"
+    rail_name = f"Deck Railings & Balusters, Wood{suffix} (safety)"
+    new_comps = []
+    for c in comps:
+        if c is wood:
+            new_comps.append((fram_name, becht, share, fram_cur, yr, inf(fram_cur, yr)))
+            new_comps.append((deck_name, becht, share, deck_cur, yr, inf(deck_cur, yr)))
+            # rail line's headline date is the ASAP replacement (past service life)
+            new_comps.append((rail_name, becht, share, rail_cur, asap_year, inf(rail_cur, asap_year)))
+        else:
+            new_comps.append(c)
+    entity["components"] = new_comps
+
+    # In the deck's replacement year, split the lumped deck into framing + boards + rails.
+    detail = entity["disbursement_detail"]
+    for y in list(detail):
+        new_items = []
+        for nm, amt in detail[y]:
+            if "Deck Replacement, Wood" in nm:
+                new_items.append(("Deck Framing & Footings", round(amt * framing_share)))
+                new_items.append(("Deck Boards (surface)", round(amt * decking_share)))
+                new_items.append(("Deck Railings & Balusters (safety)", round(amt * rail_share)))
+            else:
+                new_items.append((nm, amt))
+        detail[y] = new_items
+
+    # Rail-only replacement years: ASAP (overdue now) + mid-cycle after the deck job.
+    rail_years = set()
+    if asap_year and asap_year < yr:
+        rail_years.add(asap_year)
+    if isinstance(yr, int):
+        ry = yr + rail_cycle
+        while ry <= horizon:
+            rail_years.add(ry)
+            ry += rail_cycle
+    for ry in rail_years:
+        amt = round(rail_cur * (1 + inflation) ** (ry - 2026))
+        detail.setdefault(ry, []).append(("Deck Railings & Balusters (safety)", amt))
+    entity["disbursements"] = {y: sum(a for _, a in items) for y, items in detail.items()}
+
+
+for _k in ("Condo_I", "Condo_II", "Condo_III", "Condo_IV"):
+    split_deck_rails(ENTITIES[_k])
+
+
+# Appendix F unbundling: recurring / safety items to fund as their own LTM lines.
+# (name, current cost, cycle years, first year, basis note). Falcon $ where it
+# exists; "placeholder" where no source figure is available.
+APPENDIX_F_ADDITIONS = {
+    "HOA": [
+        ("Pool Shell Resurfacing", 22620, 10, 2027, "Falcon"),
+        ("Pool Mechanical (pump/chlorinator/heater)", 4000, 8, 2028, "Falcon (pump+chlor)"),
+        ("Pool Cover", 4000, 9, 2028, "Falcon"),
+        ("Pool Furniture", 12000, 10, 2030, "Falcon"),
+        ("Pool Fence / Safety Barrier", 18425, 28, 2035, "Falcon (aluminum)"),
+        ("Split-Rail Fence — Repair Fund", 3750, 4, 2027, "Falcon"),
+        ("Board-on-Board Fence (property line)", 37350, 25, 2034, "Falcon"),
+    ],
+    "Condo_I": [
+        ("Entry Stoops — Concrete Replacement", 12000, 28, 2032, "Falcon"),
+        ("Entry Stoops — Leveling & Stair Nosing (safety)", 1800, 7, 2028, "placeholder ~15% of replacement"),
+        ("Wood / Window Trim Repair", 5000, 4, 2027, "Falcon"),
+    ],
+    "Condo_II": [
+        ("Entry Stoops — Concrete Replacement", 44000, 28, 2032, "Falcon"),
+        ("Entry Stoops — Leveling & Stair Nosing (safety)", 6600, 7, 2028, "placeholder ~15%"),
+        ("Exterior Paint / Stain / Caulk", 8000, 6, 2029, "placeholder"),
+    ],
+    "Condo_III": [
+        ("Entry Stoops — Concrete Replacement", 31500, 28, 2032, "Falcon"),
+        ("Entry Stoops — Leveling & Stair Nosing (safety)", 4725, 7, 2028, "placeholder ~15%"),
+        ("Wood / Window Trim Repair", 7500, 5, 2027, "Falcon"),
+        ("Exterior Paint / Stain / Caulk", 8000, 6, 2029, "placeholder"),
+    ],
+    "Condo_IV": [
+        ("Entry Stoops — Concrete Replacement", 196000, 28, 2032,
+         "$2,000/unit x 98 — MAJOR item missed by Falcon AND Becht"),
+        ("Entry Stoops — Leveling & Stair Nosing (safety)", 29400, 7, 2028, "placeholder ~15%"),
+        ("Exterior Caulk/Sealant & Trim Maintenance", 15000, 6, 2027,
+         "window-seal caulking (critical) + trim; protects the wall assembly behind the vinyl"),
+    ],
+}
+
+# Omitted-list entries that are now funded in LTM (pruned to avoid double-listing).
+_F_PRUNE_KEYS = ["Stoop", "Trim", "Pool Shell", "Pool Cover", "Pool Pump",
+                 "Pool Furniture", "Chlorination", "Board-on-Board", "Pool Fence"]
+
+
+def apply_appendix_f(entity, key, inflation=0.03, horizon=2050):
+    """Fold Appendix F recurring/safety items into the funded LTM schedule as their
+    own line items, each on its own cycle. Per becht_report.md Appendix F."""
+    items = APPENDIX_F_ADDITIONS.get(key, [])
+    if not items:
+        return
+    detail = entity["disbursement_detail"]
+    for name, cost, cycle, first, _note in items:
+        first_infl = round(cost * (1 + inflation) ** (first - 2026))
+        entity["components"].append((name, None, 100.0, cost, first, first_infl))
+        y = first
+        while y <= horizon:
+            detail.setdefault(y, []).append((name, round(cost * (1 + inflation) ** (y - 2026))))
+            y += cycle
+    entity["disbursements"] = {yr: sum(a for _, a in its) for yr, its in detail.items()}
+    entity["total_replacement_cost"] = sum(c[3] for c in entity["components"])
+    entity["omitted_items"] = [it for it in entity.get("omitted_items", [])
+                               if not any(k in it[0] for k in _F_PRUNE_KEYS)]
+
+
+for _k in ENTITIES:
+    apply_appendix_f(ENTITIES[_k], _k)
+
+
+def compute_ffb(entity):
+    """Fully Funded Balance = sum(allocated cost x effective_age/useful_life)."""
+    ffb = 0.0
+    for name, _becht, _share, allocated, _yr, _infl in entity["components"]:
+        life, rem = get_life(name)
+        if life is None:
+            continue
+        frac = max(0.0, min(1.0, (life - rem) / life))
+        ffb += allocated * frac
+    return ffb
+
+
+FUND_FILL_YEARS = 5   # years to build Emergency / Regular up to their targets
+
+
+def _roundup(x, step=100):
+    import math
+    return int(math.ceil(x / step)) * step
+
+
+def solve_ltm_contribution(start, disb, growth=0.03, interest=0.01):
+    """Min year-1 contribution (growing) so LTM closing never drops below $0."""
+    lo, hi = 0.0, 2_000_000.0
+    for _ in range(60):
+        c1 = (lo + hi) / 2
+        bal, c, ok = start, c1, True
+        for i, y in enumerate(YEARS):
+            if i > 0:
+                c *= (1 + growth)
+            bal = bal + c - disb.get(y, 0) + bal * interest
+            if bal < -0.5:
+                ok = False
+                break
+        if ok:
+            hi = c1
+        else:
+            lo = c1
+    return hi
+
+
+def solve_fund_to(start, target, years, growth=0.03, interest=0.01):
+    """Year-1 contribution (growing) to reach `target` in `years` years."""
+    if start >= target:
+        return 0.0
+    lo, hi = 0.0, float(target)
+    for _ in range(60):
+        c1 = (lo + hi) / 2
+        bal, c = start, c1
+        for i in range(years):
+            if i > 0:
+                c *= (1 + growth)
+            bal = bal + c + bal * interest
+        if bal >= target:
+            hi = c1
+        else:
+            lo = c1
+    return hi
+
+
+# ---------------------------------------------------------------------------
 # Styles
 # ---------------------------------------------------------------------------
 
@@ -272,6 +570,9 @@ NORMAL_FONT = Font(name="Calibri", size=11)
 SMALL_FONT = Font(name="Calibri", size=10, italic=True, color="666666")
 WARN_FILL = PatternFill(start_color="FFC7CE", end_color="FFC7CE", fill_type="solid")
 WARN_FONT = Font(name="Calibri", color="9C0006", bold=True)
+GOOD_FILL = PatternFill(start_color="C6EFCE", end_color="C6EFCE", fill_type="solid")
+GOOD_FONT = Font(name="Calibri", color="006100", bold=True)
+NEUTRAL_FILL = PatternFill(start_color="FFEB9C", end_color="FFEB9C", fill_type="solid")
 CURRENCY_FMT = '#,##0'
 PCT_FMT = '0.00%'
 THIN_BORDER = Border(
@@ -325,6 +626,22 @@ def build_instructions_sheet(ws, entity):
     ws.cell(row=row, column=2, value="Capital Reserve Funding Plan").font = SECTION_FONT
     row += 2
 
+    # How to read this workbook (orientation for board members opening the file)
+    ws.cell(row=row, column=2, value="How to read this workbook").font = SECTION_FONT
+    row += 1
+    howto = [
+        "START on the 'Fund Summary' tab — it shows the three funds, their targets/floors, the",
+        "per-unit monthly funding, and the 'Reduction Readiness' gates all on one page.",
+        "The three fund tabs — Emergency Reserve, Long-Term Maintenance, Operating Reserve — each",
+        "show that fund's year-by-year balance from 2026 to 2050.",
+        "'Components' lists every capital item and its cost; 'Expenditure Chart' plots spending by year.",
+        "Yellow cells are inputs you can edit; every other cell is calculated automatically.",
+    ]
+    for line in howto:
+        ws.cell(row=row, column=2, value=line).font = NORMAL_FONT
+        row += 1
+    row += 1
+
     ws.cell(row=row, column=2, value="Data Sources:").font = LABEL_FONT
     row += 1
     ws.cell(row=row, column=2,
@@ -340,8 +657,8 @@ def build_instructions_sheet(ws, entity):
     info = [
         f"Number of units: {entity['units']}",
         f"Total replacement cost (current dollars): ${entity['total_replacement_cost']:,.0f}",
-        f"Baseline Year-1 annual contribution: ${entity['baseline_contribution']:,.0f}",
-        f"Starting reserve balance (2026): ${entity['starting_balance']:,.0f}",
+        f"Total reserve cash to allocate (2026): ${entity.get('total_cash', entity['starting_balance']):,.0f}",
+        "Fund contributions are solved automatically (see Fund Summary) and are fully editable.",
         "Planning horizon: 2026-2050 (25 years)",
     ]
     for line in info:
@@ -363,43 +680,38 @@ def build_instructions_sheet(ws, entity):
         row += 1
     row += 1
 
-    # Schedule sheet guide
-    ws.cell(row=row, column=2, value="Reserve Schedule Sheet — Column Guide").font = SECTION_FONT
+    # Three-fund model
+    ws.cell(row=row, column=2, value="Three-Fund Model").font = SECTION_FONT
     row += 1
-    columns_desc = [
-        ("Year", "Calendar year (2026-2050)"),
-        ("Opening Balance", "Reserve fund balance at start of year (= prior year's Closing Balance)"),
-        ("Annual Contribution", "Amount contributed this year; grows by the Growth Rate each year"),
-        ("Disbursement", "Total expenditures in this year for component replacements"),
-        ("Interest Earned", "Interest on the Opening Balance at the configured Interest Rate"),
-        ("Closing Balance", "Opening + Contribution - Disbursement + Interest"),
-        ("Monthly Cost/Unit", "Annual Contribution / Number of Units / 12 months"),
-        ("Floor Check", "Shows 'BELOW FLOOR' if Closing Balance < Total Floor Amount (Per Unit x Units); blank if OK"),
+    fund_lines = [
+        "This plan splits reserves into THREE decoupled funds, each with its own balance,",
+        "annual contribution, floor, and monthly cost per unit. Each has its own tab.",
+        "",
+        "1. Emergency Reserve — self-funded buffer to replace the worst-case building.",
+        "   Floor = a target you set (Fund Summary, yellow cell). Not drawn for routine work.",
+        "2. Long-Term Maintenance — the Becht/Falcon capital replacement schedule.",
+        "   Floor = must NEVER drop below $0 in any year.",
+        "3. Operating Reserve — decoupled buffer of operating expenses.",
+        "   Floor = multiplier (1-3 months) x monthly operating expense, both set on Fund Summary.",
+        "",
+        "Fund Summary sheet: set all inputs here (each fund's starting balance, target/floor and",
+        "contribution; unit count; growth; interest). Allocate current cash across the three funds'",
+        "starting balances (Allocated Start column). Recommended: fund near-term Long-Term Maintenance",
+        "needs and Operating liquidity first, and build the Emergency Reserve from contributions.",
+        "",
+        "Percent Funded (Long-Term Maintenance) = reserve on hand / Fully Funded Balance. It is",
+        "the industry (CAI) metric: under 30% = weak (high special-assessment risk), 30-70% = fair,",
+        "70%+ = strong.",
+        "",
+        "Reduction Readiness — common charges should NOT be reduced until all three gates PASS:",
+        "  Gate 1 — Emergency Reserve is funded to its target.",
+        "  Gate 2 — Long-Term Maintenance stays at/above $0 every year at the proposed contribution.",
+        "  Gate 3 — Operating Reserve stays at/above its floor (multiplier x monthly operating expense).",
+        "The 'OVERALL' cell reads ELIGIBLE only when all three pass. To model a reduction, lower a",
+        "fund's Year-1 Contribution on the Fund Summary sheet and watch the gates.",
+        "Replace every yellow placeholder (targets, floors, total cash) with the entity's ACTUALS.",
     ]
-    for col_name, desc in columns_desc:
-        ws.cell(row=row, column=2, value=col_name).font = LABEL_FONT
-        ws.cell(row=row, column=3, value=desc).font = NORMAL_FONT
-        row += 1
-    row += 1
-
-    # Floor amount explanation
-    ws.cell(row=row, column=2, value="Floor Amount Per Unit (Minimum Balance Threshold)").font = SECTION_FONT
-    row += 1
-    per_unit_floor = entity["per_unit_floor"]
-    total_floor = per_unit_floor * entity["units"]
-    floor_lines = [
-        "The Floor Amount is set PER UNIT and multiplied by your unit count to get the total minimum balance.",
-        f"Default: ${per_unit_floor:,}/unit x {entity['units']} units = ${total_floor:,} total floor.",
-        f"This default is approximately 5% of your per-unit replacement cost "
-        f"(${entity['total_replacement_cost'] / entity['units']:,.0f}/unit).",
-        "Set to $0/unit for baseline (no cushion — fund may hit zero).",
-        f"A 10% threshold would be ~${int(entity['total_replacement_cost'] * 0.10 / entity['units'] / 50) * 50:,}/unit "
-        f"(${entity['total_replacement_cost'] * 0.10:,.0f} total).",
-        "Higher floor = more protection against surprises but higher annual contributions needed.",
-        "The yellow 'Floor Amount Per Unit' cell on the Reserve Schedule sheet is where you set this.",
-        "Total Floor Amount is calculated automatically (Per Unit x Units).",
-    ]
-    for line in floor_lines:
+    for line in fund_lines:
         ws.cell(row=row, column=2, value=line).font = NORMAL_FONT
         row += 1
     row += 1
@@ -455,203 +767,6 @@ def build_instructions_sheet(ws, entity):
 
     ws.cell(row=row, column=2,
             value="Prepared June 2026. Review and update annually.").font = SMALL_FONT
-
-
-def build_schedule_sheet(ws, entity):
-    ws.sheet_properties.tabColor = "548235"
-    units = entity["units"]
-
-    # --- Input area ---
-    row = 1
-    ws.merge_cells("A1:B1")
-    ws.cell(row=1, column=1, value="RESERVE FUNDING INPUTS").font = SECTION_FONT
-
-    per_unit_floor = entity["per_unit_floor"]
-
-    labels_values = [
-        ("Starting Balance (2026):", entity["starting_balance"], CURRENCY_FMT, True),
-        ("Year-1 Annual Contribution:", entity["baseline_contribution"], CURRENCY_FMT, True),
-        ("Annual Contribution Growth Rate:", 0.03, PCT_FMT, True),
-        ("Interest Rate on Reserves:", 0.01, PCT_FMT, True),
-        ("Floor Amount Per Unit:", per_unit_floor, CURRENCY_FMT, True),
-        ("Number of Units:", units, "#,##0", True),
-        (None, None, None, False),  # row 8: computed total floor
-    ]
-
-    for i, (label, val, fmt, is_input) in enumerate(labels_values):
-        r = 2 + i
-        if label is None:
-            continue
-        ws.cell(row=r, column=1, value=label).font = LABEL_FONT
-        c = ws.cell(row=r, column=2, value=val)
-        c.font = LABEL_FONT
-        c.number_format = fmt
-        if is_input:
-            c.fill = INPUT_FILL
-            c.border = THIN_BORDER
-
-    # Row 8: Computed Total Floor = Per Unit Floor * Units (formula, not editable)
-    ws.cell(row=8, column=1, value="Total Floor Amount:").font = LABEL_FONT
-    c = ws.cell(row=8, column=2)
-    c.value = "=$B$6*$B$7"
-    c.font = LABEL_FONT
-    c.number_format = CURRENCY_FMT
-    c.border = THIN_BORDER
-
-    # Named references for formulas (using $B$ references)
-    # Row 2: Starting Balance -> B2
-    # Row 3: Year-1 Contribution -> B3
-    # Row 4: Growth Rate -> B4
-    # Row 5: Interest Rate -> B5
-    # Row 6: Floor Per Unit -> B6
-    # Row 7: Units -> B7
-    # Row 8: Total Floor (formula) -> B8
-
-    ws.cell(row=9, column=1,
-            value="Edit the yellow cells above to customize your plan. Total Floor = Per Unit Floor x Units.").font = SMALL_FONT
-
-    # --- Schedule table header ---
-    header_row = 11
-    headers = [
-        "Year", "Opening Balance", "Annual Contribution", "Disbursement",
-        "Interest Earned", "Closing Balance", "Monthly Cost/Unit", "Floor Check"
-    ]
-
-    for col_idx, hdr in enumerate(headers, 1):
-        ws.cell(row=header_row, column=col_idx, value=hdr)
-    style_header_row(ws, header_row, len(headers))
-
-    # --- Data rows ---
-    first_data_row = header_row + 1
-    disbursements = entity["disbursements"]
-
-    for i, year in enumerate(YEARS):
-        r = first_data_row + i
-        disb = disbursements.get(year, 0)
-
-        # Col A: Year
-        cell_year = ws.cell(row=r, column=1, value=year)
-        style_data_cell(cell_year)
-
-        # Col B: Opening Balance
-        if i == 0:
-            ws.cell(row=r, column=2).value = f"=$B$2"  # starting balance
-        else:
-            ws.cell(row=r, column=2).value = f"=F{r - 1}"  # prior closing
-        cell_ob = ws.cell(row=r, column=2)
-        cell_ob.number_format = CURRENCY_FMT
-        cell_ob.border = THIN_BORDER
-
-        # Col C: Annual Contribution
-        if i == 0:
-            ws.cell(row=r, column=3).value = f"=$B$3"
-        else:
-            ws.cell(row=r, column=3).value = f"=C{r - 1}*(1+$B$4)"
-        cell_ac = ws.cell(row=r, column=3)
-        cell_ac.number_format = CURRENCY_FMT
-        cell_ac.border = THIN_BORDER
-
-        # Col D: Disbursement (hard-coded)
-        cell_d = ws.cell(row=r, column=4, value=disb)
-        style_data_cell(cell_d, CURRENCY_FMT)
-
-        # Col E: Interest Earned
-        ws.cell(row=r, column=5).value = f"=B{r}*$B$5"
-        cell_ie = ws.cell(row=r, column=5)
-        cell_ie.number_format = CURRENCY_FMT
-        cell_ie.border = THIN_BORDER
-
-        # Col F: Closing Balance
-        ws.cell(row=r, column=6).value = f"=B{r}+C{r}-D{r}+E{r}"
-        cell_cb = ws.cell(row=r, column=6)
-        cell_cb.number_format = CURRENCY_FMT
-        cell_cb.border = THIN_BORDER
-
-        # Col G: Monthly Cost/Unit
-        ws.cell(row=r, column=7).value = f"=C{r}/$B$7/12"
-        cell_mu = ws.cell(row=r, column=7)
-        cell_mu.number_format = '$#,##0'
-        cell_mu.border = THIN_BORDER
-
-        # Col H: Floor Check
-        ws.cell(row=r, column=8).value = f'=IF(F{r}<$B$8,"BELOW FLOOR","")'
-        cell_fc = ws.cell(row=r, column=8)
-        cell_fc.border = THIN_BORDER
-        cell_fc.alignment = Alignment(horizontal="center")
-
-    # --- Totals row ---
-    totals_row = first_data_row + len(YEARS)
-    ws.cell(row=totals_row, column=1, value="TOTAL").font = LABEL_FONT
-    ws.cell(row=totals_row, column=1).border = THIN_BORDER
-
-    last_data = first_data_row + len(YEARS) - 1
-    for col in [3, 4, 5]:
-        col_letter = get_column_letter(col)
-        ws.cell(row=totals_row, column=col).value = f"=SUM({col_letter}{first_data_row}:{col_letter}{last_data})"
-        ws.cell(row=totals_row, column=col).font = LABEL_FONT
-        ws.cell(row=totals_row, column=col).number_format = CURRENCY_FMT
-        ws.cell(row=totals_row, column=col).border = THIN_BORDER
-
-    # Apply conditional formatting for below-floor years
-    from openpyxl.formatting.rule import CellIsRule
-    ws.conditional_formatting.add(
-        f"F{first_data_row}:F{last_data}",
-        CellIsRule(operator="lessThan", formula=["$B$8"], fill=WARN_FILL, font=WARN_FONT),
-    )
-
-    # Column widths
-    col_widths = [8, 18, 20, 18, 16, 18, 18, 16]
-    for i, w in enumerate(col_widths):
-        ws.column_dimensions[get_column_letter(i + 1)].width = w
-
-    # Freeze panes
-    ws.freeze_panes = f"A{first_data_row}"
-
-    # --- Disbursement detail section ---
-    detail_start_col = 10  # Column J
-    ws.cell(row=header_row - 1, column=detail_start_col, value="DISBURSEMENT DETAIL").font = SECTION_FONT
-
-    # Collect all component names that appear in disbursements
-    all_detail_components = set()
-    for year_details in entity.get("disbursement_detail", {}).values():
-        for comp_name, _ in year_details:
-            all_detail_components.add(comp_name)
-    all_detail_components = sorted(all_detail_components)
-
-    if all_detail_components:
-        # Headers
-        for j, comp_name in enumerate(all_detail_components):
-            col = detail_start_col + j
-            cell = ws.cell(row=header_row, column=col, value=comp_name)
-            cell.font = HEADER_FONT
-            cell.fill = HEADER_FILL
-            cell.alignment = Alignment(horizontal="center", wrap_text=True)
-            cell.border = THIN_BORDER
-            ws.column_dimensions[get_column_letter(col)].width = 18
-
-        # Data
-        detail_data = entity.get("disbursement_detail", {})
-        for i, year in enumerate(YEARS):
-            r = first_data_row + i
-            year_items = {name: amt for name, amt in detail_data.get(year, [])}
-            for j, comp_name in enumerate(all_detail_components):
-                col = detail_start_col + j
-                val = year_items.get(comp_name)
-                if val:
-                    cell = ws.cell(row=r, column=col, value=val)
-                    cell.number_format = CURRENCY_FMT
-                    cell.border = THIN_BORDER
-
-        # Detail totals
-        for j in range(len(all_detail_components)):
-            col = detail_start_col + j
-            col_letter = get_column_letter(col)
-            ws.cell(row=totals_row, column=col).value = (
-                f"=SUM({col_letter}{first_data_row}:{col_letter}{last_data})"
-            )
-            ws.cell(row=totals_row, column=col).font = LABEL_FONT
-            ws.cell(row=totals_row, column=col).number_format = CURRENCY_FMT
-            ws.cell(row=totals_row, column=col).border = THIN_BORDER
 
 
 def build_components_sheet(ws, entity):
@@ -790,45 +905,26 @@ def build_chart_sheet(ws, entity):
                 ws.cell(row=r, column=data_start_col + 1 + j, value=val)
                 ws.cell(row=r, column=data_start_col + 1 + j).number_format = CURRENCY_FMT
 
-    # --- Stacked bar chart ---
-    from openpyxl.chart.text import RichText
-    from openpyxl.drawing.text import Paragraph, ParagraphProperties, CharacterProperties, Font as DrawingFont
-
+    # --- Stacked bar chart (kept to standard settings so Excel opens it cleanly;
+    # avoids hand-built axis text-rotation XML and non-standard number formats that
+    # trigger Excel's "recover content" repair prompt) ---
     chart = BarChart()
     chart.type = "col"
     chart.grouping = "stacked"
+    chart.overlap = 100
     chart.title = entity["name"] + " — Projected Expenditures by Year"
     chart.style = 10
     chart.width = 36
     chart.height = 20
     chart.legend = None
-
-    # Y-axis: dollar labels with $K formatting, gridlines, title
     chart.y_axis.title = "Cost ($)"
-    chart.y_axis.numFmt = '$#,##0,K'
-    chart.y_axis.majorGridlines = None  # let default gridlines show
-    chart.y_axis.tickLblPos = "low"
-    chart.y_axis.delete = False
-
-    # X-axis: year labels rotated vertically
+    chart.y_axis.numFmt = '$#,##0'
+    chart.y_axis.axPos = 'l'
     chart.x_axis.title = "Year"
     chart.x_axis.numFmt = '0'
-    chart.x_axis.majorTickMark = "out"
-    chart.x_axis.tickLblPos = "low"
-    chart.x_axis.delete = False
-    # Rotate x-axis labels 270 degrees (vertical, reading bottom-to-top)
-    chart.x_axis.txPr = RichText(
-        p=[Paragraph(
-            pPr=ParagraphProperties(
-                defRPr=CharacterProperties(sz=1000)
-            ),
-            endParaRPr=CharacterProperties(sz=1000),
-        )]
-    )
-    chart.x_axis.txPr.properties.rot = -5400000  # -90 degrees in 60000ths
+    chart.x_axis.axPos = 'b'
 
     cats = Reference(ws, min_col=data_start_col, min_row=3, max_row=2 + num_data_rows)
-
     for j in range(num_components):
         col = data_start_col + 1 + j
         data = Reference(ws, min_col=col, min_row=2, max_row=2 + num_data_rows)
@@ -847,6 +943,328 @@ def build_chart_sheet(ws, entity):
 
 
 # ---------------------------------------------------------------------------
+# Three-fund builders (supersede build_schedule_sheet / build_health_sheet)
+# ---------------------------------------------------------------------------
+
+# Fund-schedule geometry (shared by all three fund tabs)
+FUND_HEADER_ROW = 4
+FUND_FIRST_ROW = 5
+FUND_LAST_ROW = FUND_FIRST_ROW + len(YEARS) - 1   # 29
+FUND_TOTALS_ROW = FUND_LAST_ROW + 1               # 30
+
+
+def build_fund_schedule(ws, entity, fund):
+    """A single fund's 25-year schedule. All inputs live on the Fund Summary
+    sheet, so this tab is purely calculated.
+
+    fund keys: title, tab, start_ref, contrib_ref, growth_ref, interest_ref,
+               units_ref, floor_ref, disb (dict), floor_kind ('zero'|'flat'|'target')
+    """
+    ws.sheet_properties.tabColor = fund["tab"]
+    ws.cell(row=1, column=1, value=fund["title"]).font = TITLE_FONT
+    ws.cell(row=2, column=1,
+            value="All inputs are set on the Fund Summary sheet. This tab is calculated.").font = SMALL_FONT
+
+    header_row, first, last, totals = FUND_HEADER_ROW, FUND_FIRST_ROW, FUND_LAST_ROW, FUND_TOTALS_ROW
+    headers = ["Year", "Opening Balance", "Annual Contribution", "Disbursement",
+               "Interest Earned", "Closing Balance", "Monthly Cost/Unit", "Status"]
+    for c, h in enumerate(headers, 1):
+        ws.cell(row=header_row, column=c, value=h)
+    style_header_row(ws, header_row, len(headers))
+
+    growth, interest, units = fund["growth_ref"], fund["interest_ref"], fund["units_ref"]
+    floor, kind, disb = fund["floor_ref"], fund["floor_kind"], fund["disb"]
+
+    for i, year in enumerate(YEARS):
+        r = first + i
+        ws.cell(row=r, column=1, value=year)
+        style_data_cell(ws.cell(row=r, column=1))
+        ws.cell(row=r, column=2).value = f"={fund['start_ref']}" if i == 0 else f"=F{r - 1}"
+        ws.cell(row=r, column=3).value = f"={fund['contrib_ref']}" if i == 0 else f"=C{r - 1}*(1+{growth})"
+        ws.cell(row=r, column=4, value=disb.get(year, 0))
+        ws.cell(row=r, column=5).value = f"=B{r}*{interest}"
+        ws.cell(row=r, column=6).value = f"=B{r}+C{r}-D{r}+E{r}"
+        ws.cell(row=r, column=7).value = f"=C{r}/{units}/12"
+        if kind == "zero":
+            ws.cell(row=r, column=8).value = f'=IF(F{r}<0,"BELOW $0","")'
+        elif kind == "flat":
+            ws.cell(row=r, column=8).value = f'=IF(F{r}<{floor},"BELOW FLOOR","")'
+        else:  # target
+            ws.cell(row=r, column=8).value = f'=IF(F{r}>={floor},"FUNDED","BUILDING")'
+        for col, fmt in [(2, CURRENCY_FMT), (3, CURRENCY_FMT), (4, CURRENCY_FMT),
+                         (5, CURRENCY_FMT), (6, CURRENCY_FMT), (7, '$#,##0')]:
+            cc = ws.cell(row=r, column=col)
+            cc.number_format = fmt
+            cc.border = THIN_BORDER
+        sc = ws.cell(row=r, column=8)
+        sc.border = THIN_BORDER
+        sc.alignment = Alignment(horizontal="center")
+
+    ws.cell(row=totals, column=1, value="TOTAL").font = LABEL_FONT
+    ws.cell(row=totals, column=1).border = THIN_BORDER
+    for col in (3, 4, 5):
+        cl = get_column_letter(col)
+        cell = ws.cell(row=totals, column=col, value=f"=SUM({cl}{first}:{cl}{last})")
+        cell.font = LABEL_FONT
+        cell.number_format = CURRENCY_FMT
+        cell.border = THIN_BORDER
+
+    from openpyxl.formatting.rule import FormulaRule
+    rng = f"F{first}:F{last}"
+    if kind == "zero":
+        ws.conditional_formatting.add(rng, FormulaRule(formula=[f"F{first}<0"], fill=WARN_FILL, font=WARN_FONT))
+    else:
+        # Excel rejects cross-sheet references INSIDE conditional-formatting formulas, so
+        # mirror the floor (which lives on Fund Summary) into a local cell (J2) and let the
+        # conditional formatting compare against that same-sheet cell.
+        ws.cell(row=1, column=10, value="Floor (from Fund Summary):").font = SMALL_FONT
+        fc = ws.cell(row=2, column=10, value=f"={floor}")
+        fc.number_format = CURRENCY_FMT
+        fc.font = SMALL_FONT
+        ws.column_dimensions["J"].width = 26
+        floor_local = "$J$2"
+        if kind == "flat":
+            ws.conditional_formatting.add(rng, FormulaRule(formula=[f"F{first}<{floor_local}"], fill=WARN_FILL, font=WARN_FONT))
+        else:  # target
+            ws.conditional_formatting.add(rng, FormulaRule(formula=[f"F{first}>={floor_local}"], fill=GOOD_FILL, font=GOOD_FONT))
+            ws.conditional_formatting.add(rng, FormulaRule(formula=[f"F{first}<{floor_local}"], fill=NEUTRAL_FILL))
+
+    for i, w in enumerate([8, 18, 20, 18, 16, 18, 18, 16]):
+        ws.column_dimensions[get_column_letter(i + 1)].width = w
+    ws.freeze_panes = f"A{first}"
+
+
+def build_summary_sheet(ws, entity):
+    """Fund Summary & Reduction Readiness — shared inputs, the three funds with
+    fill-by-priority allocation, LTM funding health, and the three gates."""
+    from openpyxl.formatting.rule import CellIsRule, FormulaRule
+    ws.sheet_properties.tabColor = "2F5496"
+
+    units = entity["units"]
+    total_cash = entity.get("total_cash", entity["starting_balance"])
+    et = entity["emergency_target"]
+    op_mult = entity.get("operating_multiplier", 3)
+    op_monthly = entity.get("operating_monthly", 0)
+    rf = op_monthly * op_mult   # Operating Reserve floor = months x monthly op expense
+    ffb = compute_ffb(entity)
+    elabel = entity.get("emergency_label", "worst-case building replacement")
+
+    # Manual starting-balance allocation across the three funds (editable on the sheet).
+    split = entity.get("start_split")
+    if split:
+        emerg_start, ltm_start, reg_start = split
+    else:
+        emerg_start, ltm_start, reg_start = 0, total_cash, 0   # default: seed LTM (near-term needs)
+    em_years = entity.get("emergency_fill_years", FUND_FILL_YEARS)
+    # Solve for contributions that actually fund each fund (LTM never below $0;
+    # Emergency to target over em_years; Operating to its floor over FUND_FILL_YEARS).
+    ltm_contrib = _roundup(solve_ltm_contribution(ltm_start, entity["disbursements"]))
+    emerg_contrib = _roundup(solve_fund_to(emerg_start, et, em_years))
+    reg_contrib = _roundup(solve_fund_to(reg_start, rf, FUND_FILL_YEARS))
+
+    ws.cell(row=1, column=1, value=f"{entity['name']} — Fund Summary & Reduction Readiness").font = TITLE_FONT
+    ws.cell(row=2, column=1,
+            value="Three decoupled funds. Yellow cells are inputs — replace placeholders with actual figures.").font = SMALL_FONT
+
+    # --- Shared inputs ---
+    ws.cell(row=4, column=1, value="SHARED INPUTS").font = SECTION_FONT
+
+    def inp(r, label, val, fmt):
+        ws.cell(row=r, column=1, value=label).font = LABEL_FONT
+        c = ws.cell(row=r, column=2, value=val)
+        c.font = LABEL_FONT
+        c.number_format = fmt
+        c.fill = INPUT_FILL
+        c.border = THIN_BORDER
+
+    # Total Reserve Cash is computed = sum of the three funds' starting balances (D12:D14)
+    ws.cell(row=5, column=1, value="Total Reserve Cash (all accounts):").font = LABEL_FONT
+    c = ws.cell(row=5, column=2, value="=SUM(D12:D14)")
+    c.font = LABEL_FONT
+    c.number_format = CURRENCY_FMT
+    c.border = THIN_BORDER
+    ws.cell(row=5, column=3, value="Auto-total of the three fund starting balances (Allocated Start column).").font = SMALL_FONT
+    inp(6, "Number of Units:", units, "#,##0")
+    inp(7, "Contribution Growth Rate:", 0.03, PCT_FMT)
+    inp(8, "Interest Rate on Reserves:", 0.01, PCT_FMT)
+
+    # --- Three funds table ---
+    ws.cell(row=10, column=1, value="THE THREE FUNDS").font = SECTION_FONT
+    for c, h in enumerate(["Fund", "Target / Floor", "Year-1 Contribution", "Allocated Start", "Floor Rule"], 1):
+        ws.cell(row=11, column=c, value=h)
+    style_header_row(ws, 11, 5)
+
+    def fund_row(r, name, target_val, target_is_input, contrib_val, alloc_value, rule):
+        ws.cell(row=r, column=1, value=name).font = NORMAL_FONT
+        ws.cell(row=r, column=1).border = THIN_BORDER
+        c = ws.cell(row=r, column=2, value=target_val)
+        c.font = LABEL_FONT
+        c.number_format = CURRENCY_FMT
+        c.border = THIN_BORDER
+        if target_is_input:
+            c.fill = INPUT_FILL
+        c = ws.cell(row=r, column=3, value=contrib_val)
+        c.font = LABEL_FONT
+        c.number_format = CURRENCY_FMT
+        c.fill = INPUT_FILL
+        c.border = THIN_BORDER
+        c = ws.cell(row=r, column=4, value=alloc_value)   # starting balance (editable input)
+        c.font = LABEL_FONT
+        c.number_format = CURRENCY_FMT
+        c.fill = INPUT_FILL
+        c.border = THIN_BORDER
+        ws.cell(row=r, column=5, value=rule).font = SMALL_FONT
+        ws.cell(row=r, column=5).border = THIN_BORDER
+
+    fund_row(12, "1. Emergency Reserve", et, True, emerg_contrib,
+             emerg_start, f"Reach & hold target ({elabel})")
+    fund_row(13, "2. Long-Term Maintenance", 0, False, ltm_contrib,
+             ltm_start, "Never below $0 (Becht capital schedule)")
+    # Operating Reserve floor is computed = multiplier x monthly operating expense (B38*B37)
+    fund_row(14, "3. Operating Reserve", "=B38*B37", False, reg_contrib,
+             reg_start, "≥ multiplier x monthly op. expense (set below)")
+
+    ws.cell(row=15, column=1, value="TOTAL").font = LABEL_FONT
+    ws.cell(row=15, column=1).border = THIN_BORDER
+    for col, formula in [(3, "=SUM(C12:C14)"), (4, "=SUM(D12:D14)")]:
+        c = ws.cell(row=15, column=col, value=formula)
+        c.font = LABEL_FONT
+        c.number_format = CURRENCY_FMT
+        c.border = THIN_BORDER
+    ws.cell(row=16, column=1,
+            value="Allocated Start = each fund's current balance (yellow, editable); Total Reserve Cash (B5) "
+                  "is their sum. Recommended: fund near-term Long-Term Maintenance and Operating liquidity "
+                  "first, and build the Emergency Reserve from contributions over time.").font = SMALL_FONT
+
+    # --- LTM funding health ---
+    ws.cell(row=18, column=1, value="LONG-TERM MAINTENANCE — FUNDING HEALTH").font = SECTION_FONT
+    ws.cell(row=19, column=1, value="Fully Funded Balance (FFB — what LTM should hold today):").font = LABEL_FONT
+    c = ws.cell(row=19, column=2, value=round(ffb))
+    c.font = LABEL_FONT
+    c.number_format = CURRENCY_FMT
+    c.border = THIN_BORDER
+    ws.cell(row=20, column=1, value="LTM Reserve (allocated start):").font = LABEL_FONT
+    c = ws.cell(row=20, column=2, value="=D13")
+    c.number_format = CURRENCY_FMT
+    c.border = THIN_BORDER
+    ws.cell(row=21, column=1, value="Percent Funded:").font = LABEL_FONT
+    c = ws.cell(row=21, column=2, value="=IF(B19=0,0,B20/B19)")
+    c.font = LABEL_FONT
+    c.number_format = PCT_FMT
+    c.border = THIN_BORDER
+    ws.cell(row=21, column=3,
+            value='=IF(B21<0.3,"WEAK (<30% - high special-assessment risk)",'
+                  'IF(B21<0.7,"FAIR (30-70%)","STRONG (70%+)"))').font = NORMAL_FONT
+    ws.conditional_formatting.add("B21", CellIsRule(operator="lessThan", formula=["0.3"], fill=WARN_FILL, font=WARN_FONT))
+    ws.conditional_formatting.add("B21", CellIsRule(operator="between", formula=["0.3", "0.6999"], fill=NEUTRAL_FILL))
+    ws.conditional_formatting.add("B21", CellIsRule(operator="greaterThanOrEqual", formula=["0.7"], fill=GOOD_FILL, font=GOOD_FONT))
+    ws.cell(row=22, column=1, value="CAI bands: under 30% = weak; 30-70% = fair; 70%+ = strong.").font = SMALL_FONT
+
+    # --- Reduction readiness gates ---
+    ws.cell(row=24, column=1, value="REDUCTION READINESS — ALL THREE GATES MUST PASS").font = SECTION_FONT
+    for c, h in enumerate(["Gate", "Target", "Actual", "Status"], 1):
+        ws.cell(row=25, column=c, value=h)
+    style_header_row(ws, 25, 4)
+
+    def gate_row(r, label, target_formula, actual_formula, status_formula):
+        ws.cell(row=r, column=1, value=label).font = NORMAL_FONT
+        ws.cell(row=r, column=1).border = THIN_BORDER
+        c = ws.cell(row=r, column=2, value=target_formula)
+        c.number_format = CURRENCY_FMT
+        c.border = THIN_BORDER
+        c = ws.cell(row=r, column=3, value=actual_formula)
+        c.number_format = CURRENCY_FMT
+        c.border = THIN_BORDER
+        c = ws.cell(row=r, column=4, value=status_formula)
+        c.border = THIN_BORDER
+        c.alignment = Alignment(horizontal="center")
+
+    gate_row(26, "1. Emergency Reserve funded to target", "=B12", "=D12", '=IF(D12>=B12,"PASS","FAIL")')
+    gate_row(27, "2. Long-Term Maintenance never below $0", 0,
+             "=MIN('Long-Term Maintenance'!F5:F29)", '=IF(C27>=B27,"PASS","FAIL")')
+    gate_row(28, "3. Operating Reserve at/above its floor", "=B14",
+             "=MIN('Operating Reserve'!F5:F29)", '=IF(C28>=B28,"PASS","FAIL")')
+
+    ws.cell(row=29, column=1, value="OVERALL").font = LABEL_FONT
+    ws.cell(row=29, column=1).border = THIN_BORDER
+    c = ws.cell(row=29, column=4,
+                value='=IF(AND(D26="PASS",D27="PASS",D28="PASS"),'
+                      '"ELIGIBLE TO CONSIDER REDUCTION","NOT ELIGIBLE — HOLD DUES")')
+    c.font = LABEL_FONT
+    c.border = THIN_BORDER
+    c.alignment = Alignment(horizontal="center")
+    ws.merge_cells(start_row=29, start_column=2, end_row=29, end_column=3)
+
+    for rng in ("D26", "D27", "D28"):
+        ws.conditional_formatting.add(rng, FormulaRule(formula=[f'{rng}="FAIL"'], fill=WARN_FILL, font=WARN_FONT))
+        ws.conditional_formatting.add(rng, FormulaRule(formula=[f'{rng}="PASS"'], fill=GOOD_FILL, font=GOOD_FONT))
+    ws.conditional_formatting.add("D29", FormulaRule(formula=['ISNUMBER(SEARCH("NOT",D29))'], fill=WARN_FILL, font=WARN_FONT))
+    ws.conditional_formatting.add("D29", FormulaRule(formula=['ISNUMBER(SEARCH("CONSIDER",D29))'], fill=GOOD_FILL, font=GOOD_FONT))
+
+    # --- Combined cost ---
+    ws.cell(row=31, column=1, value="Combined Monthly Cost per Unit (Year 1, all three funds):").font = LABEL_FONT
+    c = ws.cell(row=31, column=2, value="=(C12+C13+C14)/B6/12")
+    c.font = LABEL_FONT
+    c.number_format = '$#,##0'
+    c.border = THIN_BORDER
+    ws.cell(row=32, column=1,
+            value="Grows at the Growth Rate each year; this is Year-1. Add the HOA per-unit amount for a "
+                  "unit owner's all-in monthly.").font = SMALL_FONT
+    ws.cell(row=34, column=1,
+            value="To model a dues reduction: lower a fund's Year-1 Contribution above and watch the gates. "
+                  "Any gate turning FAIL means the reduction is not supported.").font = SMALL_FONT
+
+    # Operating Reserve basis — drives the Operating Reserve floor (B14 = B38 x B37)
+    ws.cell(row=36, column=1, value="OPERATING RESERVE BASIS").font = SECTION_FONT
+    ws.cell(row=37, column=1, value="Monthly Operating Expense:").font = LABEL_FONT
+    c = ws.cell(row=37, column=2, value=op_monthly)
+    c.font = LABEL_FONT
+    c.number_format = CURRENCY_FMT
+    c.fill = INPUT_FILL
+    c.border = THIN_BORDER
+    ws.cell(row=37, column=3,
+            value="The association's total monthly operating spend (excludes reserve contributions).").font = SMALL_FONT
+    ws.cell(row=38, column=1, value="Operating Reserve Multiplier (months, 1-3):").font = LABEL_FONT
+    c = ws.cell(row=38, column=2, value=op_mult)
+    c.font = LABEL_FONT
+    c.number_format = "0"
+    c.fill = INPUT_FILL
+    c.border = THIN_BORDER
+    ws.cell(row=38, column=3,
+            value="Operating Reserve floor (row 14) = this multiplier x monthly operating expense.").font = SMALL_FONT
+
+    # --- Monthly funding per unit (Year 1) ---
+    ws.cell(row=40, column=1, value="MONTHLY FUNDING PER UNIT (Year 1)").font = SECTION_FONT
+    for c, h in enumerate(["Fund", "$ / unit / month"], 1):
+        ws.cell(row=41, column=c, value=h)
+    style_header_row(ws, 41, 2)
+    for i, (nm, formula) in enumerate([
+        ("Emergency Reserve", "=C12/$B$6/12"),
+        ("Long-Term Maintenance", "=C13/$B$6/12"),
+        ("Operating Reserve", "=C14/$B$6/12"),
+    ]):
+        r = 42 + i
+        ws.cell(row=r, column=1, value=nm).font = NORMAL_FONT
+        ws.cell(row=r, column=1).border = THIN_BORDER
+        c = ws.cell(row=r, column=2, value=formula)
+        c.number_format = '$#,##0.00'
+        c.border = THIN_BORDER
+    ws.cell(row=45, column=1, value="TOTAL reserve funding / unit / month").font = LABEL_FONT
+    ws.cell(row=45, column=1).border = THIN_BORDER
+    c = ws.cell(row=45, column=2, value="=(C12+C13+C14)/$B$6/12")
+    c.font = LABEL_FONT
+    c.number_format = '$#,##0.00'
+    c.border = THIN_BORDER
+    ws.cell(row=46, column=1,
+            value="Equal per-unit split (fund contribution / units / 12); grows ~3%/yr. Excludes the separate "
+                  "$365/unit HOA dues. If common charges are set by percentage interest, larger units pay "
+                  "proportionally more than this average.").font = SMALL_FONT
+
+    for col, w in [("A", 46), ("B", 18), ("C", 20), ("D", 18), ("E", 34)]:
+        ws.column_dimensions[col].width = w
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -858,17 +1276,39 @@ def generate_workbook(key, entity):
     ws_instr.title = "Instructions"
     build_instructions_sheet(ws_instr, entity)
 
-    # Sheet 2: Reserve Schedule
-    ws_sched = wb.create_sheet("Reserve Schedule")
-    build_schedule_sheet(ws_sched, entity)
+    # Sheet 2: Fund Summary & Reduction Readiness
+    build_summary_sheet(wb.create_sheet("Fund Summary"), entity)
 
-    # Sheet 3: Components
-    ws_comp = wb.create_sheet("Components")
-    build_components_sheet(ws_comp, entity)
+    # Shared cross-sheet input references (all live on Fund Summary)
+    growth_ref = "'Fund Summary'!$B$7"
+    interest_ref = "'Fund Summary'!$B$8"
+    units_ref = "'Fund Summary'!$B$6"
+    common = {"growth_ref": growth_ref, "interest_ref": interest_ref, "units_ref": units_ref}
 
-    # Sheet 4: Expenditure Chart
-    ws_chart = wb.create_sheet("Expenditure Chart")
-    build_chart_sheet(ws_chart, entity)
+    # Sheet 3: Emergency Reserve
+    build_fund_schedule(wb.create_sheet("Emergency Reserve"), entity, {
+        "title": f"{entity['name']} — Emergency Reserve", "tab": "C00000",
+        "start_ref": "'Fund Summary'!$D$12", "contrib_ref": "'Fund Summary'!$C$12",
+        "floor_ref": "'Fund Summary'!$B$12", "floor_kind": "target", "disb": {}, **common})
+
+    # Sheet 4: Long-Term Maintenance (Becht capital schedule)
+    build_fund_schedule(wb.create_sheet("Long-Term Maintenance"), entity, {
+        "title": f"{entity['name']} — Long-Term Maintenance", "tab": "548235",
+        "start_ref": "'Fund Summary'!$D$13", "contrib_ref": "'Fund Summary'!$C$13",
+        "floor_ref": "'Fund Summary'!$B$13", "floor_kind": "zero",
+        "disb": entity["disbursements"], **common})
+
+    # Sheet 5: Operating Reserve
+    build_fund_schedule(wb.create_sheet("Operating Reserve"), entity, {
+        "title": f"{entity['name']} — Operating Reserve", "tab": "7030A0",
+        "start_ref": "'Fund Summary'!$D$14", "contrib_ref": "'Fund Summary'!$C$14",
+        "floor_ref": "'Fund Summary'!$B$14", "floor_kind": "flat", "disb": {}, **common})
+
+    # Sheet 6: Components
+    build_components_sheet(wb.create_sheet("Components"), entity)
+
+    # Sheet 7: Expenditure Chart (Long-Term Maintenance disbursements)
+    build_chart_sheet(wb.create_sheet("Expenditure Chart"), entity)
 
     filename = entity["filename"]
     wb.save(filename)
