@@ -38,7 +38,7 @@ This document is intended to help Association owners understand the HOA's financ
 | Condo IV | 98 | $214,620.00 | $214,620.00 | — |
 | **Total** | **136** | **$297,840.00** | **$283,605.00** | **($14,235.00)** |
 
-> ⚠️ **Condo I HOA dues stopped after March.** Condos II, III and IV each remitted all six months on schedule. Condo I is also billed differently from the others — its payments post per unit ("Unit 1 / 109 Old Route 6") rather than as a single association remittance, and included a 15-unit prepayment in February. Net of that prepayment, **Condo I paid 69 of 108 unit-months for the half-year, leaving approximately $14,235 unremitted as of June 30.** No payment was received in April, May, or June. This should be confirmed against the receivable ledger and pursued with management.
+> ⚠️ **Condo I HOA dues stopped after March.** Condos II, III and IV each remitted all six months on schedule. Condo I's payments also post differently: they arrive as scanned **batch deposits** under a single master-association member account ("Unit 1, 109 Old Route 6, acct. 9622"), and the amount varies month to month — 18, then 19, then 17 units' worth — whereas the other three remit a flat, unvarying association assessment. February also included a 15-unit prepayment of $5,475. In total **Condo I paid 69 of the 108 unit-months owed for the half-year, leaving $14,235 unremitted as of June 30.** No payment was received in April, May, or June. This should be confirmed against the receivable ledger and pursued with management.
 
 ### Expenses — Operating
 
@@ -114,7 +114,11 @@ This document is intended to help Association owners understand the HOA's financ
 
 > ⚠️ **Condo I stopped remitting HOA dues after March 2026.** Its last payment posted March 17, 2026. Condos II, III and IV each remitted all six months in full and on schedule.
 >
-> Condo I is billed and posts differently from the other three associations — its payments arrive per unit ("Unit 1 / 109 Old Route 6") rather than as a single association remittance, and February included a 15-unit prepayment of $5,475. Measured in unit-months, Condo I paid **69 of the 108 unit-months** owed for the half-year; the 39-unit-month shortfall at $365 is **$14,235.00**. Even crediting the February prepayment forward, it covers only about half of April.
+> Condo I posts differently from the other three associations. Its dues arrive as scanned **batch deposits** (batches 23284, 24013 and 24505) credited to a single master-association member account — recorded as "Unit 1, 109 Old Route 6, acct. 9622" rather than under an SG association code — and the amount varies month to month in exact multiples of $365: 18 units' worth in January, 19 in February, 17 in March. Condos II, III and IV each remit a flat, unvarying association assessment. February also included a 15-unit prepayment of $5,475.
+>
+> Measured in unit-months, Condo I paid **69 of the 108 unit-months** owed for the half-year; the 39-unit-month shortfall at $365 is **$14,235.00**. Even crediting the February prepayment forward, it covers only about half of April.
+>
+> *Identification note: the ledger does not name Condo I on these entries. The attribution rests on the amounts being exact multiples of $365 at Condo I's 18-unit count, and on Condo I having no other source of dues income in the period. Confirm the account mapping with management before acting on this line.*
 >
 > This receivable is **not** reflected in the cash position above — the HOA's $376,529.52 of cash is $14,235 lighter than a fully-collected half-year would leave it, which is a material part of why the operating account is down to eight days of coverage. The amount should be confirmed against the receivable ledger, and collection pursued with management. The corresponding **liability belongs on Condo I's own Statement of Income and Liabilities** when that document is prepared.
 
