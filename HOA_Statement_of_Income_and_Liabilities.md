@@ -155,7 +155,10 @@ There are two ways to read the gap. **(A)** is what the reserve plan actually re
 | Measure | Amount |
 |---|---:|
 | Reserve cash on hand (Webster Money Market, 6/30/26) | $364,333.66 |
-| Annual contribution required (all funds, Year 1) | **~$112,100/yr (~$69/unit/mo)** |
+| Annual contribution required (all funds, Year 1) | **~$98,700/yr (~$60/unit/mo)** |
+| — Long-Term Maintenance | $61,700/yr ($37.81/unit/mo) |
+| — Emergency Reserve (until funded in 2030) | $37,000/yr ($22.67/unit/mo) |
+| — Operating Reserve (floor already met from cash on hand) | $0/yr |
 | Emergency Reserve — target (largest common asset: clubhouse / pool) | $200,000 |
 | Operating Reserve — floor (3 months operating expense @ ~$47,927/mo) | ~$143,800 |
 | Long-Term Maintenance | Kept solvent every year (peak need ~$330K for the 2036 asphalt paving) |
@@ -163,7 +166,9 @@ There are two ways to read the gap. **(A)** is what the reserve plan actually re
 
 *This plan funds each obligation as it comes due; it does **not** require a large lump sum on hand today. The reserve balance rises and falls as bills are paid — it never needs to sit at the "fully funded" figure in section B.*
 
-> **Actual funding vs. plan.** The plan calls for ~$112,100/year. Cash actually transferred to reserves in the first half of 2026 was **$11,019.56**, an annualized rate of roughly **$22,000 — about 20% of the required contribution** — and transfers stopped entirely after March. Closing that gap, or formally re-adopting a lower schedule, is the central funding decision in front of the Board.
+> **The Year-1 contribution is not a flat annual figure.** It grows 3%/year to track inflation, and each fund behaves differently over the 25 years. **Long-Term Maintenance** contributes every year, rising from $61,700 (2026) to ~$125,400 (2050), because it is funding a continuing schedule of disbursements — a cumulative $2,249,537. **Emergency Reserve** contributes only until it reaches the $200,000 target in **2030**, then stops; total cost $196,438, not an indefinite obligation. **Operating Reserve** contributes nothing, because its $143,800 floor is met from cash already on hand.
+>
+> **Actual funding vs. plan.** The plan calls for ~$98,700 in Year 1. Cash actually transferred to reserves in the first half of 2026 was **$11,019.56**, an annualized rate of roughly **$22,000 — about 22% of the required contribution** — and transfers stopped entirely after March. Closing that gap, or formally re-adopting a lower schedule, is the central funding decision in front of the Board.
 
 ### B. Industry health check (accrual basis — diagnostic only)
 
@@ -182,9 +187,12 @@ There are two ways to read the gap. **(A)** is what the reserve plan actually re
 3. **Fund the nearest-term reserve items** — pool shell resurfacing and the split-rail fence repair fund (2027), then pool mechanical, cover, and clubhouse gutters (2028).
 4. **Plan for the long-horizon clusters.** The largest single obligation, **asphalt road paving (~$330,000 in 2036)**, together with the 2033 cluster (sidewalks, street lighting, clubhouse refurbishments), should drive the Long-Term Maintenance contribution schedule. Signage and other placeholder costs may shift as field verification is completed.
 
-> **Workbook reconciliation note.** `HOA_Reserve_Plan.xlsx` currently carries placeholder inputs that do not agree with this statement: total reserve cash of **$59,717** (actual: $364,333.66) and a monthly operating expense of **$0** (actual: ~$47,927 on the half-year run rate, giving a $143,800 Operating Reserve floor rather than $0). The percent-funded and Operating Reserve figures above are computed from the actual general-ledger and bank figures.
+> **Workbook reconciliation note.** `HOA_Reserve_Plan.xlsx` has been regenerated so that it agrees with this statement. Two corrections were made to `generate_entity_workbooks.py`:
 >
-> The **$112,100/yr** contribution shown above is therefore **overstated** — it is solved on the assumption that the HOA holds $59,717 of reserve cash when it in fact holds $364,333.66. Re-solving on the actual balance, with the Operating Reserve floor met from existing cash and the remainder seeded to Long-Term Maintenance, gives **~$98,700/yr (~$60/unit/month)**. The workbook should be regenerated from `generate_entity_workbooks.py` with the corrected inputs so the two documents agree; this statement will be reissued with the revised figure once the Board adopts it.
+> 1. **Reserve cash and operating basis re-based to actuals.** The workbook previously assumed total reserve cash of $59,717 and a monthly operating expense of $0. It now uses the actual $364,334 and $47,927/mo, with the Operating Reserve floor funded from cash on hand and the $220,553 remainder seeded to Long-Term Maintenance. This is what reduced the Year-1 contribution from $112,100 to $98,700.
+> 2. **Target funds no longer over-collect.** A defect caused the Emergency and Operating Reserve tabs to keep escalating contributions 3%/year *after* reaching their targets. The HOA Emergency Reserve was scheduled to collect **$1,348,993** against a $200,000 target. Contributions now stop when the target is reached — $196,438 total, complete in 2030. Long-Term Maintenance is unaffected; it contributes every year by design. *(The same defect affected all five entity workbooks and has been corrected in each.)*
+>
+> Two caveats remain. The $47,927/mo operating basis is the half-year run rate, which is seasonally high — it carries the full annual insurance premium, the whole winter snow spend and both audits — so it should be replaced with the adopted annual operating budget ÷ 12. The total is insensitive to this: across a $35,000–$48,000/mo range the required contribution moves only ~$3,200/yr. Separately, the regenerated workbooks contain formulas but no cached values, so they must be **opened and saved once in Excel** before the calculated columns will display to anyone viewing them without recalculation.
 
 ---
 

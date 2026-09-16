@@ -339,7 +339,18 @@ def get_life(component_name):
 # operating_multiplier x operating_monthly = the Operating Reserve floor (months of
 # operating expenses). operating_monthly defaults to 0 (placeholder — enter actual).
 FUND_DEFAULTS = {
-    "HOA":      {"emergency_target": 200000, "operating_multiplier": 3, "operating_monthly": 0, "total_cash": 59717,
+    # HOA cash and operating figures are actuals from the Jan 1 - Jun 30 2026 GL and bank
+    # register: reserve cash $364,333.66 (Webster Money Market 6412, rounded), operating
+    # expense $287,561.51 over six months = $47,927/mo. NOTE: the half-year run rate is
+    # seasonally high — it carries the full annual insurance premium, the whole winter snow
+    # spend and both audits — so replace operating_monthly with the adopted annual operating
+    # budget / 12 once available. The total contribution is insensitive to this: the floor
+    # moves the answer by only ~$3,200/yr across a $35k-$48k/mo range.
+    # start_split funds the Operating Reserve floor from cash on hand and seeds the
+    # remainder to Long-Term Maintenance; Emergency is built from contributions.
+    "HOA":      {"emergency_target": 200000, "operating_multiplier": 3, "operating_monthly": 47927,
+                 "total_cash": 364334,
+                 "start_split": (0, 220553, 143781),
                  "emergency_label": "largest common asset (clubhouse / pool)"},
     "Condo_I":  {"emergency_target": 150000, "operating_multiplier": 3, "operating_monthly": 0, "total_cash": 29418,
                  "emergency_label": "worst-case building replacement"},
@@ -980,7 +991,23 @@ def build_fund_schedule(ws, entity, fund):
         ws.cell(row=r, column=1, value=year)
         style_data_cell(ws.cell(row=r, column=1))
         ws.cell(row=r, column=2).value = f"={fund['start_ref']}" if i == 0 else f"=F{r - 1}"
-        ws.cell(row=r, column=3).value = f"={fund['contrib_ref']}" if i == 0 else f"=C{r - 1}*(1+{growth})"
+        # Target-based funds (Emergency, Operating) stop contributing once the fund has
+        # reached its target — otherwise the contribution compounds forever and the fund
+        # overshoots by many multiples of the target. Long-Term Maintenance (kind 'zero')
+        # contributes every year by design: it is funding a continuing disbursement
+        # schedule, not filling a fixed bucket.
+        # The growing Year-1 contribution is re-derived from contrib_ref rather than the
+        # prior year's cell, so that contributions resume correctly if a draw ever takes
+        # a target fund back below its floor.
+        if kind == "zero":
+            ws.cell(row=r, column=3).value = (
+                f"={fund['contrib_ref']}" if i == 0 else f"=C{r - 1}*(1+{growth})")
+        elif i == 0:
+            ws.cell(row=r, column=3).value = (
+                f"=IF({fund['start_ref']}>={floor},0,{fund['contrib_ref']})")
+        else:
+            ws.cell(row=r, column=3).value = (
+                f"=IF(F{r - 1}>={floor},0,{fund['contrib_ref']}*(1+{growth})^{i})")
         ws.cell(row=r, column=4, value=disb.get(year, 0))
         ws.cell(row=r, column=5).value = f"=B{r}*{interest}"
         ws.cell(row=r, column=6).value = f"=B{r}+C{r}-D{r}+E{r}"
