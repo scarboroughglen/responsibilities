@@ -169,7 +169,7 @@ Any reduction in common charges is gated on measurable reserve targets rather th
 
 ### Priorities
 
-The nearest-term items — **deck railings and exterior caulk/sealant (2027)**, **chimney caps (2031)**, and **entry stoops (2032)** — should be funded first. With the roof loan retired in July, the cash that was servicing it should be redirected to the reserve schedule rather than absorbed into operating. Additional shortfalls may emerge as the field-verification items (chimney-cap scope, entry-stoop count) are confirmed.
+The nearest-term items — **deck railings, window wells, and exterior caulk/sealant (2027)**, **chimney caps (2031)**, and **entry stoops (2032)** — should be funded first. With the roof loan retired in July, the cash that was servicing it should be redirected to the reserve schedule rather than absorbed into operating. Additional shortfalls may emerge as the field-verification items (chimney-cap scope, entry-stoop count) are confirmed.
 
 > **Workbook reconciliation note.** `Condo_IV_Reserve_Plan.xlsx` carries a total reserve cash figure of **$145,989**, which was the balance as of August 3, 2026. The June 30 balance is **$132,147.88** (the difference is the July reserve transfer). The plan's forward-looking contribution figures are unaffected, but the starting-balance input should be re-based to the period being reported when the workbook is next regenerated from `generate_entity_workbooks.py`.
 
