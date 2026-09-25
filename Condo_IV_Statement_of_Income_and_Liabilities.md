@@ -108,14 +108,16 @@ This document is intended to help owners understand this Condominium's financial
 
 | Component | Est. Remaining Life (Year) | Est. Replacement Cost | Notes |
 |---|---|---:|---|
-| Deck Railings & Balusters (safety) | Past due (2027) | $40,469 | Life-safety item; **not** replaced with the 2025 roof; recurs ~12-yr cycle |
+| Deck Railings & Balusters (safety) | 2026-2028 | $40,469 | Life-safety item; **not** replaced with the 2025 roof; recurs ~12-yr cycle |
+| Window Wells | -2028 |  |  |
+| Gutters | -2028 |  |  |
 | Exterior Caulk/Sealant & Trim Maintenance | Recurring, ~6 yrs (from 2027) | $15,000 / cycle | **Window-seal caulking (critical)** + trim; protects the wall assembly behind the vinyl |
 | Chimney Chase Covers / Caps | ~5 yrs (2031) | $125,160 | **Caps not replaced in the 2025 roof project — flashing only.** Scope/count to be field-verified |
 | Entry Stoops (concrete + safety repair cycle) | ~2032 | $225,400 | **Omitted by both Falcon and Becht;** est. $2,000/unit × 98 units + safety cycle |
 | Deck Framing & Footings | ~2033 | $64,750 | Long-lived structure (survives 2–3 board cycles) |
 | Deck Boards (surface) | ~2033 (~18-yr cycle) | $56,657 | Wear surface; next stand-alone cycle ~2051 |
-| Concrete Sidewalks | ~2033 | $5,086 | Becht/Falcon |
-| Asphalt Driveways | ~2036 | $254,562 | Becht/Falcon |
+| Concrete Sidewalks (HOA) | ~2033 | $5,086 | Becht/Falcon |
+| Asphalt Driveways (HOA) | ~2036 | $254,562 | Becht/Falcon |
 | Vinyl Siding | ~2049 | $1,651,860 | **Largest single obligation** (~$3.26M inflated to 2049) |
 | Roof Shingles (townhouses) | ~2050 | $880,045 | Replaced 2025; next cycle ~2050 |
 | Deck Replacement, Composite (next cycle) | ~2053 | $132,444 | Beyond the current 25-yr planning window |
@@ -158,8 +160,8 @@ Any reduction in common charges is gated on measurable reserve targets rather th
 
 | Gate | Target | Actual | Status |
 |---|---|---|:--:|
-| 1. Capital reserve percent funded | ≥ 30% floor (aspire 70%) | ~9.2% | **FAIL** |
-| 2. Operating Reserve at/above floor | ≥ $109,509 (3 mo.) | $37,143.77 liquid (~1.0 mo.) | **FAIL** |
+| 1. Emergency (redo section) reserve percent funded | ≥ 30% floor (aspire 70%) | ~9.2% | **FAIL (To be funded)** |
+| 2. Operating Reserve at/above floor | ≥ $109,509 (3 mo.) | $37,143.77 liquid (~1.0 mo.) | **FAIL (To be funded)** |
 | 3. Long-Term Maintenance clears every year | never below $0 | clears at $156,900/yr | **PASS** |
 | **OVERALL** | all three must pass | | **NOT SUPPORTED** |
 
