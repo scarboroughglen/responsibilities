@@ -6,6 +6,8 @@ The Becht Engineering Capital Reserve Study (Project 25-1140, dated February 3, 
 
 **The Problem**: Becht does NOT differentiate between the five legal entities (HOA, Condo I, Condo II, Condo III, Condo IV). The original Falcon Group report (2022) properly separated these. This document uses Falcon's per-entity quantities as the benchmark to derive allocation ratios and re-assign Becht's costs to the correct responsible entity.
 
+**First Amendment reallocation (revised October 2026)**: The First Amendment to the HOA Declaration and By-Laws (recorded Feb 14, 2001; `pdf/hoa_amendment_1.pdf`) makes "all walks and driveways" HOA Common Areas (§1(d)(v)), including those on Condo land. This document has been revised so that the **full Becht driveway line ($308,000) and the full concrete sidewalk line ($35,200) are allocated to the HOA**. Falcon had placed these in the Condo II-IV and Condo I-IV schedules. Every per-entity total, ratio, contribution and schedule below reflects that move. Entry stoops, porches and exterior stairs remain with the Condos (§13). See `responsibility_analysis.md` for the full amendment analysis.
+
 ---
 
 ## Becht Components - Complete List (41 Items)
@@ -105,13 +107,13 @@ These are 100% HOA responsibility -- recreation, clubhouse, pool, site common ar
 | # | Becht Component | Replace Cost | Split Type |
 |---|----------------|-------------|-----------|
 | 3 | Asphalt Paving (Roadways) | $330,000 | HOA (roadways are common) |
-| 4 | Asphalt Paving, Driveways | $308,000 | Condo (driveways are per-Condo) |
+| 4 | Asphalt Paving, Driveways | $308,000 | HOA (First Amendment §1(d)(v): all driveways are HOA Common Areas) |
 | 6 | Chimney Chase Covers | $178,800 | Condo (building component) |
-| 10 | Concrete Sidewalks | $35,200 | Mixed - HOA common + Condo parcel walks |
+| 10 | Concrete Sidewalks | $35,200 | HOA (First Amendment §1(d)(v): all walks are HOA Common Areas) |
 | 12 | Deck Replacement, Composite | $360,000 | Condo (building component) |
 | 13 | Deck Replacement, Wood | $440,000 | Condo (building component) |
 | 27 | Lights, Street | $83,200 | HOA (street lights are common) |
-| 28 | Mailboxes | $20,400 | Disputed (see items_in_disagreement.md) |
+| 28 | Mailboxes | $20,400 | HOA (not named in the documents; they stand on HOA Common Area land, First Amendment §1(d)(i)) |
 | 31 | Roof, Shingles - Townhouses | $1,150,988 | Condo (building component) |
 | 32 | Seal Coating | $16,500 | HOA (roadway maintenance) |
 | 33 | Siding, Vinyl | $1,800,000 | Condo (building component) |
@@ -132,11 +134,13 @@ Several of the "split" items above are actually 100% HOA upon closer review:
 | Asphalt Paving (Roadways) | $330,000 | **HOA** | Roadways are common elements per bylaws |
 | Lights, Street | $83,200 | **HOA** | Street lights are common area infrastructure |
 | Seal Coating | $16,500 | **HOA** | Roadway maintenance = HOA |
-| Mailboxes | $20,400 | **HOA** | Per Becht: 136 EA = all units. Recently replaced community-wide. Per responsibility_analysis.md this is disputed but likely HOA |
+| Mailboxes | $20,400 | **HOA** | Per Becht: 136 EA = all units. Recently replaced community-wide. Not named in the governing documents, but they stand on Condo land, which First Amendment §1(d)(i) makes an HOA Common Area |
+| Asphalt Paving, Driveways | $308,000 | **HOA** | First Amendment §1(d)(v): "all walks and driveways" are HOA Common Areas, including driveways on Condo land |
+| Concrete Sidewalks | $35,200 | **HOA** | First Amendment §1(d)(v): all walks, including Condo entry walks, are HOA Common Areas |
 
-**Additional HOA total from split items**: $449,700 (road) + $83,200 (lights) + $20,400 (mailboxes) = **$450,100**
+**Additional HOA total from split items**: $330,000 (roads) + $83,200 (lights) + $16,500 (seal coat) + $20,400 (mailboxes) + $308,000 (driveways) + $35,200 (sidewalks) = **$793,300**
 
-**Revised HOA-Only Total**: $475,470 + $330,000 + $83,200 + $16,500 + $20,400 = **$925,570**
+**Revised HOA-Only Total**: $475,470 + $330,000 + $83,200 + $16,500 + $20,400 + $308,000 + $35,200 = **$1,268,770**
 
 ---
 
@@ -300,6 +304,8 @@ Several of the "split" items above are actually 100% HOA upon closer review:
 | Condo IV | 3,789 | 82.66% | $254,562 |
 | **Total** | **4,584** | **100%** | **$308,000** |
 
+**First Amendment**: These ratios show *where* the driveway paving is located. They no longer split the cost. Under §1(d)(v) the entire $308,000 is an HOA expense. The split is kept for tracking and for the paving contract scope.
+
 ---
 
 ### 3G. Concrete Sidewalks
@@ -329,6 +335,8 @@ Several of the "split" items above are actually 100% HOA upon closer review:
 | Condo IV | 185 | 14.45% | $5,086 |
 | **Total** | **1,280** | **100%** | **$35,200** |
 
+**First Amendment**: All walks are HOA Common Areas under §1(d)(v), so the entire $35,200 is an HOA expense, and the location split above is for tracking only. Falcon's Condo IV line combines "entry walk/stair/landing". The stair and landing portion is arguably a Condo item under §13 ("exterior stairs"), but it is not separable at this level of detail and is small.
+
 ---
 
 ## Step 4: Final Allocation Summary
@@ -345,7 +353,9 @@ Several of the "split" items above are actually 100% HOA upon closer review:
 | Clubhouse Furniture | $15,000 | $15,000 | -- | -- | -- | -- |
 | Concrete Pool Apron | $78,250 | $78,250 | -- | -- | -- | -- |
 | Concrete Pool Coping | $9,900 | $9,900 | -- | -- | -- | -- |
+| Concrete Sidewalks | $35,200 | $35,200 | -- | -- | -- | -- |
 | Curbing, Concrete | $35,000 | $35,000 | -- | -- | -- | -- |
+| Driveways, Asphalt | $308,000 | $308,000 | -- | -- | -- | -- |
 | Entrance Sign - Large | $20,000 | $20,000 | -- | -- | -- | -- |
 | Entrance Sign - Small | $12,000 | $12,000 | -- | -- | -- | -- |
 | Fence, Vinyl Stockade | $42,500 | $42,500 | -- | -- | -- | -- |
@@ -371,18 +381,16 @@ Several of the "split" items above are actually 100% HOA upon closer review:
 | Windows, Dbl Dbl - Club | $4,000 | $4,000 | -- | -- | -- | -- |
 | Windows, Dbl Sgl - Club | $2,000 | $2,000 | -- | -- | -- | -- |
 | Windows, Transom | $1,500 | $1,500 | -- | -- | -- | -- |
-| **HOA-Only Subtotal** | **$925,570** | **$925,570** | **$0** | **$0** | **$0** | **$0** |
+| **HOA-Only Subtotal** | **$1,268,770** | **$1,268,770** | **$0** | **$0** | **$0** | **$0** |
 | | | | | | | |
 | **Split Items (Falcon Ratios)** | | | | | | |
-| Driveways, Asphalt | $308,000 | $0 | $0 | $37,638 | $15,800 | $254,562 |
 | Chimney Chase Covers | $178,800 | $0 | $17,880 | $19,668 | $16,092 | $125,160 |
-| Concrete Sidewalks | $35,200 | $20,103 | $6,382 | $2,006 | $1,623 | $5,086 |
 | Deck Repl., Wood | $440,000 | $0 | $109,868 | $81,312 | $86,900 | $161,876 |
 | Deck Repl., Composite | $360,000 | $0 | $89,892 | $66,528 | $71,100 | $132,444 |
 | Roof - Townhouses | $1,150,988 | $0 | $83,792 | $106,812 | $80,339 | $880,045 |
 | Siding, Vinyl | $1,800,000 | $0 | $148,140 | $0 | $0 | $1,651,860 |
 | Siding, Wood | $222,000 | $0 | $0 | $109,468 | $112,532 | $0 |
-| **Split Subtotal** | **$4,494,988** | **$20,103** | **$455,954** | **$423,432** | **$384,386** | **$3,211,033** |
+| **Split Subtotal** | **$4,151,788** | **$0** | **$449,572** | **$383,788** | **$366,963** | **$2,951,385** |
 
 ---
 
@@ -390,16 +398,16 @@ Several of the "split" items above are actually 100% HOA upon closer review:
 
 | Entity | Total Replacement Cost | % of Total | Per Unit* |
 |--------|----------------------|-----------|----------|
-| **HOA** | **$945,673** | **17.46%** | $6,953/unit (136 units) |
-| **Condo I** | **$455,954** | **8.42%** | $25,331/unit (18 units) |
-| **Condo II** | **$423,432** | **7.82%** | $38,494/unit (11 units) |
-| **Condo III** | **$384,386** | **7.10%** | $42,710/unit (9 units) |
-| **Condo IV** | **$3,211,033** | **59.30%** | $32,765/unit (98 units) |
+| **HOA** | **$1,268,770** | **23.41%** | $9,329/unit (136 units) |
+| **Condo I** | **$449,572** | **8.29%** | $24,976/unit (18 units) |
+| **Condo II** | **$383,788** | **7.08%** | $34,890/unit (11 units) |
+| **Condo III** | **$366,963** | **6.77%** | $40,774/unit (9 units) |
+| **Condo IV** | **$2,951,385** | **54.45%** | $30,116/unit (98 units) |
 | **Total** | **$5,420,478** | **100%** | |
 
 *Unit counts estimated from Falcon report structure (136 total units).
 
-**Note**: Condo IV dominates because it has the largest building count (98 of 136 units), and carries the bulk of vinyl siding ($1.65M) and roof ($880K) costs.
+**Note**: Condo IV dominates because it has the largest building count (98 of 136 units), and carries the bulk of vinyl siding ($1.65M) and roof ($880K) costs. The HOA's share rose from 17.46% to 23.41% when driveways and walks moved to it under the First Amendment. Before the move, Condo IV alone carried $259,648 of driveways and walks.
 
 ---
 
@@ -416,8 +424,8 @@ These ratios can be applied to Becht's costs whenever a building-level component
 | Vinyl Siding (SQ) | 8.23% | 0% | 0% | 91.77% | Falcon SQ counts |
 | Wood Siding (SQ) | 0% | 49.31% | 50.69% | 0% | Falcon SQ counts |
 | Decks (cost-based) | 24.97% | 18.48% | 19.75% | 36.79% | Falcon cost ratios |
-| Driveways (SY) | 0% | 12.22% | 5.13% | 82.66% | Falcon SY counts |
-| Sidewalks (SF) | 18.13% | 5.70% | 4.61% | 14.45% | Falcon SF counts + 57.11% HOA |
+| Driveways (SY) — *location only; cost is 100% HOA* | 0% | 12.22% | 5.13% | 82.66% | Falcon SY counts (First Amendment §1(d)(v)) |
+| Sidewalks (SF) — *location only; cost is 100% HOA* | 18.13% | 5.70% | 4.61% | 14.45% | Falcon SF counts + 57.11% HOA common (First Amendment §1(d)(v)) |
 
 ### General Building Ratio (by Falcon total building costs)
 
@@ -455,8 +463,8 @@ For any future building-level items not specifically broken down:
 | Falcon Item | Entity | Falcon Cost | Notes |
 |------------|--------|-------------|-------|
 | Wood trim replacement (recurring) | C1 | $5,000/cycle | Becht omits recurring trim maintenance |
-| Privacy fence, vinyl | C4 | $7,735 | Condo-specific fencing |
-| Retaining wall, wood tie wells | C4 | $15,000 | Condo-specific retaining walls |
+| Privacy fence, vinyl | C4 | $7,735 | **Not present on site.** Falcon line appears erroneous; excluded from the Condo IV plan |
+| Retaining wall, wood tie wells | C4 (HOA if hillside/erosion wall) | $15,000 | Condo land is HOA Common Area under First Amendment §1(d)(i); see items_in_disagreement.md Item 36 |
 | Board-on-board fence at property line | HOA | $37,350 | Becht has vinyl stockade + split rail but not board-on-board |
 | Guard rail | HOA | $10,880 | Not in Becht |
 | Vinyl on masonry wall fence | HOA | $13,950 | Not in Becht |
@@ -483,13 +491,13 @@ For any future building-level items not specifically broken down:
 | Clubhouse mirrored panels | HOA | $2,100 | Not in Becht |
 | Clubhouse restroom/lockers | HOA | $30,000 | Not in Becht |
 | Roadway granite block entry | HOA | $37,875 | Not in Becht |
-| Driveway seal coat (per-condo) | C2-C4 | Various | Becht has community-wide seal coat only |
+| Driveway seal coat (per-condo) | HOA (Falcon: C2-C4) | Various | Becht has community-wide seal coat only; driveways are HOA under First Amendment §1(d)(v) |
 | Irrigation repair fund | HOA | $5,000 | Not in Becht |
 | Refuse (slab, dumpsters, enclosure) | HOA | $6,504 | Not in Becht |
 | Retaining wall, masonry at entry | HOA | $5,000 | Not in Becht |
 | Signage (flagpole, stop, street) | HOA | $21,900 | Becht has these but at different values |
 | Fire suppression system | HOA | $7,500 | Not in Becht |
-| Mailbox hut restoration | C1 | $1,500 | Not in Becht |
+| Mailbox hut restoration | HOA (Falcon: C1) | $1,500 | Not in Becht; mailboxes treated as HOA (First Amendment §1(d)(i)) |
 
 ### Items in Becht but NOT in Falcon
 
@@ -513,37 +521,37 @@ Becht recommends annual contributions between $219,984 (5% threshold) and $437,4
 
 | Entity | Share of Total | Annual Contribution | Monthly/Unit |
 |--------|---------------|-------------------|-------------|
-| HOA | 17.46% | $76,370 | $47/unit |
-| Condo I | 8.42% | $36,829 | $170/unit |
-| Condo II | 7.82% | $34,205 | $259/unit |
-| Condo III | 7.10% | $31,056 | $288/unit |
-| Condo IV | 59.30% | $259,378 | $221/unit |
-| **Total** | **100%** | **$437,838** | |
+| HOA | 23.41% | $102,383 | $63/unit |
+| Condo I | 8.29% | $36,278 | $168/unit |
+| Condo II | 7.08% | $30,970 | $235/unit |
+| Condo III | 6.77% | $29,612 | $274/unit |
+| Condo IV | 54.45% | $238,161 | $203/unit |
+| **Total** | **100%** | **$437,404** | |
 
 ### 5% Threshold Method ($219,984/year)
 
 | Entity | Share of Total | Annual Contribution | Monthly/Unit |
 |--------|---------------|-------------------|-------------|
-| HOA | 17.46% | $38,409 | $24/unit |
-| Condo I | 8.42% | $18,523 | $86/unit |
-| Condo II | 7.82% | $17,203 | $130/unit |
-| Condo III | 7.10% | $15,619 | $145/unit |
-| Condo IV | 59.30% | $130,451 | $111/unit |
-| **Total** | **100%** | **$220,205** | |
+| HOA | 23.41% | $51,492 | $32/unit |
+| Condo I | 8.29% | $18,245 | $84/unit |
+| Condo II | 7.08% | $15,576 | $118/unit |
+| Condo III | 6.77% | $14,893 | $138/unit |
+| Condo IV | 54.45% | $119,779 | $102/unit |
+| **Total** | **100%** | **$219,984** | |
 
 ### Comparison to Falcon's Original Contributions
 
 | Entity | Falcon Full Funding (2022) | Becht Component (allocated) | Difference |
 |--------|--------------------------|---------------------------|-----------|
-| HOA | $56,866* | $76,370 | +$19,504 (+34%) |
-| Condo I | $50,336 | $36,829 | -$13,507 (-27%) |
-| Condo II | $82,588 | $34,205 | -$48,383 (-59%) |
-| Condo III | $70,736 | $31,056 | -$39,680 (-56%) |
-| Condo IV | $343,139 | $259,378 | -$83,761 (-24%) |
+| HOA | $56,866* | $102,383 | +$45,517 (+80%) |
+| Condo I | $50,336 | $36,278 | -$14,058 (-28%) |
+| Condo II | $82,588 | $30,970 | -$51,618 (-63%) |
+| Condo III | $70,736 | $29,612 | -$41,124 (-58%) |
+| Condo IV | $343,139 | $238,161 | -$104,978 (-31%) |
 
 *Falcon HOA contribution estimated from hoa_schedule.js line items.
 
-**Note**: Large differences are expected because (1) Becht uses 3% inflation vs Falcon's 0%, (2) roofs were just replaced in 2025 resetting the clock, (3) unit costs differ significantly between reports, and (4) Becht has fewer line items (41 vs 106).
+**Note**: Large differences are expected because (1) Becht uses 3% inflation vs Falcon's 0%, (2) roofs were just replaced in 2025 resetting the clock, (3) unit costs differ significantly between reports, (4) Becht has fewer line items (41 vs 106), and (5) the Falcon condo figures include driveways and walks, which the First Amendment assigns to the HOA.
 
 ---
 
@@ -677,7 +685,7 @@ Becht recommends annual contributions between $219,984 (5% threshold) and $437,4
 | 1 | Deck-wood reconstruction (phase 1) | 25 | 4 | 1,248 | SF | $70 | $87,360 |
 | 2 | Deck-wood reconstruction (phase 2) | 25 | 5 | 1,248 | SF | $70 | $87,360 |
 | 3 | Deck-wood reconstruction (phase 3) | 25 | 6 | 1,248 | SF | $70 | $87,360 |
-| 4 | Fence-privacy, vinyl | 30 | 13 | 119 | LF | $65 | $7,735 |
+| 4 | Fence-privacy, vinyl *(not present on site)* | 30 | 13 | 119 | LF | $65 | $7,735 |
 | 5 | Retaining wall-wood tie wells | 10 | 4 | 1 | LS | $15,000 | $15,000 |
 | 6 | Roof-chimney caps, large | 50 | 5 | 49 | EA | $800 | $39,200 |
 | 7 | Roof-chimney caps, small | 50 | 5 | 21 | EA | $650 | $13,650 |
@@ -702,11 +710,13 @@ Becht recommends annual contributions between $219,984 (5% threshold) and $437,4
 
 4. **Siding Type Assignment**: Falcon clearly identifies Condo I and IV as having vinyl siding, and Condo II and III as having wood siding. Becht separates these into two line items ("Siding, Vinyl" and "Siding, Wood") which aligns with this distinction. The wood siding specifically references "units 301-411 Glenwood Dr."
 
-5. **Condo I Driveways**: Condo I has "assigned parking" (a parking lot) rather than individual driveways. The Falcon report includes no driveway line item for Condo I. The Becht driveway cost is therefore split only among Condos II, III, and IV.
+5. **Condo I Driveways**: Condo I has "assigned parking" (a parking lot) rather than individual driveways. The Falcon report includes no driveway line item for Condo I. Falcon's driveway quantities sit only in Condos II, III and IV. Under the First Amendment the full Becht driveway cost is an HOA expense, and those quantities are used only to show where the paving is.
 
 6. **Deck Replacement**: Becht creates two line items -- wood (current, 7y remaining) and composite (replacement material, 27y remaining). This represents the same physical decks: replace the current wood decks now, then the composite replacements won't need work for 50 years. For budget purposes, the near-term $440,000 wood deck replacement is the priority.
 
-7. **Mailboxes**: Per items_in_disagreement.md, mailbox responsibility is disputed. Becht counts 136 EA (all units) at $150 each = $20,400. Becht notes they were "recently replaced all throughout the community." This analysis assigns them to HOA pending resolution, consistent with the community-wide replacement pattern.
+7. **Mailboxes**: Per items_in_disagreement.md, mailbox responsibility is disputed. Becht counts 136 EA (all units) at $150 each = $20,400. Becht notes they were "recently replaced all throughout the community." This analysis assigns them to HOA, consistent with the community-wide replacement pattern and with First Amendment §1(d)(i) (Condo land is HOA Common Area). The Board should adopt this formally.
+
+8. **First Amendment (2001)**: The recorded First Amendment to the HOA Declaration and By-Laws controls the HOA-vs-Condo split. Its §1(d) makes the land of the Condos, all walks and driveways, all parking areas, and all sewer, water and drainage pipes outside the buildings or under the slabs HOA Common Areas. §13 leaves buildings, structure, exterior walls, and terraces, decks, porches and exterior stairs with the Condos. Falcon's per-entity schedules predate this analysis and put driveways and entry walks in the Condo schedules. This document overrides Falcon on those two lines.
 
 ---
 
@@ -877,13 +887,13 @@ The following items appear in the Falcon reserve schedule but have no correspond
 |------------|--------|-------------|---------|----------------------|
 | Siding-wood trim replacement (recurring 3y cycle) | C1 | $5,000/cycle | Architectural | Moderate -- recurring maintenance |
 | Siding-wood trim (recurring 5y cycle) | C3 | $7,500/cycle | Architectural | Moderate -- recurring maintenance |
-| Fence-privacy, vinyl | C4 | $7,735 | Site | Low |
-| Retaining wall-wood tie wells | C4 | $15,000 | Site | Moderate -- structural/safety |
+| Fence-privacy, vinyl | C4 | $7,735 | Site | None -- no privacy fences exist on site; Falcon line appears erroneous |
+| Retaining wall-wood tie wells | C4 (HOA if hillside/erosion wall, §1(d)(i)) | $15,000 | Site | Moderate -- structural/safety |
 | Entry stoops (all condos) | C1-C4 | $12K-$44K each | Site | **High -- significant per-condo cost** |
-| Mailbox-boxes | C1 | $1,350 | Miscellaneous | Low |
-| Mailbox-hut restoration | C1 | $1,500 | Miscellaneous | Low |
-| Walkway-pavers at mailbox | C1 | $2,200 | Site | Low |
-| Driveway-asphalt seal coat (per-condo) | C2-C4 | $588-$9,473 | Site | Low-Moderate (Becht has community-wide seal coat only) |
+| Mailbox-boxes | HOA (Falcon: C1) | $1,350 | Miscellaneous | Low |
+| Mailbox-hut restoration | HOA (Falcon: C1) | $1,500 | Miscellaneous | Low |
+| Walkway-pavers at mailbox | HOA (Falcon: C1) | $2,200 | Site | Low -- walks are HOA under First Amendment §1(d)(v) |
+| Driveway-asphalt seal coat (per-condo) | HOA (Falcon: C2-C4) | $588-$9,473 | Site | Low-Moderate (Becht has community-wide seal coat only; driveways are HOA under First Amendment §1(d)(v)) |
 
 **Entry stoops are the most significant omission.** Falcon budgets $12,000 (C1), $44,000 (C2), $31,500 (C3), and $10,000-$220,000 (C4, with recurring 5-year cycle for end unit porches). These are the concrete steps and landing platforms at the front door of each townhouse unit. They crack, settle, and deteriorate over time -- especially in the Northeast with freeze/thaw cycles -- and require periodic replacement. Their omission from Becht means no reserve funding is being planned for stoop replacement.
 
@@ -912,11 +922,11 @@ It is possible that most Condo IV units have at-grade entries (slab-on-grade, no
 
 | | Falcon (2022) | Becht (2026) | Difference |
 |---|-------------|-------------|-----------|
-| **HOA replacement cost** | $1,051,117 | $925,570* | -$125,547 (-12%) |
-| **Total building components (all condos)** | $4,484,722 | $4,494,988* | +$10,266 (+0.2%) |
+| **HOA replacement cost** | $1,051,117 | $1,268,770* | +$217,653 (+21%) |
+| **Total condo components (all condos)** | $4,484,722 | $4,151,788* | -$332,934 (-7.4%) |
 | **Grand total** | $5,535,839 | $5,420,558 | -$115,281 (-2.1%) |
 
-*Using allocations derived in this document.
+*Using allocations derived in this document, with driveways and sidewalks assigned to the HOA under the First Amendment. Falcon's figures use Falcon's own allocation, with driveways and entry walks in the Condo schedules, so part of the HOA/condo shift is reallocation rather than a cost difference.
 
 The grand totals are surprisingly close (-2.1%), but this masks substantial differences in individual line items that shift costs between entities and across time horizons. The similar totals are partly coincidental -- higher unit costs in Becht offset Falcon items that Becht omits.
 
@@ -952,7 +962,7 @@ The grand totals are surprisingly close (-2.1%), but this masks substantial diff
 
 This appendix uses the **scarborough_glen_reserve_matrix_BECHT.xlsx** spreadsheet, which contains the Becht disbursement schedule projecting when each component will need replacement and the inflated cost at that future date (3% annual inflation applied). The spreadsheet covers 36 of the 41 Becht components over 25 years (2026-2050), with a total projected disbursement of **$6,558,814**.
 
-Like the Becht report itself, this spreadsheet treats Scarborough Glen as a **single entity** with no per-condo or HOA breakdown. The allocation below applies the Falcon-derived ratios from Step 5 of this document.
+Like the Becht report itself, this spreadsheet treats Scarborough Glen as a **single entity** with no per-condo or HOA breakdown. The allocation below applies the Falcon-derived ratios from Step 5 of this document. Driveways and sidewalks are assigned 100% to the HOA (First Amendment §1(d)(v)).
 
 ---
 
@@ -960,12 +970,12 @@ Like the Becht report itself, this spreadsheet treats Scarborough Glen as a **si
 
 | Entity | 25-Year Total | Share |
 |--------|--------------|-------|
-| **HOA** | **$1,508,935** | **23.01%** |
-| **Condo I** | **$456,067** | **6.95%** |
-| **Condo II** | **$331,927** | **5.06%** |
-| **Condo III** | **$309,203** | **4.71%** |
-| **Condo IV** | **$3,952,670** | **60.27%** |
-| **Grand Total** | **$6,558,801** | **100%** |
+| **HOA** | **$1,941,470** | **29.60%** |
+| **Condo I** | **$448,218** | **6.83%** |
+| **Condo II** | **$278,878** | **4.25%** |
+| **Condo III** | **$285,972** | **4.36%** |
+| **Condo IV** | **$3,604,264** | **54.95%** |
+| **Grand Total** | **$6,558,802** | **100%** |
 
 ---
 
@@ -980,12 +990,12 @@ All costs shown are inflated to the projected replacement year (Becht's 3% infla
 | 2028 | $36,067 | $0 | $0 | $0 | $0 | $36,067 |
 | 2029 | $0 | $0 | $0 | $0 | $0 | $0 |
 | 2030 | $0 | $0 | $0 | $0 | $0 | $0 |
-| 2031 | $11,477 | $20,728 | $22,801 | $18,655 | $145,095 | $218,755 |
+| 2031 | $11,477 | $20,728 | $22,801 | $18,655 | $145,095 | $218,756 |
 | 2032 | $24,620 | $0 | $0 | $0 | $0 | $24,620 |
-| 2033 | $208,222 | $142,972 | $102,471 | $108,871 | $205,342 | $767,879 |
+| 2033 | $226,791 | $135,123 | $100,003 | $106,875 | $199,086 | $767,878 |
 | 2034 | $0 | $0 | $0 | $0 | $0 | $0 |
 | 2035 | $0 | $0 | $0 | $0 | $0 | $0 |
-| 2036 | $642,321 | $0 | $50,582 | $21,234 | $342,150 | $1,056,286 |
+| 2036 | $1,056,287 | $0 | $0 | $0 | $0 | $1,056,287 |
 | 2037 | $0 | $0 | $0 | $0 | $0 | $0 |
 | 2038 | $44,915 | $0 | $156,074 | $160,442 | $0 | $361,431 |
 | 2039 | $0 | $0 | $0 | $0 | $0 | $0 |
@@ -1000,17 +1010,18 @@ All costs shown are inflated to the projected replacement year (Becht's 3% infla
 | 2048 | $117,838 | $0 | $0 | $0 | $0 | $117,838 |
 | 2049 | $40,261 | $292,367 | $0 | $0 | $3,260,083 | $3,592,711 |
 | 2050 | $0 | $0 | $0 | $0 | $0 | $0 |
-| **Total** | **$1,508,935** | **$456,067** | **$331,927** | **$309,203** | **$3,952,670** | **$6,558,801** |
+| **Total** | **$1,941,470** | **$448,218** | **$278,878** | **$285,972** | **$3,604,264** | **$6,558,802** |
 
 ---
 
 ### D.3 Per-Entity Component Breakdown (Inflated Costs)
 
-#### HOA -- $1,508,935 (23.01%)
+#### HOA -- $1,941,470 (29.60%)
 
 | Component | Year(s) | Inflated Cost |
 |-----------|---------|--------------|
 | Asphalt Paving (Roads) | 2036 | $443,487 |
+| Asphalt Driveways (Condo II-IV areas; First Amendment §1(d)(v)) | 2036 | $413,966 |
 | Fence, Wood Split Rail | 2041 | $190,852 |
 | Seal Coating | 2028, 2033, 2038, 2043, 2048 | $120,208 |
 | Asphalt Crack Filling | 2028, 2033, 2038, 2043, 2048 | $109,283 |
@@ -1019,9 +1030,9 @@ All costs shown are inflated to the projected replacement year (Becht's 3% infla
 | Fence, Vinyl Stockade | 2043 | $70,246 |
 | Siding, Vinyl - Clubhouse | 2048 | $57,482 |
 | Curbing, Concrete | 2036 | $47,037 |
+| Concrete Sidewalks (all walks, incl. Condo I-IV entry walks $18,569) | 2033 | $43,292 |
 | Mailboxes | 2049 | $40,261 |
 | Entrance Sign - Large | 2046 | $36,122 |
-| Concrete Sidewalks (HOA share: 57.11%) | 2033 | $24,723 |
 | Entrance Sign - Small | 2046 | $21,673 |
 | Clubhouse Furniture | 2036 | $20,159 |
 | Roof, Shingles - Clubhouse | 2032 | $18,650 |
@@ -1042,44 +1053,37 @@ All costs shown are inflated to the projected replacement year (Becht's 3% infla
 | Lights, Entrance Sign | 2036 | $2,016 |
 | Leaders - Clubhouse | 2032 | $597 |
 
-#### Condo I -- $456,067 (6.95%)
+#### Condo I -- $448,218 (6.83%)
 
 | Component | Year(s) | Inflated Cost | Ratio Used |
 |-----------|---------|--------------|-----------|
 | Siding, Vinyl (C1 share) | 2049 | $292,367 | 8.23% of $3,552,450 |
 | Deck Replacement, Wood (C1 share) | 2033 | $135,123 | 24.97% of $541,143 |
 | Chimney Chase Covers (C1 share) | 2031 | $20,728 | 10.00% of $207,278 |
-| Concrete Sidewalks (C1 share) | 2033 | $7,849 | 18.13% of $43,291 |
 
-#### Condo II -- $331,927 (5.06%)
+#### Condo II -- $278,878 (4.25%)
 
 | Component | Year(s) | Inflated Cost | Ratio Used |
 |-----------|---------|--------------|-----------|
 | Siding, Wood (C2 share) | 2038 | $156,074 | 49.31% of $316,516 |
 | Deck Replacement, Wood (C2 share) | 2033 | $100,003 | 18.48% of $541,143 |
-| Asphalt Driveways (C2 share) | 2036 | $50,582 | 12.22% of $413,924 |
 | Chimney Chase Covers (C2 share) | 2031 | $22,801 | 11.00% of $207,278 |
-| Concrete Sidewalks (C2 share) | 2033 | $2,468 | 5.70% of $43,291 |
 
-#### Condo III -- $309,203 (4.71%)
+#### Condo III -- $285,972 (4.36%)
 
 | Component | Year(s) | Inflated Cost | Ratio Used |
 |-----------|---------|--------------|-----------|
 | Siding, Wood (C3 share) | 2038 | $160,442 | 50.69% of $316,516 |
 | Deck Replacement, Wood (C3 share) | 2033 | $106,876 | 19.75% of $541,143 |
-| Asphalt Driveways (C3 share) | 2036 | $21,234 | 5.13% of $413,924 |
 | Chimney Chase Covers (C3 share) | 2031 | $18,655 | 9.00% of $207,278 |
-| Concrete Sidewalks (C3 share) | 2033 | $1,996 | 4.61% of $43,291 |
 
-#### Condo IV -- $3,952,670 (60.27%)
+#### Condo IV -- $3,604,264 (54.95%)
 
 | Component | Year(s) | Inflated Cost | Ratio Used |
 |-----------|---------|--------------|-----------|
 | Siding, Vinyl (C4 share) | 2049 | $3,260,083 | 91.77% of $3,552,450 |
-| Asphalt Driveways (C4 share) | 2036 | $342,150 | 82.66% of $413,924 |
 | Deck Replacement, Wood (C4 share) | 2033 | $199,087 | 36.79% of $541,143 |
 | Chimney Chase Covers (C4 share) | 2031 | $145,095 | 70.00% of $207,278 |
-| Concrete Sidewalks (C4 share) | 2033 | $6,256 | 14.45% of $43,291 |
 
 ---
 
@@ -1092,15 +1096,15 @@ This table shows what percentage of each year's total disbursement each entity i
 | 2028 | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% |
 | 2031 | 5.2% | 9.5% | 10.4% | 8.5% | 66.3% |
 | 2032 | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% |
-| 2033 | 27.1% | 18.6% | 13.3% | 14.2% | 26.7% |
-| 2036 | 60.8% | 0.0% | 4.8% | 2.0% | 32.4% |
+| 2033 | 29.5% | 17.6% | 13.0% | 13.9% | 25.9% |
+| 2036 | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% |
 | 2038 | 12.4% | 0.0% | 43.2% | 44.4% | 0.0% |
 | 2041 | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% |
 | 2043 | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% |
 | 2046 | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% |
 | 2048 | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% |
 | 2049 | 1.1% | 8.1% | 0.0% | 0.0% | 90.7% |
-| **Overall** | **23.0%** | **7.0%** | **5.1%** | **4.7%** | **60.3%** |
+| **Overall** | **29.6%** | **6.8%** | **4.3%** | **4.4%** | **55.0%** |
 
 ---
 
@@ -1108,11 +1112,11 @@ This table shows what percentage of each year's total disbursement each entity i
 
 1. **2049 is the dominant cost year** ($3.59M) driven almost entirely by vinyl siding replacement across Condo I and Condo IV. Condo IV alone accounts for $3.26M of this.
 
-2. **2036 is the second-largest year** ($1.06M) primarily from roadway repaving (HOA) and driveway reconstruction (Condos II-IV).
+2. **2036 is the second-largest year** ($1.06M) primarily from roadway repaving and driveway reconstruction, both HOA. Driveways became HOA under First Amendment §1(d)(v), so the 2036 paving year is now almost entirely an HOA event.
 
-3. **2033 is the most broadly shared year** -- all five entities have significant expenditures due to deck replacements (all condos), street lights (HOA), and sidewalks (mixed).
+3. **2033 is the most broadly shared year** -- all five entities have significant expenditures due to deck replacements (all condos), street lights (HOA), and sidewalks (HOA).
 
-4. **Condo IV's 60.3% share** is driven by two components: vinyl siding ($3.26M in 2049) and asphalt driveways ($342K in 2036). The siding alone represents 82.4% of Condo IV's total 25-year disbursement.
+4. **Condo IV's 55.0% share** is driven by vinyl siding ($3.26M in 2049), which represents 90.5% of Condo IV's total 25-year disbursement. The Condo IV driveways ($342K in 2036) are now carried by the HOA.
 
 5. **HOA years with 100% responsibility** (2028, 2032, 2041, 2043, 2046, 2048) are years where only common-area items are scheduled -- seal coating, crack filling, fencing, signage, and clubhouse components.
 
@@ -1136,7 +1140,7 @@ The three scenarios answer that question with different levels of risk tolerance
 
 **10% Threshold** -- A more conservative safety margin. The fund balance never drops below **10% of total replacement cost**. This provides a larger buffer and is generally recommended by the Community Associations Institute (CAI) as a prudent minimum. It costs more per year but significantly reduces the risk of special assessments.
 
-**Which should you choose?** Baseline is the cheapest but riskiest. 10% costs more but provides real protection. The difference between Baseline and 10% Threshold is relatively modest -- for example, Condo IV pays $85/unit/month at Baseline vs $95/unit/month at 10% Threshold, a $10/month difference that buys $321,000 in emergency cushion.
+**Which should you choose?** Baseline is the cheapest but riskiest. 10% costs more but provides real protection. The difference between Baseline and 10% Threshold is relatively modest -- for example, Condo IV pays $76/unit/month at Baseline vs $88/unit/month at 10% Threshold, a $12/month difference that buys $295,000 in emergency cushion.
 
 ---
 
@@ -1146,7 +1150,7 @@ Becht provides three funding scenarios for the combined community. This appendix
 
 - **Flat Year-1 contribution** that grows at 3%/year (matching Becht's inflation assumption)
 - **1% annual interest** earned on the reserve balance (matching Becht's interest assumption)
-- **Starting balance**: Becht's $348,425 community reserve allocated proportionally by each entity's share of total replacement cost
+- **Starting balance**: Becht's $348,425 community reserve allocated proportionally by each entity's share of total replacement cost (after the First Amendment reallocation)
 - **Goal**: Find the minimum Year-1 contribution that keeps the closing balance at or above the threshold for every year in the 25-year window
 
 This is the same logic Becht uses in their Baseline and Threshold scenarios, applied per entity instead of community-wide.
@@ -1157,16 +1161,18 @@ This is the same logic Becht uses in their Baseline and Threshold scenarios, app
 
 | Entity | Units | Baseline (0%) | 5% Threshold | 10% Threshold |
 |--------|-------|--------------|-------------|---------------|
-| **HOA** | 136 | **$64,563** | **$68,009** | **$71,455** |
-| **Condo I** | 18 | **$14,383** | **$16,862** | **$19,341** |
-| **Condo II** | 11 | **$18,686** | **$19,967** | **$21,248** |
-| **Condo III** | 9 | **$17,450** | **$18,613** | **$19,776** |
-| **Condo IV** | 98 | **$99,619** | **$103,827** | **$111,860** |
-| **Total** | 136 | **$214,701** | **$227,278** | **$243,680** |
+| **HOA** | 136 | **$95,001** | **$99,726** | **$104,450** |
+| **Condo I** | 18 | **$13,591** | **$16,036** | **$18,480** |
+| **Condo II** | 11 | **$15,589** | **$16,750** | **$17,912** |
+| **Condo III** | 9 | **$16,096** | **$17,206** | **$18,317** |
+| **Condo IV** | 98 | **$89,802** | **$93,670** | **$103,529** |
+| **Total** | 136 | **$230,079** | **$243,388** | **$262,688** |
 
 **Comparison to Becht community-wide recommendations**:
-- Becht Baseline: $219,984/year (vs $214,701 allocated -- 2.4% lower due to rounding/interest timing)
-- Becht 5% Threshold: $226,658/year (vs $227,278 allocated -- within 0.3%)
+- Becht Baseline: $219,984/year (vs $230,079 allocated -- 4.6% higher)
+- Becht 5% Threshold: $226,658/year (vs $243,388 allocated -- 7.4% higher)
+
+The per-entity totals exceed Becht's single-fund figures because each entity must stay solvent on its own. Moving the driveways to the HOA widened the gap. Condo IV's fund is sized by its 2049 siding event, so taking the 2036 driveway cost out of it lowers its contribution only modestly. The HOA fund, whose low point is the 2036 paving year, now has to cover the full driveway cost in that same year.
 
 ---
 
@@ -1174,175 +1180,175 @@ This is the same logic Becht uses in their Baseline and Threshold scenarios, app
 
 | Entity | Units | Baseline/Unit/Mo | 5% Threshold/Unit/Mo | 10% Threshold/Unit/Mo |
 |--------|-------|-----------------|---------------------|----------------------|
-| HOA | 136 | $40 | $42 | $44 |
-| Condo I | 18 | $67 | $78 | $90 |
-| Condo II | 11 | $142 | $151 | $161 |
-| Condo III | 9 | $162 | $172 | $183 |
-| Condo IV | 98 | $85 | $88 | $95 |
+| HOA | 136 | $58 | $61 | $64 |
+| Condo I | 18 | $63 | $74 | $86 |
+| Condo II | 11 | $118 | $127 | $136 |
+| Condo III | 9 | $149 | $159 | $170 |
+| Condo IV | 98 | $76 | $80 | $88 |
 
-**Note**: HOA contributions are shared across all 136 units. Condo contributions are per-condo (shared among only that condo's units). A Condo II unit owner pays the HOA amount PLUS the Condo II amount: $40 + $142 = $182/month at Baseline.
+**Note**: HOA contributions are shared across all 136 units. Condo contributions are per-condo (shared among only that condo's units). A Condo II unit owner pays the HOA amount PLUS the Condo II amount: $58 + $118 = $176/month at Baseline.
 
 ---
 
 ### E.3 Baseline (0% Threshold) -- Detailed 25-Year Schedule
 
-#### HOA -- $64,563/year starting contribution
+#### HOA -- $95,001/year starting contribution
 
 | Year | Opening | Contribution | Disbursement | Interest | Closing |
 |------|---------|-------------|-------------|---------|---------|
-| 2026 | $59,717 | $64,563 | -- | $597 | $124,877 |
-| 2027 | $124,877 | $66,500 | -- | $1,249 | $192,625 |
-| 2028 | $192,625 | $68,495 | $36,067 | $1,926 | $226,980 |
-| 2029 | $226,980 | $70,550 | -- | $2,270 | $299,799 |
-| 2030 | $299,799 | $72,666 | -- | $2,998 | $375,463 |
-| 2031 | $375,463 | $74,846 | $11,477 | $3,755 | $442,587 |
-| 2032 | $442,587 | $77,092 | $24,620 | $4,426 | $499,485 |
-| 2033 | $499,485 | $79,404 | $208,222 | $4,995 | $375,662 |
-| 2034 | $375,662 | $81,786 | -- | $3,757 | $461,205 |
-| 2035 | $461,205 | $84,240 | -- | $4,612 | $550,057 |
-| 2036 | $550,057 | $86,767 | $642,321 | $5,501 | $4 |
-| 2037 | $4 | $89,370 | -- | $0 | $89,374 |
-| 2038 | $89,374 | $92,051 | $44,915 | $894 | $137,404 |
-| 2039 | $137,404 | $94,813 | -- | $1,374 | $233,591 |
-| 2040 | $233,591 | $97,657 | -- | $2,336 | $333,585 |
-| 2041 | $333,585 | $100,587 | $190,852 | $3,336 | $246,655 |
-| 2042 | $246,655 | $103,605 | -- | $2,467 | $352,727 |
-| 2043 | $352,727 | $106,713 | $126,440 | $3,527 | $336,527 |
-| 2044 | $336,527 | $109,914 | -- | $3,365 | $449,806 |
-| 2045 | $449,806 | $113,212 | -- | $4,498 | $567,516 |
-| 2046 | $567,516 | $116,608 | $65,922 | $5,675 | $623,877 |
-| 2047 | $623,877 | $120,106 | -- | $6,239 | $750,222 |
-| 2048 | $750,222 | $123,709 | $117,838 | $7,502 | $763,596 |
-| 2049 | $763,596 | $127,421 | $40,261 | $7,636 | $858,391 |
-| 2050 | $858,391 | $131,243 | -- | $8,584 | $998,218 |
+| 2026 | $81,556 | $95,001 | -- | $816 | $177,373 |
+| 2027 | $177,373 | $97,851 | -- | $1,774 | $276,997 |
+| 2028 | $276,997 | $100,787 | $36,067 | $2,770 | $344,487 |
+| 2029 | $344,487 | $103,810 | -- | $3,445 | $451,742 |
+| 2030 | $451,742 | $106,924 | -- | $4,517 | $563,184 |
+| 2031 | $563,184 | $110,132 | $11,477 | $5,632 | $667,471 |
+| 2032 | $667,471 | $113,436 | $24,620 | $6,675 | $762,962 |
+| 2033 | $762,962 | $116,839 | $226,791 | $7,630 | $660,640 |
+| 2034 | $660,640 | $120,344 | -- | $6,606 | $787,590 |
+| 2035 | $787,590 | $123,955 | -- | $7,876 | $919,421 |
+| 2036 | $919,421 | $127,673 | $1,056,287 | $9,194 | $2 |
+| 2037 | $2 | $131,504 | -- | $0 | $131,505 |
+| 2038 | $131,505 | $135,449 | $44,915 | $1,315 | $223,354 |
+| 2039 | $223,354 | $139,512 | -- | $2,234 | $365,100 |
+| 2040 | $365,100 | $143,698 | -- | $3,651 | $512,448 |
+| 2041 | $512,448 | $148,008 | $190,852 | $5,124 | $474,729 |
+| 2042 | $474,729 | $152,449 | -- | $4,747 | $631,925 |
+| 2043 | $631,925 | $157,022 | $126,440 | $6,319 | $668,827 |
+| 2044 | $668,827 | $161,733 | -- | $6,688 | $837,248 |
+| 2045 | $837,248 | $166,585 | -- | $8,372 | $1,012,205 |
+| 2046 | $1,012,205 | $171,582 | $65,922 | $10,122 | $1,127,987 |
+| 2047 | $1,127,987 | $176,730 | -- | $11,280 | $1,315,997 |
+| 2048 | $1,315,997 | $182,032 | $117,838 | $13,160 | $1,393,351 |
+| 2049 | $1,393,351 | $187,493 | $40,261 | $13,934 | $1,554,516 |
+| 2050 | $1,554,516 | $193,117 | -- | $15,545 | $1,763,179 |
 
-**Critical year**: 2036 -- HOA fund drops to near $0 after $642K roadway repaving. Fund recovers by 2037.
+**Critical year**: 2036 -- HOA fund drops to near $0 after the ~$1.06M roadway and driveway repaving (driveways are HOA under First Amendment §1(d)(v)). Fund recovers by 2037.
 
-#### Condo I -- $14,383/year starting contribution
+#### Condo I -- $13,591/year starting contribution
 
 | Year | Opening | Contribution | Disbursement | Interest | Closing |
 |------|---------|-------------|-------------|---------|---------|
-| 2026 | $29,418 | $14,383 | -- | $294 | $44,095 |
-| 2027 | $44,095 | $14,814 | -- | $441 | $59,350 |
-| 2028 | $59,350 | $15,259 | -- | $594 | $75,203 |
-| 2029 | $75,203 | $15,717 | -- | $752 | $91,671 |
-| 2030 | $91,671 | $16,188 | -- | $917 | $108,776 |
-| 2031 | $108,776 | $16,674 | $20,728 | $1,088 | $105,810 |
-| 2032 | $105,810 | $17,174 | -- | $1,058 | $124,042 |
-| 2033 | $124,042 | $17,689 | $142,972 | $1,240 | $0 |
-| 2034 | $0 | $18,220 | -- | $0 | $18,220 |
-| 2035 | $18,220 | $18,767 | -- | $182 | $37,168 |
-| 2036 | $37,168 | $19,330 | -- | $372 | $56,870 |
-| 2037 | $56,870 | $19,909 | -- | $569 | $77,348 |
-| 2038 | $77,348 | $20,507 | -- | $773 | $98,628 |
-| 2039 | $98,628 | $21,122 | -- | $986 | $120,736 |
-| 2040 | $120,736 | $21,756 | -- | $1,207 | $143,699 |
-| 2041 | $143,699 | $22,408 | -- | $1,437 | $167,544 |
-| 2042 | $167,544 | $23,080 | -- | $1,675 | $192,300 |
-| 2043 | $192,300 | $23,773 | -- | $1,923 | $217,996 |
-| 2044 | $217,996 | $24,486 | -- | $2,180 | $244,662 |
-| 2045 | $244,662 | $25,221 | -- | $2,447 | $272,329 |
-| 2046 | $272,329 | $25,977 | -- | $2,723 | $301,030 |
-| 2047 | $301,030 | $26,757 | -- | $3,010 | $330,797 |
-| 2048 | $330,797 | $27,559 | -- | $3,308 | $361,664 |
-| 2049 | $361,664 | $28,386 | $292,367 | $3,617 | $101,300 |
-| 2050 | $101,300 | $29,238 | -- | $1,013 | $131,551 |
+| 2026 | $28,898 | $13,591 | -- | $289 | $42,778 |
+| 2027 | $42,778 | $13,999 | -- | $428 | $57,204 |
+| 2028 | $57,204 | $14,419 | -- | $572 | $72,195 |
+| 2029 | $72,195 | $14,851 | -- | $722 | $87,768 |
+| 2030 | $87,768 | $15,297 | -- | $878 | $103,943 |
+| 2031 | $103,943 | $15,756 | $20,728 | $1,039 | $100,010 |
+| 2032 | $100,010 | $16,228 | -- | $1,000 | $117,238 |
+| 2033 | $117,238 | $16,715 | $135,123 | $1,172 | $3 |
+| 2034 | $3 | $17,217 | -- | $0 | $17,220 |
+| 2035 | $17,220 | $17,733 | -- | $172 | $35,125 |
+| 2036 | $35,125 | $18,265 | -- | $351 | $53,742 |
+| 2037 | $53,742 | $18,813 | -- | $537 | $73,092 |
+| 2038 | $73,092 | $19,378 | -- | $731 | $93,201 |
+| 2039 | $93,201 | $19,959 | -- | $932 | $114,091 |
+| 2040 | $114,091 | $20,558 | -- | $1,141 | $135,790 |
+| 2041 | $135,790 | $21,174 | -- | $1,358 | $158,322 |
+| 2042 | $158,322 | $21,810 | -- | $1,583 | $181,715 |
+| 2043 | $181,715 | $22,464 | -- | $1,817 | $205,996 |
+| 2044 | $205,996 | $23,138 | -- | $2,060 | $231,194 |
+| 2045 | $231,194 | $23,832 | -- | $2,312 | $257,338 |
+| 2046 | $257,338 | $24,547 | -- | $2,573 | $284,458 |
+| 2047 | $284,458 | $25,283 | -- | $2,845 | $312,586 |
+| 2048 | $312,586 | $26,042 | -- | $3,126 | $341,753 |
+| 2049 | $341,753 | $26,823 | $292,367 | $3,418 | $79,627 |
+| 2050 | $79,627 | $27,628 | -- | $796 | $108,051 |
 
 **Critical years**: 2033 (deck replacement depletes fund) and 2049 (vinyl siding -- $292K).
 
-#### Condo II -- $18,686/year starting contribution
+#### Condo II -- $15,589/year starting contribution
 
 | Year | Opening | Contribution | Disbursement | Interest | Closing |
 |------|---------|-------------|-------------|---------|---------|
-| 2026 | $27,319 | $18,686 | -- | $273 | $46,278 |
-| 2027 | $46,278 | $19,247 | -- | $463 | $65,988 |
-| 2028 | $65,988 | $19,824 | -- | $660 | $86,472 |
-| 2029 | $86,472 | $20,419 | -- | $865 | $107,755 |
-| 2030 | $107,755 | $21,031 | -- | $1,078 | $129,864 |
-| 2031 | $129,864 | $21,662 | $22,801 | $1,299 | $130,024 |
-| 2032 | $130,024 | $22,312 | -- | $1,300 | $153,636 |
-| 2033 | $153,636 | $22,981 | $102,471 | $1,536 | $75,683 |
-| 2034 | $75,683 | $23,671 | -- | $757 | $100,111 |
-| 2035 | $100,111 | $24,381 | -- | $1,001 | $125,493 |
-| 2036 | $125,493 | $25,112 | $50,582 | $1,255 | $101,278 |
-| 2037 | $101,278 | $25,866 | -- | $1,013 | $128,157 |
-| 2038 | $128,157 | $26,642 | $156,074 | $1,282 | $6 |
-| 2039 | $6 | $27,441 | -- | $0 | $27,447 |
-| 2040 | $27,447 | $28,264 | -- | $274 | $55,986 |
-| 2041 | $55,986 | $29,112 | -- | $560 | $85,658 |
-| 2042 | $85,658 | $29,986 | -- | $857 | $116,500 |
-| 2043 | $116,500 | $30,885 | -- | $1,165 | $148,550 |
-| 2044 | $148,550 | $31,812 | -- | $1,485 | $181,847 |
-| 2045 | $181,847 | $32,766 | -- | $1,818 | $216,432 |
-| 2046 | $216,432 | $33,749 | -- | $2,164 | $252,345 |
-| 2047 | $252,345 | $34,761 | -- | $2,523 | $289,630 |
-| 2048 | $289,630 | $35,804 | -- | $2,896 | $328,330 |
-| 2049 | $328,330 | $36,878 | -- | $3,283 | $368,492 |
-| 2050 | $368,492 | $37,985 | -- | $3,685 | $410,162 |
+| 2026 | $24,670 | $15,589 | -- | $247 | $40,506 |
+| 2027 | $40,506 | $16,057 | -- | $405 | $56,967 |
+| 2028 | $56,967 | $16,538 | -- | $570 | $74,075 |
+| 2029 | $74,075 | $17,035 | -- | $741 | $91,851 |
+| 2030 | $91,851 | $17,546 | -- | $919 | $110,315 |
+| 2031 | $110,315 | $18,072 | $22,801 | $1,103 | $106,689 |
+| 2032 | $106,689 | $18,614 | -- | $1,067 | $126,370 |
+| 2033 | $126,370 | $19,173 | $100,003 | $1,264 | $46,803 |
+| 2034 | $46,803 | $19,748 | -- | $468 | $67,019 |
+| 2035 | $67,019 | $20,340 | -- | $670 | $88,029 |
+| 2036 | $88,029 | $20,950 | -- | $880 | $109,860 |
+| 2037 | $109,860 | $21,579 | -- | $1,099 | $132,537 |
+| 2038 | $132,537 | $22,226 | $156,074 | $1,325 | $15 |
+| 2039 | $15 | $22,893 | -- | $0 | $22,908 |
+| 2040 | $22,908 | $23,580 | -- | $229 | $46,717 |
+| 2041 | $46,717 | $24,287 | -- | $467 | $71,471 |
+| 2042 | $71,471 | $25,016 | -- | $715 | $97,201 |
+| 2043 | $97,201 | $25,766 | -- | $972 | $123,940 |
+| 2044 | $123,940 | $26,539 | -- | $1,239 | $151,718 |
+| 2045 | $151,718 | $27,335 | -- | $1,517 | $180,571 |
+| 2046 | $180,571 | $28,155 | -- | $1,806 | $210,532 |
+| 2047 | $210,532 | $29,000 | -- | $2,105 | $241,637 |
+| 2048 | $241,637 | $29,870 | -- | $2,416 | $273,924 |
+| 2049 | $273,924 | $30,766 | -- | $2,739 | $307,429 |
+| 2050 | $307,429 | $31,689 | -- | $3,074 | $342,193 |
 
 **Critical year**: 2038 -- wood siding replacement ($156K) depletes fund. No further Condo II disbursements after 2038, so fund recovers steadily.
 
-#### Condo III -- $17,450/year starting contribution
+#### Condo III -- $16,096/year starting contribution
 
 | Year | Opening | Contribution | Disbursement | Interest | Closing |
 |------|---------|-------------|-------------|---------|---------|
-| 2026 | $24,800 | $17,450 | -- | $248 | $42,498 |
-| 2027 | $42,498 | $17,974 | -- | $425 | $60,897 |
-| 2028 | $60,897 | $18,513 | -- | $609 | $80,018 |
-| 2029 | $80,018 | $19,068 | -- | $800 | $99,886 |
-| 2030 | $99,886 | $19,640 | -- | $999 | $120,525 |
-| 2031 | $120,525 | $20,229 | $18,655 | $1,205 | $123,305 |
-| 2032 | $123,305 | $20,836 | -- | $1,233 | $145,374 |
-| 2033 | $145,374 | $21,461 | $108,871 | $1,454 | $59,418 |
-| 2034 | $59,418 | $22,105 | -- | $594 | $82,118 |
-| 2035 | $82,118 | $22,768 | -- | $821 | $105,707 |
-| 2036 | $105,707 | $23,451 | $21,234 | $1,057 | $108,982 |
-| 2037 | $108,982 | $24,155 | -- | $1,090 | $134,226 |
-| 2038 | $134,226 | $24,880 | $160,442 | $1,342 | $6 |
-| 2039 | $6 | $25,626 | -- | $0 | $25,632 |
-| 2040 | $25,632 | $26,395 | -- | $256 | $52,283 |
-| 2041 | $52,283 | $27,187 | -- | $523 | $79,992 |
-| 2042 | $79,992 | $28,002 | -- | $800 | $108,794 |
-| 2043 | $108,794 | $28,842 | -- | $1,088 | $138,725 |
-| 2044 | $138,725 | $29,707 | -- | $1,387 | $169,819 |
-| 2045 | $169,819 | $30,599 | -- | $1,698 | $202,116 |
-| 2046 | $202,116 | $31,517 | -- | $2,021 | $235,654 |
-| 2047 | $235,654 | $32,462 | -- | $2,357 | $270,473 |
-| 2048 | $270,473 | $33,436 | -- | $2,705 | $306,613 |
-| 2049 | $306,613 | $34,439 | -- | $3,066 | $344,119 |
-| 2050 | $344,119 | $35,472 | -- | $3,441 | $383,032 |
+| 2026 | $23,588 | $16,096 | -- | $236 | $39,920 |
+| 2027 | $39,920 | $16,579 | -- | $399 | $56,898 |
+| 2028 | $56,898 | $17,076 | -- | $569 | $74,543 |
+| 2029 | $74,543 | $17,589 | -- | $745 | $92,877 |
+| 2030 | $92,877 | $18,116 | -- | $929 | $111,922 |
+| 2031 | $111,922 | $18,660 | $18,655 | $1,119 | $113,046 |
+| 2032 | $113,046 | $19,219 | -- | $1,130 | $133,396 |
+| 2033 | $133,396 | $19,796 | $106,875 | $1,334 | $47,651 |
+| 2034 | $47,651 | $20,390 | -- | $477 | $68,517 |
+| 2035 | $68,517 | $21,002 | -- | $685 | $90,204 |
+| 2036 | $90,204 | $21,632 | -- | $902 | $112,738 |
+| 2037 | $112,738 | $22,281 | -- | $1,127 | $136,146 |
+| 2038 | $136,146 | $22,949 | $160,442 | $1,361 | $14 |
+| 2039 | $14 | $23,638 | -- | $0 | $23,652 |
+| 2040 | $23,652 | $24,347 | -- | $237 | $48,235 |
+| 2041 | $48,235 | $25,077 | -- | $482 | $73,795 |
+| 2042 | $73,795 | $25,829 | -- | $738 | $100,362 |
+| 2043 | $100,362 | $26,604 | -- | $1,004 | $127,970 |
+| 2044 | $127,970 | $27,402 | -- | $1,280 | $156,652 |
+| 2045 | $156,652 | $28,224 | -- | $1,567 | $186,443 |
+| 2046 | $186,443 | $29,071 | -- | $1,864 | $217,378 |
+| 2047 | $217,378 | $29,943 | -- | $2,174 | $249,495 |
+| 2048 | $249,495 | $30,842 | -- | $2,495 | $282,832 |
+| 2049 | $282,832 | $31,767 | -- | $2,828 | $317,427 |
+| 2050 | $317,427 | $32,720 | -- | $3,174 | $353,321 |
 
 **Critical year**: 2038 -- wood siding replacement ($160K) depletes fund. Same pattern as Condo II.
 
-#### Condo IV -- $99,619/year starting contribution
+#### Condo IV -- $89,802/year starting contribution
 
 | Year | Opening | Contribution | Disbursement | Interest | Closing |
 |------|---------|-------------|-------------|---------|---------|
-| 2026 | $207,172 | $99,619 | -- | $2,072 | $308,862 |
-| 2027 | $308,862 | $102,608 | -- | $3,089 | $414,558 |
-| 2028 | $414,558 | $105,686 | -- | $4,146 | $524,390 |
-| 2029 | $524,390 | $108,856 | -- | $5,244 | $638,490 |
-| 2030 | $638,490 | $112,122 | -- | $6,385 | $756,997 |
-| 2031 | $756,997 | $115,486 | $145,095 | $7,570 | $734,958 |
-| 2032 | $734,958 | $118,950 | -- | $7,350 | $861,258 |
-| 2033 | $861,258 | $122,519 | $205,342 | $8,613 | $787,047 |
-| 2034 | $787,047 | $126,194 | -- | $7,870 | $921,112 |
-| 2035 | $921,112 | $129,980 | -- | $9,211 | $1,060,303 |
-| 2036 | $1,060,303 | $133,880 | $342,150 | $10,603 | $862,636 |
-| 2037 | $862,636 | $137,896 | -- | $8,626 | $1,009,158 |
-| 2038 | $1,009,158 | $142,033 | -- | $10,092 | $1,161,283 |
-| 2039 | $1,161,283 | $146,294 | -- | $11,613 | $1,319,189 |
-| 2040 | $1,319,189 | $150,683 | -- | $13,192 | $1,483,064 |
-| 2041 | $1,483,064 | $155,203 | -- | $14,831 | $1,653,098 |
-| 2042 | $1,653,098 | $159,859 | -- | $16,531 | $1,829,488 |
-| 2043 | $1,829,488 | $164,655 | -- | $18,295 | $2,012,438 |
-| 2044 | $2,012,438 | $169,595 | -- | $20,124 | $2,202,157 |
-| 2045 | $2,202,157 | $174,683 | -- | $22,022 | $2,398,861 |
-| 2046 | $2,398,861 | $179,923 | -- | $23,989 | $2,602,773 |
-| 2047 | $2,602,773 | $185,321 | -- | $26,028 | $2,814,121 |
-| 2048 | $2,814,121 | $190,880 | -- | $28,141 | $3,033,143 |
-| 2049 | $3,033,143 | $196,607 | $3,260,083 | $30,331 | $0 |
-| 2050 | $0 | $202,505 | -- | $0 | $202,503 |
+| 2026 | $189,713 | $89,802 | -- | $1,897 | $281,412 |
+| 2027 | $281,412 | $92,496 | -- | $2,814 | $376,722 |
+| 2028 | $376,722 | $95,271 | -- | $3,767 | $475,760 |
+| 2029 | $475,760 | $98,129 | -- | $4,758 | $578,647 |
+| 2030 | $578,647 | $101,073 | -- | $5,786 | $685,507 |
+| 2031 | $685,507 | $104,105 | $145,095 | $6,855 | $651,372 |
+| 2032 | $651,372 | $107,228 | -- | $6,514 | $765,114 |
+| 2033 | $765,114 | $110,445 | $199,086 | $7,651 | $684,124 |
+| 2034 | $684,124 | $113,758 | -- | $6,841 | $804,724 |
+| 2035 | $804,724 | $117,171 | -- | $8,047 | $929,942 |
+| 2036 | $929,942 | $120,686 | -- | $9,299 | $1,059,928 |
+| 2037 | $1,059,928 | $124,307 | -- | $10,599 | $1,194,834 |
+| 2038 | $1,194,834 | $128,036 | -- | $11,948 | $1,334,819 |
+| 2039 | $1,334,819 | $131,877 | -- | $13,348 | $1,480,044 |
+| 2040 | $1,480,044 | $135,834 | -- | $14,800 | $1,630,678 |
+| 2041 | $1,630,678 | $139,909 | -- | $16,307 | $1,786,894 |
+| 2042 | $1,786,894 | $144,106 | -- | $17,869 | $1,948,868 |
+| 2043 | $1,948,868 | $148,429 | -- | $19,489 | $2,116,786 |
+| 2044 | $2,116,786 | $152,882 | -- | $21,168 | $2,290,836 |
+| 2045 | $2,290,836 | $157,468 | -- | $22,908 | $2,471,213 |
+| 2046 | $2,471,213 | $162,192 | -- | $24,712 | $2,658,117 |
+| 2047 | $2,658,117 | $167,058 | -- | $26,581 | $2,851,756 |
+| 2048 | $2,851,756 | $172,070 | -- | $28,518 | $3,052,344 |
+| 2049 | $3,052,344 | $177,232 | $3,260,083 | $30,523 | $16 |
+| 2050 | $16 | $182,549 | -- | $0 | $182,566 |
 
 **Critical year**: 2049 -- vinyl siding replacement ($3.26M) completely depletes the fund. This is the single largest expenditure in the entire community. Condo IV spends 23 years accumulating reserves for this one event.
 
@@ -1352,7 +1358,7 @@ This is the same logic Becht uses in their Baseline and Threshold scenarios, app
 
 Every unit owner pays into **two** reserve funds: the HOA fund (shared by all 136 units) and their own Condo fund.
 
-**These amounts are NOT fixed.** Contributions grow at 3% per year to keep pace with inflation. A unit owner paying $125/month in 2026 will pay $145/month by 2031 and $253/month by 2050. The tables below show how costs escalate over the 25-year window.
+**These amounts are NOT fixed.** Contributions grow at 3% per year to keep pace with inflation. A Condo IV unit owner paying $135/month in 2026 will pay $156/month by 2031 and $274/month by 2050. The tables below show how costs escalate over the 25-year window.
 
 For reference, the Falcon report (2022) used a **step-up approach** rather than smooth annual increases -- contributions held flat for 5-6 year blocks, then jumped to a new level. The Becht model instead uses a steady 3% annual increase, which produces a smoother but continuously rising cost curve. Both approaches reach similar totals over time; the difference is in timing.
 
@@ -1360,10 +1366,10 @@ For reference, the Falcon report (2022) used a **step-up approach** rather than 
 
 | Entity | Units | 2026 | 2031 | 2036 | 2041 | 2046 | 2050 |
 |--------|-------|------|------|------|------|------|------|
-| Condo I | 18 | $106 | $123 | $143 | $165 | $192 | $216 |
-| Condo II | 11 | $181 | $210 | $243 | $282 | $327 | $368 |
-| Condo III | 9 | $201 | $233 | $270 | $313 | $363 | $409 |
-| Condo IV | 98 | $124 | $144 | $167 | $194 | $224 | $253 |
+| Condo I | 18 | $121 | $140 | $163 | $189 | $219 | $246 |
+| Condo II | 11 | $176 | $204 | $237 | $275 | $318 | $358 |
+| Condo III | 9 | $207 | $240 | $279 | $323 | $374 | $421 |
+| Condo IV | 98 | $135 | $156 | $181 | $210 | $243 | $274 |
 
 Each cell = (HOA contribution / 136 units / 12 months) + (Condo contribution / Condo units / 12 months) at 3% annual growth.
 
@@ -1371,19 +1377,19 @@ Each cell = (HOA contribution / 136 units / 12 months) + (Condo contribution / C
 
 | Entity | Units | 2026 | 2031 | 2036 | 2041 | 2046 | 2050 |
 |--------|-------|------|------|------|------|------|------|
-| Condo I | 18 | $120 | $139 | $161 | $187 | $216 | $243 |
-| Condo II | 11 | $193 | $224 | $259 | $301 | $348 | $392 |
-| Condo III | 9 | $214 | $248 | $288 | $333 | $387 | $435 |
-| Condo IV | 98 | $130 | $151 | $175 | $202 | $235 | $264 |
+| Condo I | 18 | $135 | $157 | $182 | $211 | $244 | $275 |
+| Condo II | 11 | $188 | $218 | $253 | $293 | $340 | $382 |
+| Condo III | 9 | $220 | $256 | $296 | $343 | $398 | $448 |
+| Condo IV | 98 | $141 | $163 | $189 | $219 | $254 | $286 |
 
 #### Combined Monthly Cost Per Unit Over Time -- 10% Threshold
 
 | Entity | Units | 2026 | 2031 | 2036 | 2041 | 2046 | 2050 |
 |--------|-------|------|------|------|------|------|------|
-| Condo I | 18 | $133 | $155 | $179 | $208 | $241 | $271 |
-| Condo II | 11 | $205 | $237 | $275 | $319 | $370 | $416 |
-| Condo III | 9 | $227 | $263 | $305 | $353 | $410 | $461 |
-| Condo IV | 98 | $139 | $161 | $187 | $216 | $251 | $282 |
+| Condo I | 18 | $150 | $173 | $201 | $233 | $270 | $304 |
+| Condo II | 11 | $200 | $232 | $268 | $311 | $361 | $406 |
+| Condo III | 9 | $234 | $271 | $314 | $364 | $422 | $475 |
+| Condo IV | 98 | $152 | $176 | $204 | $237 | $275 | $309 |
 
 #### Year-by-Year Annual Contribution Per Entity -- Baseline (0%)
 
@@ -1391,12 +1397,12 @@ For boards setting budgets, here are the entity-level annual contributions at 5-
 
 | Entity | 2026 | 2031 | 2036 | 2041 | 2046 | 2050 |
 |--------|------|------|------|------|------|------|
-| HOA | $64,563 | $74,846 | $86,767 | $100,587 | $116,608 | $131,243 |
-| Condo I | $14,383 | $16,674 | $19,330 | $22,408 | $25,977 | $29,238 |
-| Condo II | $18,686 | $21,662 | $25,112 | $29,112 | $33,749 | $37,985 |
-| Condo III | $17,450 | $20,229 | $23,451 | $27,187 | $31,517 | $35,472 |
-| Condo IV | $99,619 | $115,486 | $133,880 | $155,203 | $179,923 | $202,505 |
-| **Total** | **$214,701** | **$248,897** | **$288,540** | **$334,497** | **$387,774** | **$436,443** |
+| HOA | $95,001 | $110,132 | $127,673 | $148,008 | $171,582 | $193,117 |
+| Condo I | $13,591 | $15,756 | $18,265 | $21,174 | $24,547 | $27,628 |
+| Condo II | $15,589 | $18,072 | $20,950 | $24,287 | $28,155 | $31,689 |
+| Condo III | $16,096 | $18,660 | $21,632 | $25,077 | $29,071 | $32,720 |
+| Condo IV | $89,802 | $104,105 | $120,686 | $139,909 | $162,192 | $182,549 |
+| **Total** | **$230,079** | **$266,725** | **$309,207** | **$358,456** | **$415,548** | **$467,703** |
 
 #### Comparison: Falcon Step-Up vs Becht Smooth Growth
 
@@ -1405,19 +1411,19 @@ The Falcon report held contributions flat within multi-year blocks, then adjuste
 | Period | Falcon Full Funding (flat blocks) | Becht Baseline 0% (3%/year growth) |
 |--------|----------------------------------|-------------------------------------|
 | 2022-2027 | $343,139/year | N/A (pre-Becht) |
-| 2028-2032 | $262,965/year | $105,686 - $118,950/year |
-| 2033-2037 | $263,962/year | $122,519 - $137,896/year |
-| 2038-2042 | $275,331/year | $142,033 - $159,859/year |
-| 2043-2047 | $275,331/year | $164,655 - $185,321/year |
-| 2048-2052 | $282,019/year | $190,880 - $214,912/year |
+| 2028-2032 | $262,965/year | $95,271 - $107,228/year |
+| 2033-2037 | $263,962/year | $110,445 - $124,307/year |
+| 2038-2042 | $275,331/year | $128,036 - $144,106/year |
+| 2043-2047 | $275,331/year | $148,429 - $167,058/year |
+| 2048-2052 | $282,019/year | $172,070 - $193,666/year |
 
 **Why Falcon appears ~2x higher -- four compounding reasons:**
 
 1. **Different funding methods**: The Falcon column is "full funding" (component method) -- the most conservative approach, where each component is funded individually. The Becht column is "baseline" (0% threshold) -- the least conservative, where all funds are pooled and the balance is allowed to hit $0. Even within Falcon's own report, the threshold method was 30-40% cheaper than full funding. For example, Falcon's Condo IV threshold contributions were $209,125/year (5%) and $236,504/year (10%) vs $343,139/year (full funding).
 
-2. **Falcon covers more components**: Falcon includes 13 line items for Condo IV (entry stoops on a recurring 5-year cycle, retaining walls, privacy fence, driveway seal coat) that Becht omits entirely.
+2. **Falcon covers more components and includes driveways**: Falcon includes 13 line items for Condo IV (entry stoops on a recurring 5-year cycle, retaining walls, a privacy fence that doesn't exist on site, driveway seal coat) that Becht omits entirely. Falcon's Condo IV schedule also carries driveways and entry walks, which this analysis assigns to the HOA under the First Amendment.
 
-3. **Different starting balances**: Falcon started Condo IV with $582,976 in reserves. The Becht allocation here uses $207,172 (proportional share of the community-wide $348,425).
+3. **Different starting balances**: Falcon started Condo IV with $582,976 in reserves. The Becht allocation here uses $189,713 (proportional share of the community-wide $348,425).
 
 4. **Different cost and life cycle assumptions**: See Appendix C for the full breakdown (inflation 0% vs 3%, roof life 30y vs 25y, siding costs +71%, etc.).
 
@@ -1427,7 +1433,7 @@ The Falcon report held contributions flat within multi-year blocks, then adjuste
 
 ### E.5 Assumptions and Limitations
 
-1. **Starting balance allocation**: Becht's $348,425 was split proportionally by replacement cost share (HOA 17.1%, C1 8.4%, C2 7.8%, C3 7.1%, C4 59.5%). The actual split of existing reserves between entities may differ -- each entity should use its actual current reserve balance.
+1. **Starting balance allocation**: Becht's $348,425 was split proportionally by replacement cost share after the First Amendment reallocation (HOA 23.4%, C1 8.3%, C2 7.1%, C3 6.8%, C4 54.4%). The actual split of existing reserves between entities may differ -- each entity should use its actual current reserve balance.
 
 2. **Contributions grow at 3%/year**: This matches Becht's inflation assumption. If the board holds contributions flat, the fund will be underfunded.
 

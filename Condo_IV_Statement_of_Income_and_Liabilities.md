@@ -109,19 +109,19 @@ This document is intended to help owners understand this Condominium's financial
 | Component | Est. Remaining Life (Year) | Est. Replacement Cost | Notes |
 |---|---|---:|---|
 | Deck Railings & Balusters (safety) | 2026-2028 | $40,469 | Life-safety item; **not** replaced with the 2025 roof; recurs ~12-yr cycle |
-| Window Wells | -2028 |  |  |
-| Gutters | -2028 |  |  |
+| Window Wells | By 2028 | TBD | Historical window-well costs to be pulled from records; H1 2026 spend was $12,428.13 (1601 Pheasant Woods reconstruction + materials) |
+| Gutters | By 2028 | Unknown | Scope and cost not yet determined |
 | Exterior Caulk/Sealant & Trim Maintenance | Recurring, ~6 yrs (from 2027) | $15,000 / cycle | **Window-seal caulking (critical)** + trim; protects the wall assembly behind the vinyl |
 | Chimney Chase Covers / Caps | ~5 yrs (2031) | $125,160 | **Caps not replaced in the 2025 roof project — flashing only.** Scope/count to be field-verified |
 | Entry Stoops (concrete + safety repair cycle) | ~2032 | $225,400 | **Omitted by both Falcon and Becht;** est. $2,000/unit × 98 units + safety cycle |
 | Deck Framing & Footings | ~2033 | $64,750 | Long-lived structure (survives 2–3 board cycles) |
 | Deck Boards (surface) | ~2033 (~18-yr cycle) | $56,657 | Wear surface; next stand-alone cycle ~2051 |
-| Concrete Sidewalks (HOA) | ~2033 | $5,086 | Becht/Falcon |
-| Asphalt Driveways (HOA) | ~2036 | $254,562 | Becht/Falcon |
 | Vinyl Siding | ~2049 | $1,651,860 | **Largest single obligation** (~$3.26M inflated to 2049) |
 | Roof Shingles (townhouses) | ~2050 | $880,045 | Replaced 2025; next cycle ~2050 |
 | Deck Replacement, Composite (next cycle) | ~2053 | $132,444 | Beyond the current 25-yr planning window |
-| **Total Estimated Replacement Obligation** | — | **$3,451,433** | Becht 2026 / Falcon 2022 |
+| **Total Estimated Replacement Obligation** | — | **$3,191,785** | Becht 2026 / Falcon 2022; excludes window wells and gutters (costs not yet known) |
+
+> *Asphalt driveways ($254,562) and concrete sidewalks ($5,086) are not carried by Condominium IV. Under the First Amendment to the HOA Declaration and By-Laws, §1(d)(v), "all walks and driveways" are HOA Common Areas maintained by the HOA, which matches the HOA's long-standing practice of paving all roads and driveways under one contract. These items appear on the HOA's Statement of Income and Liabilities. Entry stoops and end-unit porches remain Condo IV's (§13: "porches and exterior stairs").*
 
 ---
 
@@ -134,25 +134,39 @@ There are two ways to read the gap. **(A)** is what the reserve plan actually re
 | Measure | Amount |
 |---|---:|
 | Reserve cash on hand at 6/30/26 (Webster Reserve + PCSB CD + Roof Fund) | $132,147.88 |
-| Annual contribution required (all three funds, Year 1) | **~$156,900/yr (~$133/unit/mo)** |
-| Emergency Reserve — target | $300,000 |
+| Annual contribution required (all three funds, Year 1) | **~$144,500/yr (~$123/unit/mo)** |
+| — Long-Term Maintenance | $111,000/yr ($94.39/unit/mo) |
+| — Emergency Reserve (until funded in 2030) | $23,100/yr ($19.64/unit/mo) |
+| — Operating Reserve (until floor reached in 2030) | $10,400/yr ($8.84/unit/mo) |
+| Emergency Reserve — target | $125,000 (uninsured exposure; see note below) |
 | Operating Reserve — floor (3 months operating expense @ $36,503/mo) | $109,509 |
 | Long-Term Maintenance | Kept solvent every year (peak need ~$3.3M for the 2049 siding) |
-| Total 25-year replacement obligation | $3,451,433 |
+| Total 25-year replacement obligation | $3,191,785 |
+
+> **How the Emergency Reserve target was set.** Under the First Amendment to the HOA Declaration, the HOA insures Condo IV's buildings (§22.1) and carries out rebuilding after a fire or other casualty (§22.2). This target assumes the HOA also bears the policy deductible. A building loss is the insurer's job, not this reserve's, so the target covers only what insurance won't pay in a bad year:
+>
+> | Uninsured event | Allowance |
+> |---|---:|
+> | One sudden structural failure at a building (foundation settlement, rot behind the siding, water intrusion, deck structure) | $75,000 |
+> | Clustered urgent safety repairs (window wells, stoop steps, railings). One window-well rebuild cost $12,428 in H1 2026 | $25,000 |
+> | Rebuild cost above insurance proceeds, e.g. code upgrades (NY RPL §339-cc makes this a Condo common expense) | $25,000 |
+> | **Target** | **$125,000** |
+>
+> The fund is built from contributions over five years. It reaches $125,045 at the end of 2030, after $122,641 of contributions, and then stops collecting. This replaces the earlier $300,000 placeholder, which was framed as "worst-case building replacement", a risk the HOA's master policy covers. Three things should be confirmed: the HOA master policy (Community Associations Underwriters, CAU512582-8) covers all Condo IV buildings at replacement cost; the deductible falls on the HOA; and the policy includes ordinance-and-law (code upgrade) coverage. Without that coverage, raise the shortfall allowance to about $50,000, for a target of about $150,000. If the deductible instead falls on Condo IV, add it for each building a single storm could damage.
 
 *This plan funds each obligation as it comes due; it does **not** require a large lump sum on hand today. The reserve balance rises and falls as bills are paid — it never needs to sit at the "fully funded" figure in section B.*
 
 > *The half-year data supports the $36,503/month operating basis used by the plan: actual all-in operating spend (the HOA pass-through plus Condo IV's own costs) was $221,926.48 over six months, or **$36,987.75/month** — within 1.3% of the planned figure.*
 
-### B. Industry health check (accrual basis — diagnostic only)
+### B. Industry health check — Long-Term Maintenance (accrual basis — diagnostic only)
 
 | Measure | Amount |
 |---|---:|
-| Fully Funded Balance benchmark (straight-line accrual to date) | $1,435,572 |
+| Fully Funded Balance benchmark (straight-line accrual to date) | $1,304,392 |
 | Reserve on hand at 6/30/26 | $132,147.88 |
-| **Percent funded** | **~9.2%** *(CAI "weak" band is under 30%)* |
+| **Percent funded** | **~10.1%** *(CAI "weak" band is under 30%)* |
 
-*Percent funded measures how far behind the community fell before this plan was adopted. It is a diagnostic — **not** an amount that must be held in cash.*
+*Percent funded measures how far behind the community fell before this plan was adopted. It is a diagnostic on the Long-Term Maintenance schedule — **not** an amount that must be held in cash, and **not** one of the reduction gates below.*
 
 ### Reduction Readiness — the three gates
 
@@ -160,9 +174,9 @@ Any reduction in common charges is gated on measurable reserve targets rather th
 
 | Gate | Target | Actual | Status |
 |---|---|---|:--:|
-| 1. Emergency (redo section) reserve percent funded | ≥ 30% floor (aspire 70%) | ~9.2% | **FAIL (To be funded)** |
+| 1. Emergency Reserve funded to target | ≥ $125,000 | $0 allocated (built from contributions, ~$23,100/yr over 5 yrs; funded 2030) | **FAIL (To be funded)** |
 | 2. Operating Reserve at/above floor | ≥ $109,509 (3 mo.) | $37,143.77 liquid (~1.0 mo.) | **FAIL (To be funded)** |
-| 3. Long-Term Maintenance clears every year | never below $0 | clears at $156,900/yr | **PASS** |
+| 3. Long-Term Maintenance clears every year | never below $0 | clears at $111,000/yr | **PASS** |
 | **OVERALL** | all three must pass | | **NOT SUPPORTED** |
 
 > Two of the three gates fail as of June 30, 2026, so a reduction in common charges is not supported on the current figures. The picture improves from July forward: the roof loan is retired, which frees roughly $27,000/month of debt service that was previously consuming the surplus. Re-run these gates once a few post-payoff months are on the books.
@@ -171,7 +185,7 @@ Any reduction in common charges is gated on measurable reserve targets rather th
 
 The nearest-term items — **deck railings, window wells, and exterior caulk/sealant (2027)**, **chimney caps (2031)**, and **entry stoops (2032)** — should be funded first. With the roof loan retired in July, the cash that was servicing it should be redirected to the reserve schedule rather than absorbed into operating. Additional shortfalls may emerge as the field-verification items (chimney-cap scope, entry-stoop count) are confirmed.
 
-> **Workbook reconciliation note.** `Condo_IV_Reserve_Plan.xlsx` carries a total reserve cash figure of **$145,989**, which was the balance as of August 3, 2026. The June 30 balance is **$132,147.88** (the difference is the July reserve transfer). The plan's forward-looking contribution figures are unaffected, but the starting-balance input should be re-based to the period being reported when the workbook is next regenerated from `generate_entity_workbooks.py`.
+> **Workbook reconciliation note.** `Condo_IV_Reserve_Plan.xlsx` carries a total reserve cash figure of **$145,989**, which was the balance as of August 3, 2026. The June 30 balance is **$132,147.88** (the difference is the July reserve transfer). The plan's forward-looking contribution figures are unaffected, but the starting-balance input should be re-based to the period being reported when the workbook is next regenerated from `generate_entity_workbooks.py`. The workbook has been regenerated with the asphalt driveways and concrete sidewalks moved to the HOA plan, which lowered the Year-1 contribution from ~$156,900 to ~$146,500. It was then regenerated with the Emergency Reserve target reset from $300,000 (10-year build) to $125,000 (5-year build), which lowered the Year-1 contribution to ~$144,500.
 
 ---
 

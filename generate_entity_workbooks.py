@@ -32,6 +32,15 @@ ENTITIES = {
             ("Concrete Pool Apron", 78250, 100.0, 78250, 2036, 105162),
             ("Concrete Pool Coping", 9900, 100.0, 9900, 2031, 11477),
             ("Concrete Sidewalks (HOA share)", 20103, 57.11, 20103, 2033, 24723),
+            # First Amendment to the HOA Declaration §1(d)(v): "all walks and driveways" are HOA
+            # Common Areas, so every Condo's driveway and sidewalk share is carried here.
+            ("Asphalt Driveways (Condo II share)", 308000, 12.22, 37638, 2036, 50582),
+            ("Asphalt Driveways (Condo III share)", 308000, 5.13, 15800, 2036, 21234),
+            ("Asphalt Driveways (Condo IV share)", 308000, 82.66, 254562, 2036, 342150),
+            ("Concrete Sidewalks (Condo I share)", 35200, 18.13, 6382, 2033, 7849),
+            ("Concrete Sidewalks (Condo II share)", 35200, 5.70, 2006, 2033, 2468),
+            ("Concrete Sidewalks (Condo III share)", 35200, 4.61, 1623, 2033, 1996),
+            ("Concrete Sidewalks (Condo IV share)", 35200, 14.45, 5086, 2033, 6256),
             ("Curbing, Concrete", 35000, 100.0, 35000, 2036, 47037),
             ("Entrance Sign - Large", 20000, 100.0, 20000, 2046, 36122),
             ("Entrance Sign - Small", 12000, 100.0, 12000, 2046, 21673),
@@ -64,8 +73,8 @@ ENTITIES = {
             2028: 36067,
             2031: 11477,
             2032: 24620,
-            2033: 208222,
-            2036: 642321,
+            2033: 226791,
+            2036: 1056287,
             2038: 44915,
             2041: 190852,
             2043: 126440,
@@ -79,10 +88,13 @@ ENTITIES = {
             2031: [("Concrete Pool Coping", 11477)],
             2032: [("Roof - Clubhouse", 18650), ("Skylights - Clubhouse", 5373), ("Leaders - Clubhouse", 597)],
             2033: [("Lights, Street", 102325), ("Bathroom Refurbishment", 12299), ("Concrete Sidewalks (HOA)", 24723),
+                   ("Concrete Sidewalks (Condo I)", 7849), ("Concrete Sidewalks (Condo II)", 2468),
+                   ("Concrete Sidewalks (Condo III)", 1996), ("Concrete Sidewalks (Condo IV)", 6256),
                    ("Fire Alarm Control Panel", 9839), ("Lights, Recessed", 6764), ("Fitness Room Refurb", 6149),
                    ("Hot Water Heater", 3070), ("Kitchen Refurbishment", 4305), ("Asphalt Crack Filling", 18444),
                    ("Seal Coating", 20304)],
-            2036: [("Asphalt Paving (Roads)", 443487), ("Concrete Pool Apron", 105162), ("Curbing, Concrete", 47037),
+            2036: [("Asphalt Paving (Roads)", 443487), ("Asphalt Driveways (Condo II)", 50582),
+                   ("Asphalt Driveways (Condo III)", 21234), ("Asphalt Driveways (Condo IV)", 342150), ("Concrete Pool Apron", 105162), ("Curbing, Concrete", 47037),
                    ("Clubhouse Furniture", 20159), ("Pool Filter System", 13439), ("Aerator", 7392),
                    ("Lights, Entry Clubhouse", 3629), ("Lights, Entrance Sign", 2016)],
             2038: [("Asphalt Crack Filling", 21380), ("Seal Coating", 23535)],
@@ -111,6 +123,11 @@ ENTITIES = {
             ("Guard Rail", 10880, "Falcon estimated $10,880"),
             ("Vinyl on Masonry Wall Fence", 13950, "Falcon estimated $13,950"),
             ("Fire Suppression System", 7500, "Falcon estimated $7,500"),
+            ("Driveway Seal Coat - Condo II (recurring 5-yr cycle)", 1400, "Recurring maintenance; Falcon estimated $1,400/cycle"),
+            ("Driveway Seal Coat - Condo III (recurring 5-yr cycle)", 588, "Recurring maintenance; Falcon estimated $588/cycle"),
+            ("Driveway Seal Coat - Condo IV (recurring 5-yr cycle)", 9473, "Recurring maintenance; Falcon estimated $9,473/cycle"),
+            ("Mailbox Hut Restoration (Condo I)", 1500, "Falcon estimated $1,500"),
+            ("Walkway Pavers at Mailbox (Condo I)", 2200, "Falcon estimated $2,200"),
             ("Irrigation Repair Fund", 5000, "Recurring; Falcon estimated $5,000"),
             ("CCTV Security", 2000, "Falcon estimated $2,000"),
             ("Key Fob Entry System", 1500, "Falcon estimated $1,500"),
@@ -130,23 +147,21 @@ ENTITIES = {
             ("Deck Replacement, Composite (Condo I share)", 360000, 24.97, 89892, 2053, None),
             ("Roof, Shingles - Townhouses (Condo I share)", 1150988, 7.28, 83792, 2050, None),
             ("Chimney Chase Covers (Condo I share)", 178800, 10.00, 17880, 2031, 20728),
-            ("Concrete Sidewalks (Condo I share)", 35200, 18.13, 6382, 2033, 7849),
+            # Sidewalks, mailbox hut and mailbox pavers are carried by the HOA (see HOA entry).
         ],
         "disbursements": {
             2031: 20728,
-            2033: 142972,
+            2033: 135123,
             2049: 292367,
         },
         "disbursement_detail": {
             2031: [("Chimney Chase Covers", 20728)],
-            2033: [("Deck Replacement, Wood", 135123), ("Concrete Sidewalks", 7849)],
+            2033: [("Deck Replacement, Wood", 135123)],
             2049: [("Siding, Vinyl", 292367)],
         },
         "omitted_items": [
             ("Entry Stoops (8 units)", 12000, "Concrete steps/landings at unit entries; Falcon estimated $12,000"),
             ("Wood Trim Replacement (recurring 3-yr cycle)", 5000, "Recurring maintenance; Falcon estimated $5,000/cycle"),
-            ("Mailbox Hut Restoration", 1500, "Falcon estimated $1,500"),
-            ("Walkway Pavers at Mailbox", 2200, "Falcon estimated $2,200"),
         ],
     },
     "Condo_II": {
@@ -162,25 +177,21 @@ ENTITIES = {
             ("Deck Replacement, Wood (Condo II share)", 440000, 18.48, 81312, 2033, 100003),
             ("Deck Replacement, Composite (Condo II share)", 360000, 18.48, 66528, 2053, None),
             ("Roof, Shingles - Townhouses (Condo II share)", 1150988, 9.28, 106812, 2050, None),
-            ("Asphalt Driveways (Condo II share)", 308000, 12.22, 37638, 2036, 50582),
             ("Chimney Chase Covers (Condo II share)", 178800, 11.00, 19668, 2031, 22801),
-            ("Concrete Sidewalks (Condo II share)", 35200, 5.70, 2006, 2033, 2468),
+            # Asphalt driveways and sidewalks are carried by the HOA (see HOA entry).
         ],
         "disbursements": {
             2031: 22801,
-            2033: 102471,
-            2036: 50582,
+            2033: 100003,
             2038: 156074,
         },
         "disbursement_detail": {
             2031: [("Chimney Chase Covers", 22801)],
-            2033: [("Deck Replacement, Wood", 100003), ("Concrete Sidewalks", 2468)],
-            2036: [("Asphalt Driveways", 50582)],
+            2033: [("Deck Replacement, Wood", 100003)],
             2038: [("Siding, Wood", 156074)],
         },
         "omitted_items": [
             ("Entry Stoops (11 units)", 44000, "Concrete steps/landings at unit entries; Falcon estimated $44,000"),
-            ("Driveway Seal Coat (recurring 5-yr cycle)", 1400, "Recurring maintenance; Falcon estimated $1,400/cycle"),
         ],
     },
     "Condo_III": {
@@ -196,26 +207,22 @@ ENTITIES = {
             ("Deck Replacement, Wood (Condo III share)", 440000, 19.75, 86900, 2033, 106876),
             ("Deck Replacement, Composite (Condo III share)", 360000, 19.75, 71100, 2053, None),
             ("Roof, Shingles - Townhouses (Condo III share)", 1150988, 6.98, 80339, 2050, None),
-            ("Asphalt Driveways (Condo III share)", 308000, 5.13, 15800, 2036, 21234),
             ("Chimney Chase Covers (Condo III share)", 178800, 9.00, 16092, 2031, 18655),
-            ("Concrete Sidewalks (Condo III share)", 35200, 4.61, 1623, 2033, 1996),
+            # Asphalt driveways and sidewalks are carried by the HOA (see HOA entry).
         ],
         "disbursements": {
             2031: 18655,
-            2033: 108871,
-            2036: 21234,
+            2033: 106876,
             2038: 160442,
         },
         "disbursement_detail": {
             2031: [("Chimney Chase Covers", 18655)],
-            2033: [("Deck Replacement, Wood", 106876), ("Concrete Sidewalks", 1996)],
-            2036: [("Asphalt Driveways", 21234)],
+            2033: [("Deck Replacement, Wood", 106876)],
             2038: [("Siding, Wood", 160442)],
         },
         "omitted_items": [
             ("Entry Stoops (9 units)", 31500, "Concrete steps/landings at unit entries; Falcon estimated $31,500"),
             ("Wood Trim Replacement (recurring 5-yr cycle)", 7500, "Recurring maintenance; Falcon estimated $7,500/cycle"),
-            ("Driveway Seal Coat (recurring 5-yr cycle)", 588, "Recurring maintenance; Falcon estimated $588/cycle"),
         ],
     },
     "Condo_IV": {
@@ -229,29 +236,24 @@ ENTITIES = {
         "components": [
             ("Siding, Vinyl (Condo IV share)", 1800000, 91.77, 1651860, 2049, 3260083),
             ("Roof, Shingles - Townhouses (Condo IV share)", 1150988, 76.46, 880045, 2050, None),
-            ("Asphalt Driveways (Condo IV share)", 308000, 82.66, 254562, 2036, 342150),
             ("Deck Replacement, Wood (Condo IV share)", 440000, 36.79, 161876, 2033, 199087),
             ("Deck Replacement, Composite (Condo IV share)", 360000, 36.79, 132444, 2053, None),
             ("Chimney Chase Covers (Condo IV share)", 178800, 70.00, 125160, 2031, 145095),
-            ("Concrete Sidewalks (Condo IV share)", 35200, 14.45, 5086, 2033, 6256),
+            # Asphalt driveways and Condo IV sidewalks are carried by the HOA (see HOA entry).
         ],
         "disbursements": {
             2031: 145095,
-            2033: 205342,
-            2036: 342150,
+            2033: 199087,
             2049: 3260083,
         },
         "disbursement_detail": {
             2031: [("Chimney Chase Covers", 145095)],
-            2033: [("Deck Replacement, Wood", 199087), ("Concrete Sidewalks", 6256)],
-            2036: [("Asphalt Driveways", 342150)],
+            2033: [("Deck Replacement, Wood", 199087)],
             2049: [("Siding, Vinyl", 3260083)],
         },
         "omitted_items": [
             ("Entry Stoops/Porches (recurring)", 10000, "End unit porches on 5-yr cycle; Falcon estimated $10,000/cycle"),
-            ("Privacy Fence, Vinyl", 7735, "Condo-specific fencing; Falcon estimated $7,735"),
             ("Retaining Wall, Wood Tie Wells", 15000, "Structural/safety; Falcon estimated $15,000"),
-            ("Driveway Seal Coat (recurring 5-yr cycle)", 9473, "Recurring maintenance; Falcon estimated $9,473/cycle"),
         ],
     },
 }
@@ -329,7 +331,7 @@ def get_life(component_name):
 
 # ---------------------------------------------------------------------------
 # Three-fund configuration
-#   Fund 1  Emergency Reserve      -> worst-case building replacement (target)
+#   Fund 1  Emergency Reserve      -> HOA: largest common asset; Condos: uninsured exposure (target)
 #   Fund 2  Long-Term Maintenance  -> Becht/Falcon capital schedule (never < $0)
 #   Fund 3  Regular Reserve        -> decoupled general reserve (flat floor)
 # emergency_target / regular_floor are placeholders the board replaces with real
@@ -352,16 +354,32 @@ FUND_DEFAULTS = {
                  "total_cash": 364334,
                  "start_split": (0, 220553, 143781),
                  "emergency_label": "largest common asset (clubhouse / pool)"},
-    "Condo_I":  {"emergency_target": 150000, "operating_multiplier": 3, "operating_monthly": 0, "total_cash": 29418,
-                 "emergency_label": "worst-case building replacement"},
-    "Condo_II": {"emergency_target": 120000, "operating_multiplier": 3, "operating_monthly": 0, "total_cash": 27319,
-                 "emergency_label": "worst-case building replacement"},
-    "Condo_III": {"emergency_target": 120000, "operating_multiplier": 3, "operating_monthly": 0, "total_cash": 24800,
-                  "emergency_label": "worst-case building replacement"},
-    "Condo_IV": {"emergency_target": 300000, "operating_multiplier": 3, "operating_monthly": 36503, "total_cash": 145989,
-                 "emergency_label": "worst-case building replacement",
-                 # Recommended starting-balance split (Emergency, LTM, Operating); Emergency built over 10y
-                 "start_split": (0, 95000, 50989), "emergency_fill_years": 10},
+    # Condo Emergency targets (2026-10): the HOA insures the buildings and runs casualty
+    # rebuilding (HOA First Amendment §22.1/§22.2), deductible assumed on the HOA, so each
+    # Condo reserve covers only uninsured exposure in a bad year:
+    #   one sudden structural failure at a typical building (scaled to building size)
+    #   + clustered urgent safety repairs (window wells, stoops, railings; $12.5k floor = one event)
+    #   + rebuild cost above insurance proceeds, e.g. code upgrades (NY RPL §339-cc; scaled).
+    # Building sizes per Falcon 2022: C1 2 x 9-unit multi-family; C2 2 x 5-6 unit townhouse rows;
+    # C3 3 x 3-unit townhouses; C4 41 townhouses (~2.4 units each).
+    "Condo_I":  {"emergency_target": 147500,   # 100,000 + 12,500 + 35,000
+                 "operating_multiplier": 3, "operating_monthly": 0, "total_cash": 29418,
+                 "emergency_label": "uninsured structural & shortfall exposure — deductible on HOA",
+                 "emergency_fill_years": 5},
+    "Condo_II": {"emergency_target": 132500,   # 90,000 + 12,500 + 30,000
+                 "operating_multiplier": 3, "operating_monthly": 0, "total_cash": 27319,
+                 "emergency_label": "uninsured structural & shortfall exposure — deductible on HOA",
+                 "emergency_fill_years": 5},
+    "Condo_III": {"emergency_target": 112500,  # 75,000 + 12,500 + 25,000
+                  "operating_multiplier": 3, "operating_monthly": 0, "total_cash": 24800,
+                  "emergency_label": "uninsured structural & shortfall exposure — deductible on HOA",
+                  "emergency_fill_years": 5},
+    # Condo IV: 75,000 structural + 25,000 clustered safety repairs (98 units, so more than
+    # one event a year is plausible) + 25,000 above-proceeds shortfall. See Condo comment above.
+    "Condo_IV": {"emergency_target": 125000, "operating_multiplier": 3, "operating_monthly": 36503, "total_cash": 145989,
+                 "emergency_label": "uninsured structural & shortfall exposure — deductible on HOA",
+                 # Recommended starting-balance split (Emergency, LTM, Operating); Emergency built over 5y
+                 "start_split": (0, 95000, 50989), "emergency_fill_years": 5},
 }
 for _k, _v in FUND_DEFAULTS.items():
     ENTITIES[_k].update(_v)
@@ -698,7 +716,7 @@ def build_instructions_sheet(ws, entity):
         "This plan splits reserves into THREE decoupled funds, each with its own balance,",
         "annual contribution, floor, and monthly cost per unit. Each has its own tab.",
         "",
-        "1. Emergency Reserve — self-funded buffer to replace the worst-case building.",
+        f"1. Emergency Reserve — self-funded buffer for {entity.get('emergency_label', 'worst-case building replacement')}.",
         "   Floor = a target you set (Fund Summary, yellow cell). Not drawn for routine work.",
         "2. Long-Term Maintenance — the Becht/Falcon capital replacement schedule.",
         "   Floor = must NEVER drop below $0 in any year.",
