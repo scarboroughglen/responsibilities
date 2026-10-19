@@ -362,8 +362,19 @@ The bylaws designate "mechanical systems" as Owner responsibility for interior c
 
 #### 12/11. Building - Gutters - Replace, Repair, Cleaning
 **Listing Says**: Condo
-**Bylaws Say**: ✓ CORRECT
-**Comment**: Bylaws state Condo maintains "roof and roof members." Gutters are part of roof system. The listing includes both "replace" and "cleaning" as Condo expense, which is appropriate.
+**Bylaws Say**: ⚠️ PARTLY CORRECT - the gutters are the Condo's; cleaning out tree debris is landscaping (HOA)
+**Comment**: Bylaws state Condo maintains "roof and roof members." Gutters and leaders are part of the roof system, so the Condo repairs and replaces them. What clogs them is the trees, and tree maintenance is the HOA's (Item 49; First Amendment §1(d)(i) makes the Condo land an HOA Common Area). **[AMENDED 2026-10]** Split by the work done:
+
+| Work | Responsible |
+|---|---|
+| Gutters and leaders on the building: repair, re-pitch, re-attach, replace sections | Condo |
+| Full gutter replacement | Condo, within the roof replacement cycle (Becht/Falcon price the roof "incl gutters/leaders") |
+| Roof raking and ice removal from gutters | Condo |
+| Tree trimming to keep branches off roofs and gutters | HOA |
+| Cleaning tree debris out of gutters | HOA (landscaping) |
+| Underground drain lines that downspouts discharge into | HOA (storm lines outside the buildings, §1(d)) |
+
+The listing's "Cleaning" should move to the HOA. Because this shifts a cost to the HOA, it needs the HOA Board's agreement, and the HOA budget should carry a gutter-cleaning line.
 
 #### 13/12. Building - HVAC
 **Listing Says**: Homeowner
