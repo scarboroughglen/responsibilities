@@ -91,11 +91,15 @@ This document is intended to help owners understand this Condominium's financial
 
 ---
 
-## Outstanding Liabilities *(as of June 30, 2026)*
+## Outstanding Liabilities and Receivables *(as of June 30, 2026)*
 
 | Liability | Balance |
 |---|---:|
 | Roof Loan – Tompkins Mahopac Bank | **~$21,875 outstanding** *(estimated — see note)* |
+
+| Receivable | Balance |
+|---|---:|
+| Roof assessment installments still owed by the 53 payment-plan units | **~$185,000** *(estimated — see Supplementary Information, item 2)* |
 
 > **The roof loan was still outstanding at June 30, 2026.** It was retired the following month (final payment and UCC termination recorded **July 17, 2026**), so this statement — unlike the prior year-to-date presentation through August 3 — captures the Association while the debt was still on the books.
 >
@@ -108,20 +112,21 @@ This document is intended to help owners understand this Condominium's financial
 
 | Component | Est. Remaining Life (Year) | Est. Replacement Cost | Notes |
 |---|---|---:|---|
-| Deck Railings & Balusters (safety) | 2026-2028 | $40,469 | Life-safety item; **not** replaced with the 2025 roof; recurs ~12-yr cycle |
-| Window Wells | By 2028 | TBD | Historical window-well costs to be pulled from records; H1 2026 spend was $12,428.13 (1601 Pheasant Woods reconstruction + materials) |
-| Gutters | By 2028 | Unknown | Scope and cost not yet determined |
+| Deck Railings & Balusters (safety) | 2026–2027; then ~12-yr cycle | $40,469 / cycle | Life-safety item. **Updated Oct 2026:** the 21 rails rated worst were replaced Aug–Sep 2026 (~$70,050); 5 more are planned for 2027 (~$22,500); 8 more are being assessed. This cycle (~$92,550) is well above the $40,469 allocated. **Under review: see "Deck costs under review" below** |
+| Window Wells (rebuild; side fencing and handrail if required) | 2026–2028 | $168,000 | **Updated Oct 2026** from the board's survey: 8 wells under way in 2026 (~$64,000, operating funds); 21 more at ~$8,000 each, 6 in 2027 and 15 in 2028 (includes 10 whose condition is still being confirmed) |
 | Exterior Caulk/Sealant & Trim Maintenance | Recurring, ~6 yrs (from 2027) | $15,000 / cycle | **Window-seal caulking (critical)** + trim; protects the wall assembly behind the vinyl |
 | Chimney Chase Covers / Caps | ~5 yrs (2031) | $125,160 | **Caps not replaced in the 2025 roof project — flashing only.** Scope/count to be field-verified |
 | Entry Stoops (concrete + safety repair cycle) | ~2032 | $225,400 | **Omitted by both Falcon and Becht;** est. $2,000/unit × 98 units + safety cycle |
-| Deck Framing & Footings | ~2033 | $64,750 | Long-lived structure (survives 2–3 board cycles) |
-| Deck Boards (surface) | ~2033 (~18-yr cycle) | $56,657 | Wear surface; next stand-alone cycle ~2051 |
+| Deck Framing & Footings | ~2033 | $64,750 | Long-lived structure (survives 2–3 board cycles). **Under review: see note below** |
+| Deck Boards (surface) | ~2033 (~18-yr cycle) | $56,657 | Wear surface; next stand-alone cycle ~2051. **Under review: see note below** |
 | Vinyl Siding | ~2049 | $1,651,860 | **Largest single obligation** (~$3.26M inflated to 2049) |
 | Roof Shingles (townhouses) | ~2050 | $880,045 | Replaced 2025; next cycle ~2050 |
 | Deck Replacement, Composite (next cycle) | ~2053 | $132,444 | Beyond the current 25-yr planning window |
-| **Total Estimated Replacement Obligation** | — | **$3,191,785** | Becht 2026 / Falcon 2022; excludes window wells and gutters (costs not yet known) |
+| **Total Estimated Replacement Obligation** | — | **$3,359,785** | Becht 2026 / Falcon 2022 ($3,191,785) plus the remaining window wells ($168,000). Could be about $212,500 higher if the deck review below is confirmed |
 
-> *Asphalt driveways ($254,562) and concrete sidewalks ($5,086) are not carried by Condominium IV. Under the First Amendment to the HOA Declaration and By-Laws, §1(d)(v), "all walks and driveways" are HOA Common Areas maintained by the HOA, which matches the HOA's long-standing practice of paving all roads and driveways under one contract. These items appear on the HOA's Statement of Income and Liabilities. Entry stoops and end-unit porches remain Condo IV's (§13: "porches and exterior stairs").*
+> **Deck costs under review (October 2026).** Neither the Becht nor the Falcon study priced deck rails separately; both priced whole-deck replacement. The reserve plan split decks into rails (25%), boards (35%) and framing (40%) so rails could be funded on a shorter safety cycle. The deck total it split, $161,876, is Condo IV's share of Becht's wood-deck line, which corresponds to only about 1,620 sq ft of decks. Falcon measured **3,744 sq ft** of Condo IV decks. At Becht's $100/sq ft on Falcon's area, Condo IV's deck obligations would be about **$374,400 instead of $161,876**, about **$212,500 more** in 2026 dollars (rails ~$93,600 a cycle, boards ~$131,040, framing ~$149,760). The actual 2026–2027 rail cycle (~$92,550) is consistent with the higher figure. The Board is confirming deck quantities with Becht. Until then, this statement's table uses the reserve plan's figures. The 2027 budget, to be safe, already funds the higher estimate: about $11,300 more goes to Long-Term Maintenance in 2027, within the same common charge.
+
+> *Asphalt driveways ($254,562) and concrete sidewalks ($5,086) are not carried by Condominium IV. Under the First Amendment to the HOA Declaration and By-Laws, §1(d)(v), "all walks and driveways" are HOA Common Areas maintained by the HOA, which matches the HOA's long-standing practice of paving all roads and driveways under one contract. These items appear on the HOA's Statement of Income and Liabilities. Entry stoops and end-unit porches remain Condo IV's (§13: "porches and exterior stairs"). Gutters are not carried by Condominium IV.*
 
 ---
 
@@ -141,7 +146,7 @@ There are two ways to read the gap. **(A)** is what the reserve plan actually re
 | Emergency Reserve — target | $125,000 (uninsured exposure; see note below) |
 | Operating Reserve — floor (3 months operating expense @ $36,503/mo) | $109,509 |
 | Long-Term Maintenance | Kept solvent every year (peak need ~$3.3M for the 2049 siding) |
-| Total 25-year replacement obligation | $3,191,785 |
+| Total 25-year replacement obligation | $3,359,785 *(reserve plan $3,191,785 + window wells $168,000)* |
 
 > **How the Emergency Reserve target was set.** Under the First Amendment to the HOA Declaration, the HOA insures Condo IV's buildings (§22.1) and carries out rebuilding after a fire or other casualty (§22.2). This target assumes the HOA also bears the policy deductible. A building loss is the insurer's job, not this reserve's, so the target covers only what insurance won't pay in a bad year:
 >
@@ -166,29 +171,85 @@ There are two ways to read the gap. **(A)** is what the reserve plan actually re
 | Reserve on hand at 6/30/26 | $132,147.88 |
 | **Percent funded** | **~10.1%** *(CAI "weak" band is under 30%)* |
 
-*Percent funded measures how far behind the community fell before this plan was adopted. It is a diagnostic on the Long-Term Maintenance schedule — **not** an amount that must be held in cash, and **not** one of the reduction gates below.*
+*Percent funded measures how far behind the community fell before this plan was adopted. It is a diagnostic on the Long-Term Maintenance schedule — **not** an amount that must be held in cash, and **not** one of the reserve funding targets below.*
 
-### Reduction Readiness — the three gates
+### Reserve funding status
 
-Any reduction in common charges is gated on measurable reserve targets rather than a calendar date. As of June 30, 2026:
+Any reduction in common charges is tied to measurable reserve targets rather than a calendar date. As of June 30, 2026:
 
-| Gate | Target | Actual | Status |
+| Reserve target | Target | Actual | Status |
 |---|---|---|:--:|
-| 1. Emergency Reserve funded to target | ≥ $125,000 | $0 allocated (built from contributions, ~$23,100/yr over 5 yrs; funded 2030) | **FAIL (To be funded)** |
-| 2. Operating Reserve at/above floor | ≥ $109,509 (3 mo.) | $37,143.77 liquid (~1.0 mo.) | **FAIL (To be funded)** |
-| 3. Long-Term Maintenance clears every year | never below $0 | clears at $111,000/yr | **PASS** |
-| **OVERALL** | all three must pass | | **NOT SUPPORTED** |
+| 1. Emergency Reserve at target | ≥ $125,000 | $0 allocated (built from contributions, ~$23,100/yr over 5 yrs; funded 2030) | **To be funded** |
+| 2. Operating Reserve at/above floor | ≥ $109,509 (3 mo.) | $37,143.77 liquid (~1.0 mo.) | **To be funded** |
+| 3. Long-Term Maintenance never below $0 | never below $0 | clears at $111,000/yr | **Funded** |
+| **Reduction in common charges** | all three funded | | **Not yet supported** |
 
-> Two of the three gates fail as of June 30, 2026, so a reduction in common charges is not supported on the current figures. The picture improves from July forward: the roof loan is retired, which frees roughly $27,000/month of debt service that was previously consuming the surplus. Re-run these gates once a few post-payoff months are on the books.
+> Two of the three reserve targets are still to be funded as of June 30, 2026, so a reduction in common charges is not supported on the current figures. The picture improves from July forward: the roof loan is retired, which frees roughly $27,000/month of debt service that was previously consuming the surplus. The 2027 budget re-runs these targets with the post-payoff months on the books (see Supplementary Information, item 5).
 
 ### Priorities
 
-The nearest-term items — **deck railings, window wells, and exterior caulk/sealant (2027)**, **chimney caps (2031)**, and **entry stoops (2032)** — should be funded first. With the roof loan retired in July, the cash that was servicing it should be redirected to the reserve schedule rather than absorbed into operating. Additional shortfalls may emerge as the field-verification items (chimney-cap scope, entry-stoop count) are confirmed.
+The nearest-term items — **window wells (2026–2028), the remaining deck rails and exterior caulk/sealant (2027)**, **chimney caps (2031)**, and **entry stoops (2032)** — should be funded first. With the roof loan retired in July, the cash that was servicing it should be redirected to the reserve schedule rather than absorbed into operating. Additional shortfalls may emerge as the field-verification items (chimney-cap scope, entry-stoop count) are confirmed.
 
 > **Workbook reconciliation note.** `Condo_IV_Reserve_Plan.xlsx` carries a total reserve cash figure of **$145,989**, which was the balance as of August 3, 2026. The June 30 balance is **$132,147.88** (the difference is the July reserve transfer). The plan's forward-looking contribution figures are unaffected, but the starting-balance input should be re-based to the period being reported when the workbook is next regenerated from `generate_entity_workbooks.py`. The workbook has been regenerated with the asphalt driveways and concrete sidewalks moved to the HOA plan, which lowered the Year-1 contribution from ~$156,900 to ~$146,500. It was then regenerated with the Emergency Reserve target reset from $300,000 (10-year build) to $125,000 (5-year build), which lowered the Year-1 contribution to ~$144,500.
 
 ---
 
+## Supplementary Information
+*(Unaudited. Updated October 2026. Detail for 2027 is in the separate Condo IV 2027 budget; this section summarizes and points to it.)*
+
+### 1. Budget compared with actual, January 1 – June 30, 2026
+
+The 2026 budget is pro-rated to six months (½ of the annual figure). Seasonal items, such as winter roof raking and summer insurance renewals, make a half-year comparison approximate.
+
+| Line | 2026 budget (½ year) | Actual, Jan–Jun 2026 | Over / (under) budget |
+|---|---:|---:|---:|
+| **Income** | | | |
+| Common charges | $204,949 | $204,775 | ($174) |
+| HOA dues collected (pass-through) | $214,620 | $215,383 | $763 |
+| Late fees and other common-charge income | $750 | $850 | $100 |
+| **Expenses** | | | |
+| Master Association remittance (pass-through) | $214,620 | $214,620 | — |
+| Insurance | $3,250 | $607 | ($2,643) |
+| Legal / audit | $2,500 | — | ($2,500) |
+| Copies, postage, admin | $1,100 | $664 | ($436) |
+| State & local income tax | $500 | $595 | $95 |
+| Misc. general & administrative | $2,000 | — | ($2,000) |
+| General maintenance & repair (incl. roof raking, window-well drain) | $26,996 | $5,440 | ($21,556) |
+| Wood trim and materials | $3,000 | — | ($3,000) |
+| Window wells (1601 Pheasant Woods rebuild + materials) | $37,500 | $12,428 | ($25,072) |
+| Roof loan principal and interest | $46,353 | $166,353 | $120,000 |
+| Transfers to reserves | $82,500 | $68,750 | ($13,750) |
+
+> The loan line is over budget by design: $20,000 a month of extra principal was paid to retire the loan early (five payments from operating cash and one, on May 7, from reserves). Transfers to reserves are under budget because the February transfer was skipped when the $95,000 CD was opened, and the 2026 budget's $45,000 "New Reserves" line was not transferred separately.
+
+### 2. Roof assessment installments — receivable and designation
+
+The 2025 roof replacement was paid by the Condominium, partly through a bank loan. 45 owners prepaid their share ($5,673). The other 53 chose a 3-year payment plan of $174.52 a month for 36 months, $6,282.72 per unit in total, including about $610 of interest. The bank loan was paid off on July 17, 2026, but the payment-plan owners continue to owe their installments to the Condominium.
+
+- **Receivable.** Assuming the plan runs March 2025 – February 2028, about **$185,000** was still owed at June 30, 2026 (20 installments × $174.52 × 53 units), falling to about **$129,500** at December 31, 2026. These are estimates; the Condominium's receivable ledger is the authoritative figure. A unit that sells or pays off early stops paying, so these are maximums.
+- **Designation.** Beginning with the 2027 budget, every installment collected is transferred to the Long-Term Maintenance reserve as a separately identified transfer. The installments repay Condominium cash that paid for the roof, so they return to the fund for future building work. None of this money funds operating costs.
+
+### 3. Events after June 30, 2026
+
+- **Roof loan paid in full** on July 17, 2026 (final payment $14,369.85).
+- **Deck rails.** The 21 deck rails in the worst condition were replaced in August–September 2026 (about $70,050). $40,000 of the cost was drawn from reserves on August 17, 2026.
+- **Window wells.** Eight window-well rebuilds are under way in 2026 (about $64,000), planned to be paid from operating funds.
+- **Reserve transfers** of $13,750 a month continued from July.
+
+### 4. Deck costs under review
+
+The deck figures in this statement may be understated by about $212,500 (2026 dollars); see "Deck costs under review" under Future Major Repairs and Replacements. The 2027 budget already funds the higher estimate within the same common charge, and discloses the item to owners.
+
+### 5. Relationship to the 2027 budget
+
+The proposed 2027 budget (October 2026) holds the 2027 charges, operating budget, reserve contributions and capital projects, and lists the items that could still change what owners pay. In summary:
+
+- The Condominium IV common charge is held at **$254.17** a month for every unit. The 53 payment-plan units also pay the **$174.52** roof installment, designated to Long-Term Maintenance.
+- Reserve contributions are re-calculated from actual reserve cash, using the reserve plan's rules.
+- Common charges are not reduced until all three reserve targets are funded.
+
+---
+
 ## Disclaimer
 
-This Statement has been prepared for informational purposes only. It is **unaudited** and is not intended to represent audited financial statements in accordance with U.S. GAAP. The income and cash information is derived from the Condominium's general-ledger transactions and bank account register for January 1 – June 30, 2026; the future repair and replacement figures are based on the Becht Engineering Capital Reserve Study (2026) and the Falcon Engineering Report (2022) as allocated to its Condominium. No assurance is expressed on the projections, which are estimates subject to change as conditions evolve and as field verification is completed.
+This Statement has been prepared for informational purposes only. It is **unaudited** and is not intended to represent audited financial statements in accordance with U.S. GAAP. The income and cash information is derived from the Condominium's general-ledger transactions and bank account register for January 1 – June 30, 2026; the future repair and replacement figures are based on the Becht Engineering Capital Reserve Study (2026) and the Falcon Engineering Report (2022) as allocated to its Condominium. No assurance is expressed on the projections, which are estimates subject to change as conditions evolve and as field verification is completed. The Supplementary Information and the updated window-well and deck-rail figures were added in October 2026 from the Condominium's records and the board's surveys after the reporting period; they are unaudited estimates. Deck replacement costs are under review and may change materially once deck quantities are confirmed with the reserve-study engineer.
