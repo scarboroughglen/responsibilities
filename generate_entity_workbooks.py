@@ -708,6 +708,11 @@ def build_instructions_sheet(ws, entity):
     ws.cell(row=row, column=2, value=entity["name"]).font = TITLE_FONT
     row += 1
     ws.cell(row=row, column=2, value="Capital Reserve Funding Plan").font = SECTION_FONT
+    row += 1
+    ws.cell(row=row, column=2,
+            value="Unaudited planning estimates. This plan is not a financial statement, is not prepared in "
+                  "accordance with U.S. GAAP, and is not a reserve study under the CAI National Reserve Study "
+                  "Standards. Future costs, timing and balances are estimates and will differ.").font = SMALL_FONT
     row += 2
 
     # How to read this workbook (orientation for board members opening the file)
@@ -1165,7 +1170,8 @@ def build_summary_sheet(ws, entity):
 
     ws.cell(row=1, column=1, value=f"{entity['name']} — Fund Summary & Reduction Readiness").font = TITLE_FONT
     ws.cell(row=2, column=1,
-            value="Three decoupled funds. Yellow cells are inputs — replace placeholders with actual figures.").font = SMALL_FONT
+            value="Three decoupled funds. Yellow cells are inputs — replace placeholders with actual figures. "
+                  "Unaudited planning estimates; not a GAAP financial statement.").font = SMALL_FONT
 
     # --- Shared inputs ---
     ws.cell(row=4, column=1, value="SHARED INPUTS").font = SECTION_FONT

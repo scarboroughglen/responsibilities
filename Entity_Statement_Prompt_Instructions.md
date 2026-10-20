@@ -9,6 +9,27 @@ placeholders and attaching/pointing to the entity's inputs.
 
 ---
 
+## 0. Schedule: twice a year
+
+Each entity's statement is issued twice a year:
+
+| Edition | Reporting period | Issued | Goes out with |
+|---|---|---|---|
+| **Mid-year** | January 1 – June 30 | Fall | The proposed budget for the next year |
+| **Full-year** | January 1 – December 31 | Spring | Before or alongside the audited financial statements |
+
+For each edition:
+- Get the GL transactions report and bank register **for that period** from management.
+- State the edition and period in the Background ("This is the mid-year 2026 edition…").
+- The **Supplementary Information** section compares actual results with the budget for the same
+  period. Use the full annual budget for the full-year edition, and half of it for the mid-year edition.
+  It also covers events after the period end, and how the statement relates to the current budget.
+- Keep the plan-based figures (future repairs, contributions, targets, percent funded) the same as the
+  current reserve plan workbook. For Condo IV, that workbook is re-based each fall to start on January 1
+  of the budget year, so it matches the budget (see `generate_entity_workbooks.py`).
+
+---
+
 ## 1. Inputs required for the target entity
 
 | Input | Where it comes from | Notes |

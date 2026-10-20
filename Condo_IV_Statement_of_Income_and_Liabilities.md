@@ -13,6 +13,8 @@ The Becht study evaluates the common property of Scarborough Glen as a whole; th
 
 This document is intended to help owners understand this Condominium's financial position, current reserve funding, and long-term repair and replacement obligations, and to support the Board and management in reserve planning. It has been prepared by the Condominium's Treasurer and is unaudited; it is not intended to represent audited financial statements in accordance with U.S. GAAP, and no assurance is expressed on the projections.
 
+This statement is issued twice a year: a mid-year edition (January–June), issued in the fall with the proposed budget, and a full-year edition (January–December), issued in the spring. This is the mid-year 2026 edition; the next edition will cover all of 2026.
+
 ---
 
 ## Statement of Income and Cash Position
