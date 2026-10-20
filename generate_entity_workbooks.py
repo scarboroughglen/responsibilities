@@ -376,10 +376,26 @@ FUND_DEFAULTS = {
                   "emergency_fill_years": 5},
     # Condo IV: 75,000 structural + 25,000 clustered safety repairs (98 units, so more than
     # one event a year is plausible) + 25,000 above-proceeds shortfall. See Condo comment above.
-    "Condo_IV": {"emergency_target": 125000, "operating_multiplier": 3, "operating_monthly": 36503, "total_cash": 145989,
+    # Condo IV is re-based to start 1/1/2027 so it matches the 2027 budget (budgets repo):
+    # opening cash = projected 12/31/2026 reserve cash; Emergency and Operating hold what the
+    # 2026 plan gave them, LTM the remainder; operating basis = 2027 budget's monthly spend
+    # (HOA pass-through $429,240 + Condo IV operating $42,200) / 12. Targets are reached by 2030.
+    "Condo_IV": {"emergency_target": 125000, "operating_multiplier": 3, "operating_monthly": 39286.67,
+                 "total_cash": 176604, "plan_start": 2027,
+                 "cash_note": "projected reserve cash at 12/31/2026 (from the 2027 budget)",
+                 "prepared": "Prepared October 2026 (re-based to 2027 to match the 2027 budget). Review and update annually.",
                  "emergency_label": "uninsured structural & shortfall exposure — deductible on HOA",
-                 # Recommended starting-balance split (Emergency, LTM, Operating); Emergency built over 5y
-                 "start_split": (0, 95000, 50989), "emergency_fill_years": 5},
+                 "start_split": (23100, 91605, 61899), "emergency_fill_years": 4, "operating_fill_years": 4,
+                 # Decks at Falcon's measured Condo IV area (3,744 sq ft x Becht $100/sq ft) instead of the
+                 # Becht wood-deck share ($161,876 ~ 1,620 sq ft). Under review with Becht (Oct 2026).
+                 "deck_alloc_override": 374400,
+                 # 2027 rail work = the 5 rails still needing replacement (21 done Aug-Sep 2026), $4,500 each.
+                 "rail_asap_cost": 22500, "rail_asap_label": "Deck Railings — 2027 remaining replacements (5 rails)",
+                 # Window-well rebuild program from the board's survey: 6 wells in 2027, 15 in 2028 at ~$8,000.
+                 "one_time_items": [
+                     ("Window Wells — rebuild program, 2027 (6 wells)", "Window Wells (rebuild program)", 48000, 2027),
+                     ("Window Wells — rebuild program, 2028 (15 wells)", "Window Wells (rebuild program)", 120000, 2028),
+                 ]},
 }
 for _k, _v in FUND_DEFAULTS.items():
     ENTITIES[_k].update(_v)
@@ -405,6 +421,10 @@ def split_deck_rails(entity, rail_share=0.25, decking_share=0.35, rail_cycle=12,
     if wood is None:
         return
     name, becht, share, alloc, yr, infl = wood
+    scale = 1.0
+    if entity.get("deck_alloc_override"):
+        scale = entity["deck_alloc_override"] / alloc
+        alloc = entity["deck_alloc_override"]
     suffix = name[name.find(" ("):] if " (" in name else ""   # e.g. " (Condo IV share)"
     rail_cur = round(alloc * rail_share)
     deck_cur = round(alloc * decking_share)
@@ -421,8 +441,15 @@ def split_deck_rails(entity, rail_share=0.25, decking_share=0.35, rail_cycle=12,
         if c is wood:
             new_comps.append((fram_name, becht, share, fram_cur, yr, inf(fram_cur, yr)))
             new_comps.append((deck_name, becht, share, deck_cur, yr, inf(deck_cur, yr)))
-            # rail line's headline date is the ASAP replacement (past service life)
-            new_comps.append((rail_name, becht, share, rail_cur, asap_year, inf(rail_cur, asap_year)))
+            if entity.get("rail_asap_cost"):
+                # near-term rail work is known: list it separately; the cycle line dates from the rebuild
+                new_comps.append((rail_name, becht, share, rail_cur, yr, inf(rail_cur, yr)))
+                cost = entity["rail_asap_cost"]
+                new_comps.append((entity.get("rail_asap_label", "Deck Railings — near-term replacements"),
+                                  None, 100.0, cost, asap_year, inf(cost, asap_year)))
+            else:
+                # rail line's headline date is the ASAP replacement (past service life)
+                new_comps.append((rail_name, becht, share, rail_cur, asap_year, inf(rail_cur, asap_year)))
         else:
             new_comps.append(c)
     entity["components"] = new_comps
@@ -433,6 +460,7 @@ def split_deck_rails(entity, rail_share=0.25, decking_share=0.35, rail_cycle=12,
         new_items = []
         for nm, amt in detail[y]:
             if "Deck Replacement, Wood" in nm:
+                amt = amt * scale
                 new_items.append(("Deck Framing & Footings", round(amt * framing_share)))
                 new_items.append(("Deck Boards (surface)", round(amt * decking_share)))
                 new_items.append(("Deck Railings & Balusters (safety)", round(amt * rail_share)))
@@ -450,7 +478,8 @@ def split_deck_rails(entity, rail_share=0.25, decking_share=0.35, rail_cycle=12,
             rail_years.add(ry)
             ry += rail_cycle
     for ry in rail_years:
-        amt = round(rail_cur * (1 + inflation) ** (ry - 2026))
+        cost = entity["rail_asap_cost"] if (ry == asap_year and entity.get("rail_asap_cost")) else rail_cur
+        amt = round(cost * (1 + inflation) ** (ry - 2026))
         detail.setdefault(ry, []).append(("Deck Railings & Balusters (safety)", amt))
     entity["disbursements"] = {y: sum(a for _, a in items) for y, items in detail.items()}
 
@@ -526,6 +555,24 @@ for _k in ENTITIES:
     apply_appendix_f(ENTITIES[_k], _k)
 
 
+def apply_one_time_items(entity, inflation=0.03):
+    """Known one-time capital work: (component name, chart group, 2026-dollar cost, year)."""
+    items = entity.get("one_time_items", [])
+    if not items:
+        return
+    detail = entity["disbursement_detail"]
+    for name, group, cost, year in items:
+        infl = round(cost * (1 + inflation) ** (year - 2026))
+        entity["components"].append((name, None, 100.0, cost, year, infl))
+        detail.setdefault(year, []).append((group, infl))
+    entity["disbursements"] = {yr: sum(a for _, a in its) for yr, its in detail.items()}
+    entity["total_replacement_cost"] = sum(c[3] for c in entity["components"])
+
+
+for _k in ENTITIES:
+    apply_one_time_items(ENTITIES[_k])
+
+
 def compute_ffb(entity):
     """Fully Funded Balance = sum(allocated cost x effective_age/useful_life)."""
     ffb = 0.0
@@ -539,6 +586,14 @@ def compute_ffb(entity):
 
 
 FUND_FILL_YEARS = 5   # years to build Emergency / Regular up to their targets
+
+
+def set_timeline(entity):
+    """Point the module timeline at this entity's plan years (default 2026-2050)."""
+    global YEARS, FUND_LAST_ROW, FUND_TOTALS_ROW
+    YEARS = list(range(entity.get("plan_start", 2026), 2051))
+    FUND_LAST_ROW = FUND_FIRST_ROW + len(YEARS) - 1
+    FUND_TOTALS_ROW = FUND_LAST_ROW + 1
 
 
 def _roundup(x, step=100):
@@ -660,9 +715,9 @@ def build_instructions_sheet(ws, entity):
     row += 1
     howto = [
         "START on the 'Fund Summary' tab — it shows the three funds, their targets/floors, the",
-        "per-unit monthly funding, and the 'Reduction Readiness' gates all on one page.",
+        "per-unit monthly funding, and the 'Reserve Funding Status' all on one page.",
         "The three fund tabs — Emergency Reserve, Long-Term Maintenance, Operating Reserve — each",
-        "show that fund's year-by-year balance from 2026 to 2050.",
+        f"show that fund's year-by-year balance from {YEARS[0]} to {YEARS[-1]}.",
         "'Components' lists every capital item and its cost; 'Expenditure Chart' plots spending by year.",
         "Yellow cells are inputs you can edit; every other cell is calculated automatically.",
     ]
@@ -686,9 +741,10 @@ def build_instructions_sheet(ws, entity):
     info = [
         f"Number of units: {entity['units']}",
         f"Total replacement cost (current dollars): ${entity['total_replacement_cost']:,.0f}",
-        f"Total reserve cash to allocate (2026): ${entity.get('total_cash', entity['starting_balance']):,.0f}",
+        f"Total reserve cash to allocate ({entity.get('cash_note', YEARS[0])}): "
+        f"${entity.get('total_cash', entity['starting_balance']):,.0f}",
         "Fund contributions are solved automatically (see Fund Summary) and are fully editable.",
-        "Planning horizon: 2026-2050 (25 years)",
+        f"Planning horizon: {YEARS[0]}-{YEARS[-1]} ({len(YEARS)} years)",
     ]
     for line in info:
         ws.cell(row=row, column=2, value=line).font = NORMAL_FONT
@@ -732,12 +788,12 @@ def build_instructions_sheet(ws, entity):
         "the industry (CAI) metric: under 30% = weak (high special-assessment risk), 30-70% = fair,",
         "70%+ = strong.",
         "",
-        "Reduction Readiness — common charges should NOT be reduced until all three gates PASS:",
-        "  Gate 1 — Emergency Reserve is funded to its target.",
-        "  Gate 2 — Long-Term Maintenance stays at/above $0 every year at the proposed contribution.",
-        "  Gate 3 — Operating Reserve stays at/above its floor (multiplier x monthly operating expense).",
-        "The 'OVERALL' cell reads ELIGIBLE only when all three pass. To model a reduction, lower a",
-        "fund's Year-1 Contribution on the Fund Summary sheet and watch the gates.",
+        "Reserve Funding Status — common charges should NOT be reduced until all three are Funded:",
+        "  1 — Emergency Reserve is funded to its target.",
+        "  2 — Long-Term Maintenance stays at/above $0 every year at the proposed contribution.",
+        "  3 — Operating Reserve stays at/above its floor (multiplier x monthly operating expense).",
+        "The 'Reduction in common charges' cell says a reduction can be considered only when all three",
+        "are Funded. To model a reduction, lower a fund's Year-1 Contribution on the Fund Summary sheet.",
         "Replace every yellow placeholder (targets, floors, total cash) with the entity's ACTUALS.",
     ]
     for line in fund_lines:
@@ -795,7 +851,7 @@ def build_instructions_sheet(ws, entity):
         row += 2
 
     ws.cell(row=row, column=2,
-            value="Prepared June 2026. Review and update annually.").font = SMALL_FONT
+            value=entity.get("prepared", "Prepared June 2026. Review and update annually.")).font = SMALL_FONT
 
 
 def build_components_sheet(ws, entity):
@@ -1081,7 +1137,7 @@ def build_fund_schedule(ws, entity, fund):
 
 def build_summary_sheet(ws, entity):
     """Fund Summary & Reduction Readiness — shared inputs, the three funds with
-    fill-by-priority allocation, LTM funding health, and the three gates."""
+    fill-by-priority allocation, LTM funding health, and the reserve funding status."""
     from openpyxl.formatting.rule import CellIsRule, FormulaRule
     ws.sheet_properties.tabColor = "2F5496"
 
@@ -1105,7 +1161,7 @@ def build_summary_sheet(ws, entity):
     # Emergency to target over em_years; Operating to its floor over FUND_FILL_YEARS).
     ltm_contrib = _roundup(solve_ltm_contribution(ltm_start, entity["disbursements"]))
     emerg_contrib = _roundup(solve_fund_to(emerg_start, et, em_years))
-    reg_contrib = _roundup(solve_fund_to(reg_start, rf, FUND_FILL_YEARS))
+    reg_contrib = _roundup(solve_fund_to(reg_start, rf, entity.get("operating_fill_years", FUND_FILL_YEARS)))
 
     ws.cell(row=1, column=1, value=f"{entity['name']} — Fund Summary & Reduction Readiness").font = TITLE_FONT
     ws.cell(row=2, column=1,
@@ -1205,9 +1261,9 @@ def build_summary_sheet(ws, entity):
     ws.conditional_formatting.add("B21", CellIsRule(operator="greaterThanOrEqual", formula=["0.7"], fill=GOOD_FILL, font=GOOD_FONT))
     ws.cell(row=22, column=1, value="CAI bands: under 30% = weak; 30-70% = fair; 70%+ = strong.").font = SMALL_FONT
 
-    # --- Reduction readiness gates ---
-    ws.cell(row=24, column=1, value="REDUCTION READINESS — ALL THREE GATES MUST PASS").font = SECTION_FONT
-    for c, h in enumerate(["Gate", "Target", "Actual", "Status"], 1):
+    # --- Reserve funding status (Funded / To be funded) ---
+    ws.cell(row=24, column=1, value="RESERVE FUNDING STATUS — ALL THREE MUST BE FUNDED BEFORE ANY REDUCTION").font = SECTION_FONT
+    for c, h in enumerate(["Reserve target", "Target", "Actual", "Status"], 1):
         ws.cell(row=25, column=c, value=h)
     style_header_row(ws, 25, 4)
 
@@ -1224,27 +1280,28 @@ def build_summary_sheet(ws, entity):
         c.border = THIN_BORDER
         c.alignment = Alignment(horizontal="center")
 
-    gate_row(26, "1. Emergency Reserve funded to target", "=B12", "=D12", '=IF(D12>=B12,"PASS","FAIL")')
+    span = f"F{FUND_FIRST_ROW}:F{FUND_LAST_ROW}"
+    gate_row(26, "1. Emergency Reserve funded to target", "=B12", "=D12", '=IF(D12>=B12,"Funded","To be funded")')
     gate_row(27, "2. Long-Term Maintenance never below $0", 0,
-             "=MIN('Long-Term Maintenance'!F5:F29)", '=IF(C27>=B27,"PASS","FAIL")')
+             f"=MIN('Long-Term Maintenance'!{span})", '=IF(C27>=B27,"Funded","To be funded")')
     gate_row(28, "3. Operating Reserve at/above its floor", "=B14",
-             "=MIN('Operating Reserve'!F5:F29)", '=IF(C28>=B28,"PASS","FAIL")')
+             f"=MIN('Operating Reserve'!{span})", '=IF(C28>=B28,"Funded","To be funded")')
 
-    ws.cell(row=29, column=1, value="OVERALL").font = LABEL_FONT
+    ws.cell(row=29, column=1, value="Reduction in common charges").font = LABEL_FONT
     ws.cell(row=29, column=1).border = THIN_BORDER
     c = ws.cell(row=29, column=4,
-                value='=IF(AND(D26="PASS",D27="PASS",D28="PASS"),'
-                      '"ELIGIBLE TO CONSIDER REDUCTION","NOT ELIGIBLE — HOLD DUES")')
+                value='=IF(AND(D26="Funded",D27="Funded",D28="Funded"),'
+                      '"Reduction can be considered","Not yet supported — hold common charges")')
     c.font = LABEL_FONT
     c.border = THIN_BORDER
     c.alignment = Alignment(horizontal="center")
     ws.merge_cells(start_row=29, start_column=2, end_row=29, end_column=3)
 
     for rng in ("D26", "D27", "D28"):
-        ws.conditional_formatting.add(rng, FormulaRule(formula=[f'{rng}="FAIL"'], fill=WARN_FILL, font=WARN_FONT))
-        ws.conditional_formatting.add(rng, FormulaRule(formula=[f'{rng}="PASS"'], fill=GOOD_FILL, font=GOOD_FONT))
-    ws.conditional_formatting.add("D29", FormulaRule(formula=['ISNUMBER(SEARCH("NOT",D29))'], fill=WARN_FILL, font=WARN_FONT))
-    ws.conditional_formatting.add("D29", FormulaRule(formula=['ISNUMBER(SEARCH("CONSIDER",D29))'], fill=GOOD_FILL, font=GOOD_FONT))
+        ws.conditional_formatting.add(rng, FormulaRule(formula=[f'{rng}="To be funded"'], fill=WARN_FILL, font=WARN_FONT))
+        ws.conditional_formatting.add(rng, FormulaRule(formula=[f'{rng}="Funded"'], fill=GOOD_FILL, font=GOOD_FONT))
+    ws.conditional_formatting.add("D29", FormulaRule(formula=['ISNUMBER(SEARCH("NOT YET",D29))'], fill=WARN_FILL, font=WARN_FONT))
+    ws.conditional_formatting.add("D29", FormulaRule(formula=['ISNUMBER(SEARCH("CONSIDERED",D29))'], fill=GOOD_FILL, font=GOOD_FONT))
 
     # --- Combined cost ---
     ws.cell(row=31, column=1, value="Combined Monthly Cost per Unit (Year 1, all three funds):").font = LABEL_FONT
@@ -1256,8 +1313,8 @@ def build_summary_sheet(ws, entity):
             value="Grows at the Growth Rate each year; this is Year-1. Add the HOA per-unit amount for a "
                   "unit owner's all-in monthly.").font = SMALL_FONT
     ws.cell(row=34, column=1,
-            value="To model a dues reduction: lower a fund's Year-1 Contribution above and watch the gates. "
-                  "Any gate turning FAIL means the reduction is not supported.").font = SMALL_FONT
+            value="To model a dues reduction: lower a fund's Year-1 Contribution above and watch the status. "
+                  "Any target turning 'To be funded' means the reduction is not supported.").font = SMALL_FONT
 
     # Operating Reserve basis — drives the Operating Reserve floor (B14 = B38 x B37)
     ws.cell(row=36, column=1, value="OPERATING RESERVE BASIS").font = SECTION_FONT
@@ -1314,6 +1371,7 @@ def build_summary_sheet(ws, entity):
 # ---------------------------------------------------------------------------
 
 def generate_workbook(key, entity):
+    set_timeline(entity)
     wb = Workbook()
 
     # Sheet 1: Instructions
