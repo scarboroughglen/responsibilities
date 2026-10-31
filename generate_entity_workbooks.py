@@ -358,11 +358,13 @@ FUND_DEFAULTS = {
                  "total_cash": 364334,
                  "start_split": (0, 220553, 143781),
                  "emergency_label": "largest common asset (clubhouse / pool)",
-                 # The HOA board has not acknowledged or voted on any maintenance plan or on the
-                 # HOA/Condo split of repairs; this plan is the Treasurer's independent proposal.
+                 # The HOA board has not acknowledged or voted on any maintenance plan (it has followed the
+                 # First Amendment's HOA/Condo split since 2025); this plan is the Treasurer's independent proposal.
                  "board_status_note": ("NOT ADOPTED BY THE HOA BOARD. The HOA board has not acknowledged or "
-                                       "voted on any maintenance plan, or on which repairs belong to the HOA "
-                                       "and which to the condos. This plan was prepared independently by the "
+                                       "voted on any maintenance plan. Since the 2025 board changes the HOA has "
+                                       "followed the First Amendment's split of repair responsibilities, but "
+                                       "has not adopted a plan with costs, timing and funding. This plan was "
+                                       "prepared independently by the "
                                        "HOA Treasurer as a proposal for the board to consider. It is not an "
                                        "approved HOA plan, budget or funding commitment.")},
     # Condo Emergency targets (2026-10): the HOA insures the buildings and runs casualty
