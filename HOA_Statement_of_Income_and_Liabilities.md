@@ -174,11 +174,13 @@ The books carry two reserve labels. They are not separate bank accounts:
 | When | What happened |
 |---|---|
 | March 2022 | The Falcon Group delivered an engineering study of the reserves for the HOA and all four condos. |
-| Since 2022 | The HOA board has **not defined a maintenance plan, voted on one, or acted on the engineering reports** or any other long-term planning. |
+| Since 2022 | The HOA board has **not defined a maintenance plan, voted on one, or acted on the engineering reports** or any other long-term planning. The board also **voted to keep the engineering reports from owners**. |
 | February 3, 2026 | Becht Engineering delivered a second study, ordered through the management company. It is **still marked "DRAFT,"** and the board has not voted on it. |
 | What Becht found | Reserves for the whole community, condos included, are only **14.57% funded**. The HOA put **$38,238** into reserves in the prior year. Becht's lowest recommendation is **$219,984 a year**. |
 
 Without a plan, the HOA keeps all reserve money in one pool and spends it by case-by-case board votes (see *Reserve labels on the books*). In the Treasurer's view, the management company, Heritage Management, has given the board **little help** in moving this work forward.
+
+> **A personal note from the Treasurer.** As Treasurer and the person who prepared this statement, I do not believe the board acted out of bad intent in holding back the engineering reports or in putting off a maintenance plan. In my view, it comes from a lack of the skills and experience needed. Scarborough Glen is getting older. A newer community can get by year to year, but an aging one needs much more planning for the repairs ahead, and the board has not yet made that shift. This statement is meant to help start it.
 
 Without a written plan saying who maintains what, each dispute over who pays, such as sprinklers or sewer lines, gets settled one case at a time. That leads to refunds, arguments and lawsuits, such as the one described in *Pending Legal Action* at the end of this report. Lenders and insurers also look at whether the HOA has a reserve plan and follows it.
 
