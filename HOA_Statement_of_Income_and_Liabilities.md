@@ -101,6 +101,7 @@ This document is intended to help Association owners understand the HOA's financ
 |---|---:|
 | Outstanding loans / notes payable | **$0.00 — none** |
 | Accrued but unfunded reserve transfer (20-3026, period activity) | $7,441.44 booked in excess of cash transferred — see note above |
+| Pending lawsuit — *Fernandez v. Scarborough Glen HOA* (contingent) | Amount unknown — see **Pending Legal Action** below |
 
 > The HOA carries **no outstanding debt**. No loan-principal, loan-interest, or note-payable accounts appear in the general ledger for the period.
 
@@ -121,6 +122,108 @@ This document is intended to help Association owners understand the HOA's financ
 > *Identification note: the ledger does not name Condo I on these entries. The attribution rests on the amounts being exact multiples of $365 at Condo I's 18-unit count, and on Condo I having no other source of dues income in the period. Confirm the account mapping with management before acting on this line.*
 >
 > This receivable is **not** reflected in the cash position above — the HOA's $376,529.52 of cash is $14,235 lighter than a fully-collected half-year would leave it, which is a material part of why the operating account is down to eight days of coverage. The amount should be confirmed against the receivable ledger, and collection pursued with management. The corresponding **liability belongs on Condo I's own Statement of Income and Liabilities** when that document is prepared.
+
+---
+
+## Pending Legal Action
+*Maria Fernandez v. Scarborough Glen Homeowners Association, Inc., et al. — New York State Supreme Court, Westchester County, Index No. 62111/2026*
+
+> **Please read this first.** The person who prepared this statement, Erik Anderson, is one of the people being sued. To keep this fair, this section only reports what the court papers say. It does not argue for either side. Everything below marked as a **claim** is something the lawsuit says happened. **None of it has been proven, and the court has not decided anything.** This summary is based only on the papers filed by Ms. Fernandez. It does not include any answer from the people being sued.
+
+### Who filed the lawsuit, and against whom
+
+**Maria Fernandez** filed the lawsuit on **April 16, 2026**. She lives in Condo III. She was the HOA's **At-Large** board member, the one seat chosen by all 136 owners. She was HOA President from March 2025 until December 15, 2025. She is a lawyer and is representing herself.
+
+Two other HOA board members signed sworn statements supporting her:
+
+- **Donna Lampone**, the Condo I member of the HOA board and its current Secretary
+- **Michelle Conners**, the Condo III member of the HOA board
+
+These two are **witnesses, not parties** to the case. Condo I and Condo III, as associations, are not suing.
+
+The lawsuit is against **five respondents** (the people or groups being sued):
+
+| Respondent | Role |
+|---|---|
+| Scarborough Glen Homeowners Association, Inc. | The HOA itself |
+| Tracey Wong (also known as Tracey Carayol) | Condo IV Board President; HOA board member |
+| Erik Anderson | HOA Treasurer; Condo IV board member |
+| Elaine Bachrach Sunberg | Condo II Board President; HOA Vice President |
+| August Venturini | Condo IV board member; HOA President |
+
+The four people are sued in two ways: as board members, and **personally**.
+
+### What happened, according to the lawsuit
+
+The HOA board has seven seats: one each for Condos I, II and III, three for Condo IV, and the At-Large seat. Four votes make a majority.
+
+At a Zoom board meeting on **December 15, 2025**, a motion was made to remove Ms. Fernandez as President "due to lack of confidence." The vote was **4 to 3**. Wong, Anderson, Venturini and Sunberg voted yes. Fernandez, Lampone and Conners voted no. Right after that, the board chose Mr. Venturini as President and Ms. Sunberg as Vice President.
+
+At the same meeting, the board voted 4 to 3 to settle a claim Condo IV had made against the HOA over **lawn sprinkler costs**. Condo IV had asked the HOA to pay about **$66,999.67** for sprinkler upkeep. The HOA board had said no twice, in January and February 2025. The settlement had the HOA pay Condo IV half of seven years of sprinkler costs, **$30,249.06**, and take over the sprinklers going forward.
+
+### What the HOA's own rules say about sprinklers
+
+The lawsuit does not mention it, but the HOA's governing documents speak to this question. The **First Amendment to the HOA Declaration and By-Laws** was recorded February 14, 2001 and approved by at least 80% of owners. It lists the **"Common Areas"** the HOA must take care of (§1(d)). They include:
+
+- (i) the **land** of all four condos
+- (ii) all **installations outside the units**, on condo land, that serve the community, "such as heat, power, light, gas, telephone, television and **water**"
+- (iii) all **sewer, water and drainage pipes** outside the buildings or under their concrete slabs
+- (iv) all **parking areas**
+- (v) all **walks and driveways**
+- (vi) all **private roads**
+
+Section 13 says the HOA must "operate, manage, repair and maintain the Common Areas." Section 19.3 says the HOA board must do "all maintenance work, repairs and replacements" for them. Section 20.3 says these costs are shared **equally by all 136 owners**.
+
+The condos keep their **buildings**: foundations, outside walls, and "any terraces, decks, porches and exterior stairs" (§13). So the rule is **not** simply "everything outside the walls belongs to the HOA." Decks, porches and outside stairs stay with each condo.
+
+The amendment **does not use the word "sprinkler."** But lawn sprinklers are water lines and fixtures, outside the buildings, on condo land. Read plainly, that puts them under items (i), (ii) and (iii), which would make sprinklers an HOA job **for all four condos**. The same section is why this statement already treats driveways and walks on condo land as HOA costs (see *Future Major Repairs and Replacements*).
+
+**This has happened before.** The HOA's books show the same pattern over and over. A condo or an owner paid for something the amendment makes an HOA job, such as pipes, water or sprinklers outside the buildings. Later the HOA paid them back:
+
+| When | What the HOA paid back | Amount |
+|---|---|---:|
+| 2023–2024 | Owners who paid for water used on the common grounds | about $1,838 |
+| Sep 2023 | Condo I, for landscaping it paid from its own account | $948.28 |
+| Aug 2025 | 34 refunds to Condo IV owners for sprinkler repairs | $7,166.07 |
+| Oct 2025 | 10 more owner refunds for 2022 sprinkler repairs | $2,457.86 |
+| Dec 2025 | Condo IV, for seven years of sprinkler costs (the settlement) | $30,249.06 |
+| Jan 2026 | Condo III, for sewer line repairs at units 603 and 803 | $11,200.00 |
+| Jan 2026 | Condo IV, for a sewer line repair at unit 1003 | $5,155.94 |
+| **Total** | | **about $59,015** |
+
+The August and October 2025 sprinkler refunds were paid while Ms. Fernandez was HOA President. The sewer refunds fall under item (iii) of the amendment, pipes "outside of the buildings… or under the concrete slabs." The HOA's general ledgers only go back to mid-2023, and this pattern shows up as far back as those records go. It likely started earlier, but there are no ledgers to check. Each time a cost lands in the wrong place, it takes extra work and extra money to fix later. That is a good reason for the board to write down, once and for all, who pays for what, using the amendment as the guide.
+
+Not everyone has read it that way. The HOA board voted against Condo IV's claim twice in early 2025, and the lawsuit quotes a former HOA lawyer who called the HOA's case "a slam dunk." The HOA's lawyers had not finished a written opinion when the board voted to settle. **The court will not necessarily decide who owns the sprinklers.** The lawsuit is mainly about *how* the vote was taken and *who* was allowed to vote.
+
+### What the lawsuit claims was wrong
+
+1. **No warning, no reason.** The vote was not on the meeting agenda. No reason was given. Ms. Fernandez says she had no chance to respond.
+2. **Conflicts of interest.** The lawsuit says the three Condo IV members should not have voted on the Condo IV sprinkler settlement, because Condo IV would get the money. It says Mr. Anderson wrote in an October 2025 text that he "cannot be on 2 sides of a financial lawsuit," since he was Treasurer of both the HOA and Condo IV. It says Ms. Sunberg had opposed the sprinkler claim for over a year, then voted for it and became Vice President the same night.
+3. **Two votes should not count.** The lawsuit says Ms. Wong's Condo IV term was set up improperly in 2024, and that Mr. Venturini's November 2025 Condo IV election was held early and done wrong. It argues that without those two votes, the removal would have failed 3 to 3.
+4. **A planned "voting bloc."** The lawsuit says Condo IV board candidates were asked in 2023 to promise to "vote as a slate" at HOA meetings. It quotes a September 2025 email to Condo IV owners: "We have four votes… Without that fourth vote, we cannot move forward."
+5. **Breaking the rules after the vote.** The lawsuit says the new majority later voted by email with only four "yes" votes. The HOA By-Laws require **every** director to agree when a decision is made outside a meeting. It also says board members' names were again left out of meeting minutes, and that Mr. Anderson held back financial records.
+6. **Breach of fiduciary duty.** A fiduciary duty is a board member's legal duty to act honestly and in the best interest of **all** 136 owners, not just one condo. The lawsuit says the four respondents broke this duty.
+
+### What the lawsuit asks the court to do
+
+- Declare the December 15, 2025 removal vote **void**, meaning it never legally happened.
+- **Put Ms. Fernandez back** as HOA President, as of December 15, 2025.
+- Declare void **every board action since December 15, 2025** that passed with the four-vote majority. That would include the $30,249.06 sprinkler settlement.
+- Order the four individuals to pay the HOA **money damages**, in an amount to be set at trial. This part is brought **on behalf of the HOA** (a "derivative" claim), so any money awarded would go to the HOA, not to Ms. Fernandez.
+- Award Ms. Fernandez her legal fees and court costs.
+
+### Why this matters to owners
+
+- **HOA money is already involved.** The **$30,249.06** sprinkler settlement was paid to Condo IV on **December 18, 2025**, out of the HOA's **reserve account**. Reserves are the savings meant for future major repairs. If the court cancels the settlement, the board would have to decide whether to ask Condo IV for the money back. Under the First Amendment (§1(d) and §13, above), the HOA may still owe sprinkler upkeep going forward, whatever happens to the vote.
+- **Past board decisions could be undone.** If the court agrees with Ms. Fernandez, decisions made by the board since December 15, 2025 could be cancelled. That could include officer elections, the sprinkler settlement, and votes taken by email.
+- **Legal costs.** The HOA is a respondent, so it will have to answer the lawsuit. Lawyers' fees would come out of HOA funds, which all four condos pay into through their dues. The HOA's 2026 legal budget is **$10,000**. The HOA carries directors-and-officers (D&O) insurance, which is meant to protect board members sued for board decisions. **Whether that policy covers this case has not been confirmed** and should be checked with the insurance carrier.
+- **No amount can be booked yet.** Under accounting rules, a lawsuit is recorded as a liability only when a loss is likely and the amount can be estimated. Neither is known yet. That is why it appears above as a **contingent** liability with no dollar amount.
+
+### Where the case stands
+
+- **April 16, 2026 (about 3:05 AM):** Petition filed electronically. The deadline was April 15, which was four months after the vote. Ms. Fernandez says the court's e-filing system failed for several hours that night. She asked the court to accept the papers as on time. **If the court says no, the case could be thrown out for being late**, without the court ever looking at the claims.
+- **May 15, 2026:** First hearing date requested in the court papers.
+- **After that:** The papers used for this statement do not show what has happened since. Court filings in New York are public. Owners can look up the case on the NYS Courts Electronic Filing site (NYSCEF) using **Index No. 62111/2026, Westchester County**.
 
 ---
 
