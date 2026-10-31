@@ -1,9 +1,7 @@
 # Scarborough Glen Homeowners Association
 ## Unaudited Statement of Income and Liabilities
-*What came in, what went out, what the HOA owes, and the big repairs ahead*
-
-*Prepared by Erik Anderson, HOA Board Treasurer*
-*Based on the HOA's general ledger for January 1 – June 30, 2026, the Becht Engineering Capital Reserve Study (2026, draft) and the Falcon Engineering Report (2022)*
+*Prepared by Erik Anderson / Board Treasurer*
+*In Reference to the Becht Engineering Capital Reserve Study (2026) and the Falcon Engineering Report (2022)*
 
 ---
 
@@ -57,9 +55,9 @@ Each unit owes **$365 a month** in HOA dues.
 | Condo IV | 98 | $214,620.00 | $214,620.00 | — |
 | **Total** | **136** | **$297,840.00** | **$283,605.00** | **($14,235.00)** |
 
-> ⚠️ **Condo I stopped paying HOA dues after March 2026.** Its last payment arrived on March 17. Condos II, III and IV paid all six months, in full and on time.
+> ⚠️ **No HOA dues for Condo I units reached the HOA after March 2026.** The last payment arrived on March 17. Condos II, III and IV paid all six months, in full and on time.
 >
-> Condo I's payments also look different from the others. They come in as scanned batch deposits under a single account, and the amount changes from month to month: 18 units' worth in January, 19 in February and 17 in March. The other three condos pay the same amount every month. February also included **$5,475** paid ahead for 15 units, which covers only about half of April. Altogether, Condo I paid for **69 of the 108 unit-months** it owed, leaving **$14,235 unpaid** as of June 30. No payments came in for April, May or June.
+> Condo I's payments also look different from the others. They come in as scanned batch deposits under a single account, and the amount changes from month to month: 18 units' worth in January, 19 in February and 17 in March. The other three condos pay the same amount every month. That is because Condo I sends each owner's dues to the HOA as that owner pays them, through its management company, rather than paying one fixed amount for all 18 units the way the other three condos do. **Because of this, when dues do not reach the HOA, the HOA treats them as each Condo I owner's unpaid dues, not as a debt of the Condo I association.** Under the HOA Declaration, each unit owner is responsible for paying HOA dues (§20.2), and an owner who falls behind can be charged interest, late charges and collection costs, including attorneys' fees, all of which are added to what that owner owes, and unpaid dues can lead to a lien on that owner's unit (§20.4; late charges are also mentioned in §3.4). That can happen even to a Condo I owner who paid on time, if the money did not reach the HOA. February also included **$5,475** paid ahead for 15 units, which covers only about half of April. Altogether, Condo I paid for **69 of the 108 unit-months** it owed, leaving **$14,235 unpaid** as of June 30. No payments came in for April, May or June.
 >
 > *How these payments are matched to Condo I: the ledger does not name Condo I on them. They are matched to Condo I because each amount is an exact multiple of $365, which fits its 18 units, and because Condo I paid no other dues during this time. Management should confirm this before the HOA acts on it.*
 
@@ -158,15 +156,15 @@ The books carry two reserve labels. They are not separate bank accounts:
 
 | Owed by | Months unpaid | Amount |
 |---|---|---:|
-| Condo I (18 units at $365 a month) | April, May and June 2026 | **$14,235.00** |
+| Condo I unit owners (18 units at $365 a month) | April, May and June 2026 | **$14,235.00** |
 | Condos II, III and IV | — | $0.00 — paid up |
 | **Total HOA dues receivable** | | **$14,235.00** |
 
-> This money is **not** in the bank balances above. Its absence is a big part of why the checking account is down to 8 days of bills. The amount should be confirmed with management and collected. Condo I should show the same amount as a debt on its own statement when it prepares one.
+> This money is **not** in the bank balances above. Its absence is a big part of why the checking account is down to 8 days of bills. The amount should be confirmed with management and collected. This amount is owed by the individual Condo I owners, not by the Condo I association. If Condo I collected these dues from its owners but did not pass them on, Condo I should show that money as held for the HOA on its own statement when it prepares one.
 
 ---
 
-## Future Major Repairs and Replacements *(the savings plan)*
+## Future Major Repairs and Replacements
 *(HOA share, in today's dollars, based on Becht 2026 and Falcon 2022)*
 
 > ⚠️ **Not adopted by the HOA board.** The HOA board has **not acknowledged or voted on any maintenance plan**, and it has not voted on which repairs belong to the HOA and which belong to the condos. This section, the reserve plan workbook behind it, and *Funding Gap Analysis* were **prepared independently by the HOA Treasurer**. They are a proposal for the board to consider. They are **not** an approved HOA plan, budget or funding commitment.
@@ -215,7 +213,7 @@ Listed by when the first cost comes due. The full list of items is on the Compon
 
 ---
 
-## Funding Gap Analysis *(are we saving enough?)*
+## Funding Gap Analysis
 
 > ⚠️ **Based on the unadopted plan above.** Every figure in this section comes from the Treasurer's independent reserve plan, which the HOA board has not acknowledged or voted on (see the note at the top of *Future Major Repairs and Replacements*).
 
@@ -277,7 +275,7 @@ Each fund has a target. As of June 30, 2026:
 | # | Priority | Why |
 |---|---|---|
 | 1 | Build the checking account back up | It holds only about 8 days of bills. Big projects should be paid from savings, not checking. |
-| 2 | Collect Condo I's **$14,235** and restart monthly transfers to savings | Both stopped after March. |
+| 2 | Collect the **$14,235** owed for Condo I units and restart monthly transfers to savings | Both stopped after March. |
 | 3 | Save for the nearest repairs | Pool resurfacing and split-rail fence repairs (2027); pool equipment, pool cover and clubhouse gutters (2028). |
 | 4 | Plan for 2033 and 2036 | 2036 is about a **$638,000** paving year (today's dollars): $330,000 to repave roads plus $308,000 for driveways. 2033 brings sidewalks, street lights and clubhouse updates. Sign costs may change after they are checked in the field. |
 
