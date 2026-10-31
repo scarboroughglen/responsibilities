@@ -353,7 +353,14 @@ FUND_DEFAULTS = {
     "HOA":      {"emergency_target": 200000, "operating_multiplier": 3, "operating_monthly": 47927,
                  "total_cash": 364334,
                  "start_split": (0, 220553, 143781),
-                 "emergency_label": "largest common asset (clubhouse / pool)"},
+                 "emergency_label": "largest common asset (clubhouse / pool)",
+                 # The HOA board has not acknowledged or voted on any maintenance plan or on the
+                 # HOA/Condo split of repairs; this plan is the Treasurer's independent proposal.
+                 "board_status_note": ("NOT ADOPTED BY THE HOA BOARD. The HOA board has not acknowledged or "
+                                       "voted on any maintenance plan, or on which repairs belong to the HOA "
+                                       "and which to the condos. This plan was prepared independently by the "
+                                       "HOA Treasurer as a proposal for the board to consider. It is not an "
+                                       "approved HOA plan, budget or funding commitment.")},
     # Condo Emergency targets (2026-10): the HOA insures the buildings and runs casualty
     # rebuilding (HOA First Amendment §22.1/§22.2), deductible assumed on the HOA, so each
     # Condo reserve covers only uninsured exposure in a bad year:
@@ -713,6 +720,9 @@ def build_instructions_sheet(ws, entity):
             value="Unaudited planning estimates. This plan is not a financial statement, is not prepared in "
                   "accordance with U.S. GAAP, and is not a reserve study under the CAI National Reserve Study "
                   "Standards. Future costs, timing and balances are estimates and will differ.").font = SMALL_FONT
+    if entity.get("board_status_note"):
+        row += 1
+        ws.cell(row=row, column=2, value=entity["board_status_note"]).font = WARN_FONT
     row += 2
 
     # How to read this workbook (orientation for board members opening the file)
@@ -1172,6 +1182,8 @@ def build_summary_sheet(ws, entity):
     ws.cell(row=2, column=1,
             value="Three decoupled funds. Yellow cells are inputs — replace placeholders with actual figures. "
                   "Unaudited planning estimates; not a GAAP financial statement.").font = SMALL_FONT
+    if entity.get("board_status_note"):
+        ws.cell(row=3, column=1, value=entity["board_status_note"]).font = WARN_FONT
 
     # --- Shared inputs ---
     ws.cell(row=4, column=1, value="SHARED INPUTS").font = SECTION_FONT
