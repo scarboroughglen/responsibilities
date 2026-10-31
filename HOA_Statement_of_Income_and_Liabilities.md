@@ -82,7 +82,7 @@ Each unit owes **$365 a month** in HOA dues.
 
 | Project | Amount |
 |---|---:|
-| New clubhouse roof (including permit) | $33,747.00 |
+| New clubhouse roof, completed May 2026 (including permits; see note) | $33,747.00 |
 | Sewer-line repairs paid back to Condo III ($11,200) and Condo IV ($5,155.94) | $16,355.94 |
 | New pool pump | $6,415.80 |
 | **Total Capital Projects** | **$56,518.74** |
@@ -99,6 +99,8 @@ Each unit owes **$365 a month** in HOA dues.
 > Operating activity about **broke even** for the half-year, with a surplus of $2,492.52. The **$54,026.22 net decrease in cash** came from the three capital projects, which were paid from the operating (checking) account instead of being drawn from the reserve account.
 >
 > The $12,579.89 of insurance-claim repairs was paid without any insurance money coming back by June 30.
+>
+> The clubhouse roof figure is what the books showed at June 30. It includes a $5,900 payment that was recorded twice (see *Events after June 30, 2026*).
 
 ### Cash Position *(bank balances as of June 30, 2026)*
 
@@ -200,18 +202,18 @@ Listed by when the first cost comes due. The full list of items is on the Compon
 |---|---|---:|---|
 | Pool and pool area | 2027 | $159,195 | Pool resurfacing 2027; pool equipment and cover 2028; furniture 2030; pool edge (coping) 2031; safety fence 2035; pool deck and filter 2036 |
 | Fences | 2027 | $206,100 | Split-rail repair fund 2027; board-on-board fence 2034; wood split-rail 2041; vinyl fence 2043 |
-| Clubhouse building | 2028 | $110,320 | Gutters 2028; roof, skylights and downspouts 2032; kitchen, bathroom and fitness-room updates and fire-alarm panel 2033; furniture 2036; vinyl siding 2048; windows 2053 (beyond this plan) |
+| Clubhouse building | 2028 | $122,547 | Gutters 2028; skylights and downspouts 2032; roof replaced May 2026, next due about 2051 (beyond this plan); kitchen, bathroom and fitness-room updates and fire-alarm panel 2033; furniture 2036; vinyl siding 2048; windows 2053 (beyond this plan) |
 | Street lights | 2033 | $84,700 | Street lights ($83,200) are most of this |
 | Roads, driveways and walks | 2033, and repeating | $739,700 | **Road repaving, $330,000 in 2036, is the single biggest cost.** Condo II–IV driveways, $308,000 in 2036 (Condo IV $254,562, Condo II $37,638, Condo III $15,800). Condo I–IV sidewalks and entry walks, $15,097 in 2033. Curbs in 2036. Crack filling and seal coating repeat every few years |
 | Aerator | 2036 | $5,500 | — |
 | Signs (entrance, stop and street signs) | 2046 | $36,500 | Counts and prices still need to be checked in the field |
 | Mailboxes | 2049 | $20,400 | — |
 | Clubhouse hot water heater | Repeating | $2,500 | — |
-| **Total over 25 years** | | **$1,364,915** | |
+| **Total over 25 years** | | **$1,377,142** | |
 
 > **Why driveways and walks are on the HOA's list.** The First Amendment (§1(d)(v)) says "all walks and driveways" are HOA Common Areas, including those on condo land. Sections 13 and 19.3 make the HOA responsible for maintaining them. The engineering studies had split driveways and entry walks among the condos, so this plan moves them to the HOA: the Condo II, III and IV driveways ($308,000) and the Condo I–IV sidewalks and entry walks ($15,097). This matches long-standing practice. The HOA has always repaved roads and driveways together under one contract to get a better price. Entry stoops, porches and outside stairs stay with each condo (§13). Condo I's mailbox hut ($1,500) and the pavers at the mailboxes ($2,200) also belong to the HOA under the amendment. They are listed in the workbook as items not yet funded.
 
-> *These are Becht Engineering's 2026 estimates in today's dollars, not adjusted for future price increases. Some prices, such as signs, are placeholders that still need to be checked. The clubhouse roof was replaced this year for $33,747, paid from checking, but the plan still shows a clubhouse roof in 2032. That line should be updated now that the work is done.*
+> *These are Becht Engineering's 2026 estimates in today's dollars, not adjusted for future price increases. Some prices, such as signs, are placeholders that still need to be checked. **The clubhouse roof was replaced in May 2026** (final payment May 15, 2026), so the plan no longer shows a clubhouse roof in 2032. Its actual cost was **$27,847**: $26,852 to the roofing contractor plus $995 in permits (see *Events after June 30, 2026* for a $5,900 duplicate entry). With a 25-year life, the next roof replacement is due **about 2051**, just after this plan's 2050 end date.*
 
 ---
 
@@ -224,15 +226,15 @@ Listed by when the first cost comes due. The full list of items is on the Compon
 | | Amount |
 |---|---:|
 | Reserve savings on hand (June 30, 2026) | $364,333.66 |
-| Yearly savings needed, first year (all three funds) | **about $131,000** (about $80 per unit per month) |
-| Total repair costs over 25 years | $1,364,915 |
+| Yearly savings needed, first year (all three funds) | **about $129,500** (about $79 per unit per month) |
+| Total repair costs over 25 years | $1,377,142 |
 
 | Fund | Goal | First-year amount | Per unit per month | How it works |
 |---|---|---:|---:|---|
-| Long-Term Maintenance | Never run out of money in any year. The biggest need is about $638,000 (today's dollars) in 2036 for roads and driveways | $94,000 | $57.60 | Paid every year. Grows about 3% a year with inflation, to about $191,100 by 2050 (about $3.43 million over 25 years) |
+| Long-Term Maintenance | Never run out of money in any year. The biggest need is about $638,000 (today's dollars) in 2036 for roads and driveways | $92,500 | $56.68 | Paid every year. Grows about 3% a year with inflation, to about $188,000 by 2050 (about $3.37 million over 25 years) |
 | Emergency Reserve | $200,000, about the cost of the largest shared asset (clubhouse or pool) | $37,000 | $22.67 | Stops once the goal is reached in 2030 (about $196,438 in all) |
 | Operating Reserve | About $143,800, three months of costs at about $47,927 a month | $0 | $0 | Already covered by setting aside part of today's reserve savings |
-| **Total** | | **$131,000** | **about $80** | |
+| **Total** | | **$129,500** | **about $79** | |
 
 This plan pays for each repair when it comes due. It does **not** need a huge amount in the bank today. The savings balance goes up and down as bills are paid.
 
@@ -242,7 +244,7 @@ This plan pays for each repair when it comes due. It does **not** need a huge am
 
 | | Amount |
 |---|---:|
-| First-year savings the plan calls for | about $131,000 |
+| First-year savings the plan calls for | about $129,500 |
 | Actually moved into savings, January–June 2026 | $11,019.56 |
 | At that pace for a full year | about $22,000 |
 | **Share of what the plan needs** | **about 17%** |
@@ -253,9 +255,9 @@ This plan pays for each repair when it comes due. It does **not** need a huge am
 
 | | Amount |
 |---|---:|
-| Fully Funded Balance benchmark (what the HOA would have saved if it had set money aside evenly over each item's life) | $722,755 |
+| Fully Funded Balance benchmark (what the HOA would have saved if it had set money aside evenly over each item's life) | $710,883 |
 | Reserve savings on hand (June 30, 2026) | $364,333.66 |
-| **Percent Funded** | **50.4%** |
+| **Percent Funded** | **51.3%** |
 
 *Percent funded is a measuring stick used across the industry. The Community Associations Institute calls 30–70% "fair." It is not an amount that must be kept in the bank. Becht's 14.57% figure above covers the whole community, condos included. Counting only the HOA's own repairs, the HOA is in better shape than the condos.*
 
@@ -267,7 +269,7 @@ Each fund has a target. As of June 30, 2026:
 |---|---|---|:--:|
 | 1. Emergency Reserve at target | ≥ $200,000 | $0 set aside (built from yearly contributions; reaches the target in 2030 under the plan) | **To be funded** |
 | 2. Operating Reserve at or above floor | ≥ $143,800 (3 months) | $143,781 of reserve cash set aside under the plan. The operating (checking) account itself held only $12,195.86, about 8 days | **Funded from reserve cash** |
-| 3. Long-Term Maintenance never below $0 | Never below $0 | Clears every year at $94,000 a year | **Funded under the plan** |
+| 3. Long-Term Maintenance never below $0 | Never below $0 | Clears every year at $92,500 a year | **Funded under the plan** |
 | **All three reserve targets** | All three funded | | **Not yet met** |
 
 > The plan is not adopted, and transfers into savings stopped after March, so even these targets are not being worked toward yet. The first step is for the board to vote on a plan.
@@ -276,7 +278,7 @@ Each fund has a target. As of June 30, 2026:
 
 | # | Priority | Why |
 |---|---|---|
-| 1 | Build the checking account back up | It holds only about 8 days of bills. Big projects should be paid from savings, not checking. |
+| 1 | Build the checking account back up | It holds only about 8 days of bills. Big projects should not come out of checking. They should be **projected and planned for years ahead**, with money set aside for each one in the right reserve fund. They should not depend on a board vote for a special assessment, or on drawing from one open-ended reserve pool whenever a bill comes due. |
 | 2 | Collect the **$14,235** owed for Condo I units and restart monthly transfers to savings | Both stopped after March. |
 | 3 | Save for the nearest repairs | Pool resurfacing and split-rail fence repairs (2027); pool equipment, pool cover and clubhouse gutters (2028). |
 | 4 | Plan for 2033 and 2036 | 2036 is about a **$638,000** paving year (today's dollars): $330,000 to repave roads plus $308,000 for driveways. 2033 brings sidewalks, street lights and clubhouse updates. Sign costs may change after they are checked in the field. |
@@ -325,7 +327,7 @@ The 2026 budget figures are the year-to-date budget from management's June 2026 
 | Transfers to reserves (booked) | $1,318 | $17,001 | $15,683 |
 | **Total expenses** | **$297,840** | **$358,581** | **$60,741** |
 
-> **The 2026 budget sets aside almost nothing for reserves.** It plans only **$2,635.30 for the whole year** in transfers to reserves. The Treasurer's plan calls for about $131,000, and Becht's lowest recommendation is $219,984. Of the $17,001 booked in January–March, only $11,019.56 was actually moved (see *Reserve funding during the period*).
+> **The 2026 budget sets aside almost nothing for reserves.** It plans only **$2,635.30 for the whole year** in transfers to reserves. The Treasurer's plan calls for about $129,500, and Becht's lowest recommendation is $219,984. Of the $17,001 booked in January–March, only $11,019.56 was actually moved (see *Reserve funding during the period*).
 >
 > The biggest overruns were landscaping and snow removal (+$34,350), the clubhouse roof (+$18,747), plumbing, mostly the sewer refunds (+$18,597), and the audit (+$7,525). The reserve study ($4,600) and the clubhouse claim repairs ($10,080) were not in the budget. Insurance was under budget because most of the year's premium is paid later in the year.
 >
@@ -344,6 +346,7 @@ The 2026 budget figures are the year-to-date budget from management's June 2026 
 | September 29 | **Reserve withdrawal.** $10,000, board approved, moved from reserves for an emergency plumbing repair at 15 Briar Brook Drive. |
 | September 30 | **Clubhouse insurance claim.** $42,455.26 of insurance claim payments recorded. |
 | September 30 | **Bank balances.** Operating (checking) account **$2,973.69**; reserve account **$316,584.77**, down from $364,333.66 at June 30. |
+| October 14 | **Clubhouse roof correction.** A $5,900 roof payment that had been recorded twice, under two contractor names for the same invoice (#14370), was reversed. The roof's actual cost was **$27,847**, not the $33,747 shown at June 30. |
 | October 15 | **Legal fees.** $4,500 paid for legal services on sprinkler expenses. |
 | — | **Lawsuit.** The papers used for this statement show nothing after the April 2026 filings (see *Pending Legal Action*). |
 

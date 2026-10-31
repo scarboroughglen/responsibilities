@@ -58,7 +58,10 @@ ENTITIES = {
             ("Lights, Street", 83200, 100.0, 83200, 2033, 102325),
             ("Mailboxes", 20400, 100.0, 20400, 2049, 40261),
             ("Pool Filter System", 10000, 100.0, 10000, 2036, 13439),
-            ("Roof, Shingles - Clubhouse", 15620, 100.0, 15620, 2032, 18650),
+            # Clubhouse roof replaced in 2026 (final payment May 15, 2026): actual cost $27,847
+            # (C C Roofing $26,852 + permits $995; a duplicate $5,900 entry was reversed 10/14/2026).
+            # Next replacement ~2051 on Becht's 25-year life, beyond the 2050 plan horizon.
+            ("Roof, Shingles - Clubhouse (replaced 2026)", 15620, 100.0, 27847, 2051, None),
             ("Seal Coating", 16500, 100.0, 16500, "recurring", None),
             ("Siding, Vinyl - Clubhouse", 30000, 100.0, 30000, 2048, 57482),
             ("Skylights - Clubhouse", 4500, 100.0, 4500, 2032, 5373),
@@ -72,7 +75,7 @@ ENTITIES = {
         "disbursements": {
             2028: 36067,
             2031: 11477,
-            2032: 24620,
+            2032: 5970,
             2033: 226791,
             2036: 1056287,
             2038: 44915,
@@ -86,7 +89,7 @@ ENTITIES = {
         "disbursement_detail": {
             2028: [("Asphalt Crack Filling", 15915), ("Seal Coating", 17500), ("Gutters - Clubhouse", 2652)],
             2031: [("Concrete Pool Coping", 11477)],
-            2032: [("Roof - Clubhouse", 18650), ("Skylights - Clubhouse", 5373), ("Leaders - Clubhouse", 597)],
+            2032: [("Skylights - Clubhouse", 5373), ("Leaders - Clubhouse", 597)],
             2033: [("Lights, Street", 102325), ("Bathroom Refurbishment", 12299), ("Concrete Sidewalks (HOA)", 24723),
                    ("Concrete Sidewalks (Condo I)", 7849), ("Concrete Sidewalks (Condo II)", 2468),
                    ("Concrete Sidewalks (Condo III)", 1996), ("Concrete Sidewalks (Condo IV)", 6256),
@@ -283,6 +286,7 @@ COMPONENT_LIFE = [
     ("Siding, Vinyl - Clubhouse", 45, 22),
     ("Siding, Vinyl", 45, 23),
     ("Siding, Wood", 40, 12),
+    ("Roof, Shingles - Clubhouse (replaced 2026)", 25, 25),
     ("Roof, Shingles - Clubhouse", 25, 6),
     ("Roof - Clubhouse", 25, 6),
     ("Roof", 25, 24),
