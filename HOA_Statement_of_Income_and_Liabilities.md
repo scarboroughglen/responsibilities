@@ -296,40 +296,42 @@ Each fund has a target. As of June 30, 2026:
 
 The 2026 budget figures are the year-to-date budget from management's June 2026 financial report, which is half of the annual budget.
 
+🔴 = more than $1,000 against the HOA (spending over budget, or income under budget). 🟢 = more than $1,000 in the HOA's favor.
+
 | Line | 2026 budget (½ year) | Actual, Jan–Jun 2026 | Over / (under) budget |
 |---|---:|---:|---:|
 | **Income** | | | |
-| HOA dues | $297,840 | $283,605 | ($14,235) |
-| Working-capital contributions | — | $1,460 | $1,460 |
+| HOA dues | $297,840 | $283,605 | 🔴 ($14,235) |
+| Working-capital contributions | — | $1,460 | 🟢 $1,460 |
 | Miscellaneous income | — | $100 | $100 |
-| Reserve interest income | — | $4,889 | $4,889 |
-| **Total income** | **$297,840** | **$290,054** | **($7,786)** |
+| Reserve interest income | — | $4,889 | 🟢 $4,889 |
+| **Total income** | **$297,840** | **$290,054** | 🔴 **($7,786)** |
 | **Expenses** | | | |
-| Management fees | $24,472 | $23,307 | ($1,165) |
-| Audit | $2,000 | $9,525 | $7,525 |
-| Legal | $5,000 | $2,350 | ($2,650) |
-| Insurance premiums | $75,000 | $44,861 | ($30,139) |
-| Clubhouse insurance-claim repairs | — | $10,080 | $10,080 |
-| Reserve study | — | $4,600 | $4,600 |
-| Other administrative (permits, copies and postage, taxes, events, board development) | $4,700 | $5,757 | $1,057 |
-| Pool operations and cleaning | $34,250 | $27,993 | ($6,257) |
-| Pool repairs (pool pump) | $20,000 | $6,416 | ($13,584) |
-| Clubhouse roof | $15,000 | $33,747 | $18,747 |
-| Landscaping and snow removal | $82,500 | $116,850 | $34,350 |
-| Tree maintenance | $7,500 | $10,036 | $2,536 |
-| Sprinkler repairs | $1,800 | $3,854 | $2,054 |
+| Management fees | $24,472 | $23,307 | 🟢 ($1,165) |
+| Audit | $2,000 | $9,525 | 🔴 $7,525 |
+| Legal | $5,000 | $2,350 | 🟢 ($2,650) |
+| Insurance premiums | $75,000 | $44,861 | 🟢 ($30,139) |
+| Clubhouse insurance-claim repairs | — | $10,080 | 🔴 $10,080 |
+| Reserve study | — | $4,600 | 🔴 $4,600 |
+| Other administrative (permits, copies and postage, taxes, events, board development) | $4,700 | $5,757 | 🔴 $1,057 |
+| Pool operations and cleaning | $34,250 | $27,993 | 🟢 ($6,257) |
+| Pool repairs (pool pump) | $20,000 | $6,416 | 🟢 ($13,584) |
+| Clubhouse roof | $15,000 | $33,747 | 🔴 $18,747 |
+| Landscaping and snow removal | $82,500 | $116,850 | 🔴 $34,350 |
+| Tree maintenance | $7,500 | $10,036 | 🔴 $2,536 |
+| Sprinkler repairs | $1,800 | $3,854 | 🔴 $2,054 |
 | Extermination | $1,500 | $1,601 | $101 |
-| General maintenance and repair | $5,000 | $12,973 | $7,973 |
-| Plumbing (including the $16,355.94 of sewer refunds) | $1,500 | $20,097 | $18,597 |
+| General maintenance and repair | $5,000 | $12,973 | 🔴 $7,973 |
+| Plumbing (including the $16,355.94 of sewer refunds) | $1,500 | $20,097 | 🔴 $18,597 |
 | Electrical | $750 | $426 | ($324) |
-| Roadway, fence and materials | $5,750 | — | ($5,750) |
-| Utilities | $9,800 | $7,108 | ($2,692) |
-| Transfers to reserves (booked) | $1,318 | $17,001 | $15,683 |
-| **Total expenses** | **$297,840** | **$358,581** | **$60,741** |
+| Roadway, fence and materials | $5,750 | — | 🟢 ($5,750) |
+| Utilities | $9,800 | $7,108 | 🟢 ($2,692) |
+| Transfers to reserves (booked) | $1,318 | $17,001 | 🟢 $15,683 |
+| **Total expenses** | **$297,840** | **$358,581** | 🔴 **$60,741** |
 
 > **The 2026 budget sets aside almost nothing for reserves.** It plans only **$2,635.30 for the whole year** in transfers to reserves. The Treasurer's plan calls for about $129,500, and Becht's lowest recommendation is $219,984. Of the $17,001 booked in January–March, only $11,019.56 was actually moved (see *Reserve funding during the period*).
 >
-> The biggest overruns were landscaping and snow removal (+$34,350), the clubhouse roof (+$18,747), plumbing, mostly the sewer refunds (+$18,597), and the audit (+$7,525). The reserve study ($4,600) and the clubhouse claim repairs ($10,080) were not in the budget. Insurance was under budget because most of the year's premium is paid later in the year.
+> The biggest overruns were landscaping and snow removal (+$34,350), the clubhouse roof (+$18,747), plumbing, mostly the sewer refunds (+$18,597), and the audit (+$7,525). The reserve study ($4,600) and the clubhouse claim repairs ($10,080) were not in the budget. Insurance was under budget because most of the year's premium is paid later in the year. A 🟢 does not always mean money was saved: insurance is a timing difference, roadway and fence work simply has not been done yet, and only $11,019.56 of the $17,001 booked to reserves was actually moved.
 >
 > *The ledger's total expenses ($358,581) include the $17,001 booked reserve transfer and leave out the $2,500 claim deductible, which was recorded separately. This statement shows the same activity as Total Operating Expenses ($287,561.51) plus Total Capital Projects ($56,518.74).*
 
