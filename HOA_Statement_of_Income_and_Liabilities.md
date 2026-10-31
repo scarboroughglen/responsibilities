@@ -306,6 +306,7 @@ The 2026 budget figures are the year-to-date budget from management's June 2026 
 | Miscellaneous income | — | $100 | $100 |
 | Reserve interest income | — | $4,889 | 🟢 $4,889 |
 | **Total income** | **$297,840** | **$290,054** | 🔴 **($7,786)** |
+| | | | |
 | **Expenses** | | | |
 | Management fees | $24,472 | $23,307 | 🟢 ($1,165) |
 | Audit | $2,000 | $9,525 | 🔴 $7,525 |
