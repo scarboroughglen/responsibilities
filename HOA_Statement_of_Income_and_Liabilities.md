@@ -7,7 +7,7 @@
 
 ## Background
 
-At the request of Scarborough Glen owners, this report has been prepared for the **Master Homeowners Association (HOA)**. It shows the money that came in and went out from **January 1 through June 30, 2026**. It also looks at the big repair costs the HOA can expect in the future, based on two engineering studies.
+At the request of Scarborough Glen owners, the following **unaudited Statement of Income and Liabilities** has been prepared for the **Master Homeowners Association (HOA)**. This schedule incorporates the HOA's general-ledger activity for the period **January 1, 2026 through June 30, 2026**, together with projected future repair and replacement obligations identified in the **Becht Engineering Capital Reserve Study (2026)** and the **Falcon Engineering Report (2022)**.
 
 Unlike the four condo associations, the HOA does **not own any homes or residential buildings**. It takes care of the shared property for all **136 units**:
 
