@@ -214,7 +214,9 @@ If Condo IV were responsible for its own sprinkler system:
 
 **Issue**: Several Condo bylaw provisions (pipes serving multiple Units, driveways as Limited Common Elements) assign to the Condo Board items the First Amendment makes HOA Common Areas. This document treats the recorded HOA Declaration, as amended, as controlling between the HOA and the Condos.
 
-**Action Required**: Confirm with association counsel; confirm whether any later amendment exists.
+**Resolved for Condo IV (October 2026)**: The Condo IV Declaration (¶38) and By-Laws (Art. I, §5) state that inconsistencies with the HOA's Association Documents "shall be governed by the terms and provisions of the Association Documents," and that the Condo IV board's maintenance powers apply only where maintenance is not the HOA's responsibility or if the HOA is dissolved. See `responsibility_analysis.md`, "Document hierarchy."
+
+**Action Required**: Check the Condo I–III declarations for the same clause; confirm whether any later amendment to the HOA Declaration exists.
 
 ---
 
