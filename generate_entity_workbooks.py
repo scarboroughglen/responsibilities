@@ -359,9 +359,9 @@ FUND_DEFAULTS = {
                  "start_split": (0, 220553, 143781),
                  "emergency_label": "largest common asset (clubhouse / pool)",
                  # The HOA board has not acknowledged or voted on any maintenance plan (it has followed the
-                 # First Amendment's HOA/Condo split since 2025); this plan is the Treasurer's independent proposal.
+                 # First Amendment's HOA/Condo split since December 15, 2025); this plan is the Treasurer's independent proposal.
                  "board_status_note": ("NOT ADOPTED BY THE HOA BOARD. The HOA board has not acknowledged or "
-                                       "voted on any maintenance plan. Since the 2025 board changes the HOA has "
+                                       "voted on any maintenance plan. Since the December 15, 2025 board change the HOA has "
                                        "followed the First Amendment's split of repair responsibilities, but "
                                        "has not adopted a plan with costs, timing and funding. This plan was "
                                        "prepared independently by the "
